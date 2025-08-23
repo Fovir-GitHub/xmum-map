@@ -10,6 +10,14 @@ import { SVG, registerWindow } from "@svgdotjs/svg.js";
 import { createSVGWindow } from "svgdom";
 import fs from "fs";
 
+// Begin constants.
+
+const SOURCE_FILE_NAME = "./data.xlsx";
+const WINDOW_WIDTH = 1000;
+const WINDOW_HEIGHT = 500;
+
+// End constants.
+
 /**
  * @description Read data from `.xlsx` files.
  * @param {string} fileName - The `.xlsx` file to read.
@@ -39,8 +47,7 @@ function readXlsx(fileName) {
 
 function renderSvg() {
   // Read data.
-  const sourceFileName = "./data.xlsx";
-  const storeData = readXlsx(sourceFileName);
+  const storeData = readXlsx(SOURCE_FILE_NAME);
 
   console.log(storeData);
 
@@ -49,9 +56,10 @@ function renderSvg() {
   const document = window.document;
   registerWindow(window, document);
 
-  const svgWidth = 1000;
-  const svgHeight = 500;
-  const draw = SVG(document.documentElement).size(svgWidth, svgHeight);
+  const draw = SVG(document.documentElement).size(
+    WINDOW_WIDTH,
+    WINDOW_HEIGHT,
+  );
 }
 
 renderSvg();
