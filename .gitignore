@@ -138,5 +138,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# XLSX lock file
+# XLSX and its lock files
+*.xlsx
 .~lock*
