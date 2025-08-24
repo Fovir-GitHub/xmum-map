@@ -77,12 +77,24 @@ function renderASheet(draw, stores) {
       return;
     }
 
-    // Draw a store block: black rectangle with white border at (x, y).
+    // Draw a store block: different colored rectangles with white border at (x, y).
     draw
       .rect(STORE_BLOCK_WIDTH, STORE_BLOCK_HEIGHT)
       .fill(CATEGORY_COLOR_MAP.get(store.Category))
       .stroke({ color: "white", width: 2 })
       .move(x, y);
+
+    // CSS style for text.
+    const css = fs.readFileSync("./svg.module.css");
+    draw.add(`<style>${css}</style>`);
+    draw
+      .foreignObject(STORE_BLOCK_WIDTH, STORE_BLOCK_HEIGHT)
+      .move(x, y)
+      .add(
+        '<div xmlns="http://www.w3.org/1999/xhtml" class="svg-text">' +
+          store.Name +
+          "</div>",
+      );
   };
 
   // Generate the first row.
