@@ -109,8 +109,11 @@ function renderSvg() {
     WINDOW_HEIGHT,
   );
 
-  renderASheet(draw, storeData[0]);
-  fs.writeFileSync("map.svg", draw.svg());
+  storeData.forEach((stores, index) => {
+    draw.clear();
+    renderASheet(draw, stores);
+    fs.writeFileSync(`${index}.svg`, draw.svg());
+  });
 }
 
 renderSvg();
