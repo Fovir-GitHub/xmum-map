@@ -98,7 +98,7 @@ function StoreBlock({
   handleClick,
 }) {
   return (
-    <g>
+    <g onClick={handleClick}>
       <rect
         x={x}
         y={y}
@@ -107,7 +107,6 @@ function StoreBlock({
         height={height}
         stroke={stroke}
         strokeWidth={strokeWidth}
-        onClick={handleClick}
       />
       <foreignObject width={width} height={height} x={x} y={y}>
         <div
