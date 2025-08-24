@@ -21,7 +21,7 @@ const WINDOW_HEIGHT = 1000;
 /**
  * @description Read data from `.xlsx` files.
  * @param {string} fileName - The `.xlsx` file to read.
- * @returns {Object} - Data in JSON format.
+ * @returns {Array} - JSON array.
  */
 function readXlsx(fileName) {
   const MAX_ROWS = 78; // Max row of data to be read.
