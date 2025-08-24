@@ -6,26 +6,27 @@
  */
 
 "use client";
+import { useState } from "react";
 import mapStyle from "./map.module.css";
 
 /**
  * @description Generate the map from the data file.
  * @param storeData JSON data.
  */
-export default function BellMaps({ storeData }) {
+export default function BellMaps({ storeData, currentFloor = 0 }) {
   // Size of the map.
   const WIDTH = 5000;
   const HEIGHT = 1000;
 
-  const gFloorMap = (
+  const [floor, setFloor] = useState(currentFloor);
+
+  return (
     <BellFloorMap
       svgWidth={WIDTH}
       svgHeight={HEIGHT}
-      stores={storeData[0]}
+      stores={storeData[floor]}
     />
   );
-
-  return gFloorMap;
 }
 
 /**
