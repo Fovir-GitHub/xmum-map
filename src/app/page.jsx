@@ -1,6 +1,6 @@
-import BellMaps from "../components/BellMaps/BellMaps";
 import fs from "fs";
 import path from "path";
+import AppWrapper from "../components/AppWrapper/AppWrapper";
 
 function readData() {
   const DATA_FILE = path.join(process.cwd(), "src/data/data.json");
@@ -10,5 +10,9 @@ function readData() {
 export default function Page() {
   const storeData = readData();
 
-  return <BellMaps storeData={storeData} />;
+  return (
+    <>
+      <AppWrapper storeData={storeData} />
+    </>
+  );
 }
