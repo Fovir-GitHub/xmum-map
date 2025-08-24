@@ -41,7 +41,6 @@ function readXlsx(fileName) {
     result.push(data);
   }
 
-  console.log(typeof result);
   return result;
 }
 
@@ -96,8 +95,6 @@ function renderASheet(draw, stores) {
 function renderSvg() {
   // Read data.
   const storeData = readXlsx(SOURCE_FILE_NAME);
-
-  console.log(storeData);
 
   // Create a virtual window.
   const window = createSVGWindow();
