@@ -50,18 +50,27 @@ function readXlsx(fileName) {
  * @param {Array} stores - Data of stores.
  */
 function renderASheet(draw, stores) {
-  const ROW_INDEX_LIMIT = 39;
-  const STORE_BLOCK_WIDTH = 100;
-  const STORE_BLOCK_HEIGHT = 150;
-  const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH;
+  const ROW_INDEX_LIMIT = 39; // The last store of the first row.
+  const STORE_BLOCK_WIDTH = 100; // Width of a store.
+  const STORE_BLOCK_HEIGHT = 150; // Height of a store.
+  const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH; // Right boundary of the map.
 
+  // `y` index of two rows.
   const firstRowY = 10;
   const secondRowY = 200;
 
+  /**
+   * @param {number} x - x-coordinate of the left-top point of the rectangle.
+   * @param {number} y - y-coordinate of the left-top point of the rectangle.
+   * @param {object} store - Store information.
+   */
   const drawRect = (x, y, store) => {
+    // If the item is `null`, then skip it.
     if (!store.Name) {
       return;
     }
+
+    // Draw a store block: black rectangle with white border at (x, y).
     draw
       .rect(STORE_BLOCK_WIDTH, STORE_BLOCK_HEIGHT)
       .fill("black")
@@ -69,11 +78,14 @@ function renderASheet(draw, stores) {
       .move(x, y);
   };
 
+  // Generate the first row.
   for (let i = 0; i < ROW_INDEX_LIMIT; i++) {
+    // Since the first row of the source data file is the header, so the index should plus 1 to be the real position.
     const x = (i + 1) * STORE_BLOCK_WIDTH;
     drawRect(x, firstRowY, stores[i]);
   }
 
+  // Generate the second row.
   for (let i = ROW_INDEX_LIMIT; i < stores.length; i++) {
     const x =
       RIGHT_BOUNDARY - (i - ROW_INDEX_LIMIT + 1) * STORE_BLOCK_WIDTH;
