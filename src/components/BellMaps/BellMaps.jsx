@@ -7,7 +7,7 @@
 
 "use client";
 import { useState } from "react";
-import mapStyle from "./bellmap.module.css";
+import svgMapStyle from "./bellmap.module.css";
 
 /**
  * @description Generate the map from the data file.
@@ -112,7 +112,7 @@ function StoreBlock({
       <foreignObject width={width} height={height} x={x} y={y}>
         <div
           xmlns="http://www.w3.org/1999/xhtml"
-          className={mapStyle.svgText}
+          className={svgMapStyle.svgText}
         >
           {text}
         </div>
