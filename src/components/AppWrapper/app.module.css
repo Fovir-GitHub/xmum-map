@@ -1,0 +1,7 @@
+.layerSwitcher {
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 50vh;
+  z-index: 1;
+}
