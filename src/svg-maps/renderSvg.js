@@ -109,8 +109,11 @@ function renderSvg() {
     WINDOW_HEIGHT,
   );
 
+  // Generate SVG from each sheet.
   storeData.forEach((stores, index) => {
-    draw.clear();
+    draw.clear(); // Clear the drawer.
+
+    // Render SVG and output to files.
     renderASheet(draw, stores);
     fs.writeFileSync(`${index}.svg`, draw.svg());
   });
