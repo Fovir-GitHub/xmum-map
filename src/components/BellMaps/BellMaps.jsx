@@ -1,7 +1,19 @@
+/**
+ * @file BellMaps.jsx
+ * @description Create the `BellMaps` component which depends on another two components, `BellFloorMap` and `StoreBlock`.
+ * @author Fovir
+ * @date 2025-08-24
+ */
+
 "use client";
 import mapStyle from "./map.module.css";
 
+/**
+ * @description Generate the map from the data file.
+ * @param storeData JSON data.
+ */
 export default function BellMaps({ storeData }) {
+  // Size of the map.
   const WIDTH = 5000;
   const HEIGHT = 1000;
 
@@ -16,6 +28,12 @@ export default function BellMaps({ storeData }) {
   return gFloorMap;
 }
 
+/**
+ * @description Generate maps for each floor.
+ * @param svgWidth The width of SVG.
+ * @param svgHeight The height of SVG.
+ * @param stores Data of stores on every floor.
+ */
 function BellFloorMap({ svgWidth, svgHeight, stores }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const STORE_BLOCK_WIDTH = 100; // Width of a store.
@@ -27,6 +45,7 @@ function BellFloorMap({ svgWidth, svgHeight, stores }) {
   return (
     <svg width={svgWidth} height={svgHeight}>
       {stores.map((store, index) => {
+        // Ignore empty position.
         if (!store.Name) {
           return;
         }
@@ -34,6 +53,7 @@ function BellFloorMap({ svgWidth, svgHeight, stores }) {
         let x = 0;
         let y = 0;
 
+        // Determine which row does the store exist.
         if (index < ROW_INDEX_LIMIT) {
           x = (index + 1) * STORE_BLOCK_WIDTH;
           y = FIRST_ROW_Y;
@@ -62,6 +82,9 @@ function BellFloorMap({ svgWidth, svgHeight, stores }) {
   );
 }
 
+/**
+ * @description Generate a store block.
+ */
 function StoreBlock({
   x,
   y,
