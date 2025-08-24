@@ -54,6 +54,14 @@ function renderASheet(draw, stores) {
   const STORE_BLOCK_HEIGHT = 150; // Height of a store.
   const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH; // Right boundary of the map.
 
+  // Category-color map.
+  const CATEGORY_COLOR_MAP = new Map([
+    ["rest", "black"],
+    ["drink", "red"],
+    ["store", "blue"],
+    ["enter", "purple"],
+  ]);
+
   // `y` index of two rows.
   const firstRowY = 10;
   const secondRowY = 200;
@@ -72,7 +80,7 @@ function renderASheet(draw, stores) {
     // Draw a store block: black rectangle with white border at (x, y).
     draw
       .rect(STORE_BLOCK_WIDTH, STORE_BLOCK_HEIGHT)
-      .fill("black")
+      .fill(CATEGORY_COLOR_MAP.get(store.Category))
       .stroke({ color: "white", width: 2 })
       .move(x, y);
   };
