@@ -82,7 +82,10 @@ function renderASheet(draw, stores) {
       .rect(STORE_BLOCK_WIDTH, STORE_BLOCK_HEIGHT)
       .fill(CATEGORY_COLOR_MAP.get(store.Category))
       .stroke({ color: "white", width: 2 })
-      .move(x, y);
+      .move(x, y)
+      .on("click", () => {
+        alert("clicked");
+      });
 
     // CSS style for text.
     const css = fs.readFileSync("./svg.module.css");
