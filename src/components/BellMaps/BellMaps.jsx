@@ -70,6 +70,7 @@ function BellFloorMap({ svgWidth, svgHeight, stores }) {
             y={y}
             width={STORE_BLOCK_WIDTH}
             height={STORE_BLOCK_HEIGHT}
+            fill={getFillColor(store.Category)}
             stroke={"white"}
             strokeWidth={2}
             text={store.Name}
@@ -118,4 +119,24 @@ function StoreBlock({
       </foreignObject>
     </g>
   );
+}
+
+/**
+ * @description Get the fill color by the category of the store.
+ * @param {string} category
+ */
+function getFillColor(category) {
+  const CATEGORY_COLOR_MAP = new Map([
+    ["rest", "pink"],
+    ["drink", "red"],
+    ["store", "blue"],
+    ["enter", "purple"],
+    ["default", "grey"],
+  ]);
+
+  if (CATEGORY_COLOR_MAP.has(category)) {
+    return CATEGORY_COLOR_MAP.get(category);
+  } else {
+    return CATEGORY_COLOR_MAP.get("default");
+  }
 }
