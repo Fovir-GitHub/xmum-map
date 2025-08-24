@@ -18,13 +18,11 @@ export default function BellMaps({ storeData, currentFloor = 0 }) {
   const WIDTH = 5000;
   const HEIGHT = 1000;
 
-  const [floor, setFloor] = useState(currentFloor);
-
   return (
     <BellFloorMap
       svgWidth={WIDTH}
       svgHeight={HEIGHT}
-      stores={storeData[floor]}
+      stores={storeData[currentFloor]}
     />
   );
 }
