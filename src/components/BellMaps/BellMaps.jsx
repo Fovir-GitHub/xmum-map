@@ -7,7 +7,7 @@
 
 "use client";
 import { useState } from "react";
-import mapStyle from "./map.module.css";
+import mapStyle from "./bellmap.module.css";
 
 /**
  * @description Generate the map from the data file.
