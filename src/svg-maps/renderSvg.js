@@ -13,8 +13,8 @@ import fs from "fs";
 // Begin constants.
 
 const SOURCE_FILE_NAME = "./data.xlsx";
-const WINDOW_WIDTH = 1000;
-const WINDOW_HEIGHT = 500;
+const WINDOW_WIDTH = 5000;
+const WINDOW_HEIGHT = 1000;
 
 // End constants.
 
@@ -45,6 +45,42 @@ function readXlsx(fileName) {
   return result;
 }
 
+/**
+ * @param {import("@svgdotjs/svg.js").Svg} draw - SVG drawer.
+ * @param {Array} stores - Data of stores.
+ */
+function renderASheet(draw, stores) {
+  const ROW_INDEX_LIMIT = 39;
+  const STORE_BLOCK_WIDTH = 100;
+  const STORE_BLOCK_HEIGHT = 150;
+  const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH;
+
+  const firstRowY = 10;
+  const secondRowY = 200;
+
+  const drawRect = (x, y, store) => {
+    if (!store.Name) {
+      return;
+    }
+    draw
+      .rect(STORE_BLOCK_WIDTH, STORE_BLOCK_HEIGHT)
+      .fill("black")
+      .stroke({ color: "white", width: 2 })
+      .move(x, y);
+  };
+
+  for (let i = 0; i < ROW_INDEX_LIMIT; i++) {
+    const x = (i + 1) * STORE_BLOCK_WIDTH;
+    drawRect(x, firstRowY, stores[i]);
+  }
+
+  for (let i = ROW_INDEX_LIMIT; i < stores.length; i++) {
+    const x =
+      RIGHT_BOUNDARY - (i - ROW_INDEX_LIMIT + 1) * STORE_BLOCK_WIDTH;
+    drawRect(x, secondRowY, stores[i]);
+  }
+}
+
 function renderSvg() {
   // Read data.
   const storeData = readXlsx(SOURCE_FILE_NAME);
@@ -60,6 +96,9 @@ function renderSvg() {
     WINDOW_WIDTH,
     WINDOW_HEIGHT,
   );
+
+  renderASheet(draw, storeData[0]);
+  fs.writeFileSync("map.svg", draw.svg());
 }
 
 renderSvg();
