@@ -2,7 +2,7 @@ import XLSX from "xlsx";
 import fs from "fs";
 
 // Source file and output file.
-const SOURCE_DATA_FILE = "./data.xlsx";
+const SOURCE_DATA_FILE = "../data/data.xlsx";
 const OUTPUT_DIR = "../data/data.json";
 
 /**
