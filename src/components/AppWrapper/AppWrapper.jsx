@@ -6,8 +6,10 @@ import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import appStyles from "./app.module.css";
 
 export default function AppWrapper({ storeData }) {
+  // Floor layers.
   const [layer, setLayer] = useState(0);
 
+  // Switch layers when `nextLayer` is not `null`.
   const handleSwitchLayer = (_, nextLayer) => {
     if (nextLayer) {
       setLayer(nextLayer);
