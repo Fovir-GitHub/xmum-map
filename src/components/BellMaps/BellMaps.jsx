@@ -126,7 +126,7 @@ function StoreBlock({
           xmlns="http://www.w3.org/1999/xhtml"
           className={svgMapStyle.svgText}
         >
-          {text}
+          <p>{text}</p>
         </div>
       </foreignObject>
     </g>
@@ -139,10 +139,10 @@ function StoreBlock({
  */
 function getFillColor(category) {
   const CATEGORY_COLOR_MAP = new Map([
-    ["rest", "pink"],
+    ["restaurant", "pink"],
     ["drink", "red"],
     ["store", "blue"],
-    ["enter", "purple"],
+    ["entertainment", "purple"],
     ["default", "grey"],
   ]);
 
