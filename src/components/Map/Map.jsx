@@ -11,9 +11,9 @@ export default function Map({ children }) {
       const panzoomInstance = panzoom(boxRef.current, {
         zoomSpeed: 1,
         maxZoom: 5,
-        minZoom: 1,
+        minZoom: 0.05,
         smoothScroll: true,
-        bounds: true,
+        bounds: false,
       });
 
       return () => panzoomInstance.dispose();

@@ -1,2 +1,5 @@
 .map {
+  flex: 1;
+  position: relative;
+  transition: margin-left 0.3s ease;
 }
