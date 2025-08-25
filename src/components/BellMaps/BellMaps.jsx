@@ -50,23 +50,6 @@ function BellFloorMap({
   const FIRST_ROW_Y = 10;
   const SECOND_ROW_Y = 200;
 
-  /**
-   * @description Transform `name` to `the-name` form.
-   * @param {string} name
-   */
-  function convertStoreNameToSlug(name) {
-    /**
-     * To lower case,
-     * replace invisible characters with `-`,
-     * and remove invisible characters and `-` from the beginning and the end.
-     */
-    let result = name.toLowerCase();
-    result = result.replace(/\s+/g, "-");
-    result = result.replace(/^-+/, "").replace(/-+$/, "");
-
-    return result;
-  }
-
   return (
     <svg width={svgWidth} height={svgHeight}>
       {stores.map((store, index) => {
@@ -102,7 +85,7 @@ function BellFloorMap({
             key={crypto.randomUUID()}
             handleClick={() =>
               setSelectedPost({
-                slug: convertStoreNameToSlug(store.Name),
+                slug: store.Slug,
                 locale: "en",
               })
             }
