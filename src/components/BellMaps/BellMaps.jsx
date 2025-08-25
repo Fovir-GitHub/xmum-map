@@ -2,7 +2,7 @@
  * @file BellMaps.jsx
  * @description Create the `BellMaps` component which depends on another two components, `BellFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-08-24
+ * @date 2025-08-25
  */
 
 "use client";
@@ -51,9 +51,15 @@ function BellFloorMap({
   const SECOND_ROW_Y = 200;
 
   /**
+   * @description Transform `name` to `the-name` form.
    * @param {string} name
    */
   function convertStoreNameToSlug(name) {
+    /**
+     * To lower case,
+     * replace invisible characters with `-`,
+     * and remove invisible characters and `-` from the beginning and the end.
+     */
     let result = name.toLowerCase();
     result = result.replace(/\s+/g, "-");
     result = result.replace(/^-+/, "").replace(/-+$/, "");
