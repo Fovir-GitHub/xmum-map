@@ -102,6 +102,9 @@ function BellFloorMap({
         let x = 0;
         let y = 0;
 
+        // Get the width of stores.
+        const widthOffset = store.Width === null ? 1 : store.Width;
+
         // Determine which row does the store exist.
         if (index < ROW_INDEX_LIMIT) {
           x = (index + 1) * STORE_BLOCK_WIDTH;
@@ -117,7 +120,7 @@ function BellFloorMap({
           <StoreBlock
             x={x}
             y={y}
-            width={STORE_BLOCK_WIDTH}
+            width={STORE_BLOCK_WIDTH * widthOffset}
             height={STORE_BLOCK_HEIGHT}
             fill={getFillColor(store.Category)}
             stroke={"white"}
