@@ -9,28 +9,33 @@
 
 import { marked } from "marked";
 import { useEffect, useState } from "react";
+import { Drawer } from "@mui/material";
 
-export default function Sidebar({ post, onClose }) {
+export default function Sidebar({ post, onClose, show }) {
   const [content, setContent] = useState("");
 
-  /**
-   * TODO: Handle exceptions.
-   */
   useEffect(() => {
-    fetch(`/api/posts/${post.slug}/${post.locale}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setContent(marked(data.content));
-      });
+    async function loadMarkdown() {
+      const res = await fetch(`/api/posts/${post.slug}/${post.locale}`);
+      if (!res.ok) {
+        setContent({ content: "<p>Failed</p>" });
+        return;
+      }
+
+      const data = await res.json();
+      setContent(marked(data.content));
+    }
+
+    loadMarkdown();
   }, [post]);
 
   /**
    * TODO: Add styles.
    */
   return (
-    <div className="sidebar">
+    <Drawer variant="persistent" anchor="left" open={show}>
       <button onClick={onClose}>Close</button>
       <div dangerouslySetInnerHTML={{ __html: content }} />
-    </div>
+    </Drawer>
   );
 }
