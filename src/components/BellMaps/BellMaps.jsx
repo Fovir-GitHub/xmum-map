@@ -47,11 +47,52 @@ function BellFloorMap({
   const STORE_BLOCK_WIDTH = 100; // Width of a store.
   const STORE_BLOCK_HEIGHT = 150; // Height of a store.
   const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH; // Right boundary of the map.
-  const FIRST_ROW_Y = 10;
-  const SECOND_ROW_Y = 200;
+  const FIRST_ROW_Y = 100;
+  const SECOND_ROW_Y = 500;
+
+  // Write path.
+  const PATH_SIZE = 100;
+
+  // Center justify the path.
+  const GAP_BETWEEN_STORES_AND_PATH =
+    (SECOND_ROW_Y - FIRST_ROW_Y - STORE_BLOCK_HEIGHT - 2 * PATH_SIZE) /
+    2;
+
+  const drawSvgPath = () => {
+    // Draw a single block.
+    function drawSinglePathBlock(x, y) {
+      return (
+        <rect
+          x={x}
+          y={y}
+          width={PATH_SIZE}
+          height={PATH_SIZE}
+          fill="#A0A1A6"
+          stroke="#66676B"
+          strokeWidth={3}
+        />
+      );
+    }
+
+    // Calculate where to start.
+    const pathY =
+      FIRST_ROW_Y + STORE_BLOCK_HEIGHT + GAP_BETWEEN_STORES_AND_PATH;
+    const result = [];
+    for (let x = 0; x <= RIGHT_BOUNDARY; x += PATH_SIZE) {
+      result.push(drawSinglePathBlock(x, pathY));
+      result.push(drawSinglePathBlock(x, pathY + PATH_SIZE));
+    }
+
+    return result;
+  };
 
   return (
     <svg width={svgWidth} height={svgHeight}>
+      {drawSvgPath().map((path) => {
+        // Draw the path.
+        return path;
+      })}
+
       {stores.map((store, index) => {
         // Ignore empty position.
         if (!store.Name) {
