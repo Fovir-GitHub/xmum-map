@@ -9,7 +9,8 @@
 
 import { marked } from "marked";
 import { useEffect, useState } from "react";
-import { Drawer } from "@mui/material";
+import { Drawer, IconButton } from "@mui/material";
+import { CloseRounded } from "@mui/icons-material";
 
 export default function Sidebar({ post, onClose, show }) {
   const [content, setContent] = useState("");
@@ -34,7 +35,9 @@ export default function Sidebar({ post, onClose, show }) {
    */
   return (
     <Drawer variant="persistent" anchor="left" open={show}>
-      <button onClick={onClose}>Close</button>
+      <IconButton onClick={onClose}>
+        <CloseRounded />
+      </IconButton>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </Drawer>
   );
