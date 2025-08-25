@@ -11,7 +11,7 @@ export default function AppWrapper({ storeData }) {
 
   // Switch layers when `nextLayer` is not `null`.
   const handleSwitchLayer = (_, nextLayer) => {
-    if (nextLayer) {
+    if (nextLayer !== null) {
       setLayer(nextLayer);
     }
   };
