@@ -6,14 +6,17 @@
  */
 
 "use client";
-import { useState } from "react";
 import svgMapStyle from "./bellmap.module.css";
 
 /**
  * @description Generate the map from the data file.
  * @param storeData JSON data.
  */
-export default function BellMaps({ storeData, currentFloor = 0 }) {
+export default function BellMaps({
+  storeData,
+  setSelectedPost,
+  currentFloor = 0,
+}) {
   // Size of the map.
   const WIDTH = 5000;
   const HEIGHT = 1000;
@@ -23,6 +26,7 @@ export default function BellMaps({ storeData, currentFloor = 0 }) {
       svgWidth={WIDTH}
       svgHeight={HEIGHT}
       stores={storeData[currentFloor]}
+      setSelectedPost={setSelectedPost}
     />
   );
 }
@@ -33,13 +37,29 @@ export default function BellMaps({ storeData, currentFloor = 0 }) {
  * @param svgHeight The height of SVG.
  * @param stores Data of stores on every floor.
  */
-function BellFloorMap({ svgWidth, svgHeight, stores }) {
+function BellFloorMap({
+  svgWidth,
+  svgHeight,
+  stores,
+  setSelectedPost,
+}) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const STORE_BLOCK_WIDTH = 100; // Width of a store.
   const STORE_BLOCK_HEIGHT = 150; // Height of a store.
   const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH; // Right boundary of the map.
   const FIRST_ROW_Y = 10;
   const SECOND_ROW_Y = 200;
+
+  /**
+   * @param {string} name
+   */
+  function convertStoreNameToSlug(name) {
+    let result = name.toLowerCase();
+    result = result.replace(/\s+/g, "-");
+    result = result.replace(/^-+/, "").replace(/-+$/, "");
+
+    return result;
+  }
 
   return (
     <svg width={svgWidth} height={svgHeight}>
@@ -74,7 +94,12 @@ function BellFloorMap({ svgWidth, svgHeight, stores }) {
             strokeWidth={2}
             text={store.Name}
             key={crypto.randomUUID()}
-            handleClick={() => alert("Hello")}
+            handleClick={() =>
+              setSelectedPost({
+                slug: convertStoreNameToSlug(store.Name),
+                locale: "en",
+              })
+            }
           />
         );
       })}
