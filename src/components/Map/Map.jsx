@@ -1,6 +1,6 @@
 /**
  * @file Map.jsx
- * @description Create the `Map` component to contain all maps.
+ * @description Create the `Map` component to contain all maps. And use `panzoom` to enable users to move and zoom maps.
  * @author Fovir
  * @date 2025-08-26
  */
@@ -14,6 +14,7 @@ export default function Map({ children }) {
   const boxRef = useRef(null);
 
   useEffect(() => {
+    // Panzoom settings.
     if (boxRef.current) {
       const panzoomInstance = panzoom(boxRef.current, {
         zoomSpeed: 1,
