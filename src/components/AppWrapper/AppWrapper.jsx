@@ -2,15 +2,17 @@
 import Map from "../Map/Map";
 import BellMaps from "../BellMaps/BellMaps";
 import { useState } from "react";
-import { Button, ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import appStyles from "./app.module.css";
 import Sidebar from "../Sidebar/Sidebar";
+import DetailPage from "../DetailPage/DetailPage";
 
 export default function AppWrapper({ storeData }) {
   // Floor layers.
   const [layer, setLayer] = useState(0);
 
-  const [selectedPost, setSelectedPost] = useState({});
+  // Clicked store.
+  const [selectedPost, setSelectedPost] = useState(null);
 
   // Switch layers when `nextLayer` is not `null`.
   const handleSwitchLayer = (_, nextLayer) => {
@@ -35,27 +37,22 @@ export default function AppWrapper({ storeData }) {
         </ToggleButtonGroup>
       </div>
 
-      <div>
-        <Button
-          onClick={() =>
-            setSelectedPost({ slug: "mamak", locale: "en" })
-          }
-        >
-          Show
-        </Button>
-      </div>
-
-      {selectedPost && (
-        <div>
-          <Sidebar
-            post={selectedPost}
-            onClose={() => setSelectedPost(null)}
-          />
-        </div>
-      )}
+      <Sidebar
+        onClose={() => setSelectedPost(null)}
+        show={selectedPost !== null}
+      >
+        <DetailPage
+          slug={selectedPost?.slug}
+          locale={selectedPost?.locale}
+        />
+      </Sidebar>
 
       <Map>
-        <BellMaps storeData={storeData} currentFloor={layer} />
+        <BellMaps
+          storeData={storeData}
+          currentFloor={layer}
+          setSelectedPost={setSelectedPost}
+        />
       </Map>
     </>
   );
