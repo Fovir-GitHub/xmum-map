@@ -12,6 +12,9 @@ import { CloseRounded } from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
 
 export default function Sidebar({ onClose, show, children }) {
+  // Width of drawer.
+  const DRAWER_WIDTH = "30%";
+
   const DrawerHeader = styled("div")(({ theme }) => ({
     display: "flex",
     alignItems: "center",
@@ -23,7 +26,19 @@ export default function Sidebar({ onClose, show, children }) {
    * TODO: Add styles.
    */
   return (
-    <Drawer variant="persistent" anchor="left" open={show}>
+    <Drawer
+      variant="persistent"
+      anchor="left"
+      open={show}
+      sx={{
+        width: DRAWER_WIDTH,
+        flexShrink: 0,
+        "& .MuiDrawer-paper": {
+          width: DRAWER_WIDTH,
+          boxSizing: "border-box",
+        },
+      }}
+    >
       <DrawerHeader>
         <IconButton onClick={onClose}>
           <CloseRounded />
