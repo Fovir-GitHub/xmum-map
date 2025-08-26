@@ -1,3 +1,10 @@
+/**
+ * @file Map.jsx
+ * @description Create the `Map` component to contain all maps.
+ * @author Fovir
+ * @date 2025-08-26
+ */
+
 "use client";
 import panzoom from "panzoom";
 import { useEffect, useRef } from "react";
