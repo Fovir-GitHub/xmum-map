@@ -1,8 +1,8 @@
 /**
  * @file Map.jsx
- * @description Create the `Map` component to contain all maps. And use `panzoom` to enable users to move and zoom maps.
+ * @description Create the `Map` component to contain all maps. And use `return` to enable users to move and zoom maps.
  * @author Fovir
- * @date 2025-08-26
+ * @date 2025-08-27
  */
 
 "use client";
