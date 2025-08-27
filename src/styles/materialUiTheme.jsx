@@ -1,39 +1,49 @@
 import { createTheme } from "@mui/material";
+import { flavorEntries } from "@catppuccin/palette";
+
+const mocha = flavorEntries.find(([key]) => key === "mocha")[1];
+export const catppuccinMochaColors = mocha.colorEntries.reduce(
+  (acc, [name, { hex }]) => {
+    acc[name] = hex;
+    return acc;
+  },
+  {},
+);
 
 export const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#89B4FA",
-      light: "#B4BEFE",
-      dark: "#74C7EC",
-      contrastText: "#1E1E2E",
+      main: catppuccinMochaColors.blue,
+      light: catppuccinMochaColors.lavender,
+      dark: catppuccinMochaColors.sapphire,
+      contrastText: catppuccinMochaColors.base,
     },
     secondary: {
-      main: "#F5C2E7",
-      light: "#F9E2AF",
-      dark: "#E78284",
-      contrastText: "#1E1E2E",
+      main: catppuccinMochaColors.pink,
+      light: catppuccinMochaColors.yellow,
+      dark: catppuccinMochaColors.red,
+      contrastText: catppuccinMochaColors.base,
     },
     error: {
-      main: "#F38BA8",
+      main: catppuccinMochaColors.red,
     },
     warning: {
-      main: "#FAB387",
+      main: catppuccinMochaColors.peach,
     },
     info: {
-      main: "#89DCEB",
+      main: catppuccinMochaColors.sky,
     },
     success: {
-      main: "#A6E3A1",
+      main: catppuccinMochaColors.green,
     },
     background: {
-      default: "#1E1E2E",
-      paper: "#181825",
+      default: catppuccinMochaColors.base,
+      paper: catppuccinMochaColors.mantle,
     },
     text: {
-      primary: "#CDD6F4",
-      secondary: "#BAC2DE",
+      primary: catppuccinMochaColors.text,
+      secondary: catppuccinMochaColors.subtext1,
     },
   },
 });
