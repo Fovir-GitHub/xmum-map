@@ -6,31 +6,19 @@
  */
 
 "use client";
-import panzoom from "panzoom";
-import { useEffect, useRef } from "react";
-import mapStyle from "./map.module.css";
+import {
+  TransformWrapper,
+  TransformComponent,
+} from "react-zoom-pan-pinch";
 
 export default function Map({ children }) {
-  const boxRef = useRef(null);
-
-  useEffect(() => {
-    // Panzoom settings.
-    if (boxRef.current) {
-      const panzoomInstance = panzoom(boxRef.current, {
-        zoomSpeed: 1,
-        maxZoom: 5,
-        minZoom: 0.05,
-        smoothScroll: true,
-        bounds: false,
-      });
-
-      return () => panzoomInstance.dispose();
-    }
-  }, []);
-
   return (
-    <div ref={boxRef} className={mapStyle.map}>
-      {children}
-    </div>
+    <TransformWrapper
+      limitToBounds={false}
+      minScale={0.05}
+      wheel={{ step: 0.5 }}
+    >
+      <TransformComponent>{children}</TransformComponent>
+    </TransformWrapper>
   );
 }
