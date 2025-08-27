@@ -11,6 +11,7 @@ import matter from "gray-matter";
 import { useEffect, useState } from "react";
 import { remark } from "remark";
 import html from "remark-html";
+import markdownStyle from "./markdown.module.css";
 
 export default function DetailPage({ slug, locale }) {
   // State of detail page data.
@@ -72,7 +73,7 @@ export default function DetailPage({ slug, locale }) {
    *  - Add styles.
    */
   return (
-    <article>
+    <article className={markdownStyle.markdown}>
       <h1>{detailPageData?.meta?.title}</h1>
       <div
         dangerouslySetInnerHTML={{
