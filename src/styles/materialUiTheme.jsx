@@ -1,6 +1,14 @@
+/**
+ * @file materialUiTheme.jsx
+ * @description Theme for material UI.
+ * @author Fovir
+ * @date 2025-08-27
+ */
+
 import { createTheme } from "@mui/material";
 import { flavorEntries } from "@catppuccin/palette";
 
+// Get all catppuccin mocha colors.
 const mocha = flavorEntries.find(([key]) => key === "mocha")[1];
 export const catppuccinMochaColors = mocha.colorEntries.reduce(
   (acc, [name, { hex }]) => {
