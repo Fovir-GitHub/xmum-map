@@ -175,7 +175,7 @@ function StoreBlock({
           xmlns="http://www.w3.org/1999/xhtml"
           className={svgMapStyle.svgText}
           style={{
-            color: catppuccinMochaColors.text,
+            color: catppuccinMochaColors.surface0,
           }}
         >
           <p>{text}</p>
