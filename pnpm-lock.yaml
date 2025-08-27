@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@catppuccin/palette':
+        specifier: ^1.7.1
+        version: 1.7.1
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@19.1.11)(react@19.1.1)
@@ -97,6 +100,9 @@ packages:
   '@babel/types@7.28.2':
     resolution: {integrity: sha512-ruv7Ae4J5dUYULmeXw1gmb7rYRz57OWCPM57pHojnLq/3Z1CK2lNSLTCVjxVk1F/TZHwOZZrOWi0ur95BbLxNQ==}
     engines: {node: '>=6.9.0'}
+
+  '@catppuccin/palette@1.7.1':
+    resolution: {integrity: sha512-aRc1tbzrevOTV7nFTT9SRdF26w/MIwT4Jwt4fDMc9itRZUDXCuEDBLyz4TQMlqO9ZP8mf5Hu4Jr6D03NLFc6Gw==}
 
   '@emnapi/runtime@1.4.5':
     resolution: {integrity: sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg==}
@@ -1098,6 +1104,8 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
+
+  '@catppuccin/palette@1.7.1': {}
 
   '@emnapi/runtime@1.4.5':
     dependencies:
