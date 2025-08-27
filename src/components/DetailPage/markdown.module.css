@@ -6,43 +6,24 @@
 }
 
 .markdown a {
-  color: #0645ad;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .markdown a:visited {
-  color: #0b0080;
+  color: inherit;
 }
+
 .markdown a:hover {
   color: #06e;
 }
-.markdown a:active {
-  color: #faa700;
-}
+
 .markdown a:focus {
   outline: thin dotted;
 }
+
 .markdown a:hover,
 .markdown a:active {
   outline: 0;
-}
-
-.markdown ::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
-}
-.markdown ::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
-}
-
-.markdown a::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
-}
-.markdown a::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
 }
 
 .markdown p {
@@ -60,7 +41,6 @@
 .markdown h5,
 .markdown h6 {
   font-weight: normal;
-  color: #111;
   line-height: 1em;
 }
 .markdown h4,
@@ -93,6 +73,7 @@
   padding-left: 3em;
   border-left: 0.5em #eee solid;
 }
+
 .markdown hr {
   display: block;
   height: 2px;
@@ -102,14 +83,15 @@
   margin: 1em 0;
   padding: 0;
 }
+
 .markdown pre,
 .markdown code,
 .markdown kbd,
 .markdown samp {
-  color: #000;
   font-family: monospace, monospace;
   _font-family: "courier new", monospace;
   font-size: 0.98em;
+  font-weight: bolder;
 }
 .markdown pre {
   white-space: pre;

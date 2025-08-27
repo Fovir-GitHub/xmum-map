@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { remark } from "remark";
 import html from "remark-html";
 import markdownStyle from "./markdown.module.css";
+import remarkGfm from "remark-gfm";
 
 export default function DetailPage({ slug, locale }) {
   // State of detail page data.
@@ -46,7 +47,10 @@ export default function DetailPage({ slug, locale }) {
    */
   async function parseMarkdown(plainText) {
     const { data: frontmatter, content } = matter(plainText);
-    const processed = await remark().use(html).process(content);
+    const processed = await remark()
+      .use(remarkGfm)
+      .use(html)
+      .process(content);
     const contentHtml = processed.toString();
     return { meta: frontmatter, contentHtml };
   }
