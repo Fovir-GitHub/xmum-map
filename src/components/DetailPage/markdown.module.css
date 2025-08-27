@@ -1,7 +1,7 @@
 .markdown {
   margin: 0 auto;
-  font-size: 12px;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 1.5;
   padding: 1em;
 }
 
@@ -157,10 +157,14 @@
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
+  border: 1px solid;
 }
+
 .markdown th {
-  border-bottom: 1px solid black;
+  border: 1px solid;
 }
+
 .markdown td {
-  vertical-align: top;
+  border: 1px solid;
+  text-align: center;
 }
