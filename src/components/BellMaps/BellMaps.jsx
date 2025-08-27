@@ -7,6 +7,7 @@
 
 "use client";
 import svgMapStyle from "./bellmap.module.css";
+import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 
 /**
  * @description Generate the map from the data file.
@@ -87,7 +88,11 @@ function BellFloorMap({
   };
 
   return (
-    <svg width={svgWidth} height={svgHeight}>
+    <svg
+      width={svgWidth}
+      height={svgHeight}
+      fill={catppuccinMochaColors.base}
+    >
       {drawSvgPath().map((path) => {
         // Draw the path.
         return path;
@@ -169,6 +174,9 @@ function StoreBlock({
         <div
           xmlns="http://www.w3.org/1999/xhtml"
           className={svgMapStyle.svgText}
+          style={{
+            color: catppuccinMochaColors.text,
+          }}
         >
           <p>{text}</p>
         </div>
@@ -182,17 +190,20 @@ function StoreBlock({
  * @param {string} category
  */
 function getFillColor(category) {
+  const transparent = "E2";
   const CATEGORY_COLOR_MAP = new Map([
-    ["restaurant", "pink"],
-    ["drink", "red"],
-    ["store", "blue"],
-    ["entertainment", "purple"],
-    ["default", "grey"],
+    ["restaurant", `${catppuccinMochaColors.pink}${transparent}`],
+    ["drink", `${catppuccinMochaColors.red}${transparent}`],
+    ["store", `${catppuccinMochaColors.blue}${transparent}`],
+    ["entertainment", `${catppuccinMochaColors.sky}${transparent}`],
+    ["coffee", `${catppuccinMochaColors.yellow}${transparent}`],
+    ["sanck", `${catppuccinMochaColors.green}${transparent}`],
+    ["misc", `${catppuccinMochaColors.flamingo}${transparent}`],
   ]);
 
   if (CATEGORY_COLOR_MAP.has(category)) {
     return CATEGORY_COLOR_MAP.get(category);
   } else {
-    return CATEGORY_COLOR_MAP.get("default");
+    return CATEGORY_COLOR_MAP.get("misc");
   }
 }
