@@ -13,7 +13,7 @@ import { styled } from "@mui/material/styles";
 
 export default function Sidebar({ onClose, show, children }) {
   // Width of drawer.
-  const DRAWER_WIDTH = "30%";
+  const DRAWER_WIDTH = "480px";
 
   const DrawerHeader = styled("div")(({ theme }) => ({
     display: "flex",
@@ -44,6 +44,12 @@ export default function Sidebar({ onClose, show, children }) {
           <CloseRounded />
         </IconButton>
       </DrawerHeader>
+      <hr
+        style={{
+          color: "grey",
+          width: "100%",
+        }}
+      />
       {children}
     </Drawer>
   );
