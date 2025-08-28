@@ -15,6 +15,7 @@ import LocalDrinkRoundedIcon from "@mui/icons-material/LocalDrinkRounded";
 import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
 import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
 import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
+import Image from "next/image";
 
 /**
  * @description Generate the map from the data file.
@@ -26,16 +27,25 @@ export default function BellMaps({
   currentFloor = 0,
 }) {
   // Size of the map.
-  const WIDTH = 5000;
+  const WIDTH = 3800;
   const HEIGHT = 1000;
 
   return (
-    <BellFloorMap
-      svgWidth={WIDTH}
-      svgHeight={HEIGHT}
-      stores={storeData[currentFloor]}
-      setSelectedPost={setSelectedPost}
-    />
+    <>
+      <Image
+        src="/images/xmum.png"
+        width={WIDTH}
+        height={0}
+        layout="responsive"
+        alt="XMUM Campus Map"
+      />
+      <BellFloorMap
+        svgWidth={WIDTH}
+        svgHeight={HEIGHT}
+        stores={storeData[currentFloor]}
+        setSelectedPost={setSelectedPost}
+      />
+    </>
   );
 }
 
