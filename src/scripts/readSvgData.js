@@ -36,3 +36,5 @@ fs.writeFileSync(
   OUTPUT_DIR,
   JSON.stringify(readXlsx(SOURCE_DATA_FILE)),
 );
+
+console.log("\n\nXLSX Parsed\n\n");
