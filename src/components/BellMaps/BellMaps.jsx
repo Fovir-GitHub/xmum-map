@@ -15,7 +15,6 @@ import LocalDrinkRoundedIcon from "@mui/icons-material/LocalDrinkRounded";
 import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
 import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
 import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
-import JsxParser from "react-jsx-parser";
 
 /**
  * @description Generate the map from the data file.
