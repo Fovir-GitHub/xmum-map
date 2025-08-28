@@ -13,6 +13,7 @@ import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import appStyles from "./app.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
+import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 
 export default function AppWrapper({ storeData }) {
   // Floor layers.
@@ -31,6 +32,15 @@ export default function AppWrapper({ storeData }) {
   // Width of map.
   const mapWidth = 3800;
 
+  // Style of toggle buttons.
+  const toggleButtonStyle = {
+    "&.Mui-selected": {
+      backgroundColor: `${catppuccinMochaColors.surface0}B2`,
+    },
+    fontWeight: "bolder",
+    color: catppuccinMochaColors.text,
+  };
+
   return (
     <>
       <div className={appStyles.layerSwitcher}>
@@ -38,12 +48,18 @@ export default function AppWrapper({ storeData }) {
           orientation="vertical"
           onChange={handleSwitchLayer}
           size="large"
-          color="primary"
           exclusive
           value={layer}
+          sx={{
+            backgroundColor: `${catppuccinMochaColors.surface2}B2`,
+          }}
         >
-          <ToggleButton value={1}>1F</ToggleButton>
-          <ToggleButton value={0}>GF</ToggleButton>
+          <ToggleButton value={1} sx={toggleButtonStyle}>
+            1F
+          </ToggleButton>
+          <ToggleButton value={0} sx={toggleButtonStyle}>
+            GF
+          </ToggleButton>
         </ToggleButtonGroup>
       </div>
 
