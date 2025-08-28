@@ -240,6 +240,7 @@ function getFillColor(category) {
 function getStoreIcon(store) {
   const iconSize = "large";
 
+  // Use `store.Icon`.
   if (store.Icon !== null) {
     const ICON_MAP = new Map([
       [
@@ -253,6 +254,7 @@ function getStoreIcon(store) {
     }
   }
 
+  // Use category icons.
   const CATEGORY_ICON_MAP = new Map([
     ["restaurant", <RestaurantRoundedIcon fontSize={iconSize} />],
     ["drink", <LocalDrinkRoundedIcon fontSize={iconSize} />],
