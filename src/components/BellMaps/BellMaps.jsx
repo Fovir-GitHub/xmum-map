@@ -8,6 +8,13 @@
 "use client";
 import svgMapStyle from "./bellmap.module.css";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
+import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
+import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
+import SportsEsportsRoundedIcon from "@mui/icons-material/SportsEsportsRounded";
+import CoffeeRoundedIcon from "@mui/icons-material/CoffeeRounded";
+import LocalDrinkRoundedIcon from "@mui/icons-material/LocalDrinkRounded";
+import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
+import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
 
 /**
  * @description Generate the map from the data file.
@@ -132,6 +139,7 @@ function BellFloorMap({
             strokeWidth={2}
             text={store.Name}
             key={crypto.randomUUID()}
+            icon={getDefaultIcon(store.Category)}
             handleClick={() =>
               setSelectedPost({
                 slug: store.Slug,
@@ -157,6 +165,7 @@ function StoreBlock({
   stroke,
   strokeWidth,
   text,
+  icon,
   handleClick,
 }) {
   return (
@@ -179,6 +188,7 @@ function StoreBlock({
           }}
         >
           <p>{text}</p>
+          <div>{icon}</div>
         </div>
       </foreignObject>
     </g>
@@ -187,7 +197,8 @@ function StoreBlock({
 
 /**
  * @description Get the fill color by the category of the store.
- * @param {string} category
+ * @param {string} category The category name.
+ * @returns Color in #RRGGBBAA forms.
  */
 function getFillColor(category) {
   const transparent = "E2";
@@ -205,5 +216,28 @@ function getFillColor(category) {
     return CATEGORY_COLOR_MAP.get(category);
   } else {
     return CATEGORY_COLOR_MAP.get("misc");
+  }
+}
+
+/**
+ * @description Get default icon by category of the store.
+ * @param {string} category The name of category.
+ * @returns A material UI icon component.
+ */
+function getDefaultIcon(category) {
+  const CATEGORY_ICON_MAP = new Map([
+    ["restaurant", <RestaurantRoundedIcon />],
+    ["drink", <LocalDrinkRoundedIcon />],
+    ["store", <LocalGroceryStoreRoundedIcon />],
+    ["entertainment", <SportsEsportsRoundedIcon />],
+    ["coffee", <CoffeeRoundedIcon />],
+    ["snack", <IcecreamRoundedIcon />],
+    ["misc", <CategoryRoundedIcon />],
+  ]);
+
+  if (CATEGORY_ICON_MAP.has(category)) {
+    return CATEGORY_ICON_MAP.get(category);
+  } else {
+    return CATEGORY_ICON_MAP.get("misc");
   }
 }
