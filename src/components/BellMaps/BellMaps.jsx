@@ -68,7 +68,7 @@ function BellFloorMap({
 
   const drawSvgPath = () => {
     // Draw a single block.
-    function drawSinglePathBlock(x, y) {
+    function drawSinglePathBlock(x, y, index) {
       return (
         <rect
           x={x}
@@ -78,6 +78,7 @@ function BellFloorMap({
           fill="#A0A1A6"
           stroke="#66676B"
           strokeWidth={3}
+          key={index}
         />
       );
     }
@@ -86,9 +87,10 @@ function BellFloorMap({
     const pathY =
       FIRST_ROW_Y + STORE_BLOCK_HEIGHT + GAP_BETWEEN_STORES_AND_PATH;
     const result = [];
+    let index = 0;
     for (let x = 0; x <= RIGHT_BOUNDARY; x += PATH_SIZE) {
-      result.push(drawSinglePathBlock(x, pathY));
-      result.push(drawSinglePathBlock(x, pathY + PATH_SIZE));
+      result.push(drawSinglePathBlock(x, pathY, index++));
+      result.push(drawSinglePathBlock(x, pathY + PATH_SIZE, index++));
     }
 
     return result;
