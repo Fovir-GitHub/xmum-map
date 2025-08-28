@@ -21,6 +21,8 @@ export default function AppWrapper({ storeData }) {
     }
   };
 
+  const mapWidth = 3800;
+
   return (
     <>
       <div className={appStyles.layerSwitcher}>
@@ -47,11 +49,12 @@ export default function AppWrapper({ storeData }) {
         />
       </Sidebar>
 
-      <Map>
+      <Map mapWidth={mapWidth}>
         <BellMaps
           storeData={storeData}
           currentFloor={layer}
           setSelectedPost={setSelectedPost}
+          mapWidth={mapWidth}
         />
       </Map>
     </>

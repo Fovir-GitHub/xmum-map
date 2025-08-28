@@ -24,10 +24,11 @@ import Image from "next/image";
 export default function BellMaps({
   storeData,
   setSelectedPost,
+  mapWidth,
   currentFloor = 0,
 }) {
   // Size of the map.
-  const WIDTH = 3800;
+  const WIDTH = mapWidth;
   const HEIGHT = 1000;
 
   return (
