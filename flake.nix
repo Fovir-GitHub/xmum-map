@@ -37,7 +37,7 @@
         echo "Entering the development environment!"
         echo "Node: $(node -v), pnpm: $(pnpm -v)"
 
-        alias dev="pnpm next dev"
+        alias dev="cd ./src/scripts && node readSvgData.js && cd - && pnpm next dev"
         alias build="pnpm next build"
         alias start="pnpm next start"
         alias lint="pnpm next lint"
