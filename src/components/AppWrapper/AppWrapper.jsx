@@ -1,3 +1,10 @@
+/**
+ * @file AppWrapper.jsx
+ * @description This component wraps all components of the application.
+ * @author Fovir
+ * @date 2025-08-28
+ */
+
 "use client";
 import Map from "../Map/Map";
 import BellMaps from "../BellMaps/BellMaps";
@@ -21,6 +28,7 @@ export default function AppWrapper({ storeData }) {
     }
   };
 
+  // Width of map.
   const mapWidth = 3800;
 
   return (
