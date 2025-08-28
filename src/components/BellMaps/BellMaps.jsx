@@ -14,6 +14,8 @@ import CoffeeRoundedIcon from "@mui/icons-material/CoffeeRounded";
 import LocalDrinkRoundedIcon from "@mui/icons-material/LocalDrinkRounded";
 import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
 import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
+import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
+import JsxParser from "react-jsx-parser";
 
 /**
  * @description Generate the map from the data file.
@@ -140,7 +142,7 @@ function BellFloorMap({
             strokeWidth={2}
             text={store.Name}
             key={crypto.randomUUID()}
-            icon={getDefaultIcon(store.Category)}
+            icon={getStoreIcon(store)}
             handleClick={() =>
               setSelectedPost({
                 slug: store.Slug,
@@ -232,12 +234,25 @@ function getFillColor(category) {
 }
 
 /**
- * @description Get default icon by category of the store.
- * @param {string} category The name of category.
+ * @description Get icon by store.Icon or store.Category
+ * @param {object} store The store object.
  * @returns A material UI icon component.
  */
-function getDefaultIcon(category) {
+function getStoreIcon(store) {
   const iconSize = "large";
+
+  if (store.Icon !== null) {
+    const ICON_MAP = new Map([
+      [
+        "DirectionsCarFilledRoundedIcon",
+        <DirectionsCarFilledRoundedIcon fontSize={iconSize} />,
+      ],
+    ]);
+
+    if (ICON_MAP.has(store.Icon)) {
+      return ICON_MAP.get(store.Icon);
+    }
+  }
 
   const CATEGORY_ICON_MAP = new Map([
     ["restaurant", <RestaurantRoundedIcon fontSize={iconSize} />],
@@ -249,8 +264,8 @@ function getDefaultIcon(category) {
     ["misc", <CategoryRoundedIcon fontSize={iconSize} />],
   ]);
 
-  if (CATEGORY_ICON_MAP.has(category)) {
-    return CATEGORY_ICON_MAP.get(category);
+  if (CATEGORY_ICON_MAP.has(store.Category)) {
+    return CATEGORY_ICON_MAP.get(store.Category);
   } else {
     return CATEGORY_ICON_MAP.get("misc");
   }
