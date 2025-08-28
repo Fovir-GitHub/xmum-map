@@ -2,7 +2,7 @@
  * @file BellMaps.jsx
  * @description Create the `BellMaps` component which depends on another two components, `BellFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-08-25
+ * @date 2025-08-28
  */
 
 "use client";
