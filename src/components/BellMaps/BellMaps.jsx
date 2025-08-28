@@ -6,7 +6,6 @@
  */
 
 "use client";
-import svgMapStyle from "./bellmap.module.css";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
 import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
@@ -184,13 +183,24 @@ function StoreBlock({
       <foreignObject width={width} height={height} x={x} y={y}>
         <div
           xmlns="http://www.w3.org/1999/xhtml"
-          className={svgMapStyle.svgText}
           style={{
             color: catppuccinMochaColors.surface0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          <p>{text}</p>
-          <div>{icon}</div>
+          <p
+            style={{
+              fontSize: "12px",
+              textAlign: "center",
+              wordWrap: "break-word",
+              whiteSpace: "pre-line",
+            }}
+          >
+            {text}
+          </p>
+          {icon}
         </div>
       </foreignObject>
     </g>
@@ -227,14 +237,16 @@ function getFillColor(category) {
  * @returns A material UI icon component.
  */
 function getDefaultIcon(category) {
+  const iconSize = "large";
+
   const CATEGORY_ICON_MAP = new Map([
-    ["restaurant", <RestaurantRoundedIcon />],
-    ["drink", <LocalDrinkRoundedIcon />],
-    ["store", <LocalGroceryStoreRoundedIcon />],
-    ["entertainment", <SportsEsportsRoundedIcon />],
-    ["coffee", <CoffeeRoundedIcon />],
-    ["snack", <IcecreamRoundedIcon />],
-    ["misc", <CategoryRoundedIcon />],
+    ["restaurant", <RestaurantRoundedIcon fontSize={iconSize} />],
+    ["drink", <LocalDrinkRoundedIcon fontSize={iconSize} />],
+    ["store", <LocalGroceryStoreRoundedIcon fontSize={iconSize} />],
+    ["entertainment", <SportsEsportsRoundedIcon fontSize={iconSize} />],
+    ["coffee", <CoffeeRoundedIcon fontSize={iconSize} />],
+    ["snack", <IcecreamRoundedIcon fontSize={iconSize} />],
+    ["misc", <CategoryRoundedIcon fontSize={iconSize} />],
   ]);
 
   if (CATEGORY_ICON_MAP.has(category)) {
