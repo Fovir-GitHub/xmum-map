@@ -66,7 +66,7 @@ export default function AppWrapper({ storeData }) {
 
   return (
     <>
-      <div className={appStyles.layerSwitcher}>
+      <div className={appStyles.toolZone}>
         <ToggleButtonGroup
           orientation="vertical"
           onChange={handleSwitchLayer}
