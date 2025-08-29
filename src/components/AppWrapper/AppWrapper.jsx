@@ -59,7 +59,7 @@ export default function AppWrapper({ storeData }) {
   const toolBackgroundTransparent = "B2";
 
   // Style of toggle buttons.
-  const toggleButtonStyle = {
+  const layerSwitcherStyle = {
     "&.Mui-selected": {
       backgroundColor: `${catppuccinMochaColors.surface0}${toolBackgroundTransparent}`,
     },
@@ -97,10 +97,10 @@ export default function AppWrapper({ storeData }) {
           >
             {locale}
           </ToggleButton>
-          <ToggleButton value={1} sx={toggleButtonStyle}>
+          <ToggleButton value={1} sx={layerSwitcherStyle}>
             1F
           </ToggleButton>
-          <ToggleButton value={0} sx={toggleButtonStyle}>
+          <ToggleButton value={0} sx={layerSwitcherStyle}>
             GF
           </ToggleButton>
         </ToggleButtonGroup>
