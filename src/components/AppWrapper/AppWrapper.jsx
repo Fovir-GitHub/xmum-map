@@ -14,7 +14,6 @@ import appStyles from "./app.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 
 export default function AppWrapper({ storeData }) {
   // Floor layers.
