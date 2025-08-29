@@ -35,6 +35,11 @@ export default function AppWrapper({ storeData }) {
 
   // Get user's locale.
   useEffect(() => {
+    /**
+     * @description Transform language code from `zh-*` or `en-*` to `zh` or `en`.
+     * @param {string} lang Language code.
+     * @returns If the language code starts with `zh` or `en`, then returns corresponding codes. Otherwise, it returns `defaultLanguage`.
+     */
     function normalizeLang(lang) {
       if (!lang) {
         return defaultLanguage;
