@@ -25,6 +25,7 @@ export default function BellMaps({
   storeData,
   setSelectedPost,
   mapWidth,
+  locale,
   currentFloor = 0,
 }) {
   // Size of the map.
@@ -45,6 +46,7 @@ export default function BellMaps({
         svgHeight={HEIGHT}
         stores={storeData[currentFloor]}
         setSelectedPost={setSelectedPost}
+        locale={locale}
       />
     </>
   );
@@ -61,6 +63,7 @@ function BellFloorMap({
   svgHeight,
   stores,
   setSelectedPost,
+  locale,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const STORE_BLOCK_WIDTH = 100; // Width of a store.
@@ -156,7 +159,7 @@ function BellFloorMap({
             handleClick={() =>
               setSelectedPost({
                 slug: store.Slug,
-                locale: "en",
+                locale: locale,
               })
             }
           />

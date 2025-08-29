@@ -8,12 +8,13 @@
 "use client";
 import Map from "../Map/Map";
 import BellMaps from "../BellMaps/BellMaps";
-import { useState } from "react";
-import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { useEffect, useState } from "react";
+import { Button, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import appStyles from "./app.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
+import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 
 export default function AppWrapper({ storeData }) {
   // Floor layers.
@@ -28,6 +29,28 @@ export default function AppWrapper({ storeData }) {
       setLayer(nextLayer);
     }
   };
+
+  // Locale settings.
+  const defaultLanguage = "zh";
+  const [locale, setLocale] = useState(null);
+
+  // Get user's locale.
+  useEffect(() => {
+    function normalizeLang(lang) {
+      if (!lang) {
+        return defaultLanguage;
+      }
+      const code = lang.toLowerCase();
+      if (code.startsWith("en")) {
+        return "en";
+      }
+      if (code.startsWith("zh")) {
+        return "zh";
+      }
+      return defaultLanguage;
+    }
+    setLocale(normalizeLang(navigator.language));
+  }, []);
 
   // Width of map.
   const mapWidth = 3800;
@@ -54,6 +77,23 @@ export default function AppWrapper({ storeData }) {
             backgroundColor: `${catppuccinMochaColors.surface2}B2`,
           }}
         >
+          <ToggleButton
+            onClick={() => {
+              if (locale === "zh") {
+                setLocale("en");
+              } else {
+                setLocale("zh");
+              }
+            }}
+            sx={{
+              backgroundColor: catppuccinMochaColors.blue,
+              "&:hover": {
+                backgroundColor: catppuccinMochaColors.sapphire,
+              },
+            }}
+          >
+            {locale}
+          </ToggleButton>
           <ToggleButton value={1} sx={toggleButtonStyle}>
             1F
           </ToggleButton>
@@ -79,6 +119,7 @@ export default function AppWrapper({ storeData }) {
           currentFloor={layer}
           setSelectedPost={setSelectedPost}
           mapWidth={mapWidth}
+          locale={locale}
         />
       </Map>
     </>
