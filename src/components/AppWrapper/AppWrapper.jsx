@@ -54,6 +54,8 @@ export default function AppWrapper({ storeData }) {
 
   // Width of map.
   const mapWidth = 3800;
+
+  // Transparent value.
   const toolBackgroundTransparent = "B2";
 
   // Style of toggle buttons.
