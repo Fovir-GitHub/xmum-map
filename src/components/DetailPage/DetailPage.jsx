@@ -2,7 +2,7 @@
  * @file DetailPage.jsx
  * @description Create the `DetailPage` component, which is the container of detail pages. The component fetches markdown contents via API and parses the frontmatter.
  * @author Fovir
- * @date 2025-08-26
+ * @date 2025-08-29
  */
 
 "use client";
@@ -25,15 +25,12 @@ export default function DetailPage({ slug, locale }) {
    * @returns Plain text of post content in `string` type.
    */
   async function getPlainPostContent(slug, locale) {
-    const res = await fetch(`/api/posts/${slug}/${locale}`);
+    let res = await fetch(`/api/posts/${slug}/${locale}`);
 
-    /**
-     * TODO:
-     *  - Add exception handle.
-     */
+    // If failed to fetch resources, then returns 404.
     if (!res.ok) {
       console.log("Failed to fetch resources.");
-      return;
+      res = await fetch(`/api/posts/404/${locale}`);
     }
 
     const plainText = await res.json();
@@ -59,10 +56,6 @@ export default function DetailPage({ slug, locale }) {
     (async () => {
       const plainText = await getPlainPostContent(slug, locale);
 
-      /**
-       * TODO:
-       *   - Add exception handle.
-       */
       if (!plainText) {
         return;
       }
