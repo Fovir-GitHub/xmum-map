@@ -6,6 +6,7 @@
  */
 
 "use client";
+import utilStyles from "../../styles/utils.module.css";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
 import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
@@ -185,7 +186,7 @@ function StoreBlock({
   handleClick,
 }) {
   return (
-    <g onClick={handleClick}>
+    <g onClick={handleClick} className={utilStyles.highlightOnHover}>
       <rect
         x={x}
         y={y}
