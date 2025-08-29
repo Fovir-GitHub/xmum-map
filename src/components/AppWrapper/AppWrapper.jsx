@@ -54,11 +54,12 @@ export default function AppWrapper({ storeData }) {
 
   // Width of map.
   const mapWidth = 3800;
+  const toolBackgroundTransparent = "B2";
 
   // Style of toggle buttons.
   const toggleButtonStyle = {
     "&.Mui-selected": {
-      backgroundColor: `${catppuccinMochaColors.surface0}B2`,
+      backgroundColor: `${catppuccinMochaColors.surface0}${toolBackgroundTransparent}`,
     },
     fontWeight: "bolder",
     color: catppuccinMochaColors.text,
@@ -74,7 +75,7 @@ export default function AppWrapper({ storeData }) {
           exclusive
           value={layer}
           sx={{
-            backgroundColor: `${catppuccinMochaColors.surface2}B2`,
+            backgroundColor: `${catppuccinMochaColors.surface2}${toolBackgroundTransparent}`,
           }}
         >
           <ToggleButton
