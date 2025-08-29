@@ -114,10 +114,7 @@ export default function AppWrapper({ storeData }) {
         onClose={() => setSelectedPost(null)}
         show={selectedPost !== null}
       >
-        <DetailPage
-          slug={selectedPost?.slug}
-          locale={selectedPost?.locale}
-        />
+        <DetailPage slug={selectedPost?.slug} locale={locale} />
       </Sidebar>
 
       <Map mapWidth={mapWidth}>
