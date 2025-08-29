@@ -2,14 +2,14 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-08-28
+ * @date 2025-08-29
  */
 
 "use client";
 import Map from "../Map/Map";
 import BellMaps from "../BellMaps/BellMaps";
 import { useEffect, useState } from "react";
-import { Button, ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import appStyles from "./app.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
