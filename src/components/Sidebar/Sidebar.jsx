@@ -10,13 +10,12 @@
 import { Drawer, IconButton } from "@mui/material";
 import { CloseRounded } from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
-import { theme } from "../../styles/materialUiTheme";
 
 export default function Sidebar({ onClose, show, children }) {
   // Width of drawer.
   const DRAWER_WIDTH = "480px";
 
-  const DrawerHeader = styled("div")(({ theme }) => ({
+  const DrawerHeader = styled("div")(({}) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-end",
