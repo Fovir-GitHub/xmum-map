@@ -1,6 +1,6 @@
 /* Begin Reset */
 html {
-  font-size: 62.5%;
+  font-size: clamp(56%, 1vw + 0.5rem, 62.5%);
 }
 
 body {
