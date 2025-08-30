@@ -23,7 +23,8 @@ export default function Sidebar({ onClose, show, children }) {
     padding: "0 16px",
     minHeight: "16px",
     borderBottom: "1px solid rgba(0,0,0,0.1)",
-    marginTop: "16px",
+    position: "sticky",
+    top: "16px",
   }));
 
   return (
