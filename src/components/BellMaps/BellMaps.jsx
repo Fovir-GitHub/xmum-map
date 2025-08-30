@@ -67,11 +67,11 @@ function BellFloorMap({
   locale,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
-  const STORE_BLOCK_WIDTH = 100; // Width of a store.
-  const STORE_BLOCK_HEIGHT = 150; // Height of a store.
+  const STORE_BLOCK_WIDTH = 150; // Width of a store.
+  const STORE_BLOCK_HEIGHT = 200; // Height of a store.
   const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH; // Right boundary of the map.
   const FIRST_ROW_Y = 100;
-  const SECOND_ROW_Y = 500;
+  const SECOND_ROW_Y = 700;
 
   // Write path.
   const PATH_SIZE = 100;

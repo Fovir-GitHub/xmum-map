@@ -59,7 +59,7 @@ export default function AppWrapper({ storeData }) {
   }, []);
 
   // Width of map.
-  const mapWidth = 3800;
+  const mapWidth = 5700;
 
   // Transparent value.
   const toolBackgroundTransparent = "B2";
