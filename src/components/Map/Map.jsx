@@ -24,12 +24,14 @@ export default function Map({ children, mapWidth }) {
     return;
   }
 
+  const initialScale = windowWidth / mapWidth;
+
   return (
     <TransformWrapper
       limitToBounds={false}
       minScale={0.05}
       wheel={{ step: 0.01 }}
-      initialScale={windowWidth / mapWidth} // Ensure the map is full of screen initially.
+      initialScale={initialScale} // Ensure the map is full of screen initially.
     >
       <TransformComponent>{children}</TransformComponent>
     </TransformWrapper>
