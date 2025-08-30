@@ -8,7 +8,7 @@
 "use client";
 import Map from "../Map/Map";
 import BellMaps from "../BellMaps/BellMaps";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import appStyles from "./app.module.css";
 import Sidebar from "../Sidebar/Sidebar";
@@ -16,6 +16,7 @@ import DetailPage from "../DetailPage/DetailPage";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
 import { isMobile } from "../../lib/isMobile";
+import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 
 export default function AppWrapper({ storeData }) {
   // Floor layers.
@@ -73,6 +74,8 @@ export default function AppWrapper({ storeData }) {
     color: catppuccinMochaColors.text,
   };
 
+  const transformRef = useRef(null);
+
   return (
     <>
       <div className={appStyles.toolZone}>
@@ -103,6 +106,15 @@ export default function AppWrapper({ storeData }) {
           >
             {locale}
           </ToggleButton>
+
+          <ToggleButton
+            onClick={() => {
+              transformRef.current?.resetTransform();
+            }}
+          >
+            <MyLocationRoundedIcon />
+          </ToggleButton>
+
           <ToggleButton value={1} sx={layerSwitcherStyle}>
             1F
           </ToggleButton>
@@ -120,7 +132,7 @@ export default function AppWrapper({ storeData }) {
         <DetailPage slug={selectedPost?.slug} locale={locale} />
       </Sidebar>
 
-      <Map mapWidth={mapWidth}>
+      <Map mapWidth={mapWidth} transformRef={transformRef}>
         <BellMaps
           storeData={storeData}
           currentFloor={layer}
