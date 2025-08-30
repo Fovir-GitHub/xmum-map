@@ -2,6 +2,6 @@
   position: absolute;
   left: auto;
   right: 0;
-  top: 80vh;
+  bottom: 10vh;
   z-index: 1;
 }
