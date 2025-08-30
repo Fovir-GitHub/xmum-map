@@ -36,7 +36,7 @@ export default function Sidebar({ onClose, show, children }) {
         flexShrink: 0,
         "& .MuiDrawer-paper": {
           width: isMobile() ? "100%" : DRAWER_WIDTH,
-          maxHeight: isMobile() ? "70vh" : "auto",
+          height: isMobile() ? "70vh" : "auto",
           boxSizing: "border-box",
           backdropFilter: "blur(14px)",
           boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
