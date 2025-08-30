@@ -15,6 +15,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
+import { isMobile } from "../../lib/isMobile";
 
 export default function AppWrapper({ storeData }) {
   // Floor layers.
@@ -78,7 +79,7 @@ export default function AppWrapper({ storeData }) {
         <ToggleButtonGroup
           orientation="vertical"
           onChange={handleSwitchLayer}
-          size="large"
+          size={isMobile() ? "medium" : "large"}
           exclusive
           value={layer}
           sx={{
