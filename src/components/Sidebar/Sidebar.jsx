@@ -2,7 +2,7 @@
  * @file Sidebar.jsx
  * @description Sidebar used to contain other pages.
  * @author Fovir
- * @date 2025-08-26
+ * @date 2025-08-30
  */
 
 "use client";
