@@ -208,10 +208,12 @@ function StoreBlock({
         >
           <p
             style={{
-              fontSize: "12px",
+              fontSize: "1.4rem",
               textAlign: "center",
-              wordWrap: "break-word",
+              wordBreak: "break-word",
               whiteSpace: "pre-line",
+              textWrap: "wrap",
+              padding: "0 10px",
             }}
           >
             {text}
