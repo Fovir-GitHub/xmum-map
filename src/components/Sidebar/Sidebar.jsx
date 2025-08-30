@@ -10,6 +10,7 @@
 import { Drawer, IconButton } from "@mui/material";
 import { CloseRounded } from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
+import { isMobile } from "../../lib/isMobile";
 
 export default function Sidebar({ onClose, show, children }) {
   // Width of drawer.
@@ -25,19 +26,16 @@ export default function Sidebar({ onClose, show, children }) {
     marginTop: "16px",
   }));
 
-  /**
-   * TODO: Add styles.
-   */
   return (
     <Drawer
       variant="persistent"
-      anchor="left"
+      anchor={isMobile() ? "bottom" : "left"}
       open={show}
       sx={{
-        width: DRAWER_WIDTH,
         flexShrink: 0,
         "& .MuiDrawer-paper": {
-          width: DRAWER_WIDTH,
+          width: isMobile() ? "100%" : DRAWER_WIDTH,
+          maxHeight: isMobile() ? "70vh" : "auto",
           boxSizing: "border-box",
           backdropFilter: "blur(14px)",
           boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
