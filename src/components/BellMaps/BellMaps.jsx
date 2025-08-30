@@ -208,7 +208,7 @@ function StoreBlock({
         >
           <p
             style={{
-              fontSize: "1.4rem",
+              fontSize: "1.6rem",
               textAlign: "center",
               wordBreak: "break-word",
               whiteSpace: "pre-line",
