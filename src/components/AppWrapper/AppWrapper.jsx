@@ -74,6 +74,7 @@ export default function AppWrapper({ storeData }) {
     color: catppuccinMochaColors.text,
   };
 
+  // Ref to `TransformWrapper`.
   const transformRef = useRef(null);
 
   return (
