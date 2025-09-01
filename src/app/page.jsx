@@ -8,11 +8,15 @@ function readData(fileName) {
 }
 
 export default function Page() {
-  const bellAvenueData = readData("bell_suite.json");
+  const bellAvenueData = readData("bell_avenue.json");
+  const bellSuiteData = readData("bell_suite.json");
 
   return (
     <>
-      <AppWrapper bellAvenueData={bellAvenueData} />
+      <AppWrapper
+        bellAvenueData={bellAvenueData}
+        bellSuiteData={bellSuiteData}
+      />
     </>
   );
 }
