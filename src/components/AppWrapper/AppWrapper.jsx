@@ -17,8 +17,9 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
 import { isMobile } from "../../lib/isMobile";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
+import Image from "next/image";
 
-export default function AppWrapper({ bellAvenueData }) {
+export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
   const [layer, setLayer] = useState(0);
 
@@ -134,8 +135,22 @@ export default function AppWrapper({ bellAvenueData }) {
       </Sidebar>
 
       <Map mapWidth={mapWidth} transformRef={transformRef}>
+        <Image
+          src="/images/xmum.png"
+          width={mapWidth}
+          height={0}
+          layout="responsive"
+          alt="XMUM Campus Map"
+        />
         <BellMaps
           storeData={bellAvenueData}
+          currentFloor={layer}
+          setSelectedPost={setSelectedPost}
+          mapWidth={mapWidth}
+          locale={locale}
+        />
+        <BellMaps
+          storeData={bellSuiteData}
           currentFloor={layer}
           setSelectedPost={setSelectedPost}
           mapWidth={mapWidth}

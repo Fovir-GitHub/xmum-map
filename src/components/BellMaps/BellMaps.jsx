@@ -2,7 +2,7 @@
  * @file BellMaps.jsx
  * @description Create the `BellMaps` component which depends on another two components, `BellFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-08-28
+ * @date 2025-09-01
  */
 
 "use client";
@@ -16,7 +16,6 @@ import LocalDrinkRoundedIcon from "@mui/icons-material/LocalDrinkRounded";
 import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
 import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
 import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
-import Image from "next/image";
 
 /**
  * @description Generate the map from the data file.
@@ -35,13 +34,6 @@ export default function BellMaps({
 
   return (
     <>
-      <Image
-        src="/images/xmum.png"
-        width={WIDTH}
-        height={0}
-        layout="responsive"
-        alt="XMUM Campus Map"
-      />
       <BellFloorMap
         svgWidth={WIDTH}
         svgHeight={HEIGHT}
