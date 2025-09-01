@@ -9,6 +9,14 @@
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import { getFillColor, getStoreIcon } from "../StoreBlock/StoreBlock";
 import StoreBlock from "../StoreBlock/StoreBlock";
+import {
+  STORE_BLOCK_WIDTH,
+  STORE_BLOCK_HEIGHT,
+  FIRST_ROW_Y,
+  SECOND_ROW_Y,
+  GAP_BETWEEN_STORES_AND_PATH,
+  PATH_SIZE,
+} from "../StoreBlock/StoreBlock";
 
 /**
  * @description Generate the map from the data file.
@@ -52,20 +60,9 @@ function BellAvenueFloorMap({
   locale,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
-  const STORE_BLOCK_WIDTH = 150; // Width of a store.
-  const STORE_BLOCK_HEIGHT = 200; // Height of a store.
   const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH; // Right boundary of the map.
-  const FIRST_ROW_Y = 100;
-  const SECOND_ROW_Y = 700;
 
-  // Write path.
-  const PATH_SIZE = 100;
-
-  // Center justify the path.
-  const GAP_BETWEEN_STORES_AND_PATH =
-    (SECOND_ROW_Y - FIRST_ROW_Y - STORE_BLOCK_HEIGHT - 2 * PATH_SIZE) /
-    2;
-
+  // Draw path.
   const drawSvgPath = () => {
     // Draw a single block.
     function drawSinglePathBlock(x, y, index) {
