@@ -1,6 +1,6 @@
 /**
  * @file BellMaps.jsx
- * @description Create the `BellMaps` component which depends on another two components, `BellFloorMap` and `StoreBlock`.
+ * @description Create the `BellAvenueMaps` component which depends on another two components, `BellAvenueFloorMap` and `StoreBlock`.
  * @author Fovir
  * @date 2025-09-01
  */
@@ -14,7 +14,7 @@ import StoreBlock from "../StoreBlock/StoreBlock";
  * @description Generate the map from the data file.
  * @param storeData JSON data.
  */
-export default function BellMaps({
+export default function BellAvenueMaps({
   storeData,
   setSelectedPost,
   mapWidth,
@@ -27,7 +27,7 @@ export default function BellMaps({
 
   return (
     <>
-      <BellFloorMap
+      <BellAvenueFloorMap
         svgWidth={WIDTH}
         svgHeight={HEIGHT}
         stores={storeData[currentFloor]}
@@ -44,7 +44,7 @@ export default function BellMaps({
  * @param svgHeight The height of SVG.
  * @param stores Data of stores on every floor.
  */
-function BellFloorMap({
+function BellAvenueFloorMap({
   svgWidth,
   svgHeight,
   stores,

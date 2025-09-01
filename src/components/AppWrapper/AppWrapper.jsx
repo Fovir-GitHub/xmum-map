@@ -7,7 +7,7 @@
 
 "use client";
 import Map from "../Map/Map";
-import BellMaps from "../BellMaps/BellMaps";
+import BellAvenueMaps from "../BellAvenueMaps/BellAvenueMaps";
 import { useEffect, useRef, useState } from "react";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import appStyles from "./app.module.css";
@@ -142,15 +142,8 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           layout="responsive"
           alt="XMUM Campus Map"
         />
-        <BellMaps
+        <BellAvenueMaps
           storeData={bellAvenueData}
-          currentFloor={layer}
-          setSelectedPost={setSelectedPost}
-          mapWidth={mapWidth}
-          locale={locale}
-        />
-        <BellMaps
-          storeData={bellSuiteData}
           currentFloor={layer}
           setSelectedPost={setSelectedPost}
           mapWidth={mapWidth}
