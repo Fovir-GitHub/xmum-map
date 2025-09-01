@@ -1,9 +1,12 @@
 import XLSX from "xlsx";
 import fs from "fs";
+import { json } from "stream/consumers";
 
 // Source file and output file.
-const SOURCE_DATA_FILE = "../data/data.xlsx";
-const OUTPUT_DIR = "../data/data.json";
+const BELL_AVENUE_SOURCE_FILE = "../data/bell_avenue.xlsx";
+const BELL_AVENUE_OUTPUT_FILE = "../data/bell_avenue.json";
+const BELL_SUITE_SROUCE_FILE = "../data/bell_suite.xlsx";
+const BELL_SUITE_OUTPUT_FILE = "../data/bell_suite.json";
 
 /**
  * @description Read data from `.xlsx` files.
@@ -33,8 +36,12 @@ function readXlsx(fileName) {
 
 // Output the result.
 fs.writeFileSync(
-  OUTPUT_DIR,
-  JSON.stringify(readXlsx(SOURCE_DATA_FILE)),
+  BELL_AVENUE_OUTPUT_FILE,
+  JSON.stringify(readXlsx(BELL_AVENUE_SOURCE_FILE)),
+);
+fs.writeFileSync(
+  BELL_SUITE_OUTPUT_FILE,
+  JSON.stringify(readXlsx(BELL_AVENUE_SOURCE_FILE)),
 );
 
 console.log("\n\nXLSX Parsed\n\n");

@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-08-30
+ * @date 2025-09-01
  */
 
 "use client";
@@ -18,7 +18,7 @@ import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListe
 import { isMobile } from "../../lib/isMobile";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 
-export default function AppWrapper({ storeData }) {
+export default function AppWrapper({ bellAvenueData }) {
   // Floor layers.
   const [layer, setLayer] = useState(0);
 
@@ -135,7 +135,7 @@ export default function AppWrapper({ storeData }) {
 
       <Map mapWidth={mapWidth} transformRef={transformRef}>
         <BellMaps
-          storeData={storeData}
+          storeData={bellAvenueData}
           currentFloor={layer}
           setSelectedPost={setSelectedPost}
           mapWidth={mapWidth}
