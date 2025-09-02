@@ -141,7 +141,3 @@ vite.config.ts.timestamp-*
 # XLSX and its lock files
 *.xlsx
 .~lock*
-
-# Data
-src/data
-posts/
