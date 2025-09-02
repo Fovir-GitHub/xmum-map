@@ -1,6 +1,5 @@
 import XLSX from "xlsx";
 import fs from "fs";
-import { json } from "stream/consumers";
 
 // Source file and output file.
 const BELL_AVENUE_SOURCE_FILE = "../data/bell_avenue.xlsx";
@@ -41,7 +40,7 @@ fs.writeFileSync(
 );
 fs.writeFileSync(
   BELL_SUITE_OUTPUT_FILE,
-  JSON.stringify(readXlsx(BELL_AVENUE_SOURCE_FILE)),
+  JSON.stringify(readXlsx(BELL_SUITE_SROUCE_FILE)),
 );
 
 console.log("\n\nXLSX Parsed\n\n");
