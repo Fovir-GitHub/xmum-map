@@ -9,16 +9,24 @@
 import Map from "../Map/Map";
 import BellAvenueMaps from "../BellAvenueMaps/BellAvenueMaps";
 import { useEffect, useRef, useState } from "react";
-import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import {
+  CssBaseline,
+  ToggleButton,
+  ToggleButtonGroup,
+} from "@mui/material";
 import appStyles from "./app.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
-import { catppuccinMochaColors } from "../../styles/materialUiTheme";
+import {
+  catppuccinMochaColors,
+  theme,
+} from "../../styles/materialUiTheme";
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
 import { isMobile } from "../../lib/isMobile";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 import Image from "next/image";
 import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
+import { ThemeProvider } from "@emotion/react";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -83,7 +91,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   const transformRef = useRef(null);
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+
       <div className={appStyles.toolZone}>
         <ToggleButtonGroup
           orientation="vertical"
@@ -170,6 +180,6 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           />
         </div>
       </Map>
-    </>
+    </ThemeProvider>
   );
 }
