@@ -2,18 +2,17 @@
  * @file BellMaps.jsx
  * @description Create the `BellAvenueMaps` component which depends on another two components, `BellAvenueFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-09-01
+ * @date 2025-09-02
  */
 
 "use client";
+
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
-import { getFillColor, getStoreIcon } from "../StoreBlock/StoreBlock";
-import StoreBlock from "../StoreBlock/StoreBlock";
+import DrawAMap from "../DrawAMap/DrawAMap";
 import {
   STORE_BLOCK_WIDTH,
   STORE_BLOCK_HEIGHT,
   FIRST_ROW_Y,
-  SECOND_ROW_Y,
   GAP_BETWEEN_STORES_AND_PATH,
   PATH_SIZE,
 } from "../StoreBlock/StoreBlock";
@@ -103,51 +102,7 @@ function BellAvenueFloorMap({
         // Draw the path.
         return path;
       })}
-
-      {stores.map((store, index) => {
-        // Ignore empty position.
-        if (!store.Name) {
-          return;
-        }
-
-        let x = 0;
-        let y = 0;
-
-        // Get the width of stores.
-        const widthOffset = store.Width === null ? 1 : store.Width;
-
-        // Determine which row does the store exist.
-        if (index < ROW_INDEX_LIMIT) {
-          x = (index + 1) * STORE_BLOCK_WIDTH;
-          y = FIRST_ROW_Y;
-        } else {
-          x =
-            RIGHT_BOUNDARY -
-            (index - ROW_INDEX_LIMIT + 1) * STORE_BLOCK_WIDTH;
-          y = SECOND_ROW_Y;
-        }
-
-        return (
-          <StoreBlock
-            x={x}
-            y={y}
-            width={STORE_BLOCK_WIDTH * widthOffset}
-            height={STORE_BLOCK_HEIGHT}
-            fill={getFillColor(store.Category)}
-            stroke={"white"}
-            strokeWidth={2}
-            text={store.Name}
-            key={crypto.randomUUID()}
-            icon={getStoreIcon(store)}
-            handleClick={() =>
-              setSelectedPost({
-                slug: store.Slug,
-                locale: locale,
-              })
-            }
-          />
-        );
-      })}
+      {DrawAMap(stores, ROW_INDEX_LIMIT, setSelectedPost, locale)}
     </svg>
   );
 }
