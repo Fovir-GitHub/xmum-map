@@ -14,6 +14,7 @@ import StoreBlock, {
   SECOND_ROW_Y,
   STORE_BLOCK_HEIGHT,
   STORE_BLOCK_WIDTH,
+  PATH_SIZE,
 } from "../StoreBlock/StoreBlock";
 
 export default function DrawAMap(
@@ -65,5 +66,23 @@ export default function DrawAMap(
         );
       })}
     </>
+  );
+}
+
+/**
+ * @description Draw a path block in (x,y) with `fill` color.
+ */
+export function drawPathBlock(x, y, index) {
+  return (
+    <rect
+      x={x}
+      y={y}
+      width={PATH_SIZE}
+      height={PATH_SIZE}
+      fill="#A0A1A6"
+      stroke="#66676B"
+      strokeWidth={3}
+      key={index}
+    />
   );
 }

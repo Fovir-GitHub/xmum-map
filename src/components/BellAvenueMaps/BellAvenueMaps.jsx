@@ -8,7 +8,7 @@
 "use client";
 
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
-import DrawAMap from "../DrawAMap/DrawAMap";
+import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
 import {
   STORE_BLOCK_WIDTH,
   STORE_BLOCK_HEIGHT,
@@ -64,30 +64,14 @@ function BellAvenueFloorMap({
 
   // Draw path.
   const drawSvgPath = () => {
-    // Draw a single block.
-    function drawSinglePathBlock(x, y, index) {
-      return (
-        <rect
-          x={x}
-          y={y}
-          width={PATH_SIZE}
-          height={PATH_SIZE}
-          fill="#A0A1A6"
-          stroke="#66676B"
-          strokeWidth={3}
-          key={index}
-        />
-      );
-    }
-
     // Calculate where to start.
     const pathY =
       FIRST_ROW_Y + STORE_BLOCK_HEIGHT + GAP_BETWEEN_STORES_AND_PATH;
     const result = [];
     let index = 0;
     for (let x = 0; x <= RIGHT_BOUNDARY; x += PATH_SIZE) {
-      result.push(drawSinglePathBlock(x, pathY, index++));
-      result.push(drawSinglePathBlock(x, pathY + PATH_SIZE, index++));
+      result.push(drawPathBlock(x, pathY, index++));
+      result.push(drawPathBlock(x, pathY + PATH_SIZE, index++));
     }
 
     return result;
