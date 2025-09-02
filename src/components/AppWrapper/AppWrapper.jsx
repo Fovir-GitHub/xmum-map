@@ -27,6 +27,7 @@ import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 import Image from "next/image";
 import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
 import { ThemeProvider } from "@emotion/react";
+import Footer from "../Footer/Footer";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -180,6 +181,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           />
         </div>
       </Map>
+      <Footer />
     </ThemeProvider>
   );
 }
