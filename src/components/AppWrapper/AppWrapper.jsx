@@ -18,6 +18,7 @@ import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListe
 import { isMobile } from "../../lib/isMobile";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 import Image from "next/image";
+import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -60,8 +61,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     setLocale(normalizeLang(navigator.language));
   }, []);
 
-  // Width of map.
+  // Width and height of map.
   const mapWidth = 5700;
+  const mapHeight = 1000;
 
   // Transparent value.
   const toolBackgroundTransparent = "B2";
@@ -147,7 +149,15 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           currentFloor={layer}
           setSelectedPost={setSelectedPost}
           mapWidth={mapWidth}
+          mapHeight={mapHeight}
           locale={locale}
+        />
+        <BellSuiteMap
+          storeData={bellSuiteData}
+          setSelectedPost={setSelectedPost}
+          locale={locale}
+          mapWidth={mapWidth}
+          mapHeight={mapHeight}
         />
       </Map>
     </>
