@@ -62,7 +62,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   }, []);
 
   // Width and height of map.
-  const mapWidth = 5700;
+  const bellAvenueMapWidth = 5700;
+  const bellSuiteMapWidth = 1400;
+  const mapWidth = bellAvenueMapWidth + bellSuiteMapWidth;
   const mapHeight = 1000;
 
   // Transparent value.
@@ -148,7 +150,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           storeData={bellAvenueData}
           currentFloor={layer}
           setSelectedPost={setSelectedPost}
-          mapWidth={mapWidth}
+          mapWidth={bellAvenueMapWidth}
           mapHeight={mapHeight}
           locale={locale}
         />
@@ -156,7 +158,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           storeData={bellSuiteData}
           setSelectedPost={setSelectedPost}
           locale={locale}
-          mapWidth={mapWidth}
+          mapWidth={bellSuiteMapWidth}
           mapHeight={mapHeight}
         />
       </Map>
