@@ -4,7 +4,8 @@ import AppWrapper from "../components/AppWrapper/AppWrapper";
 
 function readData(fileName) {
   const dataFile = path.join(process.cwd(), `src/data/${fileName}`);
-  return JSON.parse(fs.readFileSync(dataFile));
+  const fileContent = fs.readFileSync(dataFile);
+  return JSON.parse(fileContent);
 }
 
 export default function Page() {
