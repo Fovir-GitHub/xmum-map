@@ -25,12 +25,13 @@ export default function BellAvenueMaps({
   storeData,
   setSelectedPost,
   mapWidth,
+  mapHeight,
   locale,
   currentFloor = 0,
 }) {
   // Size of the map.
   const WIDTH = mapWidth;
-  const HEIGHT = 1000;
+  const HEIGHT = mapHeight;
 
   return (
     <>
