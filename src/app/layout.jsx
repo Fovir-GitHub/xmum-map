@@ -1,19 +1,17 @@
-"use client";
-
 import "../styles/global.css";
-import { ThemeProvider } from "@emotion/react";
-import { theme } from "../styles/materialUiTheme";
-import { CssBaseline } from "@mui/material";
+
+// Meta data of the site.
+export const metadata = {
+  title: "XMUM Map",
+  icons: {
+    icon: "/favicon.png",
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          {children}
-        </ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
