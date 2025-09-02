@@ -146,21 +146,29 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           layout="responsive"
           alt="XMUM Campus Map"
         />
-        <BellAvenueMaps
-          storeData={bellAvenueData}
-          currentFloor={layer}
-          setSelectedPost={setSelectedPost}
-          mapWidth={bellAvenueMapWidth}
-          mapHeight={mapHeight}
-          locale={locale}
-        />
-        <BellSuiteMap
-          storeData={bellSuiteData}
-          setSelectedPost={setSelectedPost}
-          locale={locale}
-          mapWidth={bellSuiteMapWidth}
-          mapHeight={mapHeight}
-        />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "10cm",
+          }}
+        >
+          <BellAvenueMaps
+            storeData={bellAvenueData}
+            currentFloor={layer}
+            setSelectedPost={setSelectedPost}
+            mapWidth={bellAvenueMapWidth}
+            mapHeight={mapHeight}
+            locale={locale}
+          />
+          <BellSuiteMap
+            storeData={bellSuiteData}
+            setSelectedPost={setSelectedPost}
+            locale={locale}
+            mapWidth={bellSuiteMapWidth}
+            mapHeight={mapHeight}
+          />
+        </div>
       </Map>
     </>
   );
