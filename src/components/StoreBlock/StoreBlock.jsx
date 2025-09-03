@@ -87,15 +87,15 @@ export default function StoreBlock({
  * @returns Color in #RRGGBBAA forms.
  */
 export function getFillColor(category) {
-  const transparent = "E2";
+  const opacity = "E2";
   const CATEGORY_COLOR_MAP = new Map([
-    ["restaurant", `${catppuccinMochaColors.pink}${transparent}`],
-    ["drink", `${catppuccinMochaColors.red}${transparent}`],
-    ["store", `${catppuccinMochaColors.blue}${transparent}`],
-    ["entertainment", `${catppuccinMochaColors.sky}${transparent}`],
-    ["coffee", `${catppuccinMochaColors.yellow}${transparent}`],
-    ["sanck", `${catppuccinMochaColors.green}${transparent}`],
-    ["misc", `${catppuccinMochaColors.flamingo}${transparent}`],
+    ["restaurant", `${catppuccinMochaColors.pink}${opacity}`],
+    ["drink", `${catppuccinMochaColors.red}${opacity}`],
+    ["store", `${catppuccinMochaColors.blue}${opacity}`],
+    ["entertainment", `${catppuccinMochaColors.sky}${opacity}`],
+    ["coffee", `${catppuccinMochaColors.yellow}${opacity}`],
+    ["sanck", `${catppuccinMochaColors.green}${opacity}`],
+    ["misc", `${catppuccinMochaColors.flamingo}${opacity}`],
   ]);
 
   if (CATEGORY_COLOR_MAP.has(category)) {
