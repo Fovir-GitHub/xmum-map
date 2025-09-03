@@ -76,13 +76,13 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   const mapWidth = bellAvenueMapWidth + bellSuiteMapWidth;
   const mapHeight = 1000;
 
-  // Transparent value.
-  const toolBackgroundTransparent = "B2";
+  // Opacity.
+  const toolBackgroundOpacity = "B2";
 
   // Style of toggle buttons.
   const layerSwitcherStyle = {
     "&.Mui-selected": {
-      backgroundColor: `${catppuccinMochaColors.surface0}${toolBackgroundTransparent}`,
+      backgroundColor: `${catppuccinMochaColors.surface0}${toolBackgroundOpacity}`,
     },
     fontWeight: "bolder",
     color: catppuccinMochaColors.text,
@@ -103,7 +103,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           exclusive
           value={layer}
           sx={{
-            backgroundColor: `${catppuccinMochaColors.surface2}${toolBackgroundTransparent}`,
+            backgroundColor: `${catppuccinMochaColors.surface2}${toolBackgroundOpacity}`,
           }}
         >
           <ToggleButton
