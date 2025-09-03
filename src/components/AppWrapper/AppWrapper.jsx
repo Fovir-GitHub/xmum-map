@@ -150,13 +150,6 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
       </Sidebar>
 
       <Map mapWidth={mapWidth} transformRef={transformRef}>
-        <Image
-          src="/images/xmum.png"
-          width={mapWidth}
-          height={0}
-          layout="responsive"
-          alt="XMUM Campus Map"
-        />
         <div
           style={{
             display: "flex",
