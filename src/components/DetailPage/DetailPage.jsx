@@ -12,7 +12,7 @@ import markdownStyle from "./markdown.module.css";
 import { getPostHtml } from "../../lib/getPostHtml";
 
 export default function DetailPage({ slug, locale }) {
-  // State of detail page data.
+  // Post html.
   const [postHtml, setPostHtml] = useState("");
 
   useEffect(() => {
