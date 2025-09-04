@@ -12,7 +12,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 const mdxDir = path.join(process.cwd(), "posts/");
 const outDir = path.join(process.cwd(), "public/mdx-html");
-const tempDir = path.join(process.cwd(), ".mdx-temp");
+const tempDir = path.join(process.cwd(), ".temp");
 
 if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
