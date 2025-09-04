@@ -1,23 +1,23 @@
 /**
- * @file app/api/posts/[slug]/[locale]/route.jsx
- * @description Provide API to fetch post contents.
+ * @file route.jsx
+ * @description Provide API to fetch post html.
  * @author Fovir
- * @date 2025-08-25
+ * @date 2025-09-04
  */
 
 import fs from "fs";
 import path from "path";
 
 /**
- * @description Get post content API.
- * @returns The post content in JSON format.
+ * @description Get post html API.
+ * @returns The post html in JSON format.
  */
 export async function GET(req, { params }) {
   const { slug, locale } = params;
   const filePath = path.join(
     process.cwd(),
-    "posts",
-    `${slug}.${locale}.md`,
+    "public/mdx-html",
+    `${slug}.${locale}.html`,
   );
   const fileContent = fs.readFileSync(filePath, "utf8");
 
