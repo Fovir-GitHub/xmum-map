@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-02
+ * @date 2025-09-03
  */
 
 "use client";
@@ -24,10 +24,10 @@ import {
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
 import { isMobile } from "../../lib/isMobile";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
-import Image from "next/image";
 import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
+import Announcement from "../Announcement/Announcement";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -148,6 +148,8 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
       >
         <DetailPage slug={selectedPost?.slug} locale={locale} />
       </Sidebar>
+
+      <Announcement locale={locale} />
 
       <Map mapWidth={mapWidth} transformRef={transformRef}>
         <div
