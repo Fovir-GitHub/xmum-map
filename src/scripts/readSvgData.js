@@ -1,3 +1,10 @@
+/**
+ * @file readSvgData.js
+ * @description Read map data from `.xlsx` files and convert them into `.json` format.
+ * @author Fovir
+ * @date 2025-09-05
+ */
+
 import XLSX from "xlsx";
 import fs from "fs";
 
