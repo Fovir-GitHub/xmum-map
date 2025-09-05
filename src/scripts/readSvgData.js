@@ -7,12 +7,25 @@
 
 import XLSX from "xlsx";
 import fs from "fs";
+import path from "path";
 
 // Source file and output file.
-const BELL_AVENUE_SOURCE_FILE = "../data/bell_avenue.xlsx";
-const BELL_AVENUE_OUTPUT_FILE = "../data/bell_avenue.json";
-const BELL_SUITE_SROUCE_FILE = "../data/bell_suite.xlsx";
-const BELL_SUITE_OUTPUT_FILE = "../data/bell_suite.json";
+const BELL_AVENUE_SOURCE_FILE = path.join(
+  process.cwd(),
+  "src/data/bell_avenue.xlsx",
+);
+const BELL_AVENUE_OUTPUT_FILE = path.join(
+  process.cwd(),
+  "src/data/bell_avenue.json",
+);
+const BELL_SUITE_SROUCE_FILE = path.join(
+  process.cwd(),
+  "src/data/bell_suite.xlsx",
+);
+const BELL_SUITE_OUTPUT_FILE = path.join(
+  process.cwd(),
+  "src/data/bell_suite.json",
+);
 
 /**
  * @description Read data from `.xlsx` files.
