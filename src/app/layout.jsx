@@ -1,3 +1,10 @@
+/**
+ * @file layout.jsx
+ * @description Layout of the website.
+ * @author Fovir
+ * @date 2025-09-05
+ */
+
 import "../styles/global.css";
 
 // Meta data of the site.
