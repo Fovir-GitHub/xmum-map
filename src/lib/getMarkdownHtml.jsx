@@ -1,3 +1,10 @@
+/**
+ * @file getMarkdownHtml.jsx
+ * @description Fetch markdown via API and parse it with `remark`.
+ * @author Fovir
+ * @date 2025-09-05
+ */
+
 "use client";
 
 import { remark } from "remark";
@@ -14,7 +21,7 @@ export async function getMarkdownHtml(slug, locale) {
   const markdownContent = jsonContent.content;
   const processed = await remark()
     .use(remarkGfm)
-    .use(html, { sanitize: false })
+    .use(html, { sanitize: false }) // Enable HTML tags.
     .process(markdownContent);
   const htmlContent = processed.toString();
 
