@@ -2,7 +2,7 @@
  * @file Map.jsx
  * @description Create the `Map` component to contain all maps. And use `react-zoom-pan-pinch` to enable users to move and zoom maps.
  * @author Fovir
- * @date 2025-08-30
+ * @date 2025-09-05
  */
 
 "use client";
