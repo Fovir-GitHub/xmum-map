@@ -16,28 +16,17 @@
       ];
 
       shellHook = ''
-        ensure_pnpm_package() {
-          local pkg=$1
-          local pkg_name="''${pkg%%@*}"
-
-          if pnpm list --depth=0 | grep "$pkg_name" &>/dev/null; then
-            echo "$pkg installed"
-          else
-            echo "Installing $pkg..."
-            pnpm add "$pkg"
-          fi
-        }
-
-        ensure_pnpm_package react@latest
-        ensure_pnpm_package react-dom@latest
-        ensure_pnpm_package next@latest
-
         echo "Entering the development environment!"
         echo "Node: $(node -v), pnpm: $(pnpm -v)"
 
         alias dev="pnpm run dev"
         alias build="pnpm run build"
         alias start="pnpm run start"
+
+        echo "Aliases:"
+        echo '    dev="pnpm run dev"'
+        echo '    build="pnpm run build"'
+        echo '    start="pnpm run start"'
 
         trap 'echo "Leaving the development environment!"' EXIT
       '';
