@@ -38,7 +38,7 @@ export default function Announcement({ locale }) {
         zIndex: 2,
       }}
     >
-      <Accordion defaultExpanded>
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreRoundedIcon />}>
           {accordionTitle[locale]}
         </AccordionSummary>
