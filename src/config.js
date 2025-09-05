@@ -36,6 +36,10 @@ const xmumConfig = {
       strokeWidth: 3,
     },
   },
+  website: {
+    title: "XMUM Map",
+    logo: "/favicon.png",
+  },
 };
 
 xmumConfig.storeBlock.path = {

@@ -6,12 +6,13 @@
  */
 
 import "../styles/global.css";
+import xmumConfig from "../config";
 
 // Meta data of the site.
 export const metadata = {
-  title: "XMUM Map",
+  title: xmumConfig.website.title,
   icons: {
-    icon: "/favicon.png",
+    icon: xmumConfig.website.logo,
   },
 };
 
