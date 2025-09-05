@@ -16,8 +16,6 @@
       ];
 
       shellHook = ''
-        export NODE_ENV=production
-
         ensure_pnpm_package() {
           local pkg=$1
           local pkg_name="''${pkg%%@*}"
