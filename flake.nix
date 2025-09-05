@@ -37,10 +37,9 @@
         echo "Entering the development environment!"
         echo "Node: $(node -v), pnpm: $(pnpm -v)"
 
-        alias dev="cd ./src/scripts && node readSvgData.js && cd - && pnpm next dev"
-        alias build="pnpm next build"
-        alias start="pnpm next start"
-        alias lint="pnpm next lint"
+        alias dev="pnpm run dev"
+        alias build="pnpm run build"
+        alias start="pnpm run start"
 
         trap 'echo "Leaving the development environment!"' EXIT
       '';
