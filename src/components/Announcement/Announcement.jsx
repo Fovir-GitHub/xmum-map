@@ -15,6 +15,7 @@ import {
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import { useEffect, useState } from "react";
 import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
+import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 
 export default function Announcement({ locale }) {
   const [announcementContent, setAnnouncementContent] = useState("");
@@ -39,7 +40,14 @@ export default function Announcement({ locale }) {
       }}
     >
       <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreRoundedIcon />}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreRoundedIcon />}
+          sx={{
+            color: catppuccinMochaColors.red,
+            fontWeight: "bolder",
+            fontSize: "1.6rem",
+          }}
+        >
           {accordionTitle[locale]}
         </AccordionSummary>
         <AccordionDetails
