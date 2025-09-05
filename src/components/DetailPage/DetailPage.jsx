@@ -2,21 +2,22 @@
  * @file DetailPage.jsx
  * @description Create the `DetailPage` component, which is the container of detail pages. The component fetches post html via API.
  * @author Fovir
- * @date 2025-09-04
+ * @date 2025-09-05
  */
 
 "use client";
 
 import { useEffect, useState } from "react";
 import markdownStyle from "./markdown.module.css";
-import { getPostHtml } from "../../lib/getPostHtml";
+import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
+import ImageSlide from "../ImageSlide/ImageSlide";
 
 export default function DetailPage({ slug, locale }) {
   // Post html.
   const [postHtml, setPostHtml] = useState("");
 
   useEffect(() => {
-    getPostHtml(slug, locale).then((html) => {
+    getMarkdownHtml(slug, locale).then((html) => {
       setPostHtml(html);
     });
   }, [slug, locale]);
@@ -28,6 +29,7 @@ export default function DetailPage({ slug, locale }) {
           __html: postHtml,
         }}
       />
+      <ImageSlide />
     </article>
   );
 }
