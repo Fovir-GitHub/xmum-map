@@ -16,6 +16,7 @@ import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import { useEffect, useState } from "react";
 import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
+import xmumConfig from "../../config";
 
 export default function Announcement({ locale }) {
   const [announcementContent, setAnnouncementContent] = useState("");
@@ -25,11 +26,6 @@ export default function Announcement({ locale }) {
       setAnnouncementContent(html);
     });
   }, [locale]);
-
-  const accordionTitle = {
-    zh: "公告",
-    en: "Announcement",
-  };
 
   return (
     <div
@@ -48,7 +44,7 @@ export default function Announcement({ locale }) {
             fontSize: "1.6rem",
           }}
         >
-          {accordionTitle[locale]}
+          {xmumConfig.announcement.title[locale]}
         </AccordionSummary>
         <AccordionDetails
           dangerouslySetInnerHTML={{ __html: announcementContent }}

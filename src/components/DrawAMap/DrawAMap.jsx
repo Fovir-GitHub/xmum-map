@@ -2,20 +2,16 @@
  * @file DrawAMap.jsx
  * @description Draw a map with row index limit.
  * @author Fovir
- * @date 2025-09-02
+ * @date 2025-09-05
  */
 
 "use client";
 
 import StoreBlock, {
-  FIRST_ROW_Y,
   getFillColor,
   getStoreIcon,
-  SECOND_ROW_Y,
-  STORE_BLOCK_HEIGHT,
-  STORE_BLOCK_WIDTH,
-  PATH_SIZE,
 } from "../StoreBlock/StoreBlock";
+import xmumConfig from "../../config";
 
 export default function DrawAMap(
   stores,
@@ -23,7 +19,8 @@ export default function DrawAMap(
   setSelectedPost,
   locale,
 ) {
-  const rightBoundary = (rowIndexLimit - 1) * STORE_BLOCK_WIDTH;
+  const rightBoundary =
+    (rowIndexLimit - 1) * xmumConfig.storeBlock.size.width;
 
   return (
     <>
@@ -36,20 +33,21 @@ export default function DrawAMap(
 
         const widthOffset = store.Width === null ? 1 : store.Width;
         if (index < rowIndexLimit) {
-          x = (index + 1) * STORE_BLOCK_WIDTH;
-          y = FIRST_ROW_Y;
+          x = (index + 1) * xmumConfig.storeBlock.size.width;
+          y = xmumConfig.storeBlock.position.firstRowY;
         } else {
           x =
             rightBoundary -
-            (index - rowIndexLimit + 1) * STORE_BLOCK_WIDTH;
-          y = SECOND_ROW_Y;
+            (index - rowIndexLimit + 1) *
+              xmumConfig.storeBlock.size.width;
+          y = xmumConfig.storeBlock.position.secondRowY;
         }
         return (
           <StoreBlock
             x={x}
             y={y}
-            width={STORE_BLOCK_WIDTH * widthOffset}
-            height={STORE_BLOCK_HEIGHT}
+            width={xmumConfig.storeBlock.size.width * widthOffset}
+            height={xmumConfig.storeBlock.size.height}
             fill={getFillColor(store.Category)}
             stroke={"white"}
             strokeWidth={2}
@@ -77,11 +75,11 @@ export function drawPathBlock(x, y, index) {
     <rect
       x={x}
       y={y}
-      width={PATH_SIZE}
-      height={PATH_SIZE}
-      fill="#A0A1A6"
-      stroke="#66676B"
-      strokeWidth={3}
+      width={xmumConfig.storeBlock.path.size}
+      height={xmumConfig.storeBlock.path.size}
+      fill={xmumConfig.storeBlock.path.fill}
+      stroke={xmumConfig.storeBlock.path.stroke}
+      strokeWidth={xmumConfig.storeBlock.path.strokeWidth}
       key={index}
     />
   );

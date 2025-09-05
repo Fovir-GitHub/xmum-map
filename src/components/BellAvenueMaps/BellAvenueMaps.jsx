@@ -7,15 +7,8 @@
 
 "use client";
 
-import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
-import {
-  STORE_BLOCK_WIDTH,
-  STORE_BLOCK_HEIGHT,
-  FIRST_ROW_Y,
-  GAP_BETWEEN_STORES_AND_PATH,
-  PATH_SIZE,
-} from "../StoreBlock/StoreBlock";
+import xmumConfig from "../../config";
 
 /**
  * @description Generate the map from the data file.
@@ -60,18 +53,31 @@ function BellAvenueFloorMap({
   locale,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
-  const RIGHT_BOUNDARY = (ROW_INDEX_LIMIT - 1) * STORE_BLOCK_WIDTH; // Right boundary of the map.
+  const RIGHT_BOUNDARY =
+    (ROW_INDEX_LIMIT - 1) * xmumConfig.storeBlock.size.width; // Right boundary of the map.
 
   // Draw path.
   const drawSvgPath = () => {
     // Calculate where to start.
     const pathY =
-      FIRST_ROW_Y + STORE_BLOCK_HEIGHT + GAP_BETWEEN_STORES_AND_PATH;
+      xmumConfig.storeBlock.position.firstRowY +
+      xmumConfig.storeBlock.size.height +
+      xmumConfig.storeBlock.path.gap;
     const result = [];
     let index = 0;
-    for (let x = 0; x <= RIGHT_BOUNDARY; x += PATH_SIZE) {
+    for (
+      let x = 0;
+      x <= RIGHT_BOUNDARY;
+      x += xmumConfig.storeBlock.path.size
+    ) {
       result.push(drawPathBlock(x, pathY, index++));
-      result.push(drawPathBlock(x, pathY + PATH_SIZE, index++));
+      result.push(
+        drawPathBlock(
+          x,
+          pathY + xmumConfig.storeBlock.path.size,
+          index++,
+        ),
+      );
     }
 
     return result;
@@ -81,7 +87,7 @@ function BellAvenueFloorMap({
     <svg
       width={svgWidth}
       height={svgHeight}
-      fill={catppuccinMochaColors.base}
+      fill={xmumConfig.map.backgroundColor}
     >
       {drawSvgPath().map((path) => {
         // Draw the path.

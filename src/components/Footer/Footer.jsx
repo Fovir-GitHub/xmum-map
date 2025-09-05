@@ -2,13 +2,14 @@
  * @file Footer.jsx
  * @description Footer component that fixed on the bottom of the page.
  * @author Fovir
- * @date 2025-09-02
+ * @date 2025-09-05
  */
 
 "use client";
 
 import { Box, Link, Typography } from "@mui/material";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
+import xmumConfig from "../../config";
 
 export default function Footer() {
   return (
@@ -34,11 +35,13 @@ export default function Footer() {
           Copyright &copy; 2025 XMUM Map | Built by Mr.Oui &&nbsp;
           <MyLink href={"https://www.fovir.fyi"}>Fovir</MyLink>
         </MyTypography>
-        <MyTypography>Contact: 123456790</MyTypography>
+        <MyTypography>
+          Contact: {xmumConfig.information.tel}
+        </MyTypography>
         <MyTypography>
           Email:&nbsp;
-          <MyLink href="mailto:example@example.com">
-            example@example.com
+          <MyLink href={xmumConfig.information.email} isEmail={true}>
+            {xmumConfig.information.email}
           </MyLink>
         </MyTypography>
       </Box>
@@ -46,11 +49,11 @@ export default function Footer() {
   );
 }
 
-function MyLink({ children, href }) {
+function MyLink({ children, href, isEmail }) {
   return (
     <>
       <Link
-        href={href}
+        href={isEmail ? `mailto:${href}` : href}
         sx={{
           color: catppuccinMochaColors.text,
           textDecoration: "underline",

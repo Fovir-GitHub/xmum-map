@@ -7,15 +7,8 @@
 
 "use client";
 
-import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
-import {
-  FIRST_ROW_Y,
-  GAP_BETWEEN_STORES_AND_PATH,
-  PATH_SIZE,
-  STORE_BLOCK_HEIGHT,
-  STORE_BLOCK_WIDTH,
-} from "../StoreBlock/StoreBlock";
+import xmumConfig from "../../config";
 
 export default function BellSuiteMap({
   storeData,
@@ -25,31 +18,56 @@ export default function BellSuiteMap({
   locale,
 }) {
   const ROW_INDEX_LIMIT = 7;
-  const rightBoundary = (ROW_INDEX_LIMIT + 1) * STORE_BLOCK_WIDTH;
+  const rightBoundary =
+    (ROW_INDEX_LIMIT + 1) * xmumConfig.storeBlock.size.width;
   const PATH_CROSS_POINT = 8;
 
   function drawHorizontalPath() {
     const pathY =
-      FIRST_ROW_Y + STORE_BLOCK_HEIGHT + GAP_BETWEEN_STORES_AND_PATH;
+      xmumConfig.storeBlock.position.firstRowY +
+      xmumConfig.storeBlock.size.height +
+      xmumConfig.storeBlock.path.gap;
     const result = [];
     let index = 0;
-    for (let x = 0; x <= rightBoundary; x += PATH_SIZE) {
+    for (
+      let x = 0;
+      x <= rightBoundary;
+      x += xmumConfig.storeBlock.path.size
+    ) {
       result.push(drawPathBlock(x, pathY, index++));
-      result.push(drawPathBlock(x, pathY + PATH_SIZE, index++));
+      result.push(
+        drawPathBlock(
+          x,
+          pathY + xmumConfig.storeBlock.path.size,
+          index++,
+        ),
+      );
     }
     return result;
   }
 
   function drawVerticalPath() {
-    const pathX = PATH_CROSS_POINT * PATH_SIZE;
+    const pathX = PATH_CROSS_POINT * xmumConfig.storeBlock.path.size;
     const result = [];
     const bottomBoundary =
-      (STORE_BLOCK_HEIGHT + GAP_BETWEEN_STORES_AND_PATH + PATH_SIZE) *
+      (xmumConfig.storeBlock.size.height +
+        xmumConfig.storeBlock.path.gap +
+        xmumConfig.storeBlock.path.size) *
       2;
     let index = 0;
-    for (let y = FIRST_ROW_Y; y <= bottomBoundary; y += PATH_SIZE) {
+    for (
+      let y = xmumConfig.storeBlock.position.firstRowY;
+      y <= bottomBoundary;
+      y += xmumConfig.storeBlock.path.size
+    ) {
       result.push(drawPathBlock(pathX, y, index++));
-      result.push(drawPathBlock(pathX + PATH_SIZE, y, index++));
+      result.push(
+        drawPathBlock(
+          pathX + xmumConfig.storeBlock.path.size,
+          y,
+          index++,
+        ),
+      );
     }
     return result;
   }
@@ -59,7 +77,7 @@ export default function BellSuiteMap({
       <svg
         width={mapWidth}
         height={mapHeight}
-        fill={catppuccinMochaColors.base}
+        fill={xmumConfig.map.backgroundColor}
       >
         {drawHorizontalPath().map((path) => {
           return path;

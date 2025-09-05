@@ -6,6 +6,7 @@
  */
 
 "use client";
+
 import Map from "../Map/Map";
 import BellAvenueMaps from "../BellAvenueMaps/BellAvenueMaps";
 import { useEffect, useRef, useState } from "react";
@@ -28,6 +29,7 @@ import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
 import Announcement from "../Announcement/Announcement";
+import xmumConfig from "../../config";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -44,7 +46,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   };
 
   // Locale settings.
-  const defaultLanguage = "zh";
+  const defaultLanguage = xmumConfig.language.default;
   const [locale, setLocale] = useState(null);
 
   // Get user's locale.
@@ -71,9 +73,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   }, []);
 
   // Width and height of map.
-  const bellAvenueMapWidth = 5700;
-  const bellSuiteMapWidth = 1400;
-  const mapHeight = 1000;
+  const bellAvenueMapWidth = xmumConfig.map.bellAvenueWidth;
+  const bellSuiteMapWidth = xmumConfig.map.bellSuiteWidth;
+  const mapHeight = xmumConfig.map.height;
 
   // Opacity.
   const toolBackgroundOpacity = "B2";

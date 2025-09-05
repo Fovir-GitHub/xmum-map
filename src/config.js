@@ -1,0 +1,51 @@
+import { catppuccinMochaColors } from "./styles/materialUiTheme";
+
+const xmumConfig = {
+  announcement: {
+    title: {
+      zh: "公告",
+      en: "Announcement",
+    },
+  },
+  information: {
+    tel: "1234567890",
+    email: "example@example.com",
+  },
+  language: {
+    default: "zh",
+  },
+  map: {
+    backgroundColor: catppuccinMochaColors.base,
+    height: 1000,
+    bellAvenueWidth: 5700,
+    bellSuiteWidth: 1400,
+  },
+  storeBlock: {
+    size: {
+      width: 150,
+      height: 200,
+    },
+    position: {
+      firstRowY: 100,
+      secondRowY: 700,
+    },
+    path: {
+      size: 100,
+      fill: "#A0A1A6",
+      stroke: "#66676B",
+      strokeWidth: 3,
+    },
+  },
+};
+
+xmumConfig.storeBlock.path = {
+  ...xmumConfig.storeBlock.path,
+  gap:
+    (xmumConfig.storeBlock.position.secondRowY -
+      xmumConfig.storeBlock.position.firstRowY -
+      xmumConfig.storeBlock.size.height -
+      2 * xmumConfig.storeBlock.path.size) /
+    2,
+};
+
+export default xmumConfig;
