@@ -2,7 +2,7 @@
  * @file Announcement.jsx
  * @description Component of displaying announcements.
  * @author Fovir
- * @date 2025-09-03
+ * @date 2025-09-05
  */
 
 "use client";
@@ -13,14 +13,14 @@ import {
   AccordionSummary,
 } from "@mui/material";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
-import { getPostHtml } from "../../lib/getPostHtml";
 import { useEffect, useState } from "react";
+import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
 
 export default function Announcement({ locale }) {
   const [announcementContent, setAnnouncementContent] = useState("");
 
   useEffect(() => {
-    getPostHtml("announcement", locale).then((html) => {
+    getMarkdownHtml("announcement", locale).then((html) => {
       setAnnouncementContent(html);
     });
   }, [locale]);
