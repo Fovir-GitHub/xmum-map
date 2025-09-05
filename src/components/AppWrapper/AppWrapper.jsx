@@ -73,7 +73,6 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Width and height of map.
   const bellAvenueMapWidth = 5700;
   const bellSuiteMapWidth = 1400;
-  const mapWidth = bellAvenueMapWidth + bellSuiteMapWidth;
   const mapHeight = 1000;
 
   // Opacity.
@@ -151,7 +150,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
 
       <Announcement locale={locale} />
 
-      <Map mapWidth={mapWidth} transformRef={transformRef}>
+      <Map transformRef={transformRef}>
         <div
           style={{
             display: "flex",

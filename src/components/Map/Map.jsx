@@ -12,7 +12,7 @@ import {
 } from "react-zoom-pan-pinch";
 import { useEffect, useState } from "react";
 
-export default function Map({ children, mapWidth, transformRef }) {
+export default function Map({ children, transformRef }) {
   // Get current window width.
   const [windowWidth, setWindowWidth] = useState(0);
   useEffect(() => {
