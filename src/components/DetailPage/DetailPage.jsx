@@ -8,7 +8,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import markdownStyle from "./markdown.module.css";
 import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
 import ImageSlide from "../ImageSlide/ImageSlide";
 
@@ -23,7 +22,7 @@ export default function DetailPage({ slug, locale }) {
   }, [slug, locale]);
 
   return (
-    <article className={markdownStyle.markdown}>
+    <article className="markdown">
       <div
         dangerouslySetInnerHTML={{
           __html: postHtml,

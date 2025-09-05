@@ -44,6 +44,7 @@ export default function Announcement({ locale }) {
         </AccordionSummary>
         <AccordionDetails
           dangerouslySetInnerHTML={{ __html: announcementContent }}
+          className="markdown"
         ></AccordionDetails>
       </Accordion>
     </div>
