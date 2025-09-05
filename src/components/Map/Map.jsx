@@ -30,7 +30,7 @@ export default function Map({ children, mapWidth, transformRef }) {
       limitToBounds={false}
       minScale={0.05}
       wheel={{ step: 0.01 }}
-      centerOnInit
+      initialScale={0.8}
     >
       <TransformComponent>{children}</TransformComponent>
     </TransformWrapper>
