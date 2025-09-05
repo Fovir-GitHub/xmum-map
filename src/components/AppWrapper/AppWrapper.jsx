@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-03
+ * @date 2025-09-05
  */
 
 "use client";
