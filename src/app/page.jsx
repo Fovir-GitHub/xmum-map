@@ -1,3 +1,10 @@
+/**
+ * @file page.jsx
+ * @description This is a file from server side, which read map data and pass them to `AppWrapper`.
+ * @author Fovir
+ * @date 2025-09-05
+ */
+
 import fs from "fs";
 import path from "path";
 import AppWrapper from "../components/AppWrapper/AppWrapper";
@@ -13,11 +20,9 @@ export default function Page() {
   const bellSuiteData = readData("bell_suite.json");
 
   return (
-    <>
-      <AppWrapper
-        bellAvenueData={bellAvenueData}
-        bellSuiteData={bellSuiteData}
-      />
-    </>
+    <AppWrapper
+      bellAvenueData={bellAvenueData}
+      bellSuiteData={bellSuiteData}
+    />
   );
 }
