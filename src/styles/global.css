@@ -30,6 +30,7 @@ body {
 }
 
 .markdown a {
+  color: inherit;
   text-decoration: underline;
 }
 
