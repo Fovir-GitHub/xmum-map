@@ -1,4 +1,4 @@
-# Marqa Caff
+﻿# Marqa Caff
 
 ## Menu
 
@@ -14,7 +14,9 @@
 ## Opening Hours
 
 Closed Monday
+
 Tuesday-Friday 12:00 PM-11:00 PM
+
 Saturday-Sunday 2:00 PM-11:00 PM
 
 ## Special Events
