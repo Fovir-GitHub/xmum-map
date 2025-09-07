@@ -1,7 +1,8 @@
+/* Style of tool zone. */
 .toolZone {
   position: absolute;
-  left: auto;
-  right: 0;
+  left: 0;
+  right: auto;
   bottom: 10vh;
   z-index: 1;
 }
