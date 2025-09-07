@@ -13,7 +13,7 @@ import path from "path";
  * @returns The post html in JSON format.
  */
 export async function GET(req, { params }) {
-  const { slug, locale } = params;
+  const { slug, locale } = await params;
   const filePath = path.join(
     process.cwd(),
     "posts",
