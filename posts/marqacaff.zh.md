@@ -13,16 +13,20 @@
 
 ## 营业时间
 
-12am-11pm
-
 周一关门
+周二-周五 12：00-23：00
+周六-周日 14：00-23：00
 
 ## 特殊活动
 
 1. [Foodpanda 外卖服务](https://www.foodpanda.my/restaurant/b7pd/marqa-cafe-sunsuria-city?utm_campaign=google_reserve_place_order_action_CH-SEO_)
 2. 可举办派对
 
-## 接受预约
+## 人均消费
+
+RM 20-40 每人
+
+## 预约情况
 
 不接受预约
 
