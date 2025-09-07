@@ -19,7 +19,7 @@
 
 ## 特殊活动
 
-1. [foodpanda 外卖服务](https://www.foodpanda.my/restaurant/b7pd/marqa-cafe-sunsuria-city?utm_campaign=google_reserve_place_order_action_CH-SEO_)
+1. [Foodpanda 外卖服务](https://www.foodpanda.my/restaurant/b7pd/marqa-cafe-sunsuria-city?utm_campaign=google_reserve_place_order_action_CH-SEO_)
 2. 可举办派对
 
 ## 接受预约
