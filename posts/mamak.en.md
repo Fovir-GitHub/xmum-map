@@ -31,11 +31,11 @@
 
 <div class="image-slide">
   <img src="https://img.xmummap.com/G_mamak_Surd1.webp" />
-  <img src="https://img.xmummap.com/G_mamak_Surd2.webp?AWSAccessKeyId=4sr3toneyHtmrJY7&Signature=Qd0N8m4f%2BT2jvrUB9HA0OP5QoYg%3D&Expires=1757339162" />
-  <img src="https://img.xmummap.com/G_mamak_Surd3.webp?AWSAccessKeyId=4sr3toneyHtmrJY7&Signature=NAaMbhYAv2VDXkENIwmmc1g58co%3D&Expires=1757339162" />
-  <img src="https://img.xmummap.com/G_mamak_Surd5.webp?AWSAccessKeyId=4sr3toneyHtmrJY7&Signature=7Ju9P9GCEo%2BhgTDllMrCPx0CF34%3D&Expires=1757339162" />
-  <img src="https://img.xmummap.com/G_mamak_Surd6.webp?AWSAccessKeyId=4sr3toneyHtmrJY7&Signature=8lqgNXWOrGqrVmGqnaZhuhfHivM%3D&Expires=1757339162" />
-  <img src="https://img.xmummap.com/G_mamak_Surd7.webp?AWSAccessKeyId=4sr3toneyHtmrJY7&Signature=TslUa9rvAqcGh6m6L15woUv8VBw%3D&Expires=1757339162" />
+  <img src="https://img.xmummap.com/G_mamak_Surd2.webp" />
+  <img src="https://img.xmummap.com/G_mamak_Surd3.webp" />
+  <img src="https://img.xmummap.com/G_mamak_Surd5.webp" />
+  <img src="https://img.xmummap.com/G_mamak_Surd6.webp" />
+  <img src="https://img.xmummap.com/G_mamak_Surd7.webp" />
 </div>
 
 ## Opening Hours
