@@ -2,7 +2,7 @@
  * @file StoreBlock.jsx
  * @description Create component that is used to draw a single block of store.
  * @author Fovir
- * @date 2025-09-01
+ * @date 2025-09-08
  */
 
 "use client";
@@ -12,8 +12,6 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
 import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
 import SportsEsportsRoundedIcon from "@mui/icons-material/SportsEsportsRounded";
-import CoffeeRoundedIcon from "@mui/icons-material/CoffeeRounded";
-import LocalDrinkRoundedIcon from "@mui/icons-material/LocalDrinkRounded";
 import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
 import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
 import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
@@ -90,18 +88,16 @@ export function getFillColor(category) {
   const opacity = "E2";
   const CATEGORY_COLOR_MAP = new Map([
     ["restaurant", `${catppuccinMochaColors.pink}${opacity}`],
-    ["drink", `${catppuccinMochaColors.red}${opacity}`],
-    ["store", `${catppuccinMochaColors.blue}${opacity}`],
+    ["daily_necessity", `${catppuccinMochaColors.blue}${opacity}`],
     ["entertainment", `${catppuccinMochaColors.sky}${opacity}`],
-    ["coffee", `${catppuccinMochaColors.yellow}${opacity}`],
     ["sanck", `${catppuccinMochaColors.green}${opacity}`],
-    ["misc", `${catppuccinMochaColors.flamingo}${opacity}`],
+    ["other", `${catppuccinMochaColors.flamingo}${opacity}`],
   ]);
 
   if (CATEGORY_COLOR_MAP.has(category)) {
     return CATEGORY_COLOR_MAP.get(category);
   } else {
-    return CATEGORY_COLOR_MAP.get("misc");
+    return CATEGORY_COLOR_MAP.get("other");
   }
 }
 
@@ -130,17 +126,18 @@ export function getStoreIcon(store) {
   // Use category icons.
   const CATEGORY_ICON_MAP = new Map([
     ["restaurant", <RestaurantRoundedIcon fontSize={iconSize} />],
-    ["drink", <LocalDrinkRoundedIcon fontSize={iconSize} />],
-    ["store", <LocalGroceryStoreRoundedIcon fontSize={iconSize} />],
+    [
+      "daily_necessity",
+      <LocalGroceryStoreRoundedIcon fontSize={iconSize} />,
+    ],
     ["entertainment", <SportsEsportsRoundedIcon fontSize={iconSize} />],
-    ["coffee", <CoffeeRoundedIcon fontSize={iconSize} />],
     ["snack", <IcecreamRoundedIcon fontSize={iconSize} />],
-    ["misc", <CategoryRoundedIcon fontSize={iconSize} />],
+    ["other", <CategoryRoundedIcon fontSize={iconSize} />],
   ]);
 
   if (CATEGORY_ICON_MAP.has(store.Category)) {
     return CATEGORY_ICON_MAP.get(store.Category);
   } else {
-    return CATEGORY_ICON_MAP.get("misc");
+    return CATEGORY_ICON_MAP.get("other");
   }
 }
