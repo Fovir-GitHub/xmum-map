@@ -8,8 +8,8 @@ const xmumConfig = {
     },
   },
   information: {
-    tel: "1234567890",
-    email: "example@example.com",
+    tel: "+60 177376029",
+    email: "a812354120@gmail.com",
   },
   language: {
     default: "zh",
