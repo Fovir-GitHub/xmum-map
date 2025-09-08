@@ -1,5 +1,5 @@
 ﻿#  喜乐冰铺
-![enter image description here](https://s3.tebi.io/img.xmummap.com/1_xile_logo.jpg)
+<img src="https://s3.tebi.io/img.xmummap.com/1_xile_logo.jpg" width="200" height="300" alt="喜乐冰铺">
 
 ## 店家小言
 我们欢迎所有XMUM的学生来我们店里放松一下。我们会为每一位学生和顾客提供价格实惠且美味的甜点。
