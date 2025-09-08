@@ -6,7 +6,7 @@
 
 ## 菜单
 
-![enter image description here](https://s3.tebi.io/img.xmummap.com/1_xile_menu.jpg)
+![enter image description here](https://s3.tebi.io/img.xmummap.com/1_xile_menu.jpg?AWSAccessKeyId=4sr3toneyHtmrJY7&Signature=U6lk/dyBMwoBIxPy4FVB8wm0kFw=&Expires=1757403866)
 实际上，所有菜品都强烈推荐 🤓，但特别推荐砂拉越叻沙、芒果西米露、桃胶甜品（桃胶）、冰粉，还有我们的奶茶🧋 。  
  
 正宗砂拉越叻沙💯预订价仅11.90马币。现场购买价12.90马币(**仅在周六和周日售卖**)
