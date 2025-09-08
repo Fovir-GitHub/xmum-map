@@ -2,7 +2,7 @@
  * @file Footer.jsx
  * @description Footer component that fixed on the bottom of the page.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-08
  */
 
 "use client";
@@ -11,7 +11,7 @@ import { Box, Link, Typography } from "@mui/material";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import xmumConfig from "../../config";
 
-export default function Footer() {
+export default function Footer({ locale }) {
   return (
     <>
       <Box
@@ -43,6 +43,10 @@ export default function Footer() {
           <MyLink href={xmumConfig.information.email} isEmail={true}>
             {xmumConfig.information.email}
           </MyLink>
+        </MyTypography>
+        <MyTypography>
+          {xmumConfig.information.lastUpdateTime[locale]}
+          {xmumConfig.information.lastUpdateTime.time}
         </MyTypography>
       </Box>
     </>

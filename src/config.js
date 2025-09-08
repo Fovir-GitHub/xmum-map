@@ -10,6 +10,11 @@ const xmumConfig = {
   information: {
     tel: "+60 177376029",
     email: "a812354120@gmail.com",
+    lastUpdateTime: {
+      zh: "上次更新时间：",
+      en: "Last update time: ",
+      time: "19 Sept 2025",
+    },
   },
   language: {
     default: "zh",

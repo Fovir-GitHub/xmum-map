@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-08
  */
 
 "use client";
@@ -177,7 +177,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           />
         </div>
       </Map>
-      <Footer />
+      <Footer locale={locale} />
     </ThemeProvider>
   );
 }
