@@ -91,13 +91,13 @@ export function getFillColor(category) {
     ["daily_necessity", `${catppuccinMochaColors.blue}${opacity}`],
     ["entertainment", `${catppuccinMochaColors.sky}${opacity}`],
     ["sanck", `${catppuccinMochaColors.green}${opacity}`],
-    ["misc", `${catppuccinMochaColors.flamingo}${opacity}`],
+    ["other", `${catppuccinMochaColors.flamingo}${opacity}`],
   ]);
 
   if (CATEGORY_COLOR_MAP.has(category)) {
     return CATEGORY_COLOR_MAP.get(category);
   } else {
-    return CATEGORY_COLOR_MAP.get("misc");
+    return CATEGORY_COLOR_MAP.get("other");
   }
 }
 
@@ -132,12 +132,12 @@ export function getStoreIcon(store) {
     ],
     ["entertainment", <SportsEsportsRoundedIcon fontSize={iconSize} />],
     ["snack", <IcecreamRoundedIcon fontSize={iconSize} />],
-    ["misc", <CategoryRoundedIcon fontSize={iconSize} />],
+    ["other", <CategoryRoundedIcon fontSize={iconSize} />],
   ]);
 
   if (CATEGORY_ICON_MAP.has(store.Category)) {
     return CATEGORY_ICON_MAP.get(store.Category);
   } else {
-    return CATEGORY_ICON_MAP.get("misc");
+    return CATEGORY_ICON_MAP.get("other");
   }
 }
