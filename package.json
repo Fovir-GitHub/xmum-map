@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "NODE_ENV=development next dev",
-    "build": "NODE_ENV=production node src/scripts/readSvgData.js && next build",
+    "build": "NODE_ENV=production next build",
+    "build:data": "node src/scripts/readSvgData.js",
     "start": "next start"
   },
   "type": "module",
