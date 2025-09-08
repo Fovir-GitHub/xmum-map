@@ -35,7 +35,8 @@ Joy isn’t distant anymore. It’s right here, between us
 <img src="https://img.xmummap.com/1_sword_surd%20%287%29.jpg" />
 <img src="https://img.xmummap.com/1_sword_surd%20%288%29.jpg" />
 </div>
-----------
+
+---
 
 ## Opening Hours
 
