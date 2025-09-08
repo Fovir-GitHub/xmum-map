@@ -51,6 +51,7 @@ export default function ImageSlide() {
           img.style.height = "100%";
           img.style.display = "block";
           img.style.objectFit = "contain";
+          img.loading = "lazy";
           slide.appendChild(img);
           wrapper.appendChild(slide);
         });
