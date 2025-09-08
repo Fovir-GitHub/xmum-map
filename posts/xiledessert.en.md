@@ -1,5 +1,5 @@
 ﻿# XILE DESSERT
-![enter image description here](https://s3.tebi.io/img.xmummap.com/1_xile_logo.jpg)
+<img src="https://s3.tebi.io/img.xmummap.com/1_xile_logo.jpg" width="200" height="300" alt="XILE DESSERT">
 
 ## Manager’s words
 
