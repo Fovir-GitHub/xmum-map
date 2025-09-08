@@ -1,6 +1,6 @@
 ﻿# 369EXPRESS 新式快炒
 
-<img src="https://img.xmummap.com/G_369express_logo.jpg" width="270" height="200" alt="369express">
+<img src="https://img.xmummap.com/G_369express_logo.webp" width="270" height="200" alt="369express">
 
 ## 店长小言
 
@@ -24,7 +24,7 @@
 
 ## 菜单
 
-<img src="https://img.xmummap.com/G_369express_menu.jpg" alt="369express">
+<img src="https://img.xmummap.com/G_369express_menu.webp" alt="369express">
 
 ----------
 
@@ -37,9 +37,9 @@ RM10-RM16
 ## 环境
 
 <div class="image-slide">
-  <img src="https://img.xmummap.com/G_369express_surd%20%281%29.png" /> 
-  <img src="https://img.xmummap.com/G_369express_surd%20%282%29.png" /> 
-  <img src="https://img.xmummap.com/G_369express_surd%20%283%29.png" /> 
+  <img src="https://img.xmummap.com/G_369express_surd%20%281%29.webp" /> 
+  <img src="https://img.xmummap.com/G_369express_surd%20%282%29.webp" /> 
+  <img src="https://img.xmummap.com/G_369express_surd%20%283%29.webp" /> 
   
 </div>
 
@@ -71,7 +71,7 @@ RM10-RM16
 
 微信群二维码：
 
-<img src="https://img.xmummap.com/G_369express_wechatcode.jpg" alt="369express">
+<img src="https://img.xmummap.com/G_369express_wechatcode.webp" alt="369express">
 
 ----------
 

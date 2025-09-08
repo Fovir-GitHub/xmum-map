@@ -1,6 +1,6 @@
 # Sword
 
-<img src="https://img.xmummap.com/1_sword_logo.jpg" width="200" height="200" alt="Sword">
+<img src="https://img.xmummap.com/1_sword_logo.webp" width="200" height="200" alt="Sword">
 
 ## Manager's Words
 
@@ -27,13 +27,13 @@ Joy isn’t distant anymore. It’s right here, between us
 ## Surroundings
 
 <div class="image-slide">
-<img src="https://img.xmummap.com/1_sword_surd%20%281%29.jpg" />
-<img src="https://img.xmummap.com/1_sword_surd%20%282%29.jpg" />
-<img src="https://img.xmummap.com/1_sword_surd%20%283%29.jpg" />
-<img src="https://img.xmummap.com/1_sword_surd%20%284%29.jpg" />
-<img src="https://img.xmummap.com/1_sword_surd%20%285%29.jpg" />
-<img src="https://img.xmummap.com/1_sword_surd%20%287%29.jpg" />
-<img src="https://img.xmummap.com/1_sword_surd%20%288%29.jpg" />
+<img src="https://img.xmummap.com/1_sword_surd%20%281%29.webp" />
+<img src="https://img.xmummap.com/1_sword_surd%20%282%29.webp" />
+<img src="https://img.xmummap.com/1_sword_surd%20%283%29.webp" />
+<img src="https://img.xmummap.com/1_sword_surd%20%284%29.webp" />
+<img src="https://img.xmummap.com/1_sword_surd%20%285%29.webp" />
+<img src="https://img.xmummap.com/1_sword_surd%20%287%29.webp" />
+<img src="https://img.xmummap.com/1_sword_surd%20%288%29.webp" />
 </div>
 
 ---
@@ -64,7 +64,7 @@ WeChat ID: sword6666666
 
 WeChat QR Code:
 
-<img src="https://img.xmummap.com/1_sword_wechatcode.jpg" width="300" height="350" alt="sword">
+<img src="https://img.xmummap.com/1_sword_wechatcode.webp" width="300" height="350" alt="sword">
 
 WhatsApp: 0142268892
 

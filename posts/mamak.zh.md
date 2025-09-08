@@ -3,39 +3,39 @@
 ## 菜单
 
 <div class="image-slide">
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu1.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu9.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu10.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu11.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu12.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu13.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu14.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu15.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu16.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu17.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu18.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu19.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu20.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu21.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu22.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu23.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu24.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu25.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu26.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu27.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu28.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu29.png" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu1.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu9.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu10.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu11.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu12.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu13.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu14.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu15.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu16.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu17.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu18.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu19.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu20.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu21.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu22.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu23.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu24.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu25.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu26.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu27.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu28.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Menu29.webp" />
  </div>
 
 ## 环境
 
 <div class="image-slide">
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd1.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd2.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd3.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd5.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd6.png" />
-  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd7.png" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd1.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd2.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd3.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd5.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd6.webp" />
+  <img src="https://s3.tebi.io/img.xmummap.com/G_mamak_Surd7.webp" />
 </div>
 
 ## 营业时间

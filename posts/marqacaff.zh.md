@@ -3,12 +3,12 @@
 ## 菜单
 
 <div class="image-slide">
-  <img src="https://img.xmummap.com/1_marqacaff_menu1.jpg" />
-  <img src="https://img.xmummap.com/1_marqacaff_menu2.jpg" />
-  <img src="https://img.xmummap.com/1_marqacaff_menu3.jpg" />
-  <img src="https://img.xmummap.com/1_marqacaff_menu4.jpg" />
-  <img src="https://img.xmummap.com/1_marqacaff_menu5.jpg" />
-  <img src="https://img.xmummap.com/1_marqacaff_menu6.jpg" />
+  <img src="https://img.xmummap.com/1_marqacaff_menu1.webp" />
+  <img src="https://img.xmummap.com/1_marqacaff_menu2.webp" />
+  <img src="https://img.xmummap.com/1_marqacaff_menu3.webp" />
+  <img src="https://img.xmummap.com/1_marqacaff_menu4.webp" />
+  <img src="https://img.xmummap.com/1_marqacaff_menu5.webp" />
+  <img src="https://img.xmummap.com/1_marqacaff_menu6.webp" />
 </div>
 
 ## 营业时间

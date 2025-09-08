@@ -1,6 +1,6 @@
 # SENZE CAFF
 
-<img src="https://img.xmummap.com/1_senzecaff_logo.jpg" width="150" height="300" alt="senzecaff" />
+<img src="https://img.xmummap.com/1_senzecaff_logo.webp" width="150" height="300" alt="senzecaff" />
 
 ## 店长小言
 
@@ -11,22 +11,22 @@
 ## 菜单
 
 <div class="image-slide">
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%281%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2810%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2811%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2812%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2813%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2814%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2815%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2816%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%282%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%283%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%284%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%285%29.jpg" />
-   <img src="https://img.xmummap.com/1_senzecaff_menu%20%286%29.jpg" />
-   <img src="https://img.xmummap.com/1_senzecaff_menu%20%287%29.jpg" />
-  <img src="https://img.xmummap.com/1_senzecaff_menu%20%288%29.jpg" />
-   <img src="https://img.xmummap.com/1_senzecaff_menu%20%289%29.jpg" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%281%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2810%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2811%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2812%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2813%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2814%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2815%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%2816%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%282%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%283%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%284%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%285%29.webp" />
+   <img src="https://img.xmummap.com/1_senzecaff_menu%20%286%29.webp" />
+   <img src="https://img.xmummap.com/1_senzecaff_menu%20%287%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_menu%20%288%29.webp" />
+   <img src="https://img.xmummap.com/1_senzecaff_menu%20%289%29.webp" />
 </div>
 
 ---
@@ -39,7 +39,7 @@
 
 ## 环境
 
-![enter image description here](https://img.xmummap.com/1_senzecaff_surd.jpg)
+![enter image description here](https://img.xmummap.com/1_senzecaff_surd.webp)
 
 ## 营业时间
 

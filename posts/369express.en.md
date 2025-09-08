@@ -1,6 +1,6 @@
 ﻿# 369EXPRESS 
 
-<img src="https://img.xmummap.com/G_369express_logo.jpg" width="270" height="200" alt="369express">
+<img src="https://img.xmummap.com/G_369express_logo.webp" width="270" height="200" alt="369express">
 
 ## Manager's Words
 
@@ -16,7 +16,7 @@ Our flavors may not suit everyone, but if you have any feedback, please feel fre
 
 ## Menu
 
-<img src="https://img.xmummap.com/G_369express_menu.jpg" alt="369express">
+<img src="https://img.xmummap.com/G_369express_menu.webp" alt="369express">
 
 ----------
 
@@ -29,9 +29,9 @@ RM10-RM16
 ## Surroundings
 
 <div class="image-slide">
-<img src="https://img.xmummap.com/G_369express_surd%20%281%29.png" />
-<img src="https://img.xmummap.com/G_369express_surd%20%282%29.png" />
-<img src="https://img.xmummap.com/G_369express_surd%20%283%29.png" />
+<img src="https://img.xmummap.com/G_369express_surd%20%281%29.webp" />
+<img src="https://img.xmummap.com/G_369express_surd%20%282%29.webp" />
+<img src="https://img.xmummap.com/G_369express_surd%20%283%29.webp" />
 </div>
 
 ----------
@@ -62,7 +62,7 @@ Accepting reservations
 
 WeChat Group QR Code:
 
-<img src="https://img.xmummap.com/G_369express_wechatcode.jpg" alt="369express">
+<img src="https://img.xmummap.com/G_369express_wechatcode.webp" alt="369express">
 
 ----------
 

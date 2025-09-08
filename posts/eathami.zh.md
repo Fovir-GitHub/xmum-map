@@ -9,27 +9,27 @@
 ## 菜单
 
 <div class="image-slide">
-  <img src="https://img.xmummap.com/G_eathmi_menu (1).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (2).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (3).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (4).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (5).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (6).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (7).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (8).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (9).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (10).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (11).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (12).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (13).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (14).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (15).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (16).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (17).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (18).png" /> 
-  <img src="https://img.xmummap.com/G_eathmi_menu (19).png" /> 
-<img src="https://img.xmummap.com/G_eathmi_menu (20).png" /> 
-<img src="https://img.xmummap.com/G_eathmi_menu (21).png" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (1).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (2).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (3).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (4).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (5).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (6).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (7).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (8).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (9).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (10).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (11).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (12).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (13).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (14).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (15).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (16).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (17).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (18).webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_menu (19).webp" /> 
+<img src="https://img.xmummap.com/G_eathmi_menu (20).webp" /> 
+<img src="https://img.xmummap.com/G_eathmi_menu (21).webp" /> 
 </div>
 
 **学生八五折**（*每位学生必须出示有效学生证。其他条款与条件适用）*
@@ -39,8 +39,8 @@
 ## 环境
 
 <div class="image-slide">
-  <img src="https://img.xmummap.com/G_eathmi_surd%20%282%29.jpg" /> 
-  <img src="https://img.xmummap.com/G_eathmi_surd%20%281%29.jpeg" />
+  <img src="https://img.xmummap.com/G_eathmi_surd%20%282%29.webp" /> 
+  <img src="https://img.xmummap.com/G_eathmi_surd%20%281%29.webp" />
 </div>
 
 ----------
@@ -48,13 +48,13 @@
 ## 热卖
 
 <div class="image-slide">
-  <img src="https://img.xmummap.com/G_eathmi_hotproduct (1).png" /> 
-   <img src="https://img.xmummap.com/G_eathmi_hotproduct (2).png" /> 
-    <img src="https://img.xmummap.com/G_eathmi_hotproduct (3).png" /> 
-     <img src="https://img.xmummap.com/G_eathmi_hotproduct (4).png" /> 
-      <img src="https://img.xmummap.com/G_eathmi_hotproduct (5).png" /> 
-       <img src="https://img.xmummap.com/G_eathmi_hotproduct (6).png" />  
-        <img src="https://img.xmummap.com/G_eathmi_hotproduct (7).png" /> 
+  <img src="https://img.xmummap.com/G_eathmi_hotproduct (1).webp" /> 
+   <img src="https://img.xmummap.com/G_eathmi_hotproduct (2).webp" /> 
+    <img src="https://img.xmummap.com/G_eathmi_hotproduct (3).webp" /> 
+     <img src="https://img.xmummap.com/G_eathmi_hotproduct (4).webp" /> 
+      <img src="https://img.xmummap.com/G_eathmi_hotproduct (5).webp" /> 
+       <img src="https://img.xmummap.com/G_eathmi_hotproduct (6).webp" />  
+        <img src="https://img.xmummap.com/G_eathmi_hotproduct (7).webp" /> 
 </div>
 
 ---
