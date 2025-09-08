@@ -90,7 +90,7 @@ export function getFillColor(category) {
     ["restaurant", `${catppuccinMochaColors.pink}${opacity}`],
     ["daily_necessity", `${catppuccinMochaColors.blue}${opacity}`],
     ["entertainment", `${catppuccinMochaColors.sky}${opacity}`],
-    ["sanck", `${catppuccinMochaColors.green}${opacity}`],
+    ["snack", `${catppuccinMochaColors.green}${opacity}`],
     ["other", `${catppuccinMochaColors.flamingo}${opacity}`],
   ]);
 
