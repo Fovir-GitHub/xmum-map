@@ -21,7 +21,8 @@ export default function Footer({ locale }) {
           bottom: 0,
           top: "auto",
           width: "100%",
-          height: "8vh",
+          height: "auto",
+          padding: "3px 0",
           zIndex: "0",
           background: catppuccinMochaColors.mantle,
           display: "flex",
@@ -31,25 +32,53 @@ export default function Footer({ locale }) {
           fontSize: "1.4rem",
         }}
       >
-        <MyTypography>
-          Copyright &copy; 2025 XMUM Map | Built by Mr.Oui &&nbsp;
-          <MyLink href={"https://www.fovir.fyi"}>Fovir</MyLink>
-        </MyTypography>
-        <MyTypography>
-          Contact: {xmumConfig.information.tel}
-        </MyTypography>
-        <MyTypography>
-          Email:&nbsp;
-          <MyLink href={xmumConfig.information.email} isEmail={true}>
-            {xmumConfig.information.email}
-          </MyLink>
-        </MyTypography>
-        <MyTypography>
-          {xmumConfig.information.lastUpdateTime[locale]}
-          {xmumConfig.information.lastUpdateTime.time}
-        </MyTypography>
+        <LastUpdateTime locale={locale} />
+        <Telephone locale={locale} />
+        <Email locale={locale} />
+        <CopyRight />
       </Box>
     </>
+  );
+}
+
+function CopyRight() {
+  return (
+    <MyTypography>
+      Copyright &copy; 2025 XMUM Map | Built by Mr.Oui &&nbsp;
+      <MyLink href={"https://www.fovir.fyi"}>Fovir</MyLink>
+    </MyTypography>
+  );
+}
+
+function Telephone({ locale }) {
+  return (
+    <MyTypography>
+      {xmumConfig.information.tel[locale]}
+      {xmumConfig.information.tel.number}
+    </MyTypography>
+  );
+}
+
+function Email({ locale }) {
+  return (
+    <MyTypography>
+      {xmumConfig.information.email[locale]} &nbsp;
+      <MyLink
+        href={xmumConfig.information.email.address}
+        isEmail={true}
+      >
+        {xmumConfig.information.email.address}
+      </MyLink>
+    </MyTypography>
+  );
+}
+
+function LastUpdateTime({ locale }) {
+  return (
+    <MyTypography>
+      {xmumConfig.information.lastUpdateTime[locale]}
+      {xmumConfig.information.lastUpdateTime.time}
+    </MyTypography>
   );
 }
 
