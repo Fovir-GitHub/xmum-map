@@ -43,20 +43,33 @@ export default function ImageSlide() {
         imgs.forEach((img) => {
           const slide = document.createElement("div");
           slide.className = "swiper-slide";
+          slide.style.display = "flex";
+          slide.style.alignItems = "center";
+          slide.style.justifyContent = "center";
+          slide.style.height = "480px";
           img.style.width = "100%";
+          img.style.height = "100%";
           img.style.display = "block";
+          img.style.objectFit = "contain";
           slide.appendChild(img);
           wrapper.appendChild(slide);
         });
 
         const prev = document.createElement("div");
         prev.className = "swiper-button-prev";
+
         const next = document.createElement("div");
         next.className = "swiper-button-next";
+
+        const pagination = document.createElement("div");
+        pagination.style.position = "static";
+        pagination.style.marginTop = "8px";
+        pagination.className = "swiper-pagination";
 
         swiperEl.appendChild(wrapper);
         swiperEl.appendChild(prev);
         swiperEl.appendChild(next);
+        swiperEl.appendChild(pagination);
 
         container.innerHTML = "";
         container.appendChild(swiperEl);
@@ -65,7 +78,8 @@ export default function ImageSlide() {
           slidesPerView: 1,
           spaceBetween: 10,
           navigation: { nextEl: next, prevEl: prev },
-          loop: false,
+          pagination: { el: pagination, type: "fraction" },
+          loop: true,
         });
       });
     };
