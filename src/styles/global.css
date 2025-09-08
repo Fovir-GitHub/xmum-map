@@ -175,7 +175,9 @@ body {
 .markdown img {
   border: 0;
   -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .markdown table {
@@ -187,6 +189,7 @@ body {
 
 .markdown th {
   border: 1px solid;
+  text-align: center;
 }
 
 .markdown td {

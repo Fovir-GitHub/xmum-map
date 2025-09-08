@@ -2,7 +2,7 @@
  * @file ImageSlide.jsx
  * @description Enable image slide feature.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-08
  */
 
 "use client";
@@ -51,6 +51,7 @@ export default function ImageSlide() {
           img.style.height = "100%";
           img.style.display = "block";
           img.style.objectFit = "contain";
+          img.loading = "lazy";
           slide.appendChild(img);
           wrapper.appendChild(slide);
         });
