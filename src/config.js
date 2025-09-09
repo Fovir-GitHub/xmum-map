@@ -42,11 +42,25 @@ const xmumConfig = {
       firstRowY: 100,
       secondRowY: 700,
     },
+    patches: {
+      milliesVision: {
+        name: "Millies Vision\n眼镜店",
+        category: "daily_necessity",
+      },
+      encounteringNailArt: {
+        name: "Encountering Nail Art\n邂逅美甲",
+        category: "daily_necessity",
+      },
+    },
     path: {
       size: 100,
       fill: "#A0A1A6",
       stroke: "#66676B",
       strokeWidth: 3,
+    },
+    style: {
+      stroke: "white",
+      strokeWidth: 2,
     },
   },
   website: {

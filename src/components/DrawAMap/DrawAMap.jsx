@@ -49,8 +49,8 @@ export default function DrawAMap(
             width={xmumConfig.storeBlock.size.width * widthOffset}
             height={xmumConfig.storeBlock.size.height}
             fill={getFillColor(store.Category)}
-            stroke={"white"}
-            strokeWidth={2}
+            stroke={xmumConfig.storeBlock.style.stroke}
+            strokeWidth={xmumConfig.storeBlock.style.strokeWidth}
             text={store.Name}
             key={crypto.randomUUID()}
             icon={getStoreIcon(store)}
