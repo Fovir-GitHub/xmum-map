@@ -2,8 +2,7 @@
 
 ## Manager’s Word
 
-Eat Healthier :smile:
-
+Eat Healthier😊
 ----------
 
 ## Menu
