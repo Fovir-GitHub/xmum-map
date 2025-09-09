@@ -2,13 +2,14 @@
  * @file BellMaps.jsx
  * @description Create the `BellAvenueMaps` component which depends on another two components, `BellAvenueFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-09
  */
 
 "use client";
 
 import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
 import xmumConfig from "../../config";
+import Patch from "./Patch";
 
 /**
  * @description Generate the map from the data file.
@@ -34,6 +35,7 @@ export default function BellAvenueMaps({
         stores={storeData[currentFloor]}
         setSelectedPost={setSelectedPost}
         locale={locale}
+        showPatch={currentFloor === 0}
       />
     </>
   );
@@ -51,6 +53,7 @@ function BellAvenueFloorMap({
   stores,
   setSelectedPost,
   locale,
+  showPatch,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const RIGHT_BOUNDARY =
@@ -94,6 +97,7 @@ function BellAvenueFloorMap({
         return path;
       })}
       {DrawAMap(stores, ROW_INDEX_LIMIT, setSelectedPost, locale)}
+      {showPatch && Patch(setSelectedPost, locale)}
     </svg>
   );
 }

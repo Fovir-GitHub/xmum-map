@@ -46,10 +46,12 @@ const xmumConfig = {
       milliesVision: {
         name: "Millies Vision\n眼镜店",
         category: "daily_necessity",
+        slug: "millies-vision",
       },
       encounteringNailArt: {
         name: "Encountering Nail Art\n邂逅美甲",
         category: "daily_necessity",
+        slug: "encountering-nail-art",
       },
     },
     path: {

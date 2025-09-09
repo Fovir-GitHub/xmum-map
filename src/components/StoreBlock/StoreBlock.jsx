@@ -2,7 +2,7 @@
  * @file StoreBlock.jsx
  * @description Create component that is used to draw a single block of store.
  * @author Fovir
- * @date 2025-09-08
+ * @date 2025-09-09
  */
 
 "use client";
@@ -38,6 +38,7 @@ export default function StoreBlock({
   text,
   icon,
   handleClick,
+  showIcon = true,
 }) {
   return (
     <g onClick={handleClick} className={utilStyles.highlightOnHover}>
@@ -72,7 +73,7 @@ export default function StoreBlock({
           >
             {text}
           </p>
-          {icon}
+          {showIcon && icon}
         </div>
       </foreignObject>
     </g>
