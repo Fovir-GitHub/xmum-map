@@ -14,7 +14,7 @@ import html from "remark-html";
 export async function getMarkdownHtml(slug, locale) {
   let res = await fetch(`/api/posts/${slug}/${locale}`);
   if (!res.ok) {
-    res = await fetch(`/api/posts/404/${locale}`);
+    return "<p>Not Found</p>";
   }
 
   const jsonContent = await res.json();
