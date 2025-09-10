@@ -1,3 +1,4 @@
 {
-  "printWidth": 72
+  "printWidth": 72,
+  "endOfLine": "lf"
 }
