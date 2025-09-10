@@ -53,8 +53,8 @@ function CopyRight() {
 function Telephone({ locale }) {
   return (
     <MyTypography>
-      {xmumConfig.information.tel[locale]}
-      {xmumConfig.information.tel.number}
+      {xmumConfig.footer.tel[locale]}
+      {xmumConfig.footer.tel.number}
     </MyTypography>
   );
 }
@@ -62,12 +62,9 @@ function Telephone({ locale }) {
 function Email({ locale }) {
   return (
     <MyTypography>
-      {xmumConfig.information.email[locale]} &nbsp;
-      <MyLink
-        href={xmumConfig.information.email.address}
-        isEmail={true}
-      >
-        {xmumConfig.information.email.address}
+      {xmumConfig.footer.email[locale]} &nbsp;
+      <MyLink href={xmumConfig.footer.email.address} isEmail={true}>
+        {xmumConfig.footer.email.address}
       </MyLink>
     </MyTypography>
   );
@@ -76,8 +73,8 @@ function Email({ locale }) {
 function LastUpdateTime({ locale }) {
   return (
     <MyTypography>
-      {xmumConfig.information.lastUpdateTime[locale]}
-      {xmumConfig.information.lastUpdateTime.time}
+      {xmumConfig.footer.lastUpdateTime[locale]}
+      {xmumConfig.footer.lastUpdateTime.time}
     </MyTypography>
   );
 }

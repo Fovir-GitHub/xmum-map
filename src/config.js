@@ -1,3 +1,10 @@
+/**
+ * @file config.js
+ * @description Configuration file of the website.
+ * @author Fovir
+ * @date 2025-09-10
+ */
+
 import { catppuccinMochaColors } from "./styles/materialUiTheme";
 import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
 import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
@@ -6,6 +13,7 @@ import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
 import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
 import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
 
+// Basic options.
 const xmumConfig = {
   announcement: {
     title: {
@@ -13,7 +21,7 @@ const xmumConfig = {
       en: "Announcement",
     },
   },
-  information: {
+  footer: {
     tel: {
       zh: "联系电话：",
       en: "Contact: ",
