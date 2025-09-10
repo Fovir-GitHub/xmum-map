@@ -2,7 +2,7 @@
  * @file Announcement.jsx
  * @description Component of displaying announcements.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-10
  */
 
 "use client";
@@ -22,8 +22,8 @@ export default function Announcement({ locale }) {
   const [announcementContent, setAnnouncementContent] = useState("");
 
   useEffect(() => {
-    getMarkdownHtml("announcement", locale).then((html) => {
-      setAnnouncementContent(html);
+    getMarkdownHtml("announcement", locale).then((result) => {
+      setAnnouncementContent(result.html);
     });
   }, [locale]);
 

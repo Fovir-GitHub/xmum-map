@@ -2,7 +2,7 @@
  * @file DetailPage.jsx
  * @description Create the `DetailPage` component, which is the container of detail pages. The component fetches post html via API.
  * @author Fovir
- * @date 2025-09-09
+ * @date 2025-09-10
  */
 
 "use client";
@@ -13,23 +13,29 @@ import ImageSlide from "../ImageSlide/ImageSlide";
 import CircularProgress from "@mui/material/CircularProgress";
 
 export default function DetailPage({ slug, locale }) {
-  // Post html.
   const [postHtml, setPostHtml] = useState("");
-
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     const fetchPost = async () => {
-      const html = await getMarkdownHtml(slug, locale);
+      setIsLoading(true);
+      const { html, isLoading, notFound } = await getMarkdownHtml(
+        slug,
+        locale,
+      );
+
       setPostHtml(html);
-      setLoading(false);
+      setIsLoading(isLoading);
+      setNotFound(notFound);
     };
+
     fetchPost();
   }, [slug, locale]);
 
   return (
     <article className="markdown">
-      {loading && (
+      {isLoading ? (
         <div
           style={{
             display: "flex",
@@ -39,12 +45,17 @@ export default function DetailPage({ slug, locale }) {
         >
           <CircularProgress />
         </div>
+      ) : notFound ? (
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+          <p>Article not found.</p>
+        </div>
+      ) : (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: postHtml,
+          }}
+        />
       )}
-      <div
-        dangerouslySetInnerHTML={{
-          __html: postHtml,
-        }}
-      />
       <ImageSlide />
     </article>
   );
