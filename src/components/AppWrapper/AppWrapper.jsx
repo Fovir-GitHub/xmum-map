@@ -88,7 +88,10 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
         onClose={() => setSelectedPost(null)}
         show={selectedPost !== null}
       >
-        <DetailPage slug={selectedPost?.slug} locale={locale} />
+        <DetailPage
+          slug={selectedPost?.slug || "404"}
+          locale={locale}
+        />
       </Sidebar>
 
       <Announcement locale={locale} />
