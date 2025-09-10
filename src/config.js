@@ -1,4 +1,10 @@
 import { catppuccinMochaColors } from "./styles/materialUiTheme";
+import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
+import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
+import SportsEsportsRoundedIcon from "@mui/icons-material/SportsEsportsRounded";
+import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
+import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
+import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
 
 const xmumConfig = {
   announcement: {
@@ -82,3 +88,54 @@ xmumConfig.storeBlock.path = {
 };
 
 export default xmumConfig;
+
+const opacity = "E2";
+const iconSize = "large";
+export const categoryInformation = {
+  restaurant: {
+    displayName: {
+      en: "Restaurant",
+      zh: "餐厅",
+    },
+    color: `${catppuccinMochaColors.pink}${opacity}`,
+    icon: <RestaurantRoundedIcon fontSize={iconSize} />,
+  },
+  daily_necessity: {
+    displayName: {
+      en: "Daily Necessity",
+      zh: "日用品",
+    },
+    color: `${catppuccinMochaColors.blue}${opacity}`,
+    icon: <LocalGroceryStoreRoundedIcon fontSize={iconSize} />,
+  },
+  entertainment: {
+    displayName: {
+      en: "Entertainment",
+      zh: "娱乐",
+    },
+    color: `${catppuccinMochaColors.sky}${opacity}`,
+    icon: <SportsEsportsRoundedIcon fontSize={iconSize} />,
+  },
+  snack: {
+    displayName: {
+      en: "Snack",
+      zh: "甜品",
+    },
+    color: `${catppuccinMochaColors.green}${opacity}`,
+    icon: <IcecreamRoundedIcon fontSize={iconSize} />,
+  },
+  other: {
+    displayName: {
+      en: "Other",
+      zh: "其它",
+    },
+    color: `${catppuccinMochaColors.flamingo}${opacity}`,
+    icon: <CategoryRoundedIcon fontSize={iconSize} />,
+  },
+};
+
+export const extraIcons = {
+  DirectionsCarFilledRoundedIcon: (
+    <DirectionsCarFilledRoundedIcon fontSize={iconSize} />
+  ),
+};

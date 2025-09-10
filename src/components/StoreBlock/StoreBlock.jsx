@@ -2,19 +2,14 @@
  * @file StoreBlock.jsx
  * @description Create component that is used to draw a single block of store.
  * @author Fovir
- * @date 2025-09-09
+ * @date 2025-09-10
  */
 
 "use client";
 
 import utilStyles from "../../styles/utils.module.css";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
-import RestaurantRoundedIcon from "@mui/icons-material/RestaurantRounded";
-import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
-import SportsEsportsRoundedIcon from "@mui/icons-material/SportsEsportsRounded";
-import IcecreamRoundedIcon from "@mui/icons-material/IcecreamRounded";
-import CategoryRoundedIcon from "@mui/icons-material/CategoryRounded";
-import DirectionsCarFilledRoundedIcon from "@mui/icons-material/DirectionsCarFilledRounded";
+import { categoryInformation, extraIcons } from "../../config";
 
 export const STORE_BLOCK_WIDTH = 150; // Width of a store.
 export const STORE_BLOCK_HEIGHT = 200; // Height of a store.
@@ -86,20 +81,11 @@ export default function StoreBlock({
  * @returns Color in #RRGGBBAA forms.
  */
 export function getFillColor(category) {
-  const opacity = "E2";
-  const CATEGORY_COLOR_MAP = new Map([
-    ["restaurant", `${catppuccinMochaColors.pink}${opacity}`],
-    ["daily_necessity", `${catppuccinMochaColors.blue}${opacity}`],
-    ["entertainment", `${catppuccinMochaColors.sky}${opacity}`],
-    ["snack", `${catppuccinMochaColors.green}${opacity}`],
-    ["other", `${catppuccinMochaColors.flamingo}${opacity}`],
-  ]);
-
-  if (CATEGORY_COLOR_MAP.has(category)) {
-    return CATEGORY_COLOR_MAP.get(category);
-  } else {
-    return CATEGORY_COLOR_MAP.get("other");
+  if (category in categoryInformation) {
+    return categoryInformation[category].color;
   }
+
+  return categoryInformation.other.color;
 }
 
 /**
@@ -108,37 +94,14 @@ export function getFillColor(category) {
  * @returns A material UI icon component.
  */
 export function getStoreIcon(store) {
-  const iconSize = "large";
-
   // Use `store.Icon`.
-  if (store.Icon !== null) {
-    const ICON_MAP = new Map([
-      [
-        "DirectionsCarFilledRoundedIcon",
-        <DirectionsCarFilledRoundedIcon fontSize={iconSize} />,
-      ],
-    ]);
-
-    if (ICON_MAP.has(store.Icon)) {
-      return ICON_MAP.get(store.Icon);
-    }
+  if (store.Icon !== null && store.Icon in extraIcons) {
+    return extraIcons[store.Icon];
   }
 
-  // Use category icons.
-  const CATEGORY_ICON_MAP = new Map([
-    ["restaurant", <RestaurantRoundedIcon fontSize={iconSize} />],
-    [
-      "daily_necessity",
-      <LocalGroceryStoreRoundedIcon fontSize={iconSize} />,
-    ],
-    ["entertainment", <SportsEsportsRoundedIcon fontSize={iconSize} />],
-    ["snack", <IcecreamRoundedIcon fontSize={iconSize} />],
-    ["other", <CategoryRoundedIcon fontSize={iconSize} />],
-  ]);
-
-  if (CATEGORY_ICON_MAP.has(store.Category)) {
-    return CATEGORY_ICON_MAP.get(store.Category);
-  } else {
-    return CATEGORY_ICON_MAP.get("other");
+  if (store.Category in categoryInformation) {
+    return categoryInformation[store.Category].icon;
   }
+
+  return categoryInformation.other.icon;
 }
