@@ -22,11 +22,13 @@
         alias dev="pnpm run dev"
         alias build="pnpm run build"
         alias start="pnpm run start"
+        alias format="pnpm run format"
 
         echo "Aliases:"
         echo '    dev="pnpm run dev"'
         echo '    build="pnpm run build"'
         echo '    start="pnpm run start"'
+        echo '    format="pnpm run format"'
 
         trap 'echo "Leaving the development environment!"' EXIT
       '';
