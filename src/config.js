@@ -97,6 +97,7 @@ xmumConfig.storeBlock.path = {
 
 export default xmumConfig;
 
+// Category information which includes display name, color, and icon.
 const opacity = "E2";
 const iconSize = "large";
 export const categoryInformation = {
@@ -142,6 +143,7 @@ export const categoryInformation = {
   },
 };
 
+// Other icons specified in `.xlsx` files.
 export const extraIcons = {
   DirectionsCarFilledRoundedIcon: (
     <DirectionsCarFilledRoundedIcon fontSize={iconSize} />
