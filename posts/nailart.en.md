@@ -6,19 +6,19 @@
 
 Starlight on your nails 💅🏻✨, a little romance just for students~ Come anytime, I'm here for you!
 
-----------
+---
 
 ## Price List
 
 ![enter image description here](https://img.xmummap.com/G_nailart_%20menu.webp)
 
-----------
+---
 
 ## Popular Items
 
 Manicure, Eyelash Extensions, Hand Care, Facial Care, Foot Care, Hair Removal
 
-----------
+---
 
 ## Environment
 
@@ -29,14 +29,13 @@ Manicure, Eyelash Extensions, Hand Care, Facial Care, Foot Care, Hair Removal
 <img src="https://img.xmummap.com/G_nailart_surd(4).webp" />
 </div>
 
-
-----------
+---
 
 ## Opening Hours
 
 10:00 AM - 12:00 PM
 
-----------
+---
 
 ## Facilities
 
@@ -44,7 +43,7 @@ Air-conditioner
 
 Seats 5
 
-----------
+---
 
 ## Reservations
 
@@ -54,13 +53,13 @@ Reservation code 👇
 
 ![enter image description here](https://img.xmummap.com/G_nailart_%20code.webp)
 
-----------
+---
 
 ## Contact Information
 
 Personal Contact: +60 195828271
 
-----------
+---
 
 ## Address
 

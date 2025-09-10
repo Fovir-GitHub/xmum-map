@@ -12,31 +12,31 @@ Mala Tang / Spicy Hot Pot / Pickled Fish Soup / Tomato Soup / Spicy Mix / Garlic
 
 Single-choice options also include: Dumplings with three different fillings / Braised Chicken / Cross-Bridge Rice Noodles / Hot and Sour Noodles / Cold Noodles, and more.
 
-----------
+---
 
 ## Menu
 
 ![enter image description here](https://img.xmummap.com/G_spicytemptation_menu.webp)
 
-----------
+---
 
 ## Ambience
 
 ![enter image description here](https://img.xmummap.com/G_spicytemptation_surd.webp)
 
-----------
+---
 
 ## Opening Hours
 
 11:00am - 10:00pm
 
-----------
+---
 
 ## :fire: Hot Dishes :fire:
 
 Spicy Hot Pot/Mala Tang/Sour Fish Soup/Tomato Soup
 
-----------
+---
 
 ## Takeaway
 
@@ -54,7 +54,7 @@ Takeaway Platforms:
 
 ![enter image description here](https://img.xmummap.com/G_spicytemptation_wechatcode.webp)
 
-----------
+---
 
 ## Facilities
 
@@ -66,13 +66,13 @@ Over 150 seats upstairs and downstairs
 
 Advance reservations accepted ✅
 
-----------
+---
 
 ## Contact Information
 
 Manager 👨🏻‍💻: Xiaotian +60145496968
 
-----------
+---
 
 ## Address
 

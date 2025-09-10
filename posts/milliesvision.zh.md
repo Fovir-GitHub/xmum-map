@@ -12,13 +12,13 @@ height="150">
 
 让迈利斯眼镜陪伴你度过整个大学生活！
 
-----------
+---
 
 ## 价格表
 
 ![enter image description here](https://img.xmummap.com/G_milliesvision_%20menu.webp)
 
-----------
+---
 
 ## 环境
 
@@ -27,13 +27,13 @@ height="150">
 <img src="https://img.xmummap.com/G_milliesvision_%20surd%20%282%29.webp" />
 </div>
 
-----------
+---
 
 ## 营业时间
 
 11:00-21:00
 
-----------
+---
 
 ## 设备情况
 
@@ -43,14 +43,14 @@ height="150">
 
 可坐10人数
 
-----------
+---
 
 ## 联系方式
 
 负责人联系方式：+60 196037552
 
-----------
+---
 
 ## 地址
 
-R.G.16 
+R.G.16

@@ -1,4 +1,4 @@
-﻿# Xinjiang Restaurant
+# Xinjiang Restaurant
 
 ## Manager's Words
 

@@ -2,8 +2,7 @@
 
 ## Manager’s Word
 
-Eat Healthier😊
-----------
+## Eat Healthier😊
 
 ## Menu
 
@@ -30,7 +29,7 @@ Eat Healthier😊
 <img src="https://img.xmummap.com/G_eathmi_menu (21).webp" />
 </div>
 
-**15% off** on normal price items **Each student** must show a **valid student ID**. *Other t&cs apply.*
+**15% off** on normal price items **Each student** must show a **valid student ID**. _Other t&cs apply._
 
 ---
 
@@ -41,7 +40,7 @@ Eat Healthier😊
 <img src="https://img.xmummap.com/G_eathmi_surd%20%281%29.webp" />
 </div>
 
-----------
+---
 
 ## Hot Items
 
@@ -60,13 +59,13 @@ Eat Healthier😊
 
 RM15++
 
------
+---
 
 ## Opening Hours
 
 10am to 8pm daily (kitchen closes 7:30pm)
 
-----------
+---
 
 ## Takeaway Service
 
@@ -74,13 +73,13 @@ Walk-in takeaway, GrabFood, FoodPanda, ShopeeFood.
 
 Ask our staff for XMUM student delivery service.
 
-----------
+---
 
 ## Facilities
 
 Air-conditioner and fans
 
-----------
+---
 
 ## Reservations
 
@@ -95,7 +94,7 @@ WhatsApp:
 - Hanson: 012 421 0073
 - Scarlett: 012 783 5114
 
-----------
+---
 
 ## Address
 
