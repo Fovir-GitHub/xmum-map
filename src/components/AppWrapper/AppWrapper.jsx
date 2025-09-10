@@ -89,6 +89,11 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     color: catppuccinMochaColors.text,
   };
 
+  const toggleButtonGroupStyle = {
+    size: isMobile() ? "medium" : "large",
+    backgroundColor: `${catppuccinMochaColors.surface2}${toolBackgroundOpacity}`,
+  };
+
   // Ref to `TransformWrapper`.
   const transformRef = useRef(null);
 
@@ -99,12 +104,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
       <div className={appStyles.toolZone}>
         <ToggleButtonGroup
           orientation="vertical"
-          onChange={handleSwitchLayer}
-          size={isMobile() ? "medium" : "large"}
-          exclusive
-          value={layer}
+          size={toggleButtonGroupStyle.size}
           sx={{
-            backgroundColor: `${catppuccinMochaColors.surface2}${toolBackgroundOpacity}`,
+            backgroundColor: toggleButtonGroupStyle.backgroundColor,
           }}
         >
           <ToggleButton
@@ -132,7 +134,18 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           >
             <MyLocationRoundedIcon />
           </ToggleButton>
+        </ToggleButtonGroup>
 
+        <ToggleButtonGroup
+          orientation="vertical"
+          onChange={handleSwitchLayer}
+          size={toggleButtonGroupStyle.size}
+          exclusive
+          value={layer}
+          sx={{
+            backgroundColor: toggleButtonGroupStyle.backgroundColor,
+          }}
+        >
           <ToggleButton value={1} sx={layerSwitcherStyle}>
             1F
           </ToggleButton>
