@@ -10,26 +10,17 @@
 import Map from "../Map/Map";
 import BellAvenueMaps from "../BellAvenueMaps/BellAvenueMaps";
 import { useEffect, useRef, useState } from "react";
-import {
-  CssBaseline,
-  ToggleButton,
-  ToggleButtonGroup,
-} from "@mui/material";
-import appStyles from "./app.module.css";
+import { CssBaseline } from "@mui/material";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
-import {
-  catppuccinMochaColors,
-  theme,
-} from "../../styles/materialUiTheme";
+import { theme } from "../../styles/materialUiTheme";
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
-import { isMobile } from "../../lib/isMobile";
-import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
 import Announcement from "../Announcement/Announcement";
 import xmumConfig from "../../config";
+import ToolZone from "../ToolZone/ToolZone";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -77,23 +68,6 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   const bellSuiteMapWidth = xmumConfig.map.bellSuiteWidth;
   const mapHeight = xmumConfig.map.height;
 
-  // Opacity.
-  const toolBackgroundOpacity = "B2";
-
-  // Style of toggle buttons.
-  const layerSwitcherStyle = {
-    "&.Mui-selected": {
-      backgroundColor: `${catppuccinMochaColors.surface0}${toolBackgroundOpacity}`,
-    },
-    fontWeight: "bolder",
-    color: catppuccinMochaColors.text,
-  };
-
-  const toggleButtonGroupStyle = {
-    size: isMobile() ? "medium" : "large",
-    backgroundColor: `${catppuccinMochaColors.surface2}${toolBackgroundOpacity}`,
-  };
-
   // Ref to `TransformWrapper`.
   const transformRef = useRef(null);
 
@@ -101,59 +75,13 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <div className={appStyles.toolZone}>
-        <ToggleButtonGroup
-          orientation="vertical"
-          size={toggleButtonGroupStyle.size}
-          sx={{
-            backgroundColor: toggleButtonGroupStyle.backgroundColor,
-          }}
-        >
-          <ToggleButton
-            onClick={() => {
-              if (locale === "zh") {
-                setLocale("en");
-              } else {
-                setLocale("zh");
-              }
-            }}
-            sx={{
-              backgroundColor: catppuccinMochaColors.blue,
-              "&:hover": {
-                backgroundColor: catppuccinMochaColors.sapphire,
-              },
-            }}
-          >
-            {locale}
-          </ToggleButton>
-
-          <ToggleButton
-            onClick={() => {
-              transformRef.current?.resetTransform();
-            }}
-          >
-            <MyLocationRoundedIcon />
-          </ToggleButton>
-        </ToggleButtonGroup>
-
-        <ToggleButtonGroup
-          orientation="vertical"
-          onChange={handleSwitchLayer}
-          size={toggleButtonGroupStyle.size}
-          exclusive
-          value={layer}
-          sx={{
-            backgroundColor: toggleButtonGroupStyle.backgroundColor,
-          }}
-        >
-          <ToggleButton value={1} sx={layerSwitcherStyle}>
-            1F
-          </ToggleButton>
-          <ToggleButton value={0} sx={layerSwitcherStyle}>
-            GF
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </div>
+      <ToolZone
+        locale={locale}
+        setLocale={setLocale}
+        layer={layer}
+        handleSwitchLayer={handleSwitchLayer}
+        transformRef={transformRef}
+      />
 
       <GlobalEscListener onEsc={() => setSelectedPost(null)} />
       <Sidebar
