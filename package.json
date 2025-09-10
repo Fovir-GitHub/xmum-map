@@ -6,7 +6,9 @@
     "build": "NODE_ENV=production node src/scripts/readSvgData.js && next build",
     "build:data": "node src/scripts/readSvgData.js",
     "start": "next start",
-    "format": "prettier --write posts/** docs/** src/**"
+    "format": "prettier --write posts/** docs/** src/**",
+    "wdev": "next dev",
+    "wbuild": "node src/scripts/readSvgData.js && next build"
   },
   "type": "module",
   "dependencies": {
