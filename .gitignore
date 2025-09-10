@@ -140,3 +140,4 @@ vite.config.ts.timestamp-*
 
 # XLSX lock files
 .~lock*
+~$*
