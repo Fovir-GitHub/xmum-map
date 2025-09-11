@@ -9,7 +9,7 @@
 
 import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
 import xmumConfig from "../../config";
-import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncouteringNailArt";
+import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringNailArt";
 
 /**
  * @description Generate the map from the data file.
