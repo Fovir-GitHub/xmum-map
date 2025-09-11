@@ -1,6 +1,6 @@
 ﻿# 蜜雪冰城
 
-<img src="https://s3.tebi.io/img.xmummap.com/G_mixue.logo.png"
+<img src="https://img.xmummap.com/G_mixue.logo.png"
 width="200"
 height="200"
 alt="mixue">

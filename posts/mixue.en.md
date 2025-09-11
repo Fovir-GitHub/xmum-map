@@ -1,11 +1,13 @@
 ﻿# MIXUE
 
-<img src="https://s3.tebi.io/img.xmummap.com/G_mixue.logo.png"
+<img src="https://img.xmummap.com/G_mixue.logo.png"
 width="200"
 height="200"
 alt="mixue">
 
 ## Price List
+
+**_Prices and styles are for reference only, please refer to the store for details_**
 
 ## 1. Fresh Ice Cream
 
