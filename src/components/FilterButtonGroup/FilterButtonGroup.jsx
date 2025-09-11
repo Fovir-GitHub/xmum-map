@@ -1,3 +1,10 @@
+/**
+ * @file FilterButtonGroup.jsx
+ * @description Component of filter buttons, which filter stores by their categories.
+ * @author Fovir
+ * @date 2025-09-11
+ */
+
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { categoryInformation } from "../../config";
 import { useEffect, useState } from "react";
