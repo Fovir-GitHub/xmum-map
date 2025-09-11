@@ -9,49 +9,49 @@ importers:
   .:
     dependencies:
       '@catppuccin/palette':
-        specifier: ^1.7.1
+        specifier: 1.7.1
         version: 1.7.1
       '@emotion/react':
-        specifier: ^11.14.0
+        specifier: 11.14.0
         version: 11.14.0(@types/react@18.3.24)(react@19.1.1)
       '@emotion/styled':
-        specifier: ^11.14.1
+        specifier: 11.14.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@18.3.24)(react@19.1.1))(@types/react@18.3.24)(react@19.1.1)
       '@mui/icons-material':
-        specifier: ^7.3.1
+        specifier: 7.3.1
         version: 7.3.1(@mui/material@7.3.1(@emotion/react@11.14.0(@types/react@18.3.24)(react@19.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.24)(react@19.1.1))(@types/react@18.3.24)(react@19.1.1))(@types/react@18.3.24)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(@types/react@18.3.24)(react@19.1.1)
       '@mui/material':
-        specifier: ^7.3.1
+        specifier: 7.3.1
         version: 7.3.1(@emotion/react@11.14.0(@types/react@18.3.24)(react@19.1.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.24)(react@19.1.1))(@types/react@18.3.24)(react@19.1.1))(@types/react@18.3.24)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       next:
-        specifier: ^15.5.0
+        specifier: 15.5.0
         version: 15.5.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       prettier:
-        specifier: ^3.6.2
+        specifier: 3.6.2
         version: 3.6.2
       react:
-        specifier: ^19.1.1
+        specifier: 19.1.1
         version: 19.1.1
       react-dom:
-        specifier: ^19.1.1
+        specifier: 19.1.1
         version: 19.1.1(react@19.1.1)
       react-zoom-pan-pinch:
-        specifier: ^3.7.0
+        specifier: 3.7.0
         version: 3.7.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       remark:
-        specifier: ^15.0.1
+        specifier: 15.0.1
         version: 15.0.1
       remark-gfm:
-        specifier: ^4.0.1
+        specifier: 4.0.1
         version: 4.0.1
       remark-html:
-        specifier: ^16.0.1
+        specifier: 16.0.1
         version: 16.0.1
       swiper:
-        specifier: ^11.2.10
+        specifier: 11.2.10
         version: 11.2.10
       xlsx:
-        specifier: ^0.18.5
+        specifier: 0.18.5
         version: 0.18.5
 
 packages:
