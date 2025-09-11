@@ -59,7 +59,7 @@ style="border-radius: 75px;">
 - Ballerina (6寸)：RM 118.00
 - Love Is (6寸)：RM 128.00
 - Animal Camp (9寸)：RM 189.00
-- First Snowfall (9寸)：RM 235.00  
+- First Snowfall (9寸)：RM 235.00
   …（更多款式请参考门店）
 
 ## 7. 饮品 Beverages
@@ -132,3 +132,9 @@ style="border-radius: 75px;">
 ## 官网
 
 https://www.baskinrobbins.com.my/
+
+---
+
+## 地址
+
+R.G.59

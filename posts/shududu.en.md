@@ -1,4 +1,4 @@
-# ShuDuDu Mart
+# Du-Du POTATO Mart
 
 ## Surroundings
 

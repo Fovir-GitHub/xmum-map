@@ -51,7 +51,7 @@ alt="mixue">
 - Peach Mi-Shake：RM 6.00
 - Strawberry Mi-Shake：RM 6.00
 - Ice Cream Earl Grey Tea：RM 5.00
-- Ice Cream Jasmine Tea：RM 5.00  
+- Ice Cream Jasmine Tea：RM 5.00
   :contentReference[oaicite:3]{index=3}
 
 ## 5. Coffee Series
@@ -68,3 +68,9 @@ alt="mixue">
 ## Opening Hours
 
 Daily: 11AM—10PM
+
+---
+
+## Address
+
+R.G.22
