@@ -1,6 +1,6 @@
-# DOBI SANTAI 洗衣房
+# DOBI SANTAI
 
-## 环境
+## Surroundings
 
 <div class="image-slide">
 <img src="https://img.xmummap.com/G_dobi_surd1.webp">
@@ -9,18 +9,18 @@
 
 ---
 
-## 营业时间
+## Opening Hours
 
-每日24小时营业
+Open 24 hours daily
 
 ---
 
-## 联系方式
+## Contact Information
 
 +60 196045579
 
 ---
 
-## 地址
+## Address
 
 R.G.50
