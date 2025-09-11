@@ -58,7 +58,7 @@ const xmumConfig = {
     },
     patches: {
       position: {
-        x: 13,
+        x: 16,
       },
       milliesVision: {
         name: "Millies Vision\n眼镜店",
