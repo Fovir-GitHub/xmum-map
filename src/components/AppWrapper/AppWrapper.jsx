@@ -21,6 +21,7 @@ import Footer from "../Footer/Footer";
 import Announcement from "../Announcement/Announcement";
 import xmumConfig from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
+import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -71,9 +72,18 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Ref to `TransformWrapper`.
   const transformRef = useRef(null);
 
+  const [avenueData, setAvenueData] = useState(bellAvenueData);
+  const [suiteData, setSuiteData] = useState(bellSuiteData);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
+      <FilterButtonGroup
+        setAvenueData={setAvenueData}
+        setSuiteData={setSuiteData}
+        locale={locale}
+      />
 
       <ToolZone
         locale={locale}
@@ -105,7 +115,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           }}
         >
           <BellAvenueMaps
-            storeData={bellAvenueData}
+            storeData={avenueData}
             currentFloor={layer}
             setSelectedPost={setSelectedPost}
             mapWidth={bellAvenueMapWidth}
@@ -113,7 +123,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
             locale={locale}
           />
           <BellSuiteMap
-            storeData={bellSuiteData}
+            storeData={suiteData}
             setSelectedPost={setSelectedPost}
             locale={locale}
             mapWidth={bellSuiteMapWidth}

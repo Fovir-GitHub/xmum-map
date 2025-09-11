@@ -23,7 +23,7 @@ export default function DrawAMap(
   return (
     <>
       {stores.map((store) => {
-        if (!store.Name) {
+        if (!store.Name || !store.Show) {
           return;
         }
         let x = 0;
