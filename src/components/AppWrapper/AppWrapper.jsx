@@ -79,6 +79,8 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
+      <Announcement locale={locale} />
+
       <FilterButtonGroup
         setAvenueData={setAvenueData}
         setSuiteData={setSuiteData}
@@ -103,8 +105,6 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           locale={locale}
         />
       </Sidebar>
-
-      <Announcement locale={locale} />
 
       <Map transformRef={transformRef}>
         <div
