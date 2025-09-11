@@ -2,14 +2,14 @@
  * @file BellMaps.jsx
  * @description Create the `BellAvenueMaps` component which depends on another two components, `BellAvenueFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-09-09
+ * @date 2025-09-11
  */
 
 "use client";
 
 import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
 import xmumConfig from "../../config";
-import Patch from "./Patch";
+import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringNailArt";
 
 /**
  * @description Generate the map from the data file.
@@ -56,8 +56,7 @@ function BellAvenueFloorMap({
   showPatch,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
-  const RIGHT_BOUNDARY =
-    (ROW_INDEX_LIMIT - 1) * xmumConfig.storeBlock.size.width; // Right boundary of the map.
+  const limit = 78;
 
   // Draw path.
   const drawSvgPath = () => {
@@ -70,7 +69,7 @@ function BellAvenueFloorMap({
     let index = 0;
     for (
       let x = 0;
-      x <= RIGHT_BOUNDARY;
+      x <= svgWidth;
       x += xmumConfig.storeBlock.path.size
     ) {
       result.push(drawPathBlock(x, pathY, index++));
@@ -96,8 +95,15 @@ function BellAvenueFloorMap({
         // Draw the path.
         return path;
       })}
-      {DrawAMap(stores, ROW_INDEX_LIMIT, setSelectedPost, locale)}
-      {showPatch && Patch(setSelectedPost, locale)}
+      {DrawAMap(
+        stores,
+        ROW_INDEX_LIMIT,
+        setSelectedPost,
+        locale,
+        limit,
+      )}
+      {showPatch &&
+        MilliesVisionAndEncounteringNailArt(setSelectedPost, locale)}
     </svg>
   );
 }

@@ -46,6 +46,10 @@ function readXlsx(fileName) {
       defval: null,
       blankrows: true,
     });
+    data = data.map((row, index) => ({
+      Row: index + 2,
+      ...row,
+    }));
     data = data.slice(0, MAX_ROWS);
     result.push(data);
   }

@@ -1,8 +1,8 @@
 /**
- * @file Patch.jsx
- * @description Draw stores with non-regular shapes.
+ * @file MilliesVisionAndEncounteringNailArt.jsx
+ * @description Draw milles vision and encountering nail art.
  * @author Fovir
- * @date 2025-09-09
+ * @date 2025-09-11
  */
 
 import xmumConfig from "../../config";
@@ -11,8 +11,13 @@ import StoreBlock, {
   getStoreIcon,
 } from "../StoreBlock/StoreBlock";
 
-export default function Patch(setSelectedPost, locale) {
-  const xPosition = 13 * xmumConfig.storeBlock.size.width;
+export default function MilliesVisionAndEncounteringNailArt(
+  setSelectedPost,
+  locale,
+) {
+  const xPosition =
+    xmumConfig.storeBlock.patches.position.x *
+    xmumConfig.storeBlock.size.width;
   const height = xmumConfig.storeBlock.size.height / 2;
 
   return (
