@@ -44,7 +44,7 @@ const xmumConfig = {
   map: {
     backgroundColor: catppuccinMochaColors.base,
     height: 1000,
-    bellAvenueWidth: 5700,
+    bellAvenueWidth: 6000,
     bellSuiteWidth: 1400,
   },
   storeBlock: {
