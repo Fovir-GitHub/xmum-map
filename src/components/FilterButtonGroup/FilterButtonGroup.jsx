@@ -1,5 +1,6 @@
-import { ToggleButton } from "@mui/material";
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { categoryInformation } from "../../config";
+import { useEffect, useState } from "react";
 
 export default function FilterButtonGroup({
   setAvenueData,
@@ -9,27 +10,40 @@ export default function FilterButtonGroup({
   // Get all categories.
   const categories = Object.keys(categoryInformation);
 
-  function handleFilterButtonClick(category) {
-    const filterCategory = (prev) =>
-      prev.map((innerArray) =>
-        innerArray.map((item) =>
-          item.Category === category
-            ? { ...item, Show: !item.Show }
-            : item,
-        ),
-      );
+  // Categories that can be displayed.
+  const [showCategories, setShowCategories] = useState(categories);
 
-    setAvenueData(filterCategory);
-    setSuiteData(filterCategory);
-  }
+  const handleFilterButtonChange = (_, clickedCategory) => {
+    setShowCategories(clickedCategory);
+  };
+
+  // Update map when `showCategories` changes.
+  useEffect(() => {
+    const updateMap = (prev) =>
+      prev.map((innerArray) =>
+        innerArray.map((item) => ({
+          ...item,
+          Show: showCategories.includes(item.Category),
+        })),
+      );
+    setAvenueData(updateMap);
+    setSuiteData(updateMap);
+  }, [showCategories, setAvenueData, setSuiteData]);
 
   function FilterButton(category, locale) {
     return (
-      <ToggleButton onClick={() => handleFilterButtonClick(category)}>
+      <ToggleButton key={category} value={category}>
         {categoryInformation[category].displayName[locale]}
       </ToggleButton>
     );
   }
 
-  return categories.map((category) => FilterButton(category, locale));
+  return (
+    <ToggleButtonGroup
+      value={showCategories}
+      onChange={handleFilterButtonChange}
+    >
+      {categories.map((category) => FilterButton(category, locale))}
+    </ToggleButtonGroup>
+  );
 }
