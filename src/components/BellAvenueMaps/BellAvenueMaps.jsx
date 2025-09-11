@@ -21,6 +21,7 @@ export default function BellAvenueMaps({
   mapWidth,
   mapHeight,
   locale,
+  showCategories,
   currentFloor = 0,
 }) {
   // Size of the map.
@@ -35,7 +36,12 @@ export default function BellAvenueMaps({
         stores={storeData[currentFloor]}
         setSelectedPost={setSelectedPost}
         locale={locale}
-        showPatch={currentFloor === 0}
+        showPatch={
+          currentFloor === 0 &&
+          showCategories.includes(
+            xmumConfig.storeBlock.patches.milliesVision.category,
+          )
+        }
       />
     </>
   );

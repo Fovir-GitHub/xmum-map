@@ -137,6 +137,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
             setSelectedPost={setSelectedPost}
             mapWidth={bellAvenueMapWidth}
             mapHeight={mapHeight}
+            showCategories={showCategories}
             locale={locale}
           />
           <BellSuiteMap
