@@ -19,8 +19,6 @@ export default function BellSuiteMap({
 }) {
   const ROW_INDEX_LIMIT = 8;
   const limit = 13;
-  const rightBoundary =
-    ROW_INDEX_LIMIT * xmumConfig.storeBlock.size.width;
   const PATH_CROSS_POINT = 8;
 
   function drawHorizontalPath() {
@@ -32,7 +30,7 @@ export default function BellSuiteMap({
     let index = 0;
     for (
       let x = 0;
-      x <= rightBoundary;
+      x <= mapWidth;
       x += xmumConfig.storeBlock.path.size
     ) {
       result.push(drawPathBlock(x, pathY, index++));

@@ -57,8 +57,6 @@ function BellAvenueFloorMap({
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const limit = 78;
-  const RIGHT_BOUNDARY =
-    (ROW_INDEX_LIMIT + 1) * xmumConfig.storeBlock.size.width; // Right boundary of the map.
 
   // Draw path.
   const drawSvgPath = () => {
@@ -71,7 +69,7 @@ function BellAvenueFloorMap({
     let index = 0;
     for (
       let x = 0;
-      x <= RIGHT_BOUNDARY;
+      x <= svgWidth;
       x += xmumConfig.storeBlock.path.size
     ) {
       result.push(drawPathBlock(x, pathY, index++));
