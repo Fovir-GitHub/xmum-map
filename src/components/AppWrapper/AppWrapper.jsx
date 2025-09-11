@@ -19,7 +19,7 @@ import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
 import Announcement from "../Announcement/Announcement";
-import xmumConfig from "../../config";
+import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 
@@ -74,6 +74,12 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
 
   const [avenueData, setAvenueData] = useState(bellAvenueData);
   const [suiteData, setSuiteData] = useState(bellSuiteData);
+  //
+  // Get all categories.
+  const categories = Object.keys(categoryInformation);
+
+  // Categories that can be displayed.
+  const [showCategories, setShowCategories] = useState(categories);
 
   return (
     <ThemeProvider theme={theme}>
@@ -92,6 +98,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           setAvenueData={setAvenueData}
           setSuiteData={setSuiteData}
           locale={locale}
+          categories={categories}
+          showCategories={showCategories}
+          setShowCategories={setShowCategories}
         />
       </div>
 

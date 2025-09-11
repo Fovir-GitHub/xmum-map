@@ -17,13 +17,10 @@ export default function FilterButtonGroup({
   setAvenueData,
   setSuiteData,
   locale,
+  categories,
+  showCategories,
+  setShowCategories,
 }) {
-  // Get all categories.
-  const categories = Object.keys(categoryInformation);
-
-  // Categories that can be displayed.
-  const [showCategories, setShowCategories] = useState(categories);
-
   const handleFilterButtonChange = (_, clickedCategory) => {
     setShowCategories(clickedCategory);
   };
