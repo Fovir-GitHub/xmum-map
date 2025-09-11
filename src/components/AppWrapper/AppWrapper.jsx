@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-10
+ * @date 2025-09-11
  */
 
 "use client";
@@ -79,13 +79,21 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <Announcement locale={locale} />
-
-      <FilterButtonGroup
-        setAvenueData={setAvenueData}
-        setSuiteData={setSuiteData}
-        locale={locale}
-      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <Announcement locale={locale} />
+        <FilterButtonGroup
+          setAvenueData={setAvenueData}
+          setSuiteData={setSuiteData}
+          locale={locale}
+        />
+      </div>
 
       <ToolZone
         locale={locale}

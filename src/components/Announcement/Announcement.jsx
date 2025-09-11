@@ -2,7 +2,7 @@
  * @file Announcement.jsx
  * @description Component of displaying announcements.
  * @author Fovir
- * @date 2025-09-10
+ * @date 2025-09-11
  */
 
 "use client";
@@ -28,29 +28,21 @@ export default function Announcement({ locale }) {
   }, [locale]);
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        width: "100%",
-        zIndex: 2,
-      }}
-    >
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreRoundedIcon />}
-          sx={{
-            color: catppuccinMochaColors.red,
-            fontWeight: "bolder",
-            fontSize: "1.6rem",
-          }}
-        >
-          {xmumConfig.announcement.title[locale]}
-        </AccordionSummary>
-        <AccordionDetails
-          dangerouslySetInnerHTML={{ __html: announcementContent }}
-          className="markdown"
-        ></AccordionDetails>
-      </Accordion>
-    </div>
+    <Accordion sx={{ width: "100%" }}>
+      <AccordionSummary
+        expandIcon={<ExpandMoreRoundedIcon />}
+        sx={{
+          color: catppuccinMochaColors.red,
+          fontWeight: "bolder",
+          fontSize: "1.6rem",
+        }}
+      >
+        {xmumConfig.announcement.title[locale]}
+      </AccordionSummary>
+      <AccordionDetails
+        dangerouslySetInnerHTML={{ __html: announcementContent }}
+        className="markdown"
+      ></AccordionDetails>
+    </Accordion>
   );
 }
