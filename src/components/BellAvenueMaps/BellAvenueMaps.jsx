@@ -56,8 +56,9 @@ function BellAvenueFloorMap({
   showPatch,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
+  const limit = 78;
   const RIGHT_BOUNDARY =
-    (ROW_INDEX_LIMIT - 1) * xmumConfig.storeBlock.size.width; // Right boundary of the map.
+    (ROW_INDEX_LIMIT + 1) * xmumConfig.storeBlock.size.width; // Right boundary of the map.
 
   // Draw path.
   const drawSvgPath = () => {
@@ -96,7 +97,13 @@ function BellAvenueFloorMap({
         // Draw the path.
         return path;
       })}
-      {DrawAMap(stores, ROW_INDEX_LIMIT, setSelectedPost, locale)}
+      {DrawAMap(
+        stores,
+        ROW_INDEX_LIMIT,
+        setSelectedPost,
+        locale,
+        limit,
+      )}
       {showPatch &&
         MilliesVisionAndEncounteringNailArt(setSelectedPost, locale)}
     </svg>

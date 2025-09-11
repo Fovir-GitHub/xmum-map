@@ -2,7 +2,7 @@
  * @file DrawAMap.jsx
  * @description Draw a map with row index limit.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-11
  */
 
 "use client";
@@ -18,13 +18,11 @@ export default function DrawAMap(
   rowIndexLimit,
   setSelectedPost,
   locale,
+  limit,
 ) {
-  const rightBoundary =
-    (rowIndexLimit - 1) * xmumConfig.storeBlock.size.width;
-
   return (
     <>
-      {stores.map((store, index) => {
+      {stores.map((store) => {
         if (!store.Name) {
           return;
         }
@@ -32,14 +30,12 @@ export default function DrawAMap(
         let y = 0;
 
         const widthOffset = store.Width === null ? 1 : store.Width;
+        const index = store.Row;
         if (index < rowIndexLimit) {
-          x = (index + 1) * xmumConfig.storeBlock.size.width;
+          x = index * xmumConfig.storeBlock.size.width;
           y = xmumConfig.storeBlock.position.firstRowY;
         } else {
-          x =
-            rightBoundary -
-            (index - rowIndexLimit + 1) *
-              xmumConfig.storeBlock.size.width;
+          x = (limit - store.Row) * xmumConfig.storeBlock.size.width;
           y = xmumConfig.storeBlock.position.secondRowY;
         }
         return (
