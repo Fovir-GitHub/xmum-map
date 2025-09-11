@@ -15,7 +15,9 @@ export default function MilliesVisionAndEncounteringNailArt(
   setSelectedPost,
   locale,
 ) {
-  const xPosition = 13 * xmumConfig.storeBlock.size.width;
+  const xPosition =
+    xmumConfig.storeBlock.patches.position.x *
+    xmumConfig.storeBlock.size.width;
   const height = xmumConfig.storeBlock.size.height / 2;
 
   return (

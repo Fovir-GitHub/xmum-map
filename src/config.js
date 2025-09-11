@@ -2,7 +2,7 @@
  * @file config.js
  * @description Configuration file of the website.
  * @author Fovir
- * @date 2025-09-10
+ * @date 2025-09-11
  */
 
 import { catppuccinMochaColors } from "./styles/materialUiTheme";
@@ -57,6 +57,9 @@ const xmumConfig = {
       secondRowY: 700,
     },
     patches: {
+      position: {
+        x: 13,
+      },
       milliesVision: {
         name: "Millies Vision\n眼镜店",
         category: "daily_necessity",
