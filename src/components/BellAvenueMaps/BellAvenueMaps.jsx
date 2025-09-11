@@ -2,14 +2,14 @@
  * @file BellMaps.jsx
  * @description Create the `BellAvenueMaps` component which depends on another two components, `BellAvenueFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-09-09
+ * @date 2025-09-11
  */
 
 "use client";
 
 import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
 import xmumConfig from "../../config";
-import Patch from "./Patch";
+import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncouteringNailArt";
 
 /**
  * @description Generate the map from the data file.
@@ -97,7 +97,8 @@ function BellAvenueFloorMap({
         return path;
       })}
       {DrawAMap(stores, ROW_INDEX_LIMIT, setSelectedPost, locale)}
-      {showPatch && Patch(setSelectedPost, locale)}
+      {showPatch &&
+        MilliesVisionAndEncounteringNailArt(setSelectedPost, locale)}
     </svg>
   );
 }
