@@ -42,6 +42,10 @@ export default function Announcement({ locale }) {
       <AccordionDetails
         dangerouslySetInnerHTML={{ __html: announcementContent }}
         className="markdown"
+        sx={{
+          maxHeight: "40vh",
+          overflowY: "auto",
+        }}
       ></AccordionDetails>
     </Accordion>
   );
