@@ -52,6 +52,14 @@ const xmumConfig = {
     bellAvenueWidth: 6000,
     bellSuiteWidth: 1400,
   },
+  seo: {
+    description: "Bell 商家地图。",
+    url: "https://xmummap.com",
+    logo: "/favicon.png",
+    image: "/favicon.png",
+    keywords: "厦门大学马来西亚分校, 厦大马校, Bell",
+    siteName: "XMUM Map",
+  },
   storeBlock: {
     size: {
       width: 150,
