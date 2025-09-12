@@ -2,12 +2,12 @@
  * @file FilterButtonGroup.jsx
  * @description Component of filter buttons, which filter stores by their categories.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-12
  */
 
 import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { categoryInformation } from "../../config";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { toggleButtonClasses } from "@mui/material/ToggleButton";
 import { toggleButtonGroupClasses } from "@mui/material/ToggleButtonGroup";
 import { styled } from "@mui/material/styles";
@@ -40,7 +40,20 @@ export default function FilterButtonGroup({
 
   function FilterButton(category, locale) {
     return (
-      <ToggleButton key={category} value={category}>
+      <ToggleButton
+        key={category}
+        value={category}
+        sx={{
+          "&.Mui-selected": {
+            backgroundColor: categoryInformation[category].color,
+            color: "black",
+          },
+          "&.Mui-selected:hover": {
+            backgroundColor: categoryInformation[category].color,
+            filter: "brightness(1.2)",
+          },
+        }}
+      >
         {categoryInformation[category].displayName[locale]}
       </ToggleButton>
     );
