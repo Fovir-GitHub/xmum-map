@@ -2,7 +2,7 @@
  * @file Announcement.jsx
  * @description Component of displaying announcements.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-12
  */
 
 "use client";
