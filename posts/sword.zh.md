@@ -1,6 +1,6 @@
 # Sword
 
-<img src="https://img.xmummap.com/1_sword_logo.webp?AWSAccessKeyId=4sr3toneyHtmrJY7&Signature=mumG9Lg51%2FOQSo55HC4ENS40m68%3D&Expires=1757408689" width="200" height="200" alt="Sword">
+<img src="https://img.xmummap.com/1_sword_logo.webp" width="200" height="200" alt="Sword">
 
 ## 店长小言
 
