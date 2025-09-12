@@ -1,9 +1,9 @@
 # Updates
 
-- 2025/07/16 _Website Beta Version Launched_ ==Website Structure Update==
-- 2025/07/25 _Website Has Most Merchant Information Posted_ ==Website Structure Update==
-- 2025/08/12 _Website Has Adopted New Version Structure, Discarding Old Version_ ==Website Structure Update==
-- 2025/08/25 **_Student Home_**_Reopened_ ==Store Information Update==
+- 2025/07/16 _Website Beta Version Launched_ `Website Structure Update`
+- 2025/07/25 _Website Has Most Merchant Information Posted_ `Website Structure Update`
+- 2025/08/12 _Website Has Adopted New Version Structure, Discarding Old Version_ `Website Structure Update`
+- 2025/08/25 **_Student Home_**_Reopened_ `Store Information Update`
 
 Welcome to this website! To help students more easily access information about nearby stores, this website regularly collects and organizes relevant information (the update date will be displayed at the bottom of the page, and each update will be announced in the announcement).
 
