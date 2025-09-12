@@ -65,6 +65,7 @@ export default function FilterButtonGroup({
       display: "flex",
       gap: "2rem",
       justifyContent: isMobile() ? "flex-start" : "center",
+      paddingBottom: "10px",
 
       [`& .${toggleButtonGroupClasses.firstButton}, & .${toggleButtonGroupClasses.middleButton}`]:
         {
