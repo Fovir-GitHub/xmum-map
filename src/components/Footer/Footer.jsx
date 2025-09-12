@@ -2,7 +2,7 @@
  * @file Footer.jsx
  * @description Footer component that fixed on the bottom of the page.
  * @author Fovir
- * @date 2025-09-08
+ * @date 2025-09-12
  */
 
 "use client";
