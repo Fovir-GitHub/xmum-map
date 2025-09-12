@@ -35,6 +35,7 @@ export default function Footer({ locale }) {
         <LastUpdateTime locale={locale} />
         <Telephone locale={locale} />
         <Email locale={locale} />
+        <Repository locale={locale} />
         <CopyRight />
       </Box>
     </>
@@ -62,7 +63,7 @@ function Telephone({ locale }) {
 function Email({ locale }) {
   return (
     <MyTypography>
-      {xmumConfig.footer.email[locale]} &nbsp;
+      {xmumConfig.footer.email[locale]}
       <MyLink href={xmumConfig.footer.email.address} isEmail={true}>
         {xmumConfig.footer.email.address}
       </MyLink>
@@ -75,6 +76,17 @@ function LastUpdateTime({ locale }) {
     <MyTypography>
       {xmumConfig.footer.lastUpdateTime[locale]}
       {xmumConfig.footer.lastUpdateTime.time}
+    </MyTypography>
+  );
+}
+
+function Repository({ locale }) {
+  return (
+    <MyTypography>
+      {xmumConfig.footer.repository[locale]}
+      <MyLink href={xmumConfig.footer.repository.link} isEmail={false}>
+        GitHub
+      </MyLink>
     </MyTypography>
   );
 }
@@ -113,6 +125,7 @@ function MyTypography({ children }) {
           alignItems: "center",
           justifyContent: "center",
           fontSize: "inherit",
+          whiteSpace: "pre",
         }}
       >
         {children}

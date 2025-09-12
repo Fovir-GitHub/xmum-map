@@ -22,6 +22,11 @@ const xmumConfig = {
     },
   },
   footer: {
+    repository: {
+      zh: "仓库：",
+      en: "Repository: ",
+      link: "https://github.com/Fovir-GitHub/xmum-map/",
+    },
     tel: {
       zh: "联系电话：",
       en: "Contact: ",
