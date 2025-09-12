@@ -20,7 +20,7 @@ Manicure, Eyelash Extensions, Hand Care, Facial Care, Foot Care, Hair Removal
 
 ---
 
-## Environment
+## Surroundings
 
 <div class="image-slide">
 <img src="https://img.xmummap.com/G_nailart_surd(1).webp" />
