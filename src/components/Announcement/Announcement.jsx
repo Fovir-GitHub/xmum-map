@@ -17,9 +17,11 @@ import { useEffect, useState } from "react";
 import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import xmumConfig from "../../config";
+import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 
 export default function Announcement({ locale }) {
   const [announcementContent, setAnnouncementContent] = useState("");
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     getMarkdownHtml("announcement", locale).then((result) => {
@@ -28,25 +30,32 @@ export default function Announcement({ locale }) {
   }, [locale]);
 
   return (
-    <Accordion sx={{ width: "100%" }}>
-      <AccordionSummary
-        expandIcon={<ExpandMoreRoundedIcon />}
-        sx={{
-          color: catppuccinMochaColors.red,
-          fontWeight: "bolder",
-          fontSize: "1.6rem",
-        }}
+    <>
+      <GlobalEscListener onEsc={() => setExpanded(false)} />
+      <Accordion
+        sx={{ width: "100%" }}
+        expanded={expanded}
+        onChange={(e, isExpanded) => setExpanded(isExpanded)}
       >
-        {xmumConfig.announcement.title[locale]}
-      </AccordionSummary>
-      <AccordionDetails
-        dangerouslySetInnerHTML={{ __html: announcementContent }}
-        className="markdown"
-        sx={{
-          maxHeight: "40vh",
-          overflowY: "auto",
-        }}
-      ></AccordionDetails>
-    </Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreRoundedIcon />}
+          sx={{
+            color: catppuccinMochaColors.red,
+            fontWeight: "bolder",
+            fontSize: "1.6rem",
+          }}
+        >
+          {xmumConfig.announcement.title[locale]}
+        </AccordionSummary>
+        <AccordionDetails
+          dangerouslySetInnerHTML={{ __html: announcementContent }}
+          className="markdown"
+          sx={{
+            maxHeight: "40vh",
+            overflowY: "auto",
+          }}
+        ></AccordionDetails>
+      </Accordion>
+    </>
   );
 }
