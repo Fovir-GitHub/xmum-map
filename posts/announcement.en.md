@@ -1,24 +1,9 @@
 # Updates
 
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/08/25----`Student Home` Reopened</span>
-    <span style="background-color:rgba(218,167,252,0.22)">Store Information Update </span>
-  </div>
-
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/08/12----Website Has Adopted New Version Structure, Discarding Old Version</span>
-    <span style="background-color:rgba(167, 245, 252, 0.22)">Website Structure Update</span>
-  </div>
-
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/07/25----Website Has Most Merchant Information Posted</span>
-    <span style="background-color:rgba(218,167,252,0.22)">Website Structure Update</span>
-  </div>
-
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/07/16----Website Beta Version Launched</span>
-    <span style="background-color:rgba(167, 245, 252, 0.22)">Website Structure Update</span>
-  </div>
+- 2025/08/25 ---- `Student Home` Reopened.
+- 2025/08/12 ---- Website has adopted new version structure, discarding old version.
+- 2025/07/25 ---- Website has most merchant information posted.
+- 2025/07/16 ---- Website beta version launched.
 
 ---
 

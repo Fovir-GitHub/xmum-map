@@ -1,24 +1,9 @@
 # 更新内容
 
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/08/25----`学生之家 湘村小灶` 重新开业</span>
-    <span style="background-color:rgba(218,167,252,0.22)">店铺信息更新</span>
-  </div>
-
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/08/12----网站改用新版本结构，舍弃旧版本</span>
-    <span style="background-color:rgba(167, 245, 252, 0.22)">网站结构更新</span>
-  </div>
-
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/07/25----网站已发布大部分商家信息</span>
-    <span style="background-color:rgba(218,167,252,0.22)">网站结构更新</span>
-  </div>
-
-- <div style="display:flex; justify-content:space-between;">
-    <span>2025/07/16----网站测试版推出</span>
-    <span style="background-color:rgba(167, 245, 252, 0.22)">网站结构更新</span>
-  </div>
+- 2025/08/25 ---- `学生之家 湘村小灶` 重新开业。
+- 2025/08/12 ---- 网站改用新版本结构，舍弃旧版本。
+- 2025/07/25 ---- 网站已发布大部分商家信息。
+- 2025/07/16 ---- 网站测试版推出。
 
 ---
 
