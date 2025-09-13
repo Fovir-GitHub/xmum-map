@@ -53,10 +53,11 @@ const xmumConfig = {
     bellSuiteWidth: 1400,
   },
   seo: {
-    description: "Bell 商家地图。",
+    description:
+      "XMUM Map 提供校园周边全攻略，涵盖美食、娱乐、生活等信息，帮学生快速找到好去处，大学生活更轻松！",
     url: "https://xmummap.com",
-    logo: "/favicon.png",
-    image: "/favicon.png",
+    logo: "https://img.xmummap.com/11_map_favicon.webp",
+    image: "https://img.xmummap.com/11_map_logo.webp",
     keywords: "厦门大学马来西亚分校, 厦大马校, Bell",
     siteName: "XMUM Map",
   },

@@ -1,9 +1,34 @@
 # Updates
 
-- 2025/07/16 _Website Beta Version Launched_ `Website Structure Update`
-- 2025/07/25 _Website Has Most Merchant Information Posted_ `Website Structure Update`
-- 2025/08/12 _Website Has Adopted New Version Structure, Discarding Old Version_ `Website Structure Update`
-- 2025/08/25 **_Student Home_**_Reopened_ `Store Information Update`
+- <div style="display:flex; justify-content:space-between;">
+    <span>2025/08/25----`Student Home` Reopened</span>
+    <span style="background-color:rgba(218,167,252,0.22)">Store Information Update </span>
+  </div>
+
+- <div style="display:flex; justify-content:space-between;">
+    <span>2025/08/12----Website Has Adopted New Version Structure, Discarding Old Version</span>
+    <span style="background-color:rgba(167, 245, 252, 0.22)">Website Structure Update</span>
+  </div>
+
+- <div style="display:flex; justify-content:space-between;">
+    <span>2025/07/25----Website Has Most Merchant Information Posted</span>
+    <span style="background-color:rgba(218,167,252,0.22)">Website Structure Update</span>
+  </div>
+
+- <div style="display:flex; justify-content:space-between;">
+    <span>2025/07/16----Website Beta Version Launched</span>
+    <span style="background-color:rgba(167, 245, 252, 0.22)">Website Structure Update</span>
+  </div>
+
+---
+
+# Feature Introduction
+
+1. Each store on the map can be **clicked to access its own page**, where you can search for information about that store.
+2. On the right side of the website, there is a **language switch** (zh - Chinese, en - English) and a **floor switch** button.
+3. At the top of the website, there are **store category buttons**; click them to **change the map appearance and narrow your search.**
+
+---
 
 Welcome to this website! To help students more easily access information about nearby stores, this website regularly collects and organizes relevant information (the update date will be displayed at the bottom of the page, and each update will be announced in the announcement).
 
@@ -17,9 +42,3 @@ Welcome to this website! To help students more easily access information about n
 7. For valid feedback that is confirmed and adopted, the administrator will provide a reward as a token of appreciation for your support and contribution to the website!
 
 Thank you for your understanding and support. We hope that students can easily find the right food and leisure spots for their studies and daily life! 🍜✨
-
-# Feature Introduction
-
-1. Each store on the map can be **clicked to access its own page**, where you can search for information about that store.
-2. On the right side of the website, there is a **language switch** (zh - Chinese, en - English) and a **floor switch** button.
-3. At the top of the website, there are **store category buttons**; click them to **change the map appearance and narrow your search.**
