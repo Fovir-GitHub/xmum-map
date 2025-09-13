@@ -2,7 +2,7 @@
  * @file Announcement.jsx
  * @description Component of displaying announcements.
  * @author Fovir
- * @date 2025-09-12
+ * @date 2025-09-13
  */
 
 "use client";
@@ -35,7 +35,7 @@ export default function Announcement({ locale }) {
       <Accordion
         sx={{ width: "100%" }}
         expanded={expanded}
-        onChange={(e, isExpanded) => setExpanded(isExpanded)}
+        onChange={(_, isExpanded) => setExpanded(isExpanded)}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreRoundedIcon />}
