@@ -23,6 +23,7 @@ import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
+import { LockClock } from "@mui/icons-material";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -104,6 +105,21 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     setSelectedPost(null);
     clearHashTag();
   }
+
+  // Handle URLs with hash tag.
+  useEffect(() => {
+    function handleHashChange() {
+      const slug = window.location.hash.slice(1);
+      if (slug) {
+        handleStoreBlockClick(slug, locale);
+      }
+    }
+
+    handleHashChange();
+    window.addEventListener("hashchange", handleHashChange);
+    return () =>
+      window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
