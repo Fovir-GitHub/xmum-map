@@ -56,8 +56,7 @@ export default function RootLayout({ children }) {
       <Script
         src="https://umami.fovir.fyi/script.js"
         data-website-id="e1fe0b15-8800-43bb-8e87-87bd8aa1b98b"
-        strategy="afterInteractive"
-        async
+        defer
       />
     </html>
   );
