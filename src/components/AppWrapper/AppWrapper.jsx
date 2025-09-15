@@ -22,6 +22,7 @@ import Announcement from "../Announcement/Announcement";
 import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -81,11 +82,27 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Categories that can be displayed.
   const [showCategories, setShowCategories] = useState(categories);
 
+  // Hash tag operations.
+  const router = useRouter();
+  const pathname = usePathname();
+
   function handleStoreBlockClick(slug, locale) {
     setSelectedPost({
       slug: slug,
       locale: locale,
     });
+    router.replace(`${pathname}#${slug}`);
+  }
+
+  // Clear hash tag.
+  function clearHashTag() {
+    router.replace(pathname);
+  }
+
+  // Function to run when closing the sidebar.
+  function closeSidebarEffect() {
+    setSelectedPost(null);
+    clearHashTag();
   }
 
   return (
@@ -119,9 +136,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
         transformRef={transformRef}
       />
 
-      <GlobalEscListener onEsc={() => setSelectedPost(null)} />
+      <GlobalEscListener onEsc={closeSidebarEffect} />
       <Sidebar
-        onClose={() => setSelectedPost(null)}
+        onClose={closeSidebarEffect}
         show={selectedPost !== null}
       >
         <DetailPage
