@@ -2,9 +2,11 @@
  * @file not-found.js
  * @description 404 page.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-15
  */
 
+import { redirect } from "next/navigation";
+
 export default function NotFound() {
-  return <h1>404 - Not Found</h1>;
+  redirect("/");
 }
