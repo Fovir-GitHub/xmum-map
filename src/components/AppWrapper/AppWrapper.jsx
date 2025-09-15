@@ -23,6 +23,7 @@ import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
+import XmumMap from "../XmumMap/XmumMap";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -165,26 +166,34 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
-            gap: "10cm",
+            flexDirection: "column",
           }}
         >
-          <BellAvenueMaps
-            storeData={avenueData}
-            currentFloor={layer}
-            mapWidth={bellAvenueMapWidth}
-            mapHeight={mapHeight}
-            showCategories={showCategories}
-            locale={locale}
-            handleStoreBlockClick={handleStoreBlockClick}
-          />
-          <BellSuiteMap
-            storeData={suiteData}
-            handleStoreBlockClick={handleStoreBlockClick}
-            locale={locale}
-            mapWidth={bellSuiteMapWidth}
-            mapHeight={mapHeight}
-          />
+          <XmumMap />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "10cm",
+            }}
+          >
+            <BellAvenueMaps
+              storeData={avenueData}
+              currentFloor={layer}
+              mapWidth={bellAvenueMapWidth}
+              mapHeight={mapHeight}
+              showCategories={showCategories}
+              locale={locale}
+              handleStoreBlockClick={handleStoreBlockClick}
+            />
+            <BellSuiteMap
+              storeData={suiteData}
+              handleStoreBlockClick={handleStoreBlockClick}
+              locale={locale}
+              mapWidth={bellSuiteMapWidth}
+              mapHeight={mapHeight}
+            />
+          </div>
         </div>
       </Map>
       <Footer locale={locale} />
