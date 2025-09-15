@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-15
  */
 
 "use client";
@@ -81,6 +81,13 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Categories that can be displayed.
   const [showCategories, setShowCategories] = useState(categories);
 
+  function handleStoreBlockClick(slug, locale) {
+    setSelectedPost({
+      slug: slug,
+      locale: locale,
+    });
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -134,15 +141,15 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           <BellAvenueMaps
             storeData={avenueData}
             currentFloor={layer}
-            setSelectedPost={setSelectedPost}
             mapWidth={bellAvenueMapWidth}
             mapHeight={mapHeight}
             showCategories={showCategories}
             locale={locale}
+            handleStoreBlockClick={handleStoreBlockClick}
           />
           <BellSuiteMap
             storeData={suiteData}
-            setSelectedPost={setSelectedPost}
+            handleStoreBlockClick={handleStoreBlockClick}
             locale={locale}
             mapWidth={bellSuiteMapWidth}
             mapHeight={mapHeight}

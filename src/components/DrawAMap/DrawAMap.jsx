@@ -16,9 +16,9 @@ import xmumConfig from "../../config";
 export default function DrawAMap({
   stores,
   rowIndexLimit,
-  setSelectedPost,
   locale,
   limit,
+  handleStoreBlockClick,
 }) {
   return (
     <>
@@ -51,10 +51,7 @@ export default function DrawAMap({
             key={crypto.randomUUID()}
             icon={getStoreIcon(store)}
             handleClick={() =>
-              setSelectedPost({
-                slug: store.Slug,
-                locale: locale,
-              })
+              handleStoreBlockClick(store.Slug, locale)
             }
           />
         );

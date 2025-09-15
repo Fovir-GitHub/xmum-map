@@ -14,7 +14,7 @@ export default function BellSuiteMap({
   storeData,
   mapWidth,
   mapHeight,
-  setSelectedPost,
+  handleStoreBlockClick,
   locale,
 }) {
   const ROW_INDEX_LIMIT = 8;
@@ -87,7 +87,7 @@ export default function BellSuiteMap({
         {DrawAMap({
           stores: storeData[0],
           rowIndexLimit: ROW_INDEX_LIMIT,
-          setSelectedPost: setSelectedPost,
+          handleStoreBlockClick: handleStoreBlockClick,
           locale: locale,
           limit: limit,
         })}
