@@ -2,7 +2,7 @@
  * @file DrawAMap.jsx
  * @description Draw a map with row index limit.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-15
  */
 
 "use client";
@@ -13,13 +13,13 @@ import StoreBlock, {
 } from "../StoreBlock/StoreBlock";
 import xmumConfig from "../../config";
 
-export default function DrawAMap(
+export default function DrawAMap({
   stores,
   rowIndexLimit,
   setSelectedPost,
   locale,
   limit,
-) {
+}) {
   return (
     <>
       {stores.map((store) => {
