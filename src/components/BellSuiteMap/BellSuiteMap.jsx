@@ -2,7 +2,7 @@
  * @file BellSuiteMap.jsx
  * @description Draw map of bell suite.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-15
  */
 
 "use client";
@@ -14,7 +14,7 @@ export default function BellSuiteMap({
   storeData,
   mapWidth,
   mapHeight,
-  setSelectedPost,
+  handleStoreBlockClick,
   locale,
 }) {
   const ROW_INDEX_LIMIT = 8;
@@ -84,13 +84,13 @@ export default function BellSuiteMap({
         {drawVerticalPath().map((path) => {
           return path;
         })}
-        {DrawAMap(
-          storeData[0],
-          ROW_INDEX_LIMIT,
-          setSelectedPost,
-          locale,
-          limit,
-        )}
+        {DrawAMap({
+          stores: storeData[0],
+          rowIndexLimit: ROW_INDEX_LIMIT,
+          handleStoreBlockClick: handleStoreBlockClick,
+          locale: locale,
+          limit: limit,
+        })}
       </svg>
     </>
   );

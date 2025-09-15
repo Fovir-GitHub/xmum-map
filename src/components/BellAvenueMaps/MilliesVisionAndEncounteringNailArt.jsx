@@ -2,7 +2,7 @@
  * @file MilliesVisionAndEncounteringNailArt.jsx
  * @description Draw milles vision and encountering nail art.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-15
  */
 
 import xmumConfig from "../../config";
@@ -11,10 +11,10 @@ import StoreBlock, {
   getStoreIcon,
 } from "../StoreBlock/StoreBlock";
 
-export default function MilliesVisionAndEncounteringNailArt(
-  setSelectedPost,
+export default function MilliesVisionAndEncounteringNailArt({
+  handleBlockClick,
   locale,
-) {
+}) {
   const xPosition =
     xmumConfig.storeBlock.patches.position.x *
     xmumConfig.storeBlock.size.width;
@@ -35,10 +35,10 @@ export default function MilliesVisionAndEncounteringNailArt(
         text={xmumConfig.storeBlock.patches.milliesVision.name}
         showIcon={false}
         handleClick={() =>
-          setSelectedPost({
-            slug: xmumConfig.storeBlock.patches.milliesVision.slug,
-            locale: locale,
-          })
+          handleBlockClick(
+            xmumConfig.storeBlock.patches.milliesVision.slug,
+            locale,
+          )
         }
       />
 
@@ -57,11 +57,10 @@ export default function MilliesVisionAndEncounteringNailArt(
           xmumConfig.storeBlock.patches.encounteringNailArt.category,
         )}
         handleClick={() =>
-          setSelectedPost({
-            slug: xmumConfig.storeBlock.patches.encounteringNailArt
-              .slug,
-            locale: locale,
-          })
+          handleBlockClick(
+            xmumConfig.storeBlock.patches.encounteringNailArt.slug,
+            locale,
+          )
         }
         showIcon={false}
       />

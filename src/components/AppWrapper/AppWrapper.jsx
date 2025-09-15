@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-15
  */
 
 "use client";
@@ -22,6 +22,7 @@ import Announcement from "../Announcement/Announcement";
 import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -81,6 +82,43 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Categories that can be displayed.
   const [showCategories, setShowCategories] = useState(categories);
 
+  // Hash tag operations.
+  const router = useRouter();
+  const pathname = usePathname();
+
+  function handleStoreBlockClick(slug, locale) {
+    setSelectedPost({
+      slug: slug,
+      locale: locale,
+    });
+    router.replace(`${pathname}#${slug}`);
+  }
+
+  // Clear hash tag.
+  function clearHashTag() {
+    router.replace(pathname);
+  }
+
+  // Function to run when closing the sidebar.
+  function closeSidebarEffect() {
+    setSelectedPost(null);
+    clearHashTag();
+  }
+
+  useEffect(() => {
+    function handleHashChange() {
+      const slug = window.location.hash.slice(1);
+      if (slug) {
+        handleStoreBlockClick(slug, locale);
+      }
+    }
+
+    handleHashChange();
+    window.addEventListener("hashchange", handleHashChange);
+    return () =>
+      window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -112,9 +150,9 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
         transformRef={transformRef}
       />
 
-      <GlobalEscListener onEsc={() => setSelectedPost(null)} />
+      <GlobalEscListener onEsc={closeSidebarEffect} />
       <Sidebar
-        onClose={() => setSelectedPost(null)}
+        onClose={closeSidebarEffect}
         show={selectedPost !== null}
       >
         <DetailPage
@@ -134,15 +172,15 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           <BellAvenueMaps
             storeData={avenueData}
             currentFloor={layer}
-            setSelectedPost={setSelectedPost}
             mapWidth={bellAvenueMapWidth}
             mapHeight={mapHeight}
             showCategories={showCategories}
             locale={locale}
+            handleStoreBlockClick={handleStoreBlockClick}
           />
           <BellSuiteMap
             storeData={suiteData}
-            setSelectedPost={setSelectedPost}
+            handleStoreBlockClick={handleStoreBlockClick}
             locale={locale}
             mapWidth={bellSuiteMapWidth}
             mapHeight={mapHeight}

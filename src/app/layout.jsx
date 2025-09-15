@@ -2,11 +2,12 @@
  * @file layout.jsx
  * @description Layout of the website.
  * @author Fovir
- * @date 2025-09-12
+ * @date 2025-09-15
  */
 
 import "../styles/global.css";
 import xmumConfig from "../config";
+import Script from "next/script";
 
 /**
  * @description Meta data of the site.
@@ -52,6 +53,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang={xmumConfig.language.default}>
       <body>{children}</body>
+      <Script
+        src="https://umami.fovir.fyi/script.js"
+        data-website-id="e1fe0b15-8800-43bb-8e87-87bd8aa1b98b"
+        strategy="afterInteractive"
+        async
+      />
     </html>
   );
 }

@@ -2,7 +2,7 @@
  * @file BellMaps.jsx
  * @description Create the `BellAvenueMaps` component which depends on another two components, `BellAvenueFloorMap` and `StoreBlock`.
  * @author Fovir
- * @date 2025-09-11
+ * @date 2025-09-15
  */
 
 "use client";
@@ -17,11 +17,11 @@ import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringN
  */
 export default function BellAvenueMaps({
   storeData,
-  setSelectedPost,
   mapWidth,
   mapHeight,
   locale,
   showCategories,
+  handleStoreBlockClick,
   currentFloor = 0,
 }) {
   // Size of the map.
@@ -34,8 +34,8 @@ export default function BellAvenueMaps({
         svgWidth={WIDTH}
         svgHeight={HEIGHT}
         stores={storeData[currentFloor]}
-        setSelectedPost={setSelectedPost}
         locale={locale}
+        handleStoreBlockClick={handleStoreBlockClick}
         showPatch={
           currentFloor === 0 &&
           showCategories.includes(
@@ -57,9 +57,9 @@ function BellAvenueFloorMap({
   svgWidth,
   svgHeight,
   stores,
-  setSelectedPost,
   locale,
   showPatch,
+  handleStoreBlockClick,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const limit = 78;
@@ -101,15 +101,18 @@ function BellAvenueFloorMap({
         // Draw the path.
         return path;
       })}
-      {DrawAMap(
-        stores,
-        ROW_INDEX_LIMIT,
-        setSelectedPost,
-        locale,
-        limit,
-      )}
+      {DrawAMap({
+        stores: stores,
+        rowIndexLimit: ROW_INDEX_LIMIT,
+        locale: locale,
+        limit: limit,
+        handleStoreBlockClick: handleStoreBlockClick,
+      })}
       {showPatch &&
-        MilliesVisionAndEncounteringNailArt(setSelectedPost, locale)}
+        MilliesVisionAndEncounteringNailArt({
+          handleBlockClick: handleStoreBlockClick,
+          locale: locale,
+        })}
     </svg>
   );
 }
