@@ -23,7 +23,6 @@ import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
-import { LockClock } from "@mui/icons-material";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -106,7 +105,6 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     clearHashTag();
   }
 
-  // Handle URLs with hash tag.
   useEffect(() => {
     function handleHashChange() {
       const slug = window.location.hash.slice(1);
