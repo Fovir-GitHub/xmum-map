@@ -2,7 +2,7 @@
  * @file Map.jsx
  * @description Create the `Map` component to contain all maps. And use `react-zoom-pan-pinch` to enable users to move and zoom maps.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-16
  */
 
 "use client";
@@ -28,9 +28,9 @@ export default function Map({ children, transformRef }) {
     <TransformWrapper
       ref={transformRef}
       limitToBounds={false}
-      minScale={0.05}
-      wheel={{ step: 0.01 }}
-      initialScale={0.8}
+      minScale={0.01}
+      wheel={{ step: 0.001 }}
+      initialScale={0.06}
     >
       <TransformComponent>{children}</TransformComponent>
     </TransformWrapper>
