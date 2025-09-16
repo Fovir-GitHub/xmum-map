@@ -32,7 +32,7 @@
       }
 
       .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15 {
-        font-family: AdobeSongStd-Light-GBpc-EUC-H, 'Adobe Song Std';
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 300;
       }
 
@@ -277,7 +277,7 @@
     <rect class="cls-3" x="490.87" y="126.5" width="148" height="111"/>
     <rect class="cls-3" x="1096.87" y="439.5" width="402" height="234"/>
     <rect class="cls-3" x="1417.87" y="838.5" width="47" height="113"/>
-    <circle class="cls-3" cx="431.87" cy="488.5" r="27"/>
+    <circle class="cls-3" cx="431.87" cy="488.5" r="36"/>
     <ellipse class="cls-3" cx="1129.37" cy="173.5" rx="91" ry="64.5" transform="translate(208.1 849.4) rotate(-45)"/>
   </g>
   <g id="_图层_5" data-name="图层 5">
