@@ -24,7 +24,6 @@ import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
 import XmumMap from "../XmumMap/XmumMap";
-import CcisMap from "../CcisMap/CcisMap";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -172,30 +171,13 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
             gap: "500px",
           }}
         >
-          <div
-            style={{
-              position: "relative",
-              top: 0,
-              left: 4900,
-            }}
-          >
-            <XmumMap />
-          </div>
+          <XmumMap />
           <div
             style={{
               display: "flex",
               flexDirection: "row",
             }}
           >
-            <div
-              style={{
-                flex: "1 0 auto",
-                position: "relative",
-                left: -1000,
-              }}
-            >
-              <CcisMap />
-            </div>
             <div
               style={{
                 flex: 1,

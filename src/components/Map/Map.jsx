@@ -41,9 +41,12 @@ export default function Map({ children, transformRef }) {
         excluded: [],
       }}
       initialScale={
-        mobileDevice ? windowWidth / 20000 : windowWidth / 25000
+        mobileDevice ? windowWidth / 10000 : windowWidth / 15000
       }
       initialPositionY={mobileDevice ? windowHeight / 4 : 0}
+      initialPositionX={
+        mobileDevice ? windowWidth / 8 : windowWidth / 4
+      }
     >
       <TransformComponent>{children}</TransformComponent>
     </TransformWrapper>
