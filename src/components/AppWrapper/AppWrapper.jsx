@@ -107,6 +107,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     clearHashTag();
   }
 
+  // Handle access to URL with hash tags.
   useEffect(() => {
     function handleHashChange() {
       const slug = window.location.hash.slice(1);
