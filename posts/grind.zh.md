@@ -17,6 +17,8 @@
 | Iced Lemon Tea    | 冰柠檬茶     | 9.0        |
 | Fruit Smoothie    | 水果冰沙     | 12.5       |
 
+————
+
 | Item (English)            | 项目（中文） | Price (RM) |
 | ------------------------- | ------------ | ---------- |
 | Big Breakfast             | 全套英式早餐 | 22.5       |
@@ -25,6 +27,8 @@
 | Pancakes with Maple Syrup | 枫糖煎饼     | 15.0       |
 | French Toast              | 法式吐司     | 14.0       |
 | Croissant Sandwich        | 可颂三明治   | 15.5       |
+
+————
 
 | Item (English)         | 项目（中文）       | Price (RM) |
 | ---------------------- | ------------------ | ---------- |
@@ -36,12 +40,16 @@
 | Grilled Salmon         | 烤三文鱼           | 28.0       |
 | German Sausage Platter | 德式香肠拼盘       | 26.5       |
 
+————
+
 | Item (English) | 项目（中文） | Price (RM) |
 | -------------- | ------------ | ---------- |
 | Caesar Salad   | 凯撒沙拉     | 15.0       |
 | Greek Salad    | 希腊沙拉     | 16.5       |
 | Chicken Wrap   | 鸡肉卷饼     | 14.5       |
 | Tuna Sandwich  | 吞拿鱼三明治 | 13.5       |
+
+————
 
 | Item (English)         | 项目（中文）   | Price (RM) |
 | ---------------------- | -------------- | ---------- |
