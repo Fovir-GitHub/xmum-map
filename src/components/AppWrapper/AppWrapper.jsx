@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-15
+ * @date 2025-09-16
  */
 
 "use client";
@@ -24,6 +24,7 @@ import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
 import XmumMap from "../XmumMap/XmumMap";
+import CcisMap from "../CcisMap/CcisMap";
 
 export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -169,30 +170,58 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
             flexDirection: "column",
           }}
         >
-          <XmumMap />
+          <div
+            style={{
+              position: "relative",
+              top: 0,
+              left: -4300,
+            }}
+          >
+            <XmumMap />
+          </div>
           <div
             style={{
               display: "flex",
-              flexDirection: "row",
-              gap: "10cm",
             }}
           >
-            <BellAvenueMaps
-              storeData={avenueData}
-              currentFloor={layer}
-              mapWidth={bellAvenueMapWidth}
-              mapHeight={mapHeight}
-              showCategories={showCategories}
-              locale={locale}
-              handleStoreBlockClick={handleStoreBlockClick}
-            />
-            <BellSuiteMap
-              storeData={suiteData}
-              handleStoreBlockClick={handleStoreBlockClick}
-              locale={locale}
-              mapWidth={bellSuiteMapWidth}
-              mapHeight={mapHeight}
-            />
+            <div
+              style={{
+                flex: "1 0 auto",
+                position: "relative",
+                left: -4200,
+              }}
+            >
+              <CcisMap />
+            </div>
+            <div
+              style={{
+                flex: 1,
+              }}
+            >
+              <BellAvenueMaps
+                storeData={avenueData}
+                currentFloor={layer}
+                mapWidth={bellAvenueMapWidth}
+                mapHeight={mapHeight}
+                showCategories={showCategories}
+                locale={locale}
+                handleStoreBlockClick={handleStoreBlockClick}
+              />
+            </div>
+            <div
+              style={{
+                flex: 1,
+                marginLeft: "200px",
+              }}
+            >
+              <BellSuiteMap
+                storeData={suiteData}
+                handleStoreBlockClick={handleStoreBlockClick}
+                locale={locale}
+                mapWidth={bellSuiteMapWidth}
+                mapHeight={mapHeight}
+              />
+            </div>
           </div>
         </div>
       </Map>
