@@ -11,16 +11,21 @@ import {
   TransformComponent,
 } from "react-zoom-pan-pinch";
 import { useEffect, useState } from "react";
+import { isMobile } from "../../lib/isMobile";
 
 export default function Map({ children, transformRef }) {
   // Get current window width.
   const [windowWidth, setWindowWidth] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+  const mobileDevice = isMobile();
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
   }, []);
 
-  // If it has not got the window width, then skip the render process.
-  if (windowWidth === 0) {
+  // If it has not got the window width or height, then skip the render process.
+  if (windowWidth === 0 || windowHeight === 0) {
     return;
   }
 
@@ -29,9 +34,16 @@ export default function Map({ children, transformRef }) {
       ref={transformRef}
       limitToBounds={false}
       minScale={0.01}
-      wheel={{ step: 0.001 }}
-      initialScale={0.06}
-      initialPositionX={windowWidth / 2}
+      wheel={{
+        step: 0.0001,
+        smoothStep: 0.0002,
+        wheelDisabled: false,
+        excluded: [],
+      }}
+      initialScale={
+        mobileDevice ? windowWidth / 20000 : windowWidth / 25000
+      }
+      initialPositionY={mobileDevice ? windowHeight / 4 : 0}
     >
       <TransformComponent>{children}</TransformComponent>
     </TransformWrapper>
