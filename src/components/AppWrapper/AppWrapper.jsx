@@ -188,7 +188,8 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
               style={{
                 flex: "1 0 auto",
                 position: "relative",
-                left: -4200,
+                left: -7000,
+                top: -1000,
               }}
             >
               <CcisMap />

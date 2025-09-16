@@ -10,7 +10,7 @@ export default function CcisMap() {
     <img
       src="maps/ccis.svg"
       style={{
-        width: "200%",
+        width: "400%",
         height: "100%",
       }}
     />
