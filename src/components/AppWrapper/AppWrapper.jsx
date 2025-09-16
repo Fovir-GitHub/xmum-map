@@ -175,7 +175,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
             style={{
               position: "relative",
               top: 0,
-              left: -4000,
+              left: 4900,
             }}
           >
             <XmumMap />
@@ -190,7 +190,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
               style={{
                 flex: "1 0 auto",
                 position: "relative",
-                left: -6000,
+                left: -1000,
               }}
             >
               <CcisMap />
