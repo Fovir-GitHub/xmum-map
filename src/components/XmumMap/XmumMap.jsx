@@ -8,7 +8,7 @@
 export default function XmumMap() {
   return (
     <img
-      src="maps/XMUM_MAP_new.svg"
+      src="maps/xmum.svg"
       alt="XMUM Map"
       style={{ width: "200%", height: "100%" }}
     />
