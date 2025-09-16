@@ -168,13 +168,14 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           style={{
             display: "flex",
             flexDirection: "column",
+            gap: "500px",
           }}
         >
           <div
             style={{
               position: "relative",
               top: 0,
-              left: -4300,
+              left: -4000,
             }}
           >
             <XmumMap />
