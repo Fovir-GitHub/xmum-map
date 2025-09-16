@@ -29,8 +29,9 @@ export default function Map({ children, transformRef }) {
       ref={transformRef}
       limitToBounds={false}
       minScale={0.01}
-      wheel={{ step: 0.001 }}
+      wheel={{ step: 0.0001 }}
       initialScale={0.06}
+      initialPositionX={windowWidth / 2}
     >
       <TransformComponent>{children}</TransformComponent>
     </TransformWrapper>
