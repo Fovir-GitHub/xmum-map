@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2603.36 613.18">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #545454;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #545454;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #dc8a78;
+        stroke: #fff;
+      }
+
+      .cls-8 {
+        fill: #000;
+      }
+
+      .cls-8, .cls-9 {
+        font-family: AdobeSongStd-Light-GBpc-EUC-H, 'Adobe Song Std';
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      .cls-4 {
+        fill: #a0a1a6;
+      }
+
+      .cls-5 {
+        fill: #8f0003;
+      }
+
+      .cls-6 {
+        fill: #00842b;
+      }
+
+      .cls-9, .cls-7 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="_图层_3" data-name="图层 3">
+    <rect class="cls-4" x="1257.5" y="181.68" width="121" height="29"/>
+    <rect class="cls-4" x="1503" y="182.18" width="121" height="29"/>
+  </g>
+  <g id="_图层_1" data-name="图层 1">
+    <rect class="cls-3" x="1356.5" y="143.68" width="163" height="105"/>
+    <rect class="cls-3" x="622.5" y="128.68" width="183" height="84"/>
+    <rect class="cls-3" x="818.5" y="213.68" width="73" height="199"/>
+    <rect class="cls-6" x="637.5" y="229.68" width="59" height="173"/>
+    <rect class="cls-6" x="729.5" y="230.68" width="59" height="173"/>
+    <rect class="cls-3" x="531.5" y="210.68" width="73" height="199"/>
+    <image width="256" height="157" transform="translate(586 384.18)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAACdCAYAAABb/aZPAAAACXBIWXMAAAsSAAALEgHS3X78AAAOtElEQVR4nO2dsXIjOQ6GMVcXyIElKxx7S/HUVu09xb7NpRveI+y9yr3EPcIkE6vWnlAjK5Cy2cBGG6LIbnYToED1/1Vd7Y0tsyk2CYIg+JMIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERJ+uXYGQP//6+TP82el1T0REi+Uqq4zT656Ohz2dDnta3K9o/bS5KIvhzxERLe5XdHe/ij5HlhnS93c5dc35u9zPDZVBlN+OU59xfG+jnDaJteviftX9/VH8fGobp563ftxkl7d73mbXo6+d//jlk6sx989rV8CScPATvb0UaQT496fXPe1etm8d8aW/zLv3Dqo1kGoMzBrw90i1TzjYuS3vRJtGyz3s6fS6p9NyRYvDdGMrGTP4id76iewjsXrIftXKu3RnAL5/+9r9fznYjod454l1MiYc/F25gRHgn31e/nZRhvz9EFNmaTlb3hqxAU/0NviYnPa6u1/R8f6tnNNhP7mtSgco95Hd85Z+PG+J3vuXLOtYUL9r4M4AyM5BdDlYF8FssXveRt3ysJwUsUFbw3rnusr83Y+H8iVATfi78TKsdNZmL6Erd8TSSS4HuaySJVXnNR7ODQqXF05WnnFnAFIvpa8DSYOQ2yk0mdKZwlkj9nP5+9Nhf2Hsxg6sqTGK2BqdnysNGdHHe9IwVqn3tHt5X4/3LNVkXYkuXf7SPrB+2nTvg5eNC9EPedniHXcGoI9rzdY5lBiB42Gf7NTcqRb3q4tOxevioYEQi4WkiA34sCOHz+XvvlBYmw/Bxj5sC35+6H6nArpWdZFxDXpUeYwpzRiAsR1LI2qeSyymMIZUp+7KT+xk8EAdevbp9cMFlv/t+3z37OWKHp42ZwNLGoj144YWX1YXf2fJ3QiDZomWp3NNXBuAVte/YxnbkfizY/5GLh/6jEZswOc+1+od3fK7vzZuDUAYvBk7ow+tq+dGzoxZsh1p4XHhvdnzj2tXIEY4+Kdsq7S0FTNELdd6ikt7erUPdrUQTGsVtx4A0eWW36i/xeyRRDthxXLvu8XBv3veqieLWeHSAGhF+lt6ETEsYyC7l+3HDsPEsmXmX4vta0krCUEuDYCkNHmkLxZg0Wm118LHnmj9VBbLFa1p87H1SNPbopWOXpOWJh33BqAEfgFh/rb8neaztN1Vy20mNgJTDUyLrnktWhj4jMsgoKS0oy2Wqy4t+Mfz1mRGZWSaagsslm/76aWzv2WHv4W9ds+49QD4pWsMJnmIwxJNV1iu/y2TXqYGBKfkItw6td6ZJu49gCMfBVUwBJxBViNhRTvd1Ao+uDKVGt5OKx4V01JMxK0HwHAgT6NRa8xWWsd7a82sLQSsWknq8ly3FO4NgLaraX1GQHNA1TjP0EKnbWFGbdH9J2pgCdBlBSosA2q4kppBK83lTx/eXWyLpZUFlgFmK9x7AIzGMqCF2S4EWXZt0GLfImrEALSwTpVoue7WrmRYx5S6ElFcfKTm+5B5FjWPet86TRgATdB5zuXIpFQW0bmUmtQbSIlyap0rSAmGhmW2EhCUhKpJnnBnAFgUNOcgUJ9UdwwWwljTpZijV7TkwGPttLj/SJKKPSPmIYRimBq7Hly/HyJPI2Zw+H87kdA1pm1koM4qZ4P/G7a11+WWOwMg3TzuaLwVmGrYlBxUCim/pSFYGdbdg4BJOOhlO01dWqyfNp0W3u5lS2vaqGYCSiESrntMfZfrMMUIaMzEKbVj2f8u+uKjzyChOwPw+cubNHessWI6cJ+//DYpg02+RCnqqNGhr7ltdfa9hMBHqp2meBiskc8zacmpS/k+Zdt35zhCIdTlx2AbO6DkDs2UGTl05fu8p9TzveHOADDhIIoJLZY0aLhdJxVep14+UeMF5yx7eFA/vM/Ysd8zU+vM7cd6g0TTDV/fTB67kIOzOVN171vyTKnjxcBPeFAtXvDi1gAMoRFwkoM8dkNQjiG4kC5LiG7mehfR8g7n5fXNXlLTr0ZH5HMWXO/cA0K5g4qfwceXOU5wdkdApK2JLu+GCNOeh+5lGFPHVnF1TxnR5d2AYWfXzAjs66wc8Bp6Xmz9J5HueG7d5UwSzloaAUGtssJydy/bs+/Zd3sTB/34tGZuXWJblWEcKKesWH1T5NYvxwPwdjegq8oQxS8HtSDXXQs7SsmAlGWlSLntWlgZAFl+rtHTDMBOpVv6RSaasfcHtmgAmlkCWOzf5+wps4ubS19AbGxZFtQYbOEdBqHRK92N0MRDHa5JMwaA6GNwaXViqwxDjX1mi4BSTY0BGc23MnpI6iqnGQNgIUBh0Xm0jEqNE4sWdDsDhhFxDHw93J8GZLQyqWqcrtPAoo4ym84a66QXbSNwloA2I9wbAB6wmh3KY0YWY/F9w/KtWSztlJesZn952GhONLEE0BKfrKVjX3pgxbOB8oDlEmBuSwv3BqCVtX9Y9tRAYOsd0DLQyAN/jjO1Fe4NAFNq9Wt2GgujpUWN47SWHgwCgLq4jwFoUqqAO4bScwpEdgFL6/jCndEef62BPycPoxkPoJQa0W/tLDsLOTCr3AeZARjm4GuVb/3+5ri8mJUHUAMLL6OlTjk2fXYMtdz/OS0xZuMBENl3IItApcYtvtbU2F2Z4+xcg1l6AJYdSXOpwQdSNLFaCt3a1uVcjM2sPIAWZxGLHQXtWEWt7MJaz2itj5QwKwNA9BFYs1oOWKSoam/daV1fVotw/7/TdHzH4lix1+WWNk0YAM2XEWrJtfKiNXcEztR0lAyWleHrRE2/pZOAWEGYXt7+3WcQYnJhHnQJrkUTBiCXIb08GaGWs4j3F6+9dVearSjRVELuG5z0mP7+oahHaBBSdZb/5s9LGTYi+7Txa9OEAciZXWLa8iHfX7/SA0tMV3J/c0Q8Y7BghkwKKi0vVN3V8AJ4VtYwJFILcUwiUfjZlMoP1zemkNzdecD14QtREobkVryGJgzAGPoEMeV6WtsNlutTFvHkTtIpGkcIJbzD8qROfuqz2fUL9PW1rl4vTdGWA59l4WOfy33OlCzEdY8UW8ygxJYdRO3EVZibMADyxfRZ5TBafTzszy4JKYVv2pFr1aFOO7ROlVd38aw/9i6E1PHinB2GIY9DaiSONQRh9qDX2bTPoJzJyfdcYOMVdwZgjOxX2DnHdiLWnNdCPrv0LIB2RHuxfLvAgyjvVF1M3FMO9vDmnjFXroWemEddvlyPY8zywyPuDIC8qYeIktr43edf90VKul5nHSs4szBmZGKz/fpxQ4svl20UW0P3ZS0my76x9vdozPpwZwB4DRi69fK/jNa6XasTej+qynfqnQ77ztMKL9fg7zDVm+JLVWJLqqllt4L39x/DnQFgbiWzzBvSCIQeVWq2z2WxXHWeWphtWFp2LUq3NVszAm4NgGQnroPSSlphPCbBWJdv5aaeXm3lxq0JYxNzoAkDYHWGXRNLI9BK5qJl3azboJUdCW2aMACaaM/+muX0oS0OYtEOlmh/99Ttwak8hFulCQPAW1aWl01oYeEJtCSvZSnbrUkYp7C+k9ErTRgApnQWtJz1eFZpae3YWsBKM2NTJm3NmaYMgOfca4tz+5K+S0fBODiegHZszACU0voLb83D8Egt8ZJWcG8A5L6shvtvfTOuFZj9gQXuDQCR3tVgLevWYeDrbgW2Fv+wwr0B0Fpb42XfBt6XQa3kbDDNqAK3crrKkt3z1uy2oFJq1InP7HsfWC15mu49AE28d5wcPM+AcKsvhWYkHttmVgaAqL0MOInnQCDrDaQy7EpjOFpBXE0Nwz5C5WKL69I0mJ0BkPJTRDrBJHmkNqVbwEwZDFo7ISGl69VQzuuUmPnGqPbm1rcEaxed3xG3x8Jx/srsDACfWy/pBBeS1cL1HVKDCRVocwfC1Pr25b3zz8YalVAtSJbJCr5h3WOqvYtD/vdv6dwGEXU6kF4HPuPOAHz/9vXs3xZiiyWKuKH68MPTZvQBElagzR0IU3ZCUoP0rFwh78Uua66mPrdbjj5h7PddGyRUd1N15fpO1dyLlWOl8Ot98BMRfbp2BUL+/b///5T/Zi06RutCB5m7P1Z/cKxsdR88EKTmXmrwMbkDIEcurc+bSaGZQx/KcYd0xk95IgiNo3xO7B30iaNKrcRY3SV//PLJ1ZhzVRkioj//+vkz9vNObqowsio775j7BnKER0ui4DFDQHTp+g8tMfjvSw1USlM/9dkaGZaWuwyyf/V9zxR830QsUMsKTERE//39X67GnKvKEKUNQIypCqzyZQ25ujzz5HRujQ4qDYEsMzbLaKojaUToTaPqioehhuob80pyjgvH+mG4zPjPrw+uxpyryhD1ewB9L37M9l4YBOzTvB8zq1nPUFZKOER+DUBMpkvL8GmlmIfl9pXnbQngLgiYYkqgKfezFjMr0EG+C833YnF822OG5hDuDYBF4o7VjGWVBy63zzwaJ0uvh8gm+zH0AlvbZtSiibMAfN2SNtoW22uKbsucLdWUb3EKr4qfI649gNjlIJ5pzfprUUMH0LL8mjEAb7g2AERtnawiaq8DlFArrz58Jl9BpnG+oLXju9q4NgDaFtpyTTlXahjosz31F3Ek+invMtIh5twfXBsAC6w7bGszSkkdLb9fyrtYP26IHvXeY4vycJq4NQAWWyq1BqTWjNK6jmEpfe0YnruferqylZ0gK9waACLdgSRfTCzNVutlaZ/Zt3ZPvcYscpd/U9tnqvHILbuVJYXbbUDepilFnt6LZfx5DTLyLNXCkVJL+jzBKUduZXkW8mJycmEJN8+49gBKkTn9D0+bC4PSwpVbcx78VtQw+t0ZFaVAJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbPkbCcZFE1+qYVkAAAAASUVORK5CYII="/>
+    <rect class="cls-3" x="1591.5" y="170.68" width="272" height="51"/>
+    <polygon class="cls-2" points="2603.36 201.61 2404.75 244.81 2348.73 256.99 2346.82 256.8 1992.15 219.26 2000.89 136.72 2400.01 178.96 2589.47 137.74 2603.36 201.61"/>
+    <rect class="cls-3" x="1012.5" y="170.68" width="272" height="51"/>
+    <g>
+      <rect class="cls-1" x="1374.5" y="29.68" width="7" height="44"/>
+      <rect class="cls-1" x="1493.5" y="29.68" width="7" height="44"/>
+      <rect class="cls-1" x="1393.5" y="43.68" width="88" height="15"/>
+    </g>
+  </g>
+  <g id="_图层_2" data-name="图层 2">
+    <text class="cls-9" transform="translate(1406.96 15.84)"><tspan x="0" y="0">Entrance</tspan><tspan x="13.42" y="21.6">大门</tspan></text>
+    <text class="cls-8" transform="translate(1422.39 191.84)"><tspan x="0" y="0">Hall</tspan><tspan x="-3.01" y="21.6">礼堂</tspan></text>
+    <text class="cls-9" transform="translate(2295.35 210.84)"><tspan x="0" y="0">Dormitory</tspan><tspan x="20.03" y="21.6">宿舍</tspan></text>
+    <ellipse class="cls-5" cx="179.5" cy="335.18" rx="179.5" ry="265"/>
+    <rect class="cls-6" x="101.5" y="162.68" width="156.5" height="345.5"/>
+    <rect class="cls-5" x="304" y="29.18" width="130" height="584"/>
+    <rect class="cls-7" x="328" y="51.18" width="7" height="536"/>
+    <rect class="cls-7" x="347" y="51.18" width="7" height="536"/>
+    <rect class="cls-7" x="366" y="51.18" width="7" height="536"/>
+    <rect class="cls-7" x="382" y="51.18" width="7" height="536"/>
+    <rect class="cls-7" x="400" y="51.18" width="7" height="536"/>
+    <rect class="cls-7" x="418" y="51.18" width="7" height="536"/>
+  </g>
+</svg>

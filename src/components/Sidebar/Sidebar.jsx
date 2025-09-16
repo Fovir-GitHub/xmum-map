@@ -2,7 +2,7 @@
  * @file Sidebar.jsx
  * @description Sidebar used to contain other pages.
  * @author Fovir
- * @date 2025-08-30
+ * @date 2025-09-16
  */
 
 "use client";
@@ -25,6 +25,7 @@ export default function Sidebar({ onClose, show, children }) {
     borderBottom: "1px solid rgba(0,0,0,0.1)",
     position: "sticky",
     top: "16px",
+    zIndex: "2",
   }));
 
   return (
