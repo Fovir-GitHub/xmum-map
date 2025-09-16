@@ -17,6 +17,8 @@
 | Iced Lemon Tea    | 9.0        |
 | Fruit Smoothie    | 12.5       |
 
+————
+
 | Item                      | Price (RM) |
 | ------------------------- | ---------- |
 | Big Breakfast             | 22.5       |
@@ -25,6 +27,8 @@
 | Pancakes with Maple Syrup | 15.0       |
 | French Toast              | 14.0       |
 | Croissant Sandwich        | 15.5       |
+
+————
 
 | Item                   | Price (RM) |
 | ---------------------- | ---------- |
@@ -36,12 +40,16 @@
 | Grilled Salmon         | 28.0       |
 | German Sausage Platter | 26.5       |
 
+————
+
 | Item          | Price (RM) |
 | ------------- | ---------- |
 | Caesar Salad  | 15.0       |
 | Greek Salad   | 16.5       |
 | Chicken Wrap  | 14.5       |
 | Tuna Sandwich | 13.5       |
+
+————
 
 | Item                   | Price (RM) |
 | ---------------------- | ---------- |
