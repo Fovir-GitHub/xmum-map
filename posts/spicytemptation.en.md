@@ -4,7 +4,7 @@
 
 Feel free to stop by Spicy Temptation anytime.
 
-Free ice cream is available :icecream:
+Free ice cream is available
 
 If you're stuck for what to eat today, come to Spicy Temptation. **Over 100 ingredients** offer unlimited flexibility, allowing you to create any combination and enjoy a variety of flavors. For example:
 
@@ -52,7 +52,7 @@ Takeaway Platforms:
 
 5. Xiamen University's Exclusive Takeaway Group:
 
-![enter image description here](https://img.xmummap.com/G_spicytemptation_wechatcode.webp)
+![enter image description here](https://img.xmummap.com/G_spicytemptation_code.webp)
 
 ---
 
