@@ -32,7 +32,7 @@ Single-choice options also include: Dumplings with three different fillings / Br
 
 ---
 
-## :fire: Hot Dishes :fire:
+## Hot Dishes
 
 Spicy Hot Pot/Mala Tang/Sour Fish Soup/Tomato Soup
 
