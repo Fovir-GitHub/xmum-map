@@ -8,10 +8,10 @@ We offer complete DJ courses from beginner to advanced, taught with Pioneer CDJ-
 
 Our program is all-in-one pricing — no hidden fees — plus free access to an extensive music library.
 
-- ✨ Flexible class schedules (weeknights & weekends)
-- 🎶 1-on-1 coaching to master essential DJ skills fast
-- 🔥 Real performance opportunities to gain stage experience
-- 🎧 Book your free trial class today and start your DJ journey with us!
+- Flexible class schedules (weeknights & weekends)
+- 1-on-1 coaching to master essential DJ skills fast
+- Real performance opportunities to gain stage experience
+- Book your free trial class today and start your DJ journey with us!
 
 ## Surroundings
 
@@ -27,15 +27,16 @@ Our program is all-in-one pricing — no hidden fees — plus free access to an 
   <img src="https://img.xmummap.com/1_real_surd%20%289%29.webp" />
   <img src="https://img.xmummap.com/1_real_surd%20%2810%29.webp" />
   <img src="https://img.xmummap.com/1_real_surd%20%2811%29.webp" />
+
 </div>
 
 ---
 
 ## Opening Hours
 
-Closed Sundays
+Operation hours 2pm until 12am
 
-Monday-Saturday 12:00 PM-10:00 PM
+Closed every Tuesday
 
 ---
 
@@ -54,3 +55,5 @@ https://realpeakmusic.com/
 ## Address
 
 R.1.30
+
+BELL AVENUE, Jalan Sunsuria, BANDAR SUNSURIA, 43900 Sepang, Selangor

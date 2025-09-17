@@ -1,4 +1,4 @@
-# KIMS SALON Barber Shop
+﻿# KIMS SALON Barber Shop
 
 # Price List
 
@@ -68,6 +68,7 @@
   <img src="https://img.xmummap.com/G_kims_surd%20%281%29.webp" />
   <img src="https://img.xmummap.com/G_kims_surd%20%283%29.webp" />
   <img src="https://img.xmummap.com/G_kims_surd%20%284%29.webp" />
+
 </div>
 
 ---
