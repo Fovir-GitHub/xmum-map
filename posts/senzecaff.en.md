@@ -8,6 +8,17 @@ Authentic Malaysian cuisine, generous portions at competitive prices, 5% cash ba
 
 ---
 
+## Current Promotion
+
+<div class="image-slide">
+  <img src="https://img.xmummap.com/1_senzecaff_new%20%281%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_new%20%282%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_new%20%283%29.webp" />
+
+</div>
+
+---
+
 ## Menu
 
 <div class="image-slide">

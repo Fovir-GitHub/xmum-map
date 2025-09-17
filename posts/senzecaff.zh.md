@@ -8,6 +8,17 @@
 
 ---
 
+## 现在促销
+
+<div class="image-slide">
+  <img src="https://img.xmummap.com/1_senzecaff_new%20%281%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_new%20%282%29.webp" />
+  <img src="https://img.xmummap.com/1_senzecaff_new%20%283%29.webp" />
+
+</div>
+
+---
+
 ## 菜单
 
 <div class="image-slide">
