@@ -1,4 +1,4 @@
-﻿# KIMS SALON理发店
+# KIMS SALON理发店
 
 # 价格表
 
@@ -61,17 +61,42 @@
 
 ---
 
+## 环境
+
+<div class="image-slide">
+  <img src="https://img.xmummap.com/G_kims_surd%20%282%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%281%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%283%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%284%29.webp" />
+</div>
+
+---
+
 ## 营业时间
+
+周一关门
+
+周二至周日 10：30-20：30
 
 ---
 
 ## 预约
 
-需要预约
+可预约
 
 ---
 
-## 联系方式
+## 社交媒体（预约方式）
+
+- instagram: https://www.instagram.com/kimssalon_sepang/
+
+- 小红书: http://xiaohongshu.com/user/profile/640fd4eb000000002a009c74?xhsshare=CopyLink&appuid=5eecb63d0000000001003fa9&apptime=1723316007&share_id=bc3e45504c444f3c896ef3584543bb2d
+
+- Facebook: http://facebook.com/profile.php?id=100054503649062&mibextid=ZbWKwL
+
+- WhatsApp: http://wa.me/60167143821
+
+- waze: http://waze.com/ul/hw28246gxe
 
 ---
 

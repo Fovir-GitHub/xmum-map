@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "NODE_ENV=development next dev",
-    "build": "NODE_ENV=production node src/scripts/readSvgData.js && next build",
-    "build:data": "node src/scripts/readSvgData.js",
+    "pre:data": "node src/scripts/readSvgData.js",
+    "pre:sitemap": "node src/scripts/generateSitemap.js",
+    "prebuild": "pnpm pre:data && pnpm pre:sitemap",
+    "build": "NODE_ENV=production next build",
     "start": "next start",
     "format": "prettier --write posts/** docs/** src/**",
     "wdev": "next dev",
@@ -18,6 +20,7 @@
     "@mui/icons-material": "7.3.1",
     "@mui/material": "7.3.1",
     "next": "15.5.0",
+    "node-fetch": "^3.3.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-zoom-pan-pinch": "3.7.0",
@@ -25,7 +28,8 @@
     "remark-gfm": "4.0.1",
     "remark-html": "16.0.1",
     "swiper": "11.2.10",
-    "xlsx": "0.18.5"
+    "xlsx": "0.18.5",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "prettier": "3.6.2"
