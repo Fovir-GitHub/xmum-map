@@ -4,7 +4,7 @@
 
 随时欢迎来麻辣诱惑坐坐
 
-有**免费冰淇凌** :icecream:
+有**免费冰淇凌**
 
 今天要是真不知道想吃什么，就来麻辣诱惑。**超过100种以上的食材**，自由度极高，任意搭配，多种口味任选，例：
 
@@ -48,7 +48,7 @@
 4. Shopee平台
 5. 厦门大学专属外卖群：
 
-![enter image description here](https://img.xmummap.com/G_spicytemptation_wechatcode.webp)
+![enter image description here](https://img.xmummap.com/G_spicytemptation_code.webp)
 
 ---
 
