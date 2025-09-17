@@ -1,0 +1,59 @@
+name: Auto PR from develop to main
+
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch main
+        run: git fetch origin main
+
+      - name: Check changed files
+        id: check
+        run: |
+          # 定义允许修改的文件/目录
+          WHITELIST="^posts/|src/config.js"
+
+          git diff --name-only origin/main...origin/develop > changed_files.txt
+          cat changed_files.txt
+
+          violation=false
+          while read file; do
+            if ! [[ "$file" =~ $WHITELIST ]]; then
+              violation=true
+              echo "❌ Disallowed change: $file"
+            fi
+          done < changed_files.txt
+
+          echo "violation=$violation" >> $GITHUB_OUTPUT
+
+      - name: Create or update PR
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/develop-to-main
+          title: "Auto PR: develop → main"
+          body: "This PR was automatically created by GitHub Actions."
+          base: main
+          labels: automerge
+
+      - name: Auto-merge PR if only whitelist changed
+        if: steps.check.outputs.violation == 'false'
+        run: |
+          gh pr merge ${{ steps.cpr.outputs.pull-request-number }} \
+            --merge --admin
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
