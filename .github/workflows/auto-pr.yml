@@ -24,18 +24,17 @@ jobs:
       - name: Check changed files
         id: check
         run: |
-          WHITELIST="^posts/|src/config.js"
-
-          git diff --name-only origin/main...origin/develop > changed_files.txt
-          cat changed_files.txt
+          WHITELIST="^posts/|^src/config.js"
 
           violation=false
-          while read file; do
+
+          for file in $(git diff --name-only origin/main...origin/develop); do
+            echo "Changed file: $file"
             if ! [[ "$file" =~ $WHITELIST ]]; then
               violation=true
               echo "❌ Disallowed change: $file"
             fi
-          done < changed_files.txt
+          done
 
           echo "violation=$violation" >> $GITHUB_OUTPUT
 
