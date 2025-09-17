@@ -13,22 +13,14 @@ import {
   AccordionSummary,
 } from "@mui/material";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
-import { useEffect, useState } from "react";
-import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
+import { useState } from "react";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import xmumConfig from "../../config";
 import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
+import DetailPage from "../DetailPage/DetailPage";
 
 export default function Announcement({ locale }) {
-  const [announcementContent, setAnnouncementContent] = useState("");
   const [expanded, setExpanded] = useState(false);
-
-  // Fetch announcement content.
-  useEffect(() => {
-    getMarkdownHtml("announcement", locale).then((result) => {
-      setAnnouncementContent(result.html);
-    });
-  }, [locale]);
 
   return (
     <>
@@ -49,13 +41,16 @@ export default function Announcement({ locale }) {
           {xmumConfig.announcement.title[locale]}
         </AccordionSummary>
         <AccordionDetails
-          dangerouslySetInnerHTML={{ __html: announcementContent }}
-          className="markdown"
           sx={{
             maxHeight: "40vh",
             overflowY: "auto",
           }}
-        ></AccordionDetails>
+        >
+          <DetailPage
+            slug={xmumConfig.announcement.slug}
+            locale={locale}
+          />
+        </AccordionDetails>
       </Accordion>
     </>
   );
