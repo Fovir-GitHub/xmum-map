@@ -8,27 +8,40 @@
 
 ## 菜单
 
+<div class="image-slide">
+<img src="https://img.xmummap.com/G_xinjiang_menu%20%281%29.webp" />
+<img src="https://img.xmummap.com/G_xinjiang_menu%20%282%29.webp" />
+
+</div>
+
+## 爆品
+
+- 新疆大盘鸡
+- 辣子鸡
+- 手抓羊肉
+- 孜然羊肉
+- 炒米粉
+- 各种新疆拌面
+- 各种炒菜
+
 ## 环境
+
+<div class="image-slide">
+<img src="https://img.xmummap.com/G_xinjiang_surd%20%281%29.webp" />
+<img src="https://img.xmummap.com/G_xinjiang_surd%20%282%29.webp" />
+<img src="https://img.xmummap.com/G_xinjiang_surd%20%283%29.webp" />
+
+</div>
 
 ## 营业时间
 
 10:30-22:30
-
-## 热卖产品
-
-所有菜品不败类，每款都是爆款
-
-## 外卖服务
 
 ## 设施情况
 
 有空调风扇
 
 中午下午忙的时候可能需要排队，但不会太久十几分钟就能安排
-
-## 预约情况
-
-可以进群预约
 
 ## 联系方式
 
