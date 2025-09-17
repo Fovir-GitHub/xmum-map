@@ -28,7 +28,7 @@ jobs:
 
           violation=false
 
-          for file in $(git diff --name-only origin/main origin/develop); do
+          for file in $(git diff --name-only origin/main...origin/develop); do
             echo "Changed file: $file"
             if ! [[ "$file" =~ $WHITELIST ]]; then
               violation=true
