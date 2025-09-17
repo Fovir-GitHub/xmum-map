@@ -8,10 +8,10 @@ Real Peak Music 位于 Sepang，是 Pioneer DJ 官方认证学院。
 
 课程一口价，透明无隐藏收费，并附赠海量歌曲资源。
 
-- ✨ 灵活上课时间（平日晚间 & 周末）
-- 🎶 一对一指导，快速掌握 Real DJ 核心技能
-- 🔥 学员可登台演出，积累真实舞台经验
-- 🎧 立即预约 免费试听课，开启你的 DJ 之路！
+- 灵活上课时间（平日晚间 & 周末）
+- 一对一指导，快速掌握 Real DJ 核心技能
+- 学员可登台演出，积累真实舞台经验
+- 立即预约 免费试听课，开启你的 DJ 之路！
 
 ## 环境
 
@@ -33,9 +33,9 @@ Real Peak Music 位于 Sepang，是 Pioneer DJ 官方认证学院。
 
 ## 营业时间
 
-周日关门
+周二关门
 
-周一至周六 12：00-22：00
+每日（除周二） 14：00-00：00
 
 ---
 
@@ -54,3 +54,5 @@ https://realpeakmusic.com/
 ## 地址
 
 R.1.30
+
+BELL AVENUE, Jalan Sunsuria, BANDAR SUNSURIA, 43900 Sepang, Selangor
