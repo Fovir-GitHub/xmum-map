@@ -24,7 +24,6 @@ jobs:
       - name: Check changed files
         id: check
         run: |
-          # 定义允许修改的文件/目录
           WHITELIST="^posts/|src/config.js"
 
           git diff --name-only origin/main...origin/develop > changed_files.txt
@@ -56,4 +55,4 @@ jobs:
           gh pr merge ${{ steps.cpr.outputs.pull-request-number }} \
             --merge --admin
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
