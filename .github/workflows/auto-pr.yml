@@ -28,7 +28,7 @@ jobs:
 
           violation=false
 
-          for file in $(git diff --name-only origin/main...origin/develop); do
+          for file in $(git diff --name-only origin/main origin/develop); do
             echo "Changed file: $file"
             if ! [[ "$file" =~ $WHITELIST ]]; then
               violation=true
@@ -61,3 +61,10 @@ jobs:
             --merge --admin
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+      - name: Delete temporary branch
+        if: always()
+        run: |
+          git checkout main
+          git branch -D auto/develop-to-main || true
+          git push origin --delete auto/develop-to-main || true
