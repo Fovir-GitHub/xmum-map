@@ -43,6 +43,8 @@ Air conditioning and fans available
 
 During busy periods in the afternoon, you may have to wait in line, but it won't take too long and can be seated in just over ten minutes.
 
+WiFi (XJCD-5.g) password: Z5h12345 (ask the vendor if it is incorrect)
+
 ## Reservations
 
 You can make reservations by joining the group.
