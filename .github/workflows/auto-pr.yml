@@ -39,6 +39,11 @@ jobs:
 
           echo "violation=$violation" >> $GITHUB_OUTPUT
 
+      - name: Prepare auto PR branch
+        run: |
+          git fetch origin develop
+          git checkout -b auto/develop-to-main origin/develop
+
       - name: Create or update PR
         id: cpr
         uses: peter-evans/create-pull-request@v6
@@ -48,6 +53,7 @@ jobs:
           body: "This PR was automatically created by GitHub Actions."
           base: main
           labels: automerge
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Auto-merge PR if only whitelist changed
         if: steps.check.outputs.violation == 'false'
