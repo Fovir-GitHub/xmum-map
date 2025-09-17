@@ -1,2 +1,3 @@
 posts/spicytemptation.en.md
 posts/spicytemptation.zh.md
+src/data/bell_avenue.xlsx
