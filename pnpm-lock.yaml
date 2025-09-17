@@ -26,6 +26,9 @@ importers:
       next:
         specifier: 15.5.0
         version: 15.5.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      node-fetch:
+        specifier: ^3.3.2
+        version: 3.3.2
       react:
         specifier: 19.1.1
         version: 19.1.1
@@ -50,16 +53,13 @@ importers:
       xlsx:
         specifier: 0.18.5
         version: 0.18.5
-    devDependencies:
-      node-fetch:
-        specifier: ^3.3.2
-        version: 3.3.2
-      prettier:
-        specifier: 3.6.2
-        version: 3.6.2
       xml2js:
         specifier: ^0.6.2
         version: 0.6.2
+    devDependencies:
+      prettier:
+        specifier: 3.6.2
+        version: 3.6.2
 
 packages:
 
