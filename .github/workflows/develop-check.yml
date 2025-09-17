@@ -24,7 +24,7 @@ jobs:
       - name: Check whitelist
         id: check
         run: |
-          WHITELIST="^posts/|src/config.js"
+          WHITELIST="^posts/|^src/config.js|^src/data/"
           VIOLATION=false
           while read file; do
             if ! [[ "$file" =~ $WHITELIST ]]; then
