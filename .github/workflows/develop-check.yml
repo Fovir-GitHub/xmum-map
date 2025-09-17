@@ -1,0 +1,40 @@
+name: Check develop changes
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  check-and-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get changed files
+        run: |
+          git fetch origin main
+          git diff --name-only origin/main...HEAD > changed_files.txt
+          cat changed_files.txt
+
+      - name: Check whitelist
+        id: check
+        run: |
+          WHITELIST="^posts/|src/config.js"
+          VIOLATION=false
+          while read file; do
+            if ! [[ "$file" =~ $WHITELIST ]]; then
+              VIOLATION=true
+              echo "Found disallowed change: $file"
+            fi
+          done < changed_files.txt
+          echo "violation=$VIOLATION" >> $GITHUB_OUTPUT
+
+      - name: Auto merge to main if only whitelist changed
+        if: steps.check.outputs.violation == 'false'
+        run: |
+          git config user.name "CI Bot"
+          git config user.email "ci-bot@example.com"
+          git checkout main
+          git merge --no-ff origin/develop -m "Auto-merge develop into main"
+          git push origin main
