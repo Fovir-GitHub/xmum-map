@@ -1,2 +1,1 @@
-.github/workflows/auto-pr.yml
 src/config.js
