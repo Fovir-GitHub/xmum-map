@@ -1,6 +1,7 @@
 # Updates
 
-- 2025/08/25 ---- _`Student Home` Reopened._
+- 2025/09/18 ---- _<span style="background-color:rgba(137, 243, 255, 0.3)">Senze Caff</span> New promotions updated_. _<span style="background-color:rgba(137, 243, 255, 0.3)">Student's Home</span>New products added_.
+- 2025/08/25 ---- _<span style="background-color:rgba(208, 137, 255, 0.3)">Student's Home</span> Reopened._
 - 2025/08/12 ---- _Website has adopted new version structure, discarding old version._
 - 2025/07/25 ---- _Website has most merchant information posted._
 - 2025/07/16 ---- _Website beta version launched._
