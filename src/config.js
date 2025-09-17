@@ -2,7 +2,7 @@
  * @file config.js
  * @description Configuration file of the website.
  * @author Fovir
- * @date 2025-09-12
+ * @date 2025-09-17
  */
 
 import { catppuccinMochaColors } from "./styles/materialUiTheme";
@@ -20,6 +20,7 @@ const xmumConfig = {
       zh: "公告",
       en: "Announcement",
     },
+    slug: "announcement",
   },
   footer: {
     repository: {
