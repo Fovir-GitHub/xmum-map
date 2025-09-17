@@ -1,4 +1,4 @@
-﻿# KIMS SALON理发店
+# KIMS SALON理发店
 
 # 价格表
 
@@ -64,10 +64,11 @@
 ## 环境
 
 <div class="image-slide">
-<img src="https://img.xmummap.com/G_kims_surd%20%282%29.webp" />
-<img src="https://img.xmummap.com/G_kims_surd%20%281%29.webp" />
-<img src="https://img.xmummap.com/G_kims_surd%20%283%29.webp" />
-<img src="https://img.xmummap.com/G_kims_surd%20%284%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%282%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%281%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%283%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%284%29.webp" />
+</div>
 
 ---
 

@@ -1,19 +1,19 @@
-﻿# KIMS SALON Barber Shop
+# KIMS SALON Barber Shop
 
 # Price List
 
 ## HAIR SERVICES
 
-| **Service**         | **Price (RM)**            |
-| ------------------- | ------------------------- |
-| TEMPORARY FLAT IRON | 48++                      |
-| TEMPORARY SET CURL  | 48++                      |
-| FRINGE CUT          | 20++                      |
-| EYEBROW TRIMMING    | 20++                      |
-| HAIRCUT             | Male 39++ / Female 49++   |
-| HAIRWASH            | Male 39++ / Female 49++   |
-| BLOW STRAIGHT       | Male 28++ ​​/ Female 38++ |
-| BLOW CURL           | 48++                      |
+| **Service**         | **Price (RM)**          |
+| ------------------- | ----------------------- |
+| TEMPORARY FLAT IRON | 48++                    |
+| TEMPORARY SET CURL  | 48++                    |
+| FRINGE CUT          | 20++                    |
+| EYEBROW TRIMMING    | 20++                    |
+| HAIRCUT             | Male 39++ / Female 49++ |
+| HAIRWASH            | Male 39++ / Female 49++ |
+| BLOW STRAIGHT       | Male 28++ / Female 38++ |
+| BLOW CURL           | 48++                    |
 
 ## KIDS HAIR SERVICES
 
@@ -64,10 +64,11 @@
 ## Surroundings
 
 <div class="image-slide">
-<img src="https://img.xmummap.com/G_kims_surd%20%282%29.webp" />
-<img src="https://img.xmummap.com/G_kims_surd%20%281%29.webp" />
-<img src="https://img.xmummap.com/G_kims_surd%20%283%29.webp" />
-<img src="https://img.xmummap.com/G_kims_surd%20%284%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%282%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%281%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%283%29.webp" />
+  <img src="https://img.xmummap.com/G_kims_surd%20%284%29.webp" />
+</div>
 
 ---
 
