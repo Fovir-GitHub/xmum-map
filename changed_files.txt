@@ -1,1 +1,2 @@
-src/config.js
+posts/spicytemptation.en.md
+posts/spicytemptation.zh.md
