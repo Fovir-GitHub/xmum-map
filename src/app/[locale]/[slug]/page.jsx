@@ -64,7 +64,7 @@ export default async function ShopSeoPage({ params }) {
         dangerouslySetInnerHTML={{
           __html: `
             if (typeof window !== "undefined") {
-              window.location.replace("/#${slug}");
+              window.location.replace("/#${slug}-${locale}");
             }
           `,
         }}
