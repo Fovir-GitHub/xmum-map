@@ -1,5 +1,18 @@
 # Stella Vet Clinic
 
+## Price List
+
+| **Main Services** | **Price (RM)** |
+| ----------------- | -------------- |
+| Cat Vaccines      | 35             |
+| Deworming         | 5              |
+| Deflea            | 35-50          |
+| Neutering Male    | 65             |
+| Nuetering Female  | 120            |
+| Cat Ward or Hotel | 30-35/day      |
+
+**_A wide variety of cat food and vet services available_**
+
 ## Surroundings
 
 <div class="image-slide">
