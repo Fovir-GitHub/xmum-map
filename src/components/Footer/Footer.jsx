@@ -2,7 +2,7 @@
  * @file Footer.jsx
  * @description Footer component that fixed on the bottom of the page.
  * @author Fovir
- * @date 2025-09-12
+ * @date 2025-09-18
  */
 
 "use client";
@@ -45,7 +45,13 @@ export default function Footer({ locale }) {
 function CopyRight() {
   return (
     <MyTypography>
-      Copyright &copy; 2025 XMUM Map | Built by Mr.Oui &&nbsp;
+      Copyright &copy; 2025 XMUM Map | Built by {""}
+      <MyLink
+        href={"https://palevioletred-pigeon-368192.hostingersite.com/"}
+      >
+        Mr.Oui
+      </MyLink>
+      {" & "}
       <MyLink href={"https://www.fovir.fyi"}>Fovir</MyLink>
     </MyTypography>
   );
