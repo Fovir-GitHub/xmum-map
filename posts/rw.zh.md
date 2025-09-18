@@ -1,6 +1,6 @@
 ## R.W F&B 冰室
 
-暂无详细信息
+外卖有grabfood和foodpanda
 
 ## 地址
 
