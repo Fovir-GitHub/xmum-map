@@ -2,7 +2,7 @@
  * @file config.js
  * @description Configuration file of the website.
  * @author Fovir
- * @date 2025-09-17
+ * @date 2025-09-18
  */
 
 import { catppuccinMochaColors } from "./styles/materialUiTheme";
@@ -23,6 +23,10 @@ const xmumConfig = {
     slug: "announcement",
   },
   footer: {
+    links: {
+      oui: "https://palevioletred-pigeon-368192.hostingersite.com/",
+      fovir: "https://www.fovir.fyi",
+    },
     repository: {
       zh: "仓库：",
       en: "Repository: ",
