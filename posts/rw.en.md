@@ -1,6 +1,6 @@
 ## R.W F&B
 
-Details not available
+For takeout, there are grabfood and foodpanda
 
 ## Address
 
