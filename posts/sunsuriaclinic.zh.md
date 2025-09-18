@@ -1,5 +1,7 @@
 # Sunsuria Medical Clinic
 
+有华人医生
+
 ## 环境
 
 <div class="image-slide">
