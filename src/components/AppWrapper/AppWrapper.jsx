@@ -117,6 +117,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
           localeFormat = xmumConfig.language.default;
         }
         handleStoreBlockClick(slug, localeFormat);
+        setLocale(localeFormat);
       } else {
         clearHashTag();
       }
