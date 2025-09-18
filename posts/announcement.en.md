@@ -27,5 +27,8 @@ Welcome to this website! To help students more easily access information about n
 6. If you encounter technical issues or errors while using the website, please provide feedback immediately (contact information is available in the website header).
 7. If you have information that can supplement or correct the information on the website, please also submit it.
 8. For valid feedback that is confirmed and adopted, the administrator will provide a reward as a token of appreciation for your support and contribution to the website!
+9. Website WeChat User Group:
+
+<img src="https://img.xmummap.com/1A%E7%94%A8%E6%88%B7%E7%BE%A4code.jpg">
 
 Thank you for your understanding and support. We hope that students can easily find the right food and leisure spots for their studies and daily life! 🍜✨
