@@ -10,7 +10,8 @@
     "start": "next start",
     "format": "prettier --write posts/** docs/** src/**",
     "wdev": "next dev",
-    "wbuild": "node src/scripts/readSvgData.js && next build"
+    "wbuild": "pnpm run prebuild && next build",
+    "test:sitemap": "node src/scripts/testSitemap.js"
   },
   "type": "module",
   "dependencies": {

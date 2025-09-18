@@ -16,13 +16,30 @@ async function checkSitemap(sitemapPath) {
 
   const urls = parsed.urlset.url.map((u) => u.loc[0]);
 
+  let hashError = false;
+  const errorUrls = [];
+
   for (const url of urls) {
     try {
       const res = await fetch(url);
       console.log(`${url} -> ${res.status}`);
+      if (res.status >= 400) {
+        hashError = true;
+        errorUrls.push(url);
+      }
     } catch (err) {
       console.error(`${url} -> ERROR`, err.message);
+      hashError = true;
+      errorUrls.push(url);
     }
+  }
+
+  if (hashError) {
+    console.log("Error URLs:");
+    console.log(errorUrls);
+    process.exit(1);
+  } else {
+    console.log("✅ Sitemap Check Pass!");
   }
 }
 
