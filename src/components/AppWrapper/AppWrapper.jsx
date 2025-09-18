@@ -2,7 +2,7 @@
  * @file AppWrapper.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-16
+ * @date 2025-09-18
  */
 
 "use client";
@@ -92,7 +92,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
       slug: slug,
       locale: locale,
     });
-    router.replace(`${pathname}#${slug}`);
+    router.replace(`${pathname}#${slug}-${locale}`);
   }
 
   // Clear hash tag.
@@ -109,9 +109,17 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
   // Handle access to URL with hash tags.
   useEffect(() => {
     function handleHashChange() {
-      const slug = window.location.hash.slice(1);
-      if (slug) {
-        handleStoreBlockClick(slug, locale);
+      const hash = window.location.hash.slice(1);
+
+      if (hash) {
+        let [slug, localeFormat] = hash.split("-");
+        if (!localeFormat) {
+          localeFormat = xmumConfig.language.default;
+        }
+        handleStoreBlockClick(slug, localeFormat);
+        setLocale(localeFormat);
+      } else {
+        clearHashTag();
       }
     }
 
@@ -120,6 +128,13 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
     return () =>
       window.removeEventListener("hashchange", handleHashChange);
   }, []);
+
+  // Change locale when hash tag changes.
+  useEffect(() => {
+    if (selectedPost) {
+      router.replace(`${pathname}#${selectedPost.slug}-${locale}`);
+    }
+  }, [locale]);
 
   return (
     <ThemeProvider theme={theme}>

@@ -2,7 +2,7 @@
  * @file page.jsx
  * @description Generate metadata for shops.
  * @author Fovir
- * @date 2025-09-17
+ * @date 2025-09-18
  */
 
 import DetailPage from "../../../components/DetailPage/DetailPage";
@@ -64,7 +64,7 @@ export default async function ShopSeoPage({ params }) {
         dangerouslySetInnerHTML={{
           __html: `
             if (typeof window !== "undefined") {
-              window.location.replace("/#${slug}");
+              window.location.replace("/#${slug}-${locale}");
             }
           `,
         }}
