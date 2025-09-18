@@ -46,13 +46,9 @@ function CopyRight() {
   return (
     <MyTypography>
       Copyright &copy; 2025 XMUM Map | Built by {""}
-      <MyLink
-        href={"https://palevioletred-pigeon-368192.hostingersite.com/"}
-      >
-        Mr.Oui
-      </MyLink>
+      <MyLink href={xmumConfig.footer.links.oui}>Mr.Oui</MyLink>
       {" & "}
-      <MyLink href={"https://www.fovir.fyi"}>Fovir</MyLink>
+      <MyLink href={xmumConfig.footer.links.fovir}>Fovir</MyLink>
     </MyTypography>
   );
 }
