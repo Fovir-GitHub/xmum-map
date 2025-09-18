@@ -101,6 +101,7 @@ function MyLink({ children, href, isEmail }) {
   return (
     <>
       <Link
+        target="_blank"
         href={isEmail ? `mailto:${href}` : href}
         sx={{
           color: catppuccinMochaColors.text,
