@@ -1,5 +1,7 @@
 # Sunsuria Medical Clinic
 
+There are Chinese doctors
+
 ## Surroundings
 
 <div class="image-slide">
