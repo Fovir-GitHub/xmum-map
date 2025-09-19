@@ -2,18 +2,11 @@
  * @file page.jsx
  * @description This is a file from server side, which read map data and pass them to `AppWrapper`.
  * @author Fovir
- * @date 2025-09-05
+ * @date 2025-09-19
  */
 
-import fs from "fs";
-import path from "path";
 import AppWrapper from "../components/AppWrapper/AppWrapper";
-
-function readData(fileName) {
-  const dataFile = path.join(process.cwd(), `src/data/${fileName}`);
-  const fileContent = fs.readFileSync(dataFile);
-  return JSON.parse(fileContent);
-}
+import { readData } from "../lib/readData";
 
 export default function Page() {
   const bellAvenueData = readData("bell_avenue.json");
