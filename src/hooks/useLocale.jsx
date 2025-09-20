@@ -34,7 +34,9 @@ export function useLocale() {
       if (!hash) {
         return;
       }
-      let [, localeFromHash] = hash.split("-");
+      let [, localeFromHash] = hash.split(
+        xmumConfig.website.seperatorBetweenSlugAndLocale,
+      );
       if (!localeFromHash) {
         return;
       }

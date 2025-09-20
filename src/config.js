@@ -104,6 +104,7 @@ const xmumConfig = {
   website: {
     title: "XMUM Map",
     logo: "/favicon.png",
+    seperatorBetweenSlugAndLocale: "::",
   },
 };
 

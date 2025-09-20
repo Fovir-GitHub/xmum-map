@@ -1,5 +1,6 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import xmumConfig from "../config";
 
 /**
  * Hook of setting selected post.
@@ -23,7 +24,9 @@ export function useSelectedPost(locale) {
         setSelectedPost(null);
         return;
       }
-      let [slug, localeFromHash] = hash.split("-");
+      let [slug, localeFromHash] = hash.split(
+        xmumConfig.website.seperatorBetweenSlugAndLocale,
+      );
       if (!localeFromHash) {
         setSelectedPost(null);
         return;
@@ -42,11 +45,13 @@ export function useSelectedPost(locale) {
     if (!selectedPost) {
       return;
     }
-    const newHash = `${selectedPost.slug}-${locale}`;
+    const newHash = `${selectedPost.slug}${xmumConfig.website.seperatorBetweenSlugAndLocale}${locale}`;
     if (window.location.hash.slice(1) !== newHash) {
       router.replace(`${pathname}#${newHash}`);
     }
   }, [selectedPost, locale, pathname, router]);
+
+  console.log(selectedPost);
 
   return [selectedPost, setSelectedPost];
 }
