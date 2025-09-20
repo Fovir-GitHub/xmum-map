@@ -8,6 +8,7 @@
 import { useEffect, useState } from "react";
 import xmumConfig from "../config";
 import { normalizeLanguage } from "../lib/languageOperation";
+import { isValidLocale } from "../lib/isValidLocale";
 
 /**
  * Hook of locale.
@@ -37,7 +38,11 @@ export function useLocale() {
       if (!localeFromHash) {
         return;
       }
-      setLocale(localeFromHash);
+      setLocale(
+        isValidLocale(localeFromHash)
+          ? localeFromHash
+          : xmumConfig.language.default,
+      );
     }
     window.addEventListener("hashchange", handleHashChange);
 
