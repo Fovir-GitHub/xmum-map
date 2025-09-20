@@ -1,4 +1,4 @@
-# Yak Mee Tarik
+# YAKMEETARIK
 
 ## Menu
 
@@ -15,11 +15,27 @@
 
 </div>
 
+**_Our main dishes include beef ramen and Chinese Muslim-style stir-fried dishes._**
+
+Weekly Featured Dishes
+
+**Yangzhou Fried Rice (10 Yuan)** will be our next featured dish.
+
 ---
 
 ## Opening Hours
 
-Daily 11:30 AM - 10:00 PM
+Daily: 11:30 AM - 10:00 PM
+
+---
+
+## Facilities
+
+Capacity: 100 people
+
+4 air conditioners
+
+12 ceiling fans
 
 ---
 
