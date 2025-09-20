@@ -8,14 +8,15 @@
 "use client";
 
 import Map from "../Map/Map";
-import BellAvenueMaps from "../BellAvenueMaps/BellAvenueMaps";
+import BellAvenueMaps from "./BellAvenueMaps";
+import BellSuiteMap from "./BellSuiteMap";
+import XmumMap from "./XmumMap";
 import { useEffect, useRef, useState } from "react";
 import { CssBaseline } from "@mui/material";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import { theme } from "../../styles/materialUiTheme";
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
-import BellSuiteMap from "../BellSuiteMap/BellSuiteMap";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
 import Announcement from "../Announcement/Announcement";
@@ -23,7 +24,6 @@ import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
-import XmumMap from "../XmumMap/XmumMap";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Floor layers.

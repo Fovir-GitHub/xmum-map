@@ -2,7 +2,7 @@
  * @file XmumMap.jsx
  * @description Map of xmum campus.
  * @author Fovir
- * @date 2025-09-16
+ * @date 2025-09-20
  */
 
 export default function XmumMap() {
