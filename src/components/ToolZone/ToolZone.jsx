@@ -2,14 +2,15 @@
  * @file ToolZone.jsx
  * @description Tool zone float in the lower right corner of web page.
  * @author Fovir
- * @date 2025-09-10
+ * @date 2025-09-20
  */
 
 import toolZoneStyle from "./toolzone.module.css";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import { isMobile } from "../../lib/isMobile";
-import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
+import LanguageSwitcher from "./LanguageSwitcher";
+import ResetLocationButton from "./ResetLocationButton";
 
 export default function ToolZone({
   locale,
@@ -44,31 +45,8 @@ export default function ToolZone({
           backgroundColor: toggleButtonGroupStyle.backgroundColor,
         }}
       >
-        <ToggleButton
-          onClick={() => {
-            if (locale === "zh") {
-              setLocale("en");
-            } else {
-              setLocale("zh");
-            }
-          }}
-          sx={{
-            backgroundColor: catppuccinMochaColors.blue,
-            "&:hover": {
-              backgroundColor: catppuccinMochaColors.sapphire,
-            },
-          }}
-        >
-          {locale}
-        </ToggleButton>
-
-        <ToggleButton
-          onClick={() => {
-            transformRef.current?.resetTransform();
-          }}
-        >
-          <MyLocationRoundedIcon />
-        </ToggleButton>
+        <LanguageSwitcher locale={locale} setLocale={setLocale} />
+        <ResetLocationButton transformRef={transformRef} />
       </ToggleButtonGroup>
 
       <ToggleButtonGroup
