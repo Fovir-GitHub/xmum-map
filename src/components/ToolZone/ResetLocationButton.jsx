@@ -9,7 +9,10 @@ import { ToggleButton } from "@mui/material";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 
 /**
- * @description Component that reset location on a map.
+ * Component that reset location on a map.
+ *
+ * When click on the button, it will reset the map to initial state, which includes the scale, position, etc.
+ *
  * @param transformRef Ref of the map.
  */
 export default function ResetLocationButton({ transformRef }) {
