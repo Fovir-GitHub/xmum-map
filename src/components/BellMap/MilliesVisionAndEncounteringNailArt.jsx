@@ -2,7 +2,7 @@
  * @file MilliesVisionAndEncounteringNailArt.jsx
  * @description Draw milles vision and encountering nail art.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 import xmumConfig from "../../config";

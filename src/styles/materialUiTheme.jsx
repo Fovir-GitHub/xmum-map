@@ -2,7 +2,7 @@
  * @file materialUiTheme.jsx
  * @description Theme for material UI.
  * @author Fovir
- * @date 2025-08-27
+ * @since 2025-08-27
  */
 
 import { createTheme } from "@mui/material";

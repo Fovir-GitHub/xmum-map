@@ -2,7 +2,7 @@
  * @file BellSuiteMap.jsx
  * @description Draw map of bell suite.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 "use client";

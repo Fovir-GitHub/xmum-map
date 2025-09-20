@@ -2,7 +2,7 @@
  * @file languageOperation.jsx
  * @description Language operation functions.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 import xmumConfig from "../config";

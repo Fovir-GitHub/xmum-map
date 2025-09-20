@@ -2,7 +2,7 @@
  * @file DrawAMap.jsx
  * @description Draw a map with row index limit.
  * @author Fovir
- * @date 2025-09-15
+ * @since 2025-09-15
  */
 
 "use client";

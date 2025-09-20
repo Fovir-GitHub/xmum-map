@@ -2,7 +2,7 @@
  * @file config.js
  * @description Configuration file of the website.
  * @author Fovir
- * @date 2025-09-18
+ * @since 2025-09-18
  */
 
 import { catppuccinMochaColors } from "./styles/materialUiTheme";

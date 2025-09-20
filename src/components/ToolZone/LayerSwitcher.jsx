@@ -2,7 +2,7 @@
  * @file LayerSwitcher.jsx
  * @description Component used to switch layers.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";

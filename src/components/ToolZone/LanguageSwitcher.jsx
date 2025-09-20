@@ -2,7 +2,7 @@
  * @file LanguageSwitcher.jsx
  * @description Language switcher button component.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 import { ToggleButton } from "@mui/material";

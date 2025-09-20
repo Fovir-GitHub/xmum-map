@@ -2,7 +2,7 @@
  * @file readData.jsx
  * @description Read data file and parse it as JSON.
  * @author Fovir
- * @date 2025-09-19
+ * @since 2025-09-19
  */
 
 import fs from "fs";

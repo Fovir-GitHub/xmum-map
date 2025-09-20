@@ -2,7 +2,7 @@
  * @file ResetLocationButton.jsx
  * @description Button component used to reset location of a map.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 import { ToggleButton } from "@mui/material";

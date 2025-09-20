@@ -2,7 +2,7 @@
  * @file generateSitemap.js
  * @description Generate sitemap for SEO.
  * @author Fovir
- * @date 2025-09-18
+ * @since 2025-09-18
  */
 
 import fs from "fs";

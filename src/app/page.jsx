@@ -2,7 +2,7 @@
  * @file page.jsx
  * @description This is a file from server side, which read map data and pass them to `BellMap`.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 import BellMap from "../components/BellMap/BellMap";

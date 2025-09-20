@@ -2,7 +2,7 @@
  * @file BellMap.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-20
+ * @since 2025-09-20
  */
 
 "use client";
