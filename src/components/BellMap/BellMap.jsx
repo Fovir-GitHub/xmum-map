@@ -24,6 +24,7 @@ import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
+import { normalizeLanguage } from "../../lib/languageOperation";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -40,30 +41,11 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
   };
 
   // Locale settings.
-  const defaultLanguage = xmumConfig.language.default;
   const [locale, setLocale] = useState(null);
 
   // Get user's locale.
   useEffect(() => {
-    /**
-     * @description Transform language code from `zh-*` or `en-*` to `zh` or `en`.
-     * @param {string} lang Language code.
-     * @returns If the language code starts with `zh` or `en`, then returns corresponding codes. Otherwise, it returns `defaultLanguage`.
-     */
-    function normalizeLang(lang) {
-      if (!lang) {
-        return defaultLanguage;
-      }
-      const code = lang.toLowerCase();
-      if (code.startsWith("en")) {
-        return "en";
-      }
-      if (code.startsWith("zh")) {
-        return "zh";
-      }
-      return defaultLanguage;
-    }
-    setLocale(normalizeLang(navigator.language));
+    setLocale(normalizeLanguage(navigator.language));
   }, []);
 
   // Width and height of map.
