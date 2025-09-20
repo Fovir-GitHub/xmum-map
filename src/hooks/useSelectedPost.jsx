@@ -1,3 +1,10 @@
+/**
+ * @file useSelectedPost.jsx
+ * @description Define hook of setting `selectedPost`.
+ * @author Fovir
+ * @since 2025-09-20
+ */
+
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import xmumConfig from "../config";
