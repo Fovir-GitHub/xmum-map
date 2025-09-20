@@ -163,6 +163,7 @@ export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
         locale={locale}
         setLocale={setLocale}
         layer={layer}
+        layerRange={2}
         handleSwitchLayer={handleSwitchLayer}
         transformRef={transformRef}
       />
