@@ -24,8 +24,8 @@ import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
-import { normalizeLanguage } from "../../lib/languageOperation";
 import { clearHashTag } from "../../lib/routerOperation";
+import { useLocale } from "../../hooks/useLocale";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -41,13 +41,7 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
     }
   };
 
-  /**
-   * Set locale and default locale.
-   */
-  const [locale, setLocale] = useState(null);
-  useEffect(() => {
-    setLocale(normalizeLanguage(navigator.language));
-  }, []);
+  const [locale, setLocale] = useLocale();
 
   // Width and height of map.
   const bellAvenueMapWidth = xmumConfig.map.bellAvenueWidth;
@@ -83,29 +77,6 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
     setSelectedPost(null);
     clearHashTag(router, pathname);
   }
-
-  // Handle access to URL with hash tags.
-  useEffect(() => {
-    function handleHashChange() {
-      const hash = window.location.hash.slice(1);
-
-      if (hash) {
-        let [slug, localeFormat] = hash.split("-");
-        if (!localeFormat) {
-          localeFormat = xmumConfig.language.default;
-        }
-        handleStoreBlockClick(slug, localeFormat);
-        setLocale(localeFormat);
-      } else {
-        clearHashTag(router, pathname);
-      }
-    }
-
-    handleHashChange();
-    window.addEventListener("hashchange", handleHashChange);
-    return () =>
-      window.removeEventListener("hashchange", handleHashChange);
-  }, []);
 
   // Change locale when hash tag changes.
   useEffect(() => {
