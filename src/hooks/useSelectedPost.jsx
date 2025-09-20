@@ -1,6 +1,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import xmumConfig from "../config";
+import { clearHashTag } from "../lib/routerOperation";
 
 /**
  * Hook of setting selected post.
@@ -42,7 +43,9 @@ export function useSelectedPost(locale) {
 
   // Update hash tag when selected post changes.
   useEffect(() => {
+    // If the selected post is invalid, then clear the hash tag.
     if (!selectedPost) {
+      clearHashTag(router, pathname);
       return;
     }
     const newHash = `${selectedPost.slug}${xmumConfig.website.seperatorBetweenSlugAndLocale}${locale}`;
