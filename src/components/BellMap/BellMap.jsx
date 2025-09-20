@@ -11,7 +11,7 @@ import Map from "../Map/Map";
 import BellAvenueMaps from "./BellAvenueMaps";
 import BellSuiteMap from "./BellSuiteMap";
 import XmumMap from "./XmumMap";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { CssBaseline } from "@mui/material";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
@@ -77,13 +77,6 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
     setSelectedPost(null);
     clearHashTag(router, pathname);
   }
-
-  // Change locale when hash tag changes.
-  useEffect(() => {
-    if (selectedPost) {
-      router.replace(`${pathname}#${selectedPost.slug}-${locale}`);
-    }
-  }, [locale]);
 
   return (
     <ThemeProvider theme={theme}>
