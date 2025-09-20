@@ -1,8 +1,8 @@
 /**
- * @file AppWrapper.jsx
+ * @file BellMap.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
- * @date 2025-09-18
+ * @date 2025-09-20
  */
 
 "use client";
@@ -25,7 +25,7 @@ import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
 import XmumMap from "../XmumMap/XmumMap";
 
-export default function AppWrapper({ bellAvenueData, bellSuiteData }) {
+export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
   const [layer, setLayer] = useState(0);
 
