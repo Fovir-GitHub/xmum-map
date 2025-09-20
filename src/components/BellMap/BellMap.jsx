@@ -40,10 +40,10 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
     }
   };
 
-  // Locale settings.
+  /**
+   * Set locale and default locale.
+   */
   const [locale, setLocale] = useState(null);
-
-  // Get user's locale.
   useEffect(() => {
     setLocale(normalizeLanguage(navigator.language));
   }, []);
@@ -58,7 +58,7 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
 
   const [avenueData, setAvenueData] = useState(bellAvenueData);
   const [suiteData, setSuiteData] = useState(bellSuiteData);
-  //
+
   // Get all categories.
   const categories = Object.keys(categoryInformation);
 
