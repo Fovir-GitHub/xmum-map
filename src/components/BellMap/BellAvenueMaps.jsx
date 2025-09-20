@@ -12,8 +12,17 @@ import xmumConfig from "../../config";
 import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringNailArt";
 
 /**
- * @description Generate the map from the data file.
+ * Generate the map of bell avenue from the data file.
+ *
+ * Bell avenue map has two floors, which requires a `LayerSwitcher` component.
+ *
  * @param storeData JSON data.
+ * @param mapWidth Width of the map.
+ * @param mapHeight Height of the map.
+ * @param locale Locale from `useState()`.
+ * @param showCategories An array to determine which stores can be displayed by their categories.
+ * @param handleStoreBlockClick Function to call when a store block is clicked.
+ * @param currentFloor The floor that users are on. By default, it is GF (0F).
  */
 export default function BellAvenueMaps({
   storeData,
@@ -48,10 +57,13 @@ export default function BellAvenueMaps({
 }
 
 /**
- * @description Generate maps for each floor.
+ * Generate maps for each floor of bell avenue.
  * @param svgWidth The width of SVG.
  * @param svgHeight The height of SVG.
  * @param stores Data of stores on every floor.
+ * @param locale Locale from `useState()`.
+ * @param showPatch Determine whether to display patch stores.
+ * @param handleStoreBlockClick Function to call when a store block is clicked.
  */
 function BellAvenueFloorMap({
   svgWidth,
@@ -62,7 +74,7 @@ function BellAvenueFloorMap({
   handleStoreBlockClick,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
-  const limit = 78;
+  const limit = 78; // Maximum number of stores.
 
   // Draw path.
   const drawSvgPath = () => {
