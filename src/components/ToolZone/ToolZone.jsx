@@ -8,33 +8,21 @@
 import toolZoneStyle from "./toolzone.module.css";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
-import { isMobile } from "../../lib/isMobile";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ResetLocationButton from "./ResetLocationButton";
+import getToggleButtonGroupStyle from "../../styles/getToggleButtonGroupStyle";
+import LayerSwitcher from "./LayerSwitcher";
 
 export default function ToolZone({
   locale,
   setLocale,
   layer,
+  layerRange,
   handleSwitchLayer,
   transformRef,
 }) {
-  // Opacity.
-  const toolBackgroundOpacity = "B2";
-
-  // Style of toggle buttons.
-  const layerSwitcherStyle = {
-    "&.Mui-selected": {
-      backgroundColor: `${catppuccinMochaColors.surface0}${toolBackgroundOpacity}`,
-    },
-    fontWeight: "bolder",
-    color: catppuccinMochaColors.text,
-  };
-
-  const toggleButtonGroupStyle = {
-    size: isMobile() ? "medium" : "large",
-    backgroundColor: `${catppuccinMochaColors.surface2}${toolBackgroundOpacity}`,
-  };
+  const toggleButtonGroupStyle =
+    getToggleButtonGroupStyle().toggleButtonGroupStyle;
 
   return (
     <div className={toolZoneStyle.toolZone}>
@@ -49,23 +37,11 @@ export default function ToolZone({
         <ResetLocationButton transformRef={transformRef} />
       </ToggleButtonGroup>
 
-      <ToggleButtonGroup
-        orientation="vertical"
-        onChange={handleSwitchLayer}
-        size={toggleButtonGroupStyle.size}
-        exclusive
-        value={layer}
-        sx={{
-          backgroundColor: toggleButtonGroupStyle.backgroundColor,
-        }}
-      >
-        <ToggleButton value={1} sx={layerSwitcherStyle}>
-          1F
-        </ToggleButton>
-        <ToggleButton value={0} sx={layerSwitcherStyle}>
-          GF
-        </ToggleButton>
-      </ToggleButtonGroup>
+      <LayerSwitcher
+        layer={layer}
+        layerRange={layerRange}
+        handleSwitchLayer={handleSwitchLayer}
+      />
     </div>
   );
 }
