@@ -10,6 +10,15 @@
 import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
 import xmumConfig from "../../config";
 
+/**
+ * Bell suite map which has one floor.
+ *
+ * @param storeData Data of stores in bell suite.
+ * @param mapWidth Width of the map.
+ * @param mapHeight Height of the map.
+ * @param handleStoreBlockClick Function to call when a store block is clicked.
+ * @param locale Locale from `useState()` function.
+ */
 export default function BellSuiteMap({
   storeData,
   mapWidth,
@@ -19,6 +28,8 @@ export default function BellSuiteMap({
 }) {
   const ROW_INDEX_LIMIT = 8;
   const limit = 13;
+
+  // Bell suite has a crossing road.
   const PATH_CROSS_POINT = 8;
 
   function drawHorizontalPath() {
