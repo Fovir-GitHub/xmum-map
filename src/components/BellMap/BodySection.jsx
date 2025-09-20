@@ -1,8 +1,15 @@
+/**
+ * @file BodySection.jsx
+ * @description Body section of bell map.
+ * @author Fovir
+ * @since 2025-09-21
+ */
+
 import { usePathname, useRouter } from "next/navigation";
 import { clearHashTag } from "../../lib/routerOperation";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
 import xmumConfig from "../../config";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import ToolZone from "../ToolZone/ToolZone";
 import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 import Sidebar from "../Sidebar/Sidebar";
@@ -16,8 +23,6 @@ import Map from "../Map/Map";
  * @typedef {Object} BodySectionProps
  * @property {string} locale
  * @property {Function} setLocale
- * @property {Number} layer
- * @property {Function} setLayer
  * @property {Array<Array<Object>>} avenueData
  * @property {Array<Array<Object>>} suiteData
  * @property {string[]} showCategories
@@ -29,15 +34,8 @@ import Map from "../Map/Map";
  * @param {BodySectionProps} props
  */
 export default function BodySection(props) {
-  const {
-    locale,
-    setLocale,
-    layer,
-    setLayer,
-    avenueData,
-    suiteData,
-    showCategories,
-  } = props;
+  const { locale, setLocale, avenueData, suiteData, showCategories } =
+    props;
 
   // Width and height of map.
   const bellAvenueMapWidth = xmumConfig.map.bellAvenueWidth;
@@ -50,6 +48,9 @@ export default function BodySection(props) {
   // Hash tag operations.
   const router = useRouter();
   const pathname = usePathname();
+
+  // Floor layers.
+  const [layer, setLayer] = useState(0);
 
   // Clicked store.
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);

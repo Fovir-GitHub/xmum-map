@@ -15,11 +15,9 @@ import Footer from "../Footer/Footer";
 import { useLocale } from "../../hooks/useLocale";
 import HeaderSection from "./HeaderSection";
 import BodySection from "./BodySection";
+import { categoryInformation } from "../../config";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
-  // Floor layers.
-  const [layer, setLayer] = useState(0);
-
   const [locale, setLocale] = useLocale();
 
   const [avenueData, setAvenueData] = useState(bellAvenueData);
@@ -47,8 +45,6 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
       <BodySection
         locale={locale}
         setLocale={setLocale}
-        layer={layer}
-        setLayer={setLayer}
         avenueData={avenueData}
         suiteData={suiteData}
         showCategories={showCategories}
