@@ -24,15 +24,18 @@ import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
-import { clearHashTag } from "../../lib/routerOperation";
 import { useLocale } from "../../hooks/useLocale";
+import { useSelectedPost } from "../../hooks/useSelectedPost";
+import { clearHashTag } from "../../lib/routerOperation";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
   const [layer, setLayer] = useState(0);
 
+  const [locale, setLocale] = useLocale();
+
   // Clicked store.
-  const [selectedPost, setSelectedPost] = useState(null);
+  const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
   // Switch layers when `nextLayer` is not `null`.
   const handleSwitchLayer = (_, nextLayer) => {
@@ -40,8 +43,6 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
       setLayer(nextLayer);
     }
   };
-
-  const [locale, setLocale] = useLocale();
 
   // Width and height of map.
   const bellAvenueMapWidth = xmumConfig.map.bellAvenueWidth;
@@ -69,7 +70,6 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
       slug: slug,
       locale: locale,
     });
-    router.replace(`${pathname}#${slug}-${locale}`);
   }
 
   // Function to run when closing the sidebar.
