@@ -25,6 +25,7 @@ import ToolZone from "../ToolZone/ToolZone";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
 import { normalizeLanguage } from "../../lib/languageOperation";
+import { clearHashTag } from "../../lib/routerOperation";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -77,15 +78,10 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
     router.replace(`${pathname}#${slug}-${locale}`);
   }
 
-  // Clear hash tag.
-  function clearHashTag() {
-    router.replace(pathname);
-  }
-
   // Function to run when closing the sidebar.
   function closeSidebarEffect() {
     setSelectedPost(null);
-    clearHashTag();
+    clearHashTag(router, pathname);
   }
 
   // Handle access to URL with hash tags.
@@ -101,7 +97,7 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
         handleStoreBlockClick(slug, localeFormat);
         setLocale(localeFormat);
       } else {
-        clearHashTag();
+        clearHashTag(router, pathname);
       }
     }
 
