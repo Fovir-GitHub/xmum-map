@@ -2,7 +2,7 @@
  * @file isMobile.jsx
  * @description Judge whether the client is on mobile phones.
  * @author Fovir
- * @date 2025-08-30
+ * @since 2025-08-30
  */
 
 import { useMediaQuery } from "@mui/material";

@@ -1,26 +1,19 @@
 /**
  * @file page.jsx
- * @description This is a file from server side, which read map data and pass them to `AppWrapper`.
+ * @description This is a file from server side, which read map data and pass them to `BellMap`.
  * @author Fovir
- * @date 2025-09-05
+ * @since 2025-09-20
  */
 
-import fs from "fs";
-import path from "path";
-import AppWrapper from "../components/AppWrapper/AppWrapper";
-
-function readData(fileName) {
-  const dataFile = path.join(process.cwd(), `src/data/${fileName}`);
-  const fileContent = fs.readFileSync(dataFile);
-  return JSON.parse(fileContent);
-}
+import BellMap from "../components/BellMap/BellMap";
+import { readData } from "../lib/readData";
 
 export default function Page() {
   const bellAvenueData = readData("bell_avenue.json");
   const bellSuiteData = readData("bell_suite.json");
 
   return (
-    <AppWrapper
+    <BellMap
       bellAvenueData={bellAvenueData}
       bellSuiteData={bellSuiteData}
     />

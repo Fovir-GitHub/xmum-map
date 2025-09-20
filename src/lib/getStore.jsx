@@ -2,7 +2,7 @@
  * @file getStore.jsx
  * @description Get store data.
  * @author Fovir
- * @date 2025-09-17
+ * @since 2025-09-17
  */
 
 import fs from "fs";

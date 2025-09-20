@@ -2,7 +2,7 @@
  * @file ImageSlide.jsx
  * @description Enable image slide feature.
  * @author Fovir
- * @date 2025-09-08
+ * @since 2025-09-08
  */
 
 "use client";

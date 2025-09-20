@@ -2,7 +2,7 @@
  * @file testSitemap.js
  * @description Test whether all urls in sitemap are available.
  * @author Fovir
- * @date 2025-09-18
+ * @since 2025-09-18
  */
 
 import fetch from "node-fetch";

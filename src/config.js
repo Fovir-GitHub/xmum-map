@@ -2,7 +2,7 @@
  * @file config.js
  * @description Configuration file of the website.
  * @author Fovir
- * @date 2025-09-18
+ * @since 2025-09-18
  */
 
 import { catppuccinMochaColors } from "./styles/materialUiTheme";
@@ -45,7 +45,7 @@ const xmumConfig = {
     lastUpdateTime: {
       zh: "上次更新时间：",
       en: "Last update time: ",
-      time: "18 Sept 2025",
+      time: "19 Sept 2025",
     },
   },
   language: {
@@ -104,6 +104,7 @@ const xmumConfig = {
   website: {
     title: "XMUM Map",
     logo: "/favicon.png",
+    seperatorBetweenSlugAndLocale: "::",
   },
 };
 

@@ -2,7 +2,7 @@
  * @file GlobalEscListener.jsx
  * @description This component listens `Esc` globally.
  * @author Fovir
- * @date 2025-08-29
+ * @since 2025-08-29
  */
 
 "use client";

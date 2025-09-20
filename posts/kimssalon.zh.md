@@ -1,6 +1,12 @@
 ﻿# KIMS SALON理发店
 
-# 价格表
+## 最新促销
+
+<img src="https://img.xmummap.com/G_kims_prom.webp" />
+
+**有效时间：2025/09/20-2025/09/21**
+
+## 价格表
 
 ## 成人美发服务
 

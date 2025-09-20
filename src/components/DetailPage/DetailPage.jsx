@@ -2,7 +2,7 @@
  * @file DetailPage.jsx
  * @description Create the `DetailPage` component, which is the container of detail pages. The component fetches post html via API.
  * @author Fovir
- * @date 2025-09-10
+ * @since 2025-09-10
  */
 
 "use client";

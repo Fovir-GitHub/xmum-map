@@ -2,7 +2,7 @@
  * @file FilterButtonGroup.jsx
  * @description Component of filter buttons, which filter stores by their categories.
  * @author Fovir
- * @date 2025-09-12
+ * @since 2025-09-12
  */
 
 import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
