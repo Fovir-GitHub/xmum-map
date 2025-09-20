@@ -18,15 +18,17 @@ import BodySection from "./BodySection";
 import { categoryInformation } from "../../config";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
-  const [locale, setLocale] = useLocale();
-
-  const [avenueData, setAvenueData] = useState(bellAvenueData);
-  const [suiteData, setSuiteData] = useState(bellSuiteData);
-
   // Get all categories.
   const categories = Object.keys(categoryInformation);
 
-  // Categories that can be displayed.
+  // Locale of the website.
+  const [locale, setLocale] = useLocale();
+
+  // Data of stores.
+  const [avenueData, setAvenueData] = useState(bellAvenueData);
+  const [suiteData, setSuiteData] = useState(bellSuiteData);
+
+  // Categories to display.
   const [showCategories, setShowCategories] = useState(categories);
 
   return (
@@ -49,6 +51,7 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
         suiteData={suiteData}
         showCategories={showCategories}
       />
+
       <Footer locale={locale} />
     </ThemeProvider>
   );
