@@ -19,14 +19,13 @@ import { theme } from "../../styles/materialUiTheme";
 import GlobalEscListener from "../../components/GlobalEscListener/GlobalEscListener";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
-import Announcement from "../Announcement/Announcement";
 import xmumConfig, { categoryInformation } from "../../config";
 import ToolZone from "../ToolZone/ToolZone";
-import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "../../hooks/useLocale";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
 import { clearHashTag } from "../../lib/routerOperation";
+import HeaderSection from "./HeaderSection";
 
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Floor layers.
@@ -82,24 +81,14 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "1rem",
-        }}
-      >
-        <Announcement locale={locale} />
-        <FilterButtonGroup
-          setAvenueData={setAvenueData}
-          setSuiteData={setSuiteData}
-          locale={locale}
-          categories={categories}
-          showCategories={showCategories}
-          setShowCategories={setShowCategories}
-        />
-      </div>
+      <HeaderSection
+        locale={locale}
+        setAvenueData={setAvenueData}
+        setSuiteData={setSuiteData}
+        categories={categories}
+        showCategories={showCategories}
+        setShowCategories={setShowCategories}
+      />
 
       <ToolZone
         locale={locale}
