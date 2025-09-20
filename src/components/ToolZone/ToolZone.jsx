@@ -6,8 +6,7 @@
  */
 
 import toolZoneStyle from "./toolzone.module.css";
-import { ToggleButton, ToggleButtonGroup } from "@mui/material";
-import { catppuccinMochaColors } from "../../styles/materialUiTheme";
+import { ToggleButtonGroup } from "@mui/material";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ResetLocationButton from "./ResetLocationButton";
 import getToggleButtonGroupStyle from "../../styles/getToggleButtonGroupStyle";
