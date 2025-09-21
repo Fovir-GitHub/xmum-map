@@ -9,32 +9,21 @@ import XLSX from "xlsx";
 import fs from "fs";
 import path from "path";
 
-// Source file and output file.
-const BELL_AVENUE_SOURCE_FILE = path.join(
-  process.cwd(),
-  "src/data/bell_avenue.xlsx",
-);
-const BELL_AVENUE_OUTPUT_FILE = path.join(
-  process.cwd(),
-  "src/data/bell_avenue.json",
-);
-const BELL_SUITE_SROUCE_FILE = path.join(
-  process.cwd(),
-  "src/data/bell_suite.xlsx",
-);
-const BELL_SUITE_OUTPUT_FILE = path.join(
-  process.cwd(),
-  "src/data/bell_suite.json",
-);
-
 /**
- * @description Read data from `.xlsx` files.
- * @param {string} fileName - The `.xlsx` file to read.
- * @returns {Array} - JSON array.
+ * Read `.xlsx` files and output them in `.json` format.
+ *
+ * The data files path is `src/data`, so the funtion will read the file `${fileName}.xlsx` and output it as `${fileName}.json`.
+ *
+ * @param {string} fileName File name without extension.
+ * @param {Number} maxRows Maximum rows to read and parse.
  */
-function readXlsx(fileName) {
-  const MAX_ROWS = 78; // Max row of data to be read.
-  const workBook = XLSX.readFile(fileName); // Open the file.
+function readXlsx(fileName, maxRows) {
+  const dataPath = path.join(process.cwd(), "src/data");
+  const inputPath = path.join(dataPath, `${fileName}.xlsx`);
+  const outputPath = path.join(dataPath, `${fileName}.json`);
+
+  const MAX_ROWS = maxRows; // Max row of data to be read.
+  const workBook = XLSX.readFile(inputPath); // Open the file.
   const result = []; // The result array.
 
   for (const sheetName of workBook.SheetNames) {
@@ -54,17 +43,11 @@ function readXlsx(fileName) {
     result.push(data);
   }
 
-  return result;
+  fs.writeFileSync(outputPath, JSON.stringify(result));
 }
 
-// Output the result.
-fs.writeFileSync(
-  BELL_AVENUE_OUTPUT_FILE,
-  JSON.stringify(readXlsx(BELL_AVENUE_SOURCE_FILE)),
-);
-fs.writeFileSync(
-  BELL_SUITE_OUTPUT_FILE,
-  JSON.stringify(readXlsx(BELL_SUITE_SROUCE_FILE)),
-);
+readXlsx("bell_avenue", 78);
+readXlsx("bell_suite", 13);
+readXlsx("ly3", 13);
 
 console.log("\n\nXLSX Parsed\n\n");
