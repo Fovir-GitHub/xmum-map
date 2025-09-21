@@ -16,7 +16,11 @@ export default function Ly3Map({ ly3Data }) {
       <CssBaseline />
       <HeaderSection locale={locale} />
 
-      <BodySection locale={locale} setLocale={setLocale} />
+      <BodySection
+        locale={locale}
+        setLocale={setLocale}
+        ly3Data={ly3Data}
+      />
 
       <Footer locale={locale} />
     </ThemeProvider>
