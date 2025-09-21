@@ -48,6 +48,6 @@ function readXlsx(fileName, maxRows) {
 
 readXlsx("bell_avenue", 78);
 readXlsx("bell_suite", 13);
-readXlsx("ly3", 13);
+readXlsx("ly3", 40);
 
 console.log("\n\nXLSX Parsed\n\n");
