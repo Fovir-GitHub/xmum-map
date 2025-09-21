@@ -20,7 +20,6 @@ const xmumConfig = {
       zh: "公告",
       en: "Announcement",
     },
-    slug: "announcement",
   },
   footer: {
     links: {
