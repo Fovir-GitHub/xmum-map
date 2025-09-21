@@ -1,3 +1,8 @@
+import Ly3Map from "../../components/Ly3Map/Ly3Map";
+import { readData } from "../../lib/readData";
+
 export default function Ly3() {
-  return <h1>LY3 Map</h1>;
+  const ly3Data = readData("ly3.json");
+
+  return <Ly3Map ly3Data={ly3Data} />;
 }
