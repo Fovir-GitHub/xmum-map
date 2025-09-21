@@ -20,11 +20,11 @@ import BellSuiteMap from "./BellSuiteMap";
 import Map from "../Map/Map";
 
 /**
- * @typedef {Object} BodySectionProps
+ * @typedef {object} BodySectionProps
  * @property {string} locale
  * @property {Function} setLocale
- * @property {Array<Array<Object>>} avenueData
- * @property {Array<Array<Object>>} suiteData
+ * @property {Array<Array<object>>} avenueData
+ * @property {Array<Array<object>>} suiteData
  * @property {string[]} showCategories
  */
 

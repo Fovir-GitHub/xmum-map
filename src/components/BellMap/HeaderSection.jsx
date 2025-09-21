@@ -9,7 +9,7 @@ import Announcement from "../Announcement/Announcement";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 
 /**
- * @typedef {Object} HeaderSectionProps
+ * @typedef {object} HeaderSectionProps
  * @property {string} locale
  * @property {Function} setAvenueData
  * @property {Function} setSuiteData

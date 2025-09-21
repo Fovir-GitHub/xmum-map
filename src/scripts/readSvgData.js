@@ -15,7 +15,7 @@ import path from "path";
  * The data files path is `src/data`, so the funtion will read the file `${fileName}.xlsx` and output it as `${fileName}.json`.
  *
  * @param {string} fileName File name without extension.
- * @param {Number} maxRows Maximum rows to read and parse.
+ * @param {number} maxRows Maximum rows to read and parse.
  */
 function readXlsx(fileName, maxRows) {
   const dataPath = path.join(process.cwd(), "src/data");
