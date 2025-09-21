@@ -14,11 +14,9 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
  *
  * It will display layers between [0, layerRange), where `0F` will display as `GF`, and it will also highlight current layer.
  *
- * When buttons are clicked, the component will call `handleSwitchLayer()` function.
- *
  * @param layer The layer variable from `useState()`.
+ * @param setLayer Callback function used to set `layer`.
  * @param layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
- * @param handleSwitchLayer Function used to handle click on switch layer buttons.
  */
 export default function LayerSwitcher({ layer, layerRange, setLayer }) {
   const toolBackgroundOpacity = getToggleButtonGroupStyle().opacity;

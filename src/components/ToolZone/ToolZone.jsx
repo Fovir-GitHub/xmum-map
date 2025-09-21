@@ -18,8 +18,8 @@ import LayerSwitcher from "./LayerSwitcher";
  * @param locale Locale from `useState()`.
  * @param setLocale Callback function used to set locale.
  * @param layer Layer variable from `useState()`.
+ * @param setLayer Callback function used to set `layer`.
  * @param layerRange Number of layers, which will be passed to `LayerSwitcher` component.
- * @param handleSwitchLayer Function to be called when layer switcher is clicked.
  * @param transformRef Ref of map used to reset state of map.
  */
 export default function ToolZone({
