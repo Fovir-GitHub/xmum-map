@@ -42,7 +42,7 @@ export default function HeaderSection(props) {
         gap: "1rem",
       }}
     >
-      <Announcement locale={locale} />
+      <Announcement locale={locale} slug={"bell-announcement"} />
       <FilterButtonGroup
         setAvenueData={setAvenueData}
         setSuiteData={setSuiteData}
