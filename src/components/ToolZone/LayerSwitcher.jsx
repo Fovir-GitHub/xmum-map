@@ -20,11 +20,7 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
  * @param layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
  * @param handleSwitchLayer Function used to handle click on switch layer buttons.
  */
-export default function LayerSwitcher({
-  layer,
-  layerRange,
-  handleSwitchLayer,
-}) {
+export default function LayerSwitcher({ layer, layerRange, setLayer }) {
   const toolBackgroundOpacity = getToggleButtonGroupStyle().opacity;
   const toggleButtonGroupStyle =
     getToggleButtonGroupStyle().toggleButtonGroupStyle;
@@ -36,6 +32,13 @@ export default function LayerSwitcher({
     },
     fontWeight: "bolder",
     color: catppuccinMochaColors.text,
+  };
+
+  // Switch layers when `nextLayer` is not `null`.
+  const handleSwitchLayer = (_, nextLayer) => {
+    if (nextLayer !== null) {
+      setLayer(nextLayer);
+    }
   };
 
   return (

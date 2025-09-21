@@ -55,13 +55,6 @@ export default function BodySection(props) {
   // Clicked store.
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
-  // Switch layers when `nextLayer` is not `null`.
-  const handleSwitchLayer = (_, nextLayer) => {
-    if (nextLayer !== null) {
-      setLayer(nextLayer);
-    }
-  };
-
   // Function to run when closing the sidebar.
   const closeSidebarEffect = () => {
     setSelectedPost(null);
@@ -82,8 +75,8 @@ export default function BodySection(props) {
         locale={locale}
         setLocale={setLocale}
         layer={layer}
+        setLayer={setLayer}
         layerRange={2}
-        handleSwitchLayer={handleSwitchLayer}
         transformRef={transformRef}
       />
 

@@ -26,8 +26,8 @@ export default function ToolZone({
   locale,
   setLocale,
   layer,
+  setLayer,
   layerRange,
-  handleSwitchLayer,
   transformRef,
 }) {
   const toggleButtonGroupStyle =
@@ -49,7 +49,7 @@ export default function ToolZone({
       <LayerSwitcher
         layer={layer}
         layerRange={layerRange}
-        handleSwitchLayer={handleSwitchLayer}
+        setLayer={setLayer}
       />
     </div>
   );
