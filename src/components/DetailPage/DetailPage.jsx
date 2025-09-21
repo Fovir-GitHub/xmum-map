@@ -12,6 +12,12 @@ import { getMarkdownHtml } from "../../lib/getMarkdownHtml";
 import ImageSlide from "../ImageSlide/ImageSlide";
 import CircularProgress from "@mui/material/CircularProgress";
 
+/**
+ * Detail page of stores in markdown format.
+ *
+ * @param {string} slug Slug of post.
+ * @param {string} locale Current locale.
+ */
 export default function DetailPage({ slug, locale }) {
   const [postHtml, setPostHtml] = useState("");
   const [isLoading, setIsLoading] = useState(true);

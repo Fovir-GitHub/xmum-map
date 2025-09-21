@@ -13,6 +13,15 @@ import StoreBlock, {
 } from "../StoreBlock/StoreBlock";
 import xmumConfig from "../../config";
 
+/**
+ * Draw a row of bell map.
+ *
+ * @param {object[]} stores Data of stores.
+ * @param {number} rowIndexLimit Determine how many stores should be placed in a row.
+ * @param {string} locale Current locale.
+ * @param {number} limit Total number of stores.
+ * @param {(slug: string, locale: string) => void} handleStoreBlockClick Function to handle store click.
+ */
 export default function DrawAMap({
   stores,
   rowIndexLimit,
@@ -61,7 +70,11 @@ export default function DrawAMap({
 }
 
 /**
- * @description Draw a path block in (x,y) with `fill` color.
+ * Draw a path block in (x,y) with `fill` color.
+ *
+ * @param {number} x X-coordinate.
+ * @param {number} y Y-coordinate.
+ * @param {number} index The index of store.
  */
 export function drawPathBlock(x, y, index) {
   return (
