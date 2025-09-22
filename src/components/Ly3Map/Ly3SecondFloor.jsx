@@ -3,10 +3,15 @@
 import DrawAMap from "../DrawAMap/DrawAMap";
 
 export default function Ly3SecondFloor({ storeData, locale }) {
-  const topRowStart = 0,
-    topRowEnd = 8;
-  const leftRowStart = topRowEnd + 1,
-    leftRowEnd = 29;
+  const topRowStart = 0;
+  const topRowEnd = 8;
+
+  const leftRowStart = topRowEnd + 1;
+  const leftRowEnd = 29;
+
+  const tmallStart = leftRowEnd;
+  const tmallEnd = tmallStart + 1;
+
   return (
     <div>
       <img src="maps/LY3_2F.svg" width={10000} height={10000} />
@@ -27,6 +32,10 @@ export default function Ly3SecondFloor({ storeData, locale }) {
         />
         <LeftRow
           storeData={storeData.slice(leftRowStart, leftRowEnd)}
+          locale={locale}
+        />
+        <TmallCoffee
+          storeData={storeData.slice(tmallStart, tmallEnd)}
           locale={locale}
         />
       </div>
@@ -109,6 +118,39 @@ function LeftRow({ storeData, locale }) {
           height: storeHeight,
           width: storeWidth,
           useRowIndex: false,
+        })}
+      </svg>
+    </div>
+  );
+}
+
+function TmallCoffee({ storeData, locale }) {
+  const limit = 1;
+  const storeWidth = 800;
+  const storeHeight = 800;
+  const top = 4300;
+  const left = 5400;
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: top,
+        left: left,
+        height: storeHeight,
+        width: getTotalStoreWidth(storeData, storeWidth),
+      }}
+    >
+      <svg width={"100%"} height={"100%"}>
+        {DrawAMap({
+          stores: storeData,
+          rowIndexLimit: limit,
+          locale: locale,
+          limit: limit,
+          useRowIndex: false,
+          width: storeWidth,
+          height: storeHeight,
+          fontSize: "6rem",
         })}
       </svg>
     </div>
