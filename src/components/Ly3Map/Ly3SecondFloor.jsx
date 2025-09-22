@@ -5,7 +5,7 @@ import DrawAMap from "../DrawAMap/DrawAMap";
 export default function Ly3SecondFloor({ storeData, locale }) {
   const topRowStart = 0,
     topRowEnd = 8;
-  const leftRowStart = topRowEnd,
+  const leftRowStart = topRowEnd + 1,
     leftRowEnd = 29;
   return (
     <div>
@@ -34,6 +34,15 @@ export default function Ly3SecondFloor({ storeData, locale }) {
   );
 }
 
+function getTotalStoreWidth(stores, width) {
+  let totalWidth = 0;
+
+  stores.map(
+    (store) => (totalWidth += store.Width !== null ? store.Width : 1),
+  );
+  return totalWidth * width;
+}
+
 function TopRow({ storeData, locale }) {
   const rowIndexLimit = 8;
   const limit = 8;
@@ -41,14 +50,17 @@ function TopRow({ storeData, locale }) {
   const top = 1750;
   const left = 200;
 
+  const storeWidth = 350;
+  const storeHeight = 500;
+
   return (
     <div
       style={{
         position: "relative",
         top: top,
         left: left,
-        width: "100%",
-        height: "100%",
+        width: getTotalStoreWidth(storeData, storeWidth),
+        height: storeHeight,
       }}
     >
       <svg width={"100%"} height={"100%"}>
@@ -58,8 +70,8 @@ function TopRow({ storeData, locale }) {
           limit: limit,
           locale: locale,
           handleStoreBlockClick: () => console.log("Clicked"),
-          height: 400,
-          width: 350,
+          height: storeHeight,
+          width: storeWidth,
           fontSize: "4rem",
         })}
       </svg>
@@ -69,29 +81,34 @@ function TopRow({ storeData, locale }) {
 
 function LeftRow({ storeData, locale }) {
   const rowIndexLimit = 40;
+  const storeWidth = 250;
+  const storeHeight = 500;
+
+  const top = 4300;
+  const left = -2700;
+
   return (
     <div
       style={{
-        width: "100%",
-        height: "100%",
+        width: getTotalStoreWidth(storeData, storeWidth),
+        height: storeHeight,
         position: "absolute",
-        top: 600,
-        left: -100,
+        top: top,
+        left: left,
+        transform: "rotate(-90deg)",
+        transformOrigin: "center",
       }}
     >
-      <svg
-        width={"100%"}
-        height={"100%"}
-        transform="rotate(-90, 100, 50)"
-      >
+      <svg width={"100%"} height={"100%"}>
         {DrawAMap({
           stores: storeData,
           rowIndexLimit: rowIndexLimit,
           limit: rowIndexLimit,
           locale: locale,
           fontSize: "4rem",
-          height: 400,
-          width: 300,
+          height: storeHeight,
+          width: storeWidth,
+          useRowIndex: false,
         })}
       </svg>
     </div>
