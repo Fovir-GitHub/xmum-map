@@ -10,6 +10,13 @@ import ToolZone from "../ToolZone/ToolZone";
 import Map from "../Map/Map";
 import Ly3SecondFloor from "./Ly3SecondFloor";
 
+/**
+ * Body section of LY3 map.
+ *
+ * @param {string} locale Current locale from `useState()` function.
+ * @param {Function} setLocale Function used to change the value of `locale`.
+ * @param {object[][]} ly3Data Store data of LY3.
+ */
 export default function BodySection({ locale, setLocale, ly3Data }) {
   const [layer, setLayer] = useState(0);
   const layerRange = 3;
