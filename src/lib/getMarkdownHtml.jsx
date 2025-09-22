@@ -2,7 +2,7 @@
  * @file getMarkdownHtml.jsx
  * @description Fetch markdown via API and parse it with `remark`.
  * @author Fovir
- * @date 2025-09-10
+ * @since 2025-09-10
  */
 
 "use client";

@@ -2,7 +2,7 @@
  * @file StoreBlock.jsx
  * @description Create component that is used to draw a single block of store.
  * @author Fovir
- * @date 2025-09-10
+ * @since 2025-09-10
  */
 
 "use client";

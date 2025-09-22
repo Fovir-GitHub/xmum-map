@@ -2,7 +2,7 @@
  * @file page.jsx
  * @description Generate metadata for shops.
  * @author Fovir
- * @date 2025-09-18
+ * @since 2025-09-17
  */
 
 import DetailPage from "../../../components/DetailPage/DetailPage";

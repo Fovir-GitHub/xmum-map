@@ -2,7 +2,7 @@
  * @file Announcement.jsx
  * @description Component of displaying announcements on the top of page.
  * @author Fovir
- * @date 2025-09-17
+ * @since 2025-09-17
  */
 
 "use client";
@@ -19,7 +19,7 @@ import xmumConfig from "../../config";
 import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 import DetailPage from "../DetailPage/DetailPage";
 
-export default function Announcement({ locale }) {
+export default function Announcement({ locale, slug }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -46,10 +46,7 @@ export default function Announcement({ locale }) {
             overflowY: "auto",
           }}
         >
-          <DetailPage
-            slug={xmumConfig.announcement.slug}
-            locale={locale}
-          />
+          <DetailPage slug={slug} locale={locale} />
         </AccordionDetails>
       </Accordion>
     </>

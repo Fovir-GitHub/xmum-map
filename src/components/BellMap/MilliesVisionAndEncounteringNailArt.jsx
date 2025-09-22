@@ -2,7 +2,7 @@
  * @file MilliesVisionAndEncounteringNailArt.jsx
  * @description Draw milles vision and encountering nail art.
  * @author Fovir
- * @date 2025-09-15
+ * @since 2025-09-20
  */
 
 import xmumConfig from "../../config";
@@ -11,6 +11,12 @@ import StoreBlock, {
   getStoreIcon,
 } from "../StoreBlock/StoreBlock";
 
+/**
+ * Non-regular store blocks that needs special operation.
+ *
+ * @param handleBlockClick Function to call when a store block is clicked.
+ * @param locale Locale from `useState()`.
+ */
 export default function MilliesVisionAndEncounteringNailArt({
   handleBlockClick,
   locale,
