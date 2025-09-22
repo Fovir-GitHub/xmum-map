@@ -21,7 +21,7 @@ import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringN
  * @param mapHeight Height of the map.
  * @param locale Locale from `useState()`.
  * @param showCategories An array to determine which stores can be displayed by their categories.
- * @param handleStoreBlockClick Function to call when a store block is clicked.
+ * @param setSelectedPost Function used to set selected post.
  * @param currentFloor The floor that users are on. By default, it is GF (0F).
  */
 export default function BellAvenueMaps({
@@ -63,7 +63,7 @@ export default function BellAvenueMaps({
  * @param stores Data of stores on every floor.
  * @param locale Locale from `useState()`.
  * @param showPatch Determine whether to display patch stores.
- * @param handleStoreBlockClick Function to call when a store block is clicked.
+ * @param setSelectedPost Function used to set selected post.
  */
 function BellAvenueFloorMap({
   svgWidth,

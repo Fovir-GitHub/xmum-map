@@ -14,7 +14,7 @@ import StoreBlock, {
 /**
  * Non-regular store blocks that needs special operation.
  *
- * @param handleBlockClick Function to call when a store block is clicked.
+ * @param setSelectedPost Function used to set selected post.
  * @param locale Locale from `useState()`.
  */
 export default function MilliesVisionAndEncounteringNailArt({

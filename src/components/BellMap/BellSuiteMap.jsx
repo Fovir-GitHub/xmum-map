@@ -16,7 +16,7 @@ import xmumConfig from "../../config";
  * @param storeData Data of stores in bell suite.
  * @param mapWidth Width of the map.
  * @param mapHeight Height of the map.
- * @param handleStoreBlockClick Function to call when a store block is clicked.
+ * @param setSelectedPost Function used to set selected post.
  * @param locale Locale from `useState()` function.
  */
 export default function BellSuiteMap({
