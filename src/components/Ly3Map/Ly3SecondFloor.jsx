@@ -14,12 +14,12 @@ import DrawAMap from "../DrawAMap/DrawAMap";
  *
  * @param {object[]} storeData Data of stores.
  * @param {string} locale Current locale.
- * @param {Function} handleStoreBlockClick Function used to handle store click events.
+ * @param {Function} setSelectedPost Function used to set selected post.
  */
 export default function Ly3SecondFloor({
   storeData,
   locale,
-  handleStoreBlockClick,
+  setSelectedPost,
 }) {
   const topRowStart = 0;
   const topRowEnd = 8;
@@ -63,7 +63,7 @@ export default function Ly3SecondFloor({
           storeData={storeData.slice(topRowStart, topRowEnd)}
           fontSize={"4rem"}
           useRowIndex={true}
-          handleStoreBlockClick={handleStoreBlockClick}
+          setSelectedPost={setSelectedPost}
         />
         {/* Top Row End */}
         {/* Left Row Start */}
@@ -77,7 +77,7 @@ export default function Ly3SecondFloor({
           storeData={storeData.slice(leftRowStart, leftRowEnd)}
           fontSize={"4rem"}
           rotate={true}
-          handleStoreBlockClick={handleStoreBlockClick}
+          setSelectedPost={setSelectedPost}
         />
         {/* Left Row End */}
         {/* Tmall Coffee Start */}
@@ -90,7 +90,7 @@ export default function Ly3SecondFloor({
           locale={locale}
           storeData={storeData.slice(tmallStart, tmallEnd)}
           fontSize={"6rem"}
-          handleStoreBlockClick={handleStoreBlockClick}
+          setSelectedPost={setSelectedPost}
         />
         {/* Tmall Coffee End */}
         {/* Fruit Juice Start */}
@@ -103,7 +103,7 @@ export default function Ly3SecondFloor({
           locale={locale}
           storeData={storeData.slice(fruitJuiceStart, fruitJuiceEnd)}
           fontSize={"3rem"}
-          handleStoreBlockClick={handleStoreBlockClick}
+          setSelectedPost={setSelectedPost}
         />
         {/* Fruit Juice End */}
         {/* Top Right Corner Start */}
@@ -119,7 +119,7 @@ export default function Ly3SecondFloor({
             topRightCornerEnd,
           )}
           fontSize={"3rem"}
-          handleStoreBlockClick={handleStoreBlockClick}
+          setSelectedPost={setSelectedPost}
         />
         {/* Top Right Corner End */}
       </div>
@@ -155,7 +155,7 @@ function getTotalStoreWidth(stores, width) {
  * @param {number} width Width of a single store block.
  * @param {number} height Height of a single store block.
  * @param {string} fontSize Font size of the store block.
- * @param {Function} handleStoreBlockClick Function used to handle store click events.
+ * @param {Function} setSelectedPost Function used to set selected post.
  * @param {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
  * @param {boolean} [rotate=false] Determine whether to rotate the row.
  */
@@ -168,7 +168,7 @@ function StoresArea({
   width,
   height,
   fontSize,
-  handleStoreBlockClick,
+  setSelectedPost,
   useRowIndex = false,
   rotate = false,
 }) {
@@ -190,11 +190,11 @@ function StoresArea({
           rowIndexLimit: limit,
           limit: limit,
           locale: locale,
-          handleStoreBlockClick: handleStoreBlockClick,
           height: height,
           width: width,
           fontSize: fontSize,
           useRowIndex: useRowIndex,
+          setSelectedPost: setSelectedPost,
         })}
       </svg>
     </div>

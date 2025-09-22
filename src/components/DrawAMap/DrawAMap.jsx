@@ -20,14 +20,14 @@ import xmumConfig from "../../config";
  * @param {number} rowIndexLimit Determine how many stores should be placed in a row.
  * @param {string} locale Current locale.
  * @param {number} limit Total number of stores.
- * @param {(slug: string, locale: string) => void} handleStoreBlockClick Function to handle store click.
+ * @param {Function} setSelectedPost Function used to set selected post.
  */
 export default function DrawAMap({
   stores,
   rowIndexLimit,
   locale,
   limit,
-  handleStoreBlockClick,
+  setSelectedPost,
   width = xmumConfig.storeBlock.size.width,
   height = xmumConfig.storeBlock.size.height,
   fontSize = xmumConfig.storeBlock.style.fontSize,
@@ -67,7 +67,7 @@ export default function DrawAMap({
             key={crypto.randomUUID()}
             icon={getStoreIcon(store)}
             handleClick={() =>
-              handleStoreBlockClick(store.Slug, locale)
+              setSelectedPost({ slug: store.Slug, locale: locale })
             }
           />
         );

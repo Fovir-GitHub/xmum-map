@@ -31,21 +31,13 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
 
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
-  // Function to run when stores are clicked.
-  const handleStoreBlockClick = (slug, locale) => {
-    setSelectedPost({
-      slug: slug,
-      locale: locale,
-    });
-  };
-
   const maps = [
     null,
     null,
     <Ly3SecondFloor
       locale={locale}
       storeData={ly3Data[2]}
-      handleStoreBlockClick={handleStoreBlockClick}
+      setSelectedPost={setSelectedPost}
     />,
   ];
 
