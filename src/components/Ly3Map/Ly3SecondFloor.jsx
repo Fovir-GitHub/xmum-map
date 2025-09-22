@@ -5,6 +5,11 @@
  * @since 2025-09-22
  */
 
+/**
+ * TODO:
+ *  Refactor maps.
+ */
+
 "use client";
 
 import DrawAMap from "../DrawAMap/DrawAMap";
