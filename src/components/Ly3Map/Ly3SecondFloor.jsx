@@ -5,11 +5,6 @@
  * @since 2025-09-22
  */
 
-/**
- * TODO:
- *  Add `handleStoreBlockClick()` function.
- */
-
 "use client";
 
 import DrawAMap from "../DrawAMap/DrawAMap";
@@ -19,8 +14,13 @@ import DrawAMap from "../DrawAMap/DrawAMap";
  *
  * @param {object[]} storeData Data of stores.
  * @param {string} locale Current locale.
+ * @param {Function} handleStoreBlockClick Function used to handle store click events.
  */
-export default function Ly3SecondFloor({ storeData, locale }) {
+export default function Ly3SecondFloor({
+  storeData,
+  locale,
+  handleStoreBlockClick,
+}) {
   const topRowStart = 0;
   const topRowEnd = 8;
 
@@ -63,6 +63,7 @@ export default function Ly3SecondFloor({ storeData, locale }) {
           storeData={storeData.slice(topRowStart, topRowEnd)}
           fontSize={"4rem"}
           useRowIndex={true}
+          handleStoreBlockClick={handleStoreBlockClick}
         />
         {/* Top Row End */}
         {/* Left Row Start */}
@@ -76,6 +77,7 @@ export default function Ly3SecondFloor({ storeData, locale }) {
           storeData={storeData.slice(leftRowStart, leftRowEnd)}
           fontSize={"4rem"}
           rotate={true}
+          handleStoreBlockClick={handleStoreBlockClick}
         />
         {/* Left Row End */}
         {/* Tmall Coffee Start */}
@@ -88,6 +90,7 @@ export default function Ly3SecondFloor({ storeData, locale }) {
           locale={locale}
           storeData={storeData.slice(tmallStart, tmallEnd)}
           fontSize={"6rem"}
+          handleStoreBlockClick={handleStoreBlockClick}
         />
         {/* Tmall Coffee End */}
         {/* Fruit Juice Start */}
@@ -100,6 +103,7 @@ export default function Ly3SecondFloor({ storeData, locale }) {
           locale={locale}
           storeData={storeData.slice(fruitJuiceStart, fruitJuiceEnd)}
           fontSize={"3rem"}
+          handleStoreBlockClick={handleStoreBlockClick}
         />
         {/* Fruit Juice End */}
         {/* Top Right Corner Start */}
@@ -115,6 +119,7 @@ export default function Ly3SecondFloor({ storeData, locale }) {
             topRightCornerEnd,
           )}
           fontSize={"3rem"}
+          handleStoreBlockClick={handleStoreBlockClick}
         />
         {/* Top Right Corner End */}
       </div>
@@ -150,6 +155,7 @@ function getTotalStoreWidth(stores, width) {
  * @param {number} width Width of a single store block.
  * @param {number} height Height of a single store block.
  * @param {string} fontSize Font size of the store block.
+ * @param {Function} handleStoreBlockClick Function used to handle store click events.
  * @param {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
  * @param {boolean} [rotate=false] Determine whether to rotate the row.
  */
@@ -162,6 +168,7 @@ function StoresArea({
   width,
   height,
   fontSize,
+  handleStoreBlockClick,
   useRowIndex = false,
   rotate = false,
 }) {
@@ -183,7 +190,7 @@ function StoresArea({
           rowIndexLimit: limit,
           limit: limit,
           locale: locale,
-          handleStoreBlockClick: () => console.log("Clicked"),
+          handleStoreBlockClick: handleStoreBlockClick,
           height: height,
           width: width,
           fontSize: fontSize,

@@ -9,6 +9,12 @@ import { useRef, useState } from "react";
 import ToolZone from "../ToolZone/ToolZone";
 import Map from "../Map/Map";
 import Ly3SecondFloor from "./Ly3SecondFloor";
+import { useSelectedPost } from "../../hooks/useSelectedPost";
+import { usePathname, useRouter } from "next/navigation";
+import Sidebar from "../Sidebar/Sidebar";
+import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
+import DetailPage from "../DetailPage/DetailPage";
+import { clearHashTag } from "../../lib/routerOperation";
 
 /**
  * Body section of LY3 map.
@@ -22,10 +28,33 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
   const layerRange = 3;
   const transfromRef = useRef(null);
 
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const [selectedPost, setSelectedPost] = useSelectedPost(locale);
+
+  // Function to run when stores are clicked.
+  const handleStoreBlockClick = (slug, locale) => {
+    setSelectedPost({
+      slug: slug,
+      locale: locale,
+    });
+  };
+
+  // Function to run when closing the sidebar.
+  const closeSidebarEffect = () => {
+    setSelectedPost(null);
+    clearHashTag(router, pathname);
+  };
+
   const maps = [
     null,
     null,
-    <Ly3SecondFloor locale={locale} storeData={ly3Data[2]} />,
+    <Ly3SecondFloor
+      locale={locale}
+      storeData={ly3Data[2]}
+      handleStoreBlockClick={handleStoreBlockClick}
+    />,
   ];
 
   return (
@@ -38,6 +67,17 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
         layerRange={layerRange}
         transformRef={transfromRef}
       />
+
+      <GlobalEscListener onEsc={closeSidebarEffect} />
+      <Sidebar
+        onClose={closeSidebarEffect}
+        show={selectedPost !== null}
+      >
+        <DetailPage
+          slug={selectedPost?.slug || "404"}
+          locale={locale}
+        />
+      </Sidebar>
 
       <Map transformRef={transfromRef}>{maps[layer]}</Map>
     </>
