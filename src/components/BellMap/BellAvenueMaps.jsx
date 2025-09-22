@@ -16,13 +16,13 @@ import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringN
  *
  * Bell avenue map has two floors, which requires a `LayerSwitcher` component.
  *
- * @param storeData JSON data.
- * @param mapWidth Width of the map.
- * @param mapHeight Height of the map.
- * @param locale Locale from `useState()`.
- * @param showCategories An array to determine which stores can be displayed by their categories.
- * @param handleStoreBlockClick Function to call when a store block is clicked.
- * @param currentFloor The floor that users are on. By default, it is GF (0F).
+ * @param {object[][]} storeData JSON data.
+ * @param {number} mapWidth Width of the map.
+ * @param {number} mapHeight Height of the map.
+ * @param {string} locale Locale from `useState()`.
+ * @param {string[]} showCategories An array to determine which stores can be displayed by their categories.
+ * @param {Function} setSelectedPost Function used to set selected post.
+ * @param {number} [currentFloor=0] The floor that users are on. By default, it is GF (0F).
  */
 export default function BellAvenueMaps({
   storeData,
@@ -30,7 +30,7 @@ export default function BellAvenueMaps({
   mapHeight,
   locale,
   showCategories,
-  handleStoreBlockClick,
+  setSelectedPost,
   currentFloor = 0,
 }) {
   // Size of the map.
@@ -44,7 +44,7 @@ export default function BellAvenueMaps({
         svgHeight={HEIGHT}
         stores={storeData[currentFloor]}
         locale={locale}
-        handleStoreBlockClick={handleStoreBlockClick}
+        setSelectedPost={setSelectedPost}
         showPatch={
           currentFloor === 0 &&
           showCategories.includes(
@@ -58,12 +58,12 @@ export default function BellAvenueMaps({
 
 /**
  * Generate maps for each floor of bell avenue.
- * @param svgWidth The width of SVG.
- * @param svgHeight The height of SVG.
- * @param stores Data of stores on every floor.
- * @param locale Locale from `useState()`.
- * @param showPatch Determine whether to display patch stores.
- * @param handleStoreBlockClick Function to call when a store block is clicked.
+ * @param {number} svgWidth The width of SVG.
+ * @param {number} svgHeight The height of SVG.
+ * @param {object[]} stores Data of stores on every floor.
+ * @param {string} locale Locale from `useState()`.
+ * @param {boolean} showPatch Determine whether to display patch stores.
+ * @param {Function} setSelectedPost Function used to set selected post.
  */
 function BellAvenueFloorMap({
   svgWidth,
@@ -71,7 +71,7 @@ function BellAvenueFloorMap({
   stores,
   locale,
   showPatch,
-  handleStoreBlockClick,
+  setSelectedPost,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const limit = 78; // Maximum number of stores.
@@ -118,11 +118,11 @@ function BellAvenueFloorMap({
         rowIndexLimit: ROW_INDEX_LIMIT,
         locale: locale,
         limit: limit,
-        handleStoreBlockClick: handleStoreBlockClick,
+        setSelectedPost: setSelectedPost,
       })}
       {showPatch &&
         MilliesVisionAndEncounteringNailArt({
-          handleBlockClick: handleStoreBlockClick,
+          setSelectedPost: setSelectedPost,
           locale: locale,
         })}
     </svg>

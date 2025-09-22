@@ -9,13 +9,13 @@ import Announcement from "../Announcement/Announcement";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 
 /**
- * @typedef {Object} HeaderSectionProps
- * @property {string} locale
- * @property {Function} setAvenueData
- * @property {Function} setSuiteData
- * @property {string[]} categories
- * @property {string[]} showCategories
- * @property {Function} setShowCategories
+ * @typedef {object} HeaderSectionProps
+ * @property {string} locale Current locale.
+ * @property {Function} setAvenueData Function used to change bell avenue data.
+ * @property {Function} setSuiteData Function used to change bell suite data.
+ * @property {string[]} categories Array of all categories.
+ * @property {string[]} showCategories Categories that can be displayed.
+ * @property {Function} setShowCategories Function used to change which categories can be displayed.
  */
 
 /**
@@ -42,7 +42,7 @@ export default function HeaderSection(props) {
         gap: "1rem",
       }}
     >
-      <Announcement locale={locale} />
+      <Announcement locale={locale} slug={"bell-announcement"} />
       <FilterButtonGroup
         setAvenueData={setAvenueData}
         setSuiteData={setSuiteData}

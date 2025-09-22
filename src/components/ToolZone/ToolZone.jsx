@@ -11,6 +11,8 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import ResetLocationButton from "./ResetLocationButton";
 import getToggleButtonGroupStyle from "../../styles/getToggleButtonGroupStyle";
 import LayerSwitcher from "./LayerSwitcher";
+import BackToHomeButton from "./BackToHomeButton";
+import { usePathname } from "next/navigation";
 
 /**
  * It floats in the lower right corner of the web page, which contains two zones -- function zone and layer switcher zone.
@@ -18,20 +20,22 @@ import LayerSwitcher from "./LayerSwitcher";
  * @param locale Locale from `useState()`.
  * @param setLocale Callback function used to set locale.
  * @param layer Layer variable from `useState()`.
+ * @param setLayer Callback function used to set `layer`.
  * @param layerRange Number of layers, which will be passed to `LayerSwitcher` component.
- * @param handleSwitchLayer Function to be called when layer switcher is clicked.
  * @param transformRef Ref of map used to reset state of map.
  */
 export default function ToolZone({
   locale,
   setLocale,
   layer,
+  setLayer,
   layerRange,
-  handleSwitchLayer,
   transformRef,
 }) {
   const toggleButtonGroupStyle =
     getToggleButtonGroupStyle().toggleButtonGroupStyle;
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <div className={toolZoneStyle.toolZone}>
@@ -42,6 +46,7 @@ export default function ToolZone({
           backgroundColor: toggleButtonGroupStyle.backgroundColor,
         }}
       >
+        {!isHome && <BackToHomeButton />}
         <LanguageSwitcher locale={locale} setLocale={setLocale} />
         <ResetLocationButton transformRef={transformRef} />
       </ToggleButtonGroup>
@@ -49,7 +54,7 @@ export default function ToolZone({
       <LayerSwitcher
         layer={layer}
         layerRange={layerRange}
-        handleSwitchLayer={handleSwitchLayer}
+        setLayer={setLayer}
       />
     </div>
   );

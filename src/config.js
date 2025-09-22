@@ -20,7 +20,6 @@ const xmumConfig = {
       zh: "公告",
       en: "Announcement",
     },
-    slug: "announcement",
   },
   footer: {
     links: {
@@ -99,6 +98,7 @@ const xmumConfig = {
     style: {
       stroke: "white",
       strokeWidth: 2,
+      fontSize: "1.6rem",
     },
   },
   website: {

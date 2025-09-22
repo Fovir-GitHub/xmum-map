@@ -274,7 +274,9 @@
     <path class="cls-3" d="M286.84,838.06l33.36,31.39c4.36-4.63,9.63-8.54,15.71-11.44,9.52-4.54,19.72-5.98,29.45-4.72l5.87-45.43c-18.18-2.34-37.24.35-55.03,8.83-11.37,5.42-21.22,12.73-29.36,21.38Z"/>
     <rect class="cls-3" x="267.87" y="852.5" width="38" height="34" transform="translate(-547.22 491.85) rotate(-47.38)"/>
     <rect class="cls-3" x="1097.87" y="722.5" width="305" height="234"/>
-    <rect class="cls-3" x="490.87" y="126.5" width="148" height="111"/>
+    <a href="/ly3">
+      <rect class="cls-3" x="490.87" y="126.5" width="148" height="111"/>
+    </a>
     <rect class="cls-3" x="1096.87" y="439.5" width="402" height="234"/>
     <rect class="cls-3" x="1417.87" y="838.5" width="47" height="113"/>
     <circle class="cls-3" cx="431.87" cy="488.5" r="36"/>
@@ -288,7 +290,9 @@
     <text class="cls-11" transform="translate(406.49 488.62)"><tspan x="0" y="0">Musical Island</tspan><tspan x="11.81" y="10.8">音乐岛</tspan></text>
     <text class="cls-13" transform="translate(772.06 782.62)"><tspan x="0" y="0">A4</tspan></text>
     <text class="cls-12" transform="translate(1105.59 189.41) scale(.93 1)"><tspan x="0" y="0">D6</tspan></text>
-    <text class="cls-12" transform="translate(541.19 188.41) scale(.93 1)"><tspan x="0" y="0">LY3</tspan></text>
+    <a href="/ly3">
+      <text class="cls-12" transform="translate(541.19 188.41) scale(.93 1)"><tspan x="0" y="0">LY3</tspan></text>
+    </a>
     <text class="cls-14" transform="translate(313.02 126.41) scale(.93 1)"><tspan x="0" y="0">LY6</tspan></text>
     <text class="cls-14" transform="translate(317.02 243.41) scale(.93 1)"><tspan x="0" y="0">LY1</tspan></text>
     <text class="cls-14" transform="translate(417.02 243.41) scale(.93 1)"><tspan x="0" y="0">LY2</tspan></text>

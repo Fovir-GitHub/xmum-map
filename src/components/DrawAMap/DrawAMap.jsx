@@ -13,45 +13,61 @@ import StoreBlock, {
 } from "../StoreBlock/StoreBlock";
 import xmumConfig from "../../config";
 
+/**
+ * Draw a row of bell map.
+ *
+ * @param {object[]} stores Data of stores.
+ * @param {number} rowIndexLimit Determine how many stores should be placed in a row.
+ * @param {string} locale Current locale.
+ * @param {number} limit Total number of stores.
+ * @param {Function} setSelectedPost Function used to set selected post.
+ */
 export default function DrawAMap({
   stores,
   rowIndexLimit,
   locale,
   limit,
-  handleStoreBlockClick,
+  setSelectedPost,
+  width = xmumConfig.storeBlock.size.width,
+  height = xmumConfig.storeBlock.size.height,
+  fontSize = xmumConfig.storeBlock.style.fontSize,
+  useRowIndex = true,
 }) {
+  let arrayIndex = 0;
   return (
     <>
       {stores.map((store) => {
         if (!store.Name || !store.Show) {
+          arrayIndex++;
           return;
         }
         let x = 0;
         let y = 0;
 
         const widthOffset = store.Width === null ? 1 : store.Width;
-        const index = store.Row;
+        const index = useRowIndex ? store.Row : arrayIndex++;
         if (index < rowIndexLimit) {
-          x = index * xmumConfig.storeBlock.size.width;
+          x = index * width;
           y = xmumConfig.storeBlock.position.firstRowY;
         } else {
-          x = (limit - store.Row) * xmumConfig.storeBlock.size.width;
+          x = (limit - store.Row) * width;
           y = xmumConfig.storeBlock.position.secondRowY;
         }
         return (
           <StoreBlock
             x={x}
             y={y}
-            width={xmumConfig.storeBlock.size.width * widthOffset}
-            height={xmumConfig.storeBlock.size.height}
+            width={width * widthOffset}
+            height={height}
             fill={getFillColor(store.Category)}
             stroke={xmumConfig.storeBlock.style.stroke}
             strokeWidth={xmumConfig.storeBlock.style.strokeWidth}
             text={store.Name}
+            fontSize={fontSize}
             key={crypto.randomUUID()}
             icon={getStoreIcon(store)}
             handleClick={() =>
-              handleStoreBlockClick(store.Slug, locale)
+              setSelectedPost({ slug: store.Slug, locale: locale })
             }
           />
         );
@@ -61,7 +77,11 @@ export default function DrawAMap({
 }
 
 /**
- * @description Draw a path block in (x,y) with `fill` color.
+ * Draw a path block in (x,y) with `fill` color.
+ *
+ * @param {number} x X-coordinate.
+ * @param {number} y Y-coordinate.
+ * @param {number} index The index of store.
  */
 export function drawPathBlock(x, y, index) {
   return (

@@ -9,7 +9,10 @@
 
 import utilStyles from "../../styles/utils.module.css";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
-import { categoryInformation, extraIcons } from "../../config";
+import xmumConfig, {
+  categoryInformation,
+  extraIcons,
+} from "../../config";
 
 export const STORE_BLOCK_WIDTH = 150; // Width of a store.
 export const STORE_BLOCK_HEIGHT = 200; // Height of a store.
@@ -34,6 +37,7 @@ export default function StoreBlock({
   icon,
   handleClick,
   showIcon = true,
+  fontSize = xmumConfig.storeBlock.style.fontSize,
 }) {
   return (
     <g onClick={handleClick} className={utilStyles.highlightOnHover}>
@@ -58,7 +62,7 @@ export default function StoreBlock({
         >
           <p
             style={{
-              fontSize: "1.6rem",
+              fontSize: fontSize,
               textAlign: "center",
               wordBreak: "break-word",
               whiteSpace: "pre-line",

@@ -17,6 +17,12 @@ import HeaderSection from "./HeaderSection";
 import BodySection from "./BodySection";
 import { categoryInformation } from "../../config";
 
+/**
+ * Wrapper of bell map.
+ *
+ * @param {object[][]} bellAvenueData Store data of bell avenue.
+ * @param {object[][]} bellSuiteData Store data of bell suite.
+ */
 export default function BellMap({ bellAvenueData, bellSuiteData }) {
   // Get all categories.
   const categories = Object.keys(categoryInformation);

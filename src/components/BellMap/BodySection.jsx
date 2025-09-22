@@ -6,12 +6,10 @@
  */
 
 import { usePathname, useRouter } from "next/navigation";
-import { clearHashTag } from "../../lib/routerOperation";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
 import xmumConfig from "../../config";
 import { useRef, useState } from "react";
 import ToolZone from "../ToolZone/ToolZone";
-import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import XmumMap from "./XmumMap";
@@ -20,12 +18,12 @@ import BellSuiteMap from "./BellSuiteMap";
 import Map from "../Map/Map";
 
 /**
- * @typedef {Object} BodySectionProps
- * @property {string} locale
- * @property {Function} setLocale
- * @property {Array<Array<Object>>} avenueData
- * @property {Array<Array<Object>>} suiteData
- * @property {string[]} showCategories
+ * @typedef {object} BodySectionProps
+ * @property {string} locale Current locale.
+ * @property {Function} setLocale Function used to set locale.
+ * @property {object[][]} avenueData Data of bell avenue.
+ * @property {object[][]} suiteData Data of bell suite.
+ * @property {string[]} showCategories Categories that can be displayed.
  */
 
 /**
@@ -55,42 +53,22 @@ export default function BodySection(props) {
   // Clicked store.
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
-  // Switch layers when `nextLayer` is not `null`.
-  const handleSwitchLayer = (_, nextLayer) => {
-    if (nextLayer !== null) {
-      setLayer(nextLayer);
-    }
-  };
-
-  // Function to run when closing the sidebar.
-  const closeSidebarEffect = () => {
-    setSelectedPost(null);
-    clearHashTag(router, pathname);
-  };
-
-  // Function to run when stores are clicked.
-  const handleStoreBlockClick = (slug, locale) => {
-    setSelectedPost({
-      slug: slug,
-      locale: locale,
-    });
-  };
-
   return (
     <>
       <ToolZone
         locale={locale}
         setLocale={setLocale}
         layer={layer}
+        setLayer={setLayer}
         layerRange={2}
-        handleSwitchLayer={handleSwitchLayer}
         transformRef={transformRef}
       />
 
-      <GlobalEscListener onEsc={closeSidebarEffect} />
       <Sidebar
-        onClose={closeSidebarEffect}
-        show={selectedPost !== null}
+        selectedPost={selectedPost}
+        setSelectedPost={setSelectedPost}
+        router={router}
+        pathname={pathname}
       >
         <DetailPage
           slug={selectedPost?.slug || "404"}
@@ -125,7 +103,7 @@ export default function BodySection(props) {
                 mapHeight={mapHeight}
                 showCategories={showCategories}
                 locale={locale}
-                handleStoreBlockClick={handleStoreBlockClick}
+                setSelectedPost={setSelectedPost}
               />
             </div>
             <div
@@ -136,7 +114,7 @@ export default function BodySection(props) {
             >
               <BellSuiteMap
                 storeData={suiteData}
-                handleStoreBlockClick={handleStoreBlockClick}
+                setSelectedPost={setSelectedPost}
                 locale={locale}
                 mapWidth={bellSuiteMapWidth}
                 mapHeight={mapHeight}

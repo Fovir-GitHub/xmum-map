@@ -14,11 +14,11 @@ import StoreBlock, {
 /**
  * Non-regular store blocks that needs special operation.
  *
- * @param handleBlockClick Function to call when a store block is clicked.
- * @param locale Locale from `useState()`.
+ * @param {Function} setSelectedPost Function used to set selected post.
+ * @param {string} locale Locale from `useState()`.
  */
 export default function MilliesVisionAndEncounteringNailArt({
-  handleBlockClick,
+  setSelectedPost,
   locale,
 }) {
   const xPosition =
@@ -41,10 +41,10 @@ export default function MilliesVisionAndEncounteringNailArt({
         text={xmumConfig.storeBlock.patches.milliesVision.name}
         showIcon={false}
         handleClick={() =>
-          handleBlockClick(
-            xmumConfig.storeBlock.patches.milliesVision.slug,
-            locale,
-          )
+          setSelectedPost({
+            slug: xmumConfig.storeBlock.patches.milliesVision.slug,
+            locale: locale,
+          })
         }
       />
 
@@ -63,10 +63,11 @@ export default function MilliesVisionAndEncounteringNailArt({
           xmumConfig.storeBlock.patches.encounteringNailArt.category,
         )}
         handleClick={() =>
-          handleBlockClick(
-            xmumConfig.storeBlock.patches.encounteringNailArt.slug,
-            locale,
-          )
+          setSelectedPost({
+            slug: xmumConfig.storeBlock.patches.encounteringNailArt
+              .slug,
+            locale: locale,
+          })
         }
         showIcon={false}
       />
