@@ -6,12 +6,10 @@
  */
 
 import { usePathname, useRouter } from "next/navigation";
-import { clearHashTag } from "../../lib/routerOperation";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
 import xmumConfig from "../../config";
 import { useRef, useState } from "react";
 import ToolZone from "../ToolZone/ToolZone";
-import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import XmumMap from "./XmumMap";
@@ -55,12 +53,6 @@ export default function BodySection(props) {
   // Clicked store.
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
-  // Function to run when closing the sidebar.
-  const closeSidebarEffect = () => {
-    setSelectedPost(null);
-    clearHashTag(router, pathname);
-  };
-
   // Function to run when stores are clicked.
   const handleStoreBlockClick = (slug, locale) => {
     setSelectedPost({
@@ -80,10 +72,11 @@ export default function BodySection(props) {
         transformRef={transformRef}
       />
 
-      <GlobalEscListener onEsc={closeSidebarEffect} />
       <Sidebar
-        onClose={closeSidebarEffect}
-        show={selectedPost !== null}
+        selectedPost={selectedPost}
+        setSelectedPost={setSelectedPost}
+        router={router}
+        pathname={pathname}
       >
         <DetailPage
           slug={selectedPost?.slug || "404"}

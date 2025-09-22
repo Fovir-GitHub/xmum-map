@@ -12,9 +12,7 @@ import Ly3SecondFloor from "./Ly3SecondFloor";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
 import { usePathname, useRouter } from "next/navigation";
 import Sidebar from "../Sidebar/Sidebar";
-import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 import DetailPage from "../DetailPage/DetailPage";
-import { clearHashTag } from "../../lib/routerOperation";
 
 /**
  * Body section of LY3 map.
@@ -41,12 +39,6 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
     });
   };
 
-  // Function to run when closing the sidebar.
-  const closeSidebarEffect = () => {
-    setSelectedPost(null);
-    clearHashTag(router, pathname);
-  };
-
   const maps = [
     null,
     null,
@@ -68,10 +60,11 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
         transformRef={transfromRef}
       />
 
-      <GlobalEscListener onEsc={closeSidebarEffect} />
       <Sidebar
-        onClose={closeSidebarEffect}
-        show={selectedPost !== null}
+        selectedPost={selectedPost}
+        setSelectedPost={setSelectedPost}
+        router={router}
+        pathname={pathname}
       >
         <DetailPage
           slug={selectedPost?.slug || "404"}
