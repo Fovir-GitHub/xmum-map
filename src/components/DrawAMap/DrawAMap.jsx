@@ -28,6 +28,9 @@ export default function DrawAMap({
   locale,
   limit,
   handleStoreBlockClick,
+  width = xmumConfig.storeBlock.size.width,
+  height = xmumConfig.storeBlock.size.height,
+  fontSize = xmumConfig.storeBlock.style.fontSize,
 }) {
   return (
     <>
@@ -41,22 +44,23 @@ export default function DrawAMap({
         const widthOffset = store.Width === null ? 1 : store.Width;
         const index = store.Row;
         if (index < rowIndexLimit) {
-          x = index * xmumConfig.storeBlock.size.width;
+          x = index * width;
           y = xmumConfig.storeBlock.position.firstRowY;
         } else {
-          x = (limit - store.Row) * xmumConfig.storeBlock.size.width;
+          x = (limit - store.Row) * width;
           y = xmumConfig.storeBlock.position.secondRowY;
         }
         return (
           <StoreBlock
             x={x}
             y={y}
-            width={xmumConfig.storeBlock.size.width * widthOffset}
-            height={xmumConfig.storeBlock.size.height}
+            width={width * widthOffset}
+            height={height}
             fill={getFillColor(store.Category)}
             stroke={xmumConfig.storeBlock.style.stroke}
             strokeWidth={xmumConfig.storeBlock.style.strokeWidth}
             text={store.Name}
+            fontSize={fontSize}
             key={crypto.randomUUID()}
             icon={getStoreIcon(store)}
             handleClick={() =>
