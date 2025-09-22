@@ -1,24 +1,20 @@
 "use client";
 
-import xmumConfig from "../../config";
-import DrawAMap from "../DrawAMap/DrawAMap";
-
 export default function Ly3SecondFloor({ storeData, locale }) {
   return (
-    <>
-      <svg
-        width={10000}
-        height={1000}
-        fill={xmumConfig.map.backgroundColor}
-      >
-        {DrawAMap({
-          stores: storeData,
-          rowIndexLimit: 33,
-          handleStoreBlockClick: () => console.log("Clicked"),
-          locale: locale,
-          limit: 33,
-        })}
-      </svg>
-    </>
+    <div>
+      <img src="maps/LY3_2F.svg" width={10000} height={10000} />
+
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          backgroundColor: "transparent",
+          position: "absolute",
+          top: 0,
+          left: 0,
+        }}
+      ></div>
+    </div>
   );
 }
