@@ -5,10 +5,21 @@
  * @since 2025-09-22
  */
 
+/**
+ * TODO:
+ *  Add `handleStoreBlockClick()` function.
+ */
+
 "use client";
 
 import DrawAMap from "../DrawAMap/DrawAMap";
 
+/**
+ * Draw the map of LY3 second floor.
+ *
+ * @param {object[]} storeData Data of stores.
+ * @param {string} locale Current locale.
+ */
 export default function Ly3SecondFloor({ storeData, locale }) {
   const topRowStart = 0;
   const topRowEnd = 8;
@@ -111,6 +122,14 @@ export default function Ly3SecondFloor({ storeData, locale }) {
   );
 }
 
+/**
+ * Calculate the total width of a row of stores.
+ *
+ * @param {object[]} stores Data of stores.
+ * @param {number} width Width of a single store.
+ *
+ * @returns Total width of the row of stores.
+ */
 function getTotalStoreWidth(stores, width) {
   let totalWidth = 0;
 
@@ -120,6 +139,20 @@ function getTotalStoreWidth(stores, width) {
   return totalWidth * width;
 }
 
+/**
+ * Draw a row of stores.
+ *
+ * @param {object[]} storeData Data of stores.
+ * @param {string} locale Current locale.
+ * @param {number} limit Index limit.
+ * @param {number} top Top position in `absolute` layout.
+ * @param {number} left Left position in `absolute` layout.
+ * @param {number} width Width of a single store block.
+ * @param {number} height Height of a single store block.
+ * @param {string} fontSize Font size of the store block.
+ * @param {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
+ * @param {boolean} [rotate=false] Determine whether to rotate the row.
+ */
 function StoresArea({
   storeData,
   locale,
