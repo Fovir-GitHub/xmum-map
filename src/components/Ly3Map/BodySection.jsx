@@ -8,6 +8,12 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
   const layerRange = 3;
   const transfromRef = useRef(null);
 
+  const maps = [
+    null,
+    null,
+    <Ly3SecondFloor locale={locale} storeData={ly3Data[2]} />,
+  ];
+
   return (
     <>
       <ToolZone
@@ -19,9 +25,7 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
         transformRef={transfromRef}
       />
 
-      <Map transformRef={transfromRef}>
-        <Ly3SecondFloor locale={locale} storeData={ly3Data[2]} />
-      </Map>
+      <Map transformRef={transfromRef}>{maps[layer]}</Map>
     </>
   );
 }
