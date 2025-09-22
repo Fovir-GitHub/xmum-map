@@ -81,6 +81,42 @@ function getTotalStoreWidth(stores, width) {
   return totalWidth * width;
 }
 
+function StoresArea({
+  storeData,
+  locale,
+  limit,
+  top,
+  left,
+  width,
+  height,
+  fontSize,
+}) {
+  return (
+    <div
+      style={{
+        position: "relative",
+        top: top,
+        left: left,
+        width: getTotalStoreWidth(storeData, width),
+        height: height,
+      }}
+    >
+      <svg width={"100%"} height={"100%"}>
+        {DrawAMap({
+          stores: storeData,
+          rowIndexLimit: limit,
+          limit: limit,
+          locale: locale,
+          handleStoreBlockClick: () => console.log("Clicked"),
+          height: height,
+          width: width,
+          fontSize: fontSize,
+        })}
+      </svg>
+    </div>
+  );
+}
+
 function TopRow({ storeData, locale }) {
   const rowIndexLimit = 8;
   const limit = 8;
