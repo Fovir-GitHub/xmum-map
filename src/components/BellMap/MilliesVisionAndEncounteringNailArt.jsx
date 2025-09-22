@@ -14,8 +14,8 @@ import StoreBlock, {
 /**
  * Non-regular store blocks that needs special operation.
  *
- * @param setSelectedPost Function used to set selected post.
- * @param locale Locale from `useState()`.
+ * @param {Function} setSelectedPost Function used to set selected post.
+ * @param {string} locale Locale from `useState()`.
  */
 export default function MilliesVisionAndEncounteringNailArt({
   setSelectedPost,

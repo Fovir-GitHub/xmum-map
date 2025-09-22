@@ -16,13 +16,13 @@ import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringN
  *
  * Bell avenue map has two floors, which requires a `LayerSwitcher` component.
  *
- * @param storeData JSON data.
- * @param mapWidth Width of the map.
- * @param mapHeight Height of the map.
- * @param locale Locale from `useState()`.
- * @param showCategories An array to determine which stores can be displayed by their categories.
- * @param setSelectedPost Function used to set selected post.
- * @param currentFloor The floor that users are on. By default, it is GF (0F).
+ * @param {object[][]} storeData JSON data.
+ * @param {number} mapWidth Width of the map.
+ * @param {number} mapHeight Height of the map.
+ * @param {string} locale Locale from `useState()`.
+ * @param {string[]} showCategories An array to determine which stores can be displayed by their categories.
+ * @param {Function} setSelectedPost Function used to set selected post.
+ * @param {number} [currentFloor=0] The floor that users are on. By default, it is GF (0F).
  */
 export default function BellAvenueMaps({
   storeData,
@@ -58,12 +58,12 @@ export default function BellAvenueMaps({
 
 /**
  * Generate maps for each floor of bell avenue.
- * @param svgWidth The width of SVG.
- * @param svgHeight The height of SVG.
- * @param stores Data of stores on every floor.
- * @param locale Locale from `useState()`.
- * @param showPatch Determine whether to display patch stores.
- * @param setSelectedPost Function used to set selected post.
+ * @param {number} svgWidth The width of SVG.
+ * @param {number} svgHeight The height of SVG.
+ * @param {object[]} stores Data of stores on every floor.
+ * @param {string} locale Locale from `useState()`.
+ * @param {boolean} showPatch Determine whether to display patch stores.
+ * @param {Function} setSelectedPost Function used to set selected post.
  */
 function BellAvenueFloorMap({
   svgWidth,
