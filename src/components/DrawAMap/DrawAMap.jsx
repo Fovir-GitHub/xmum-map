@@ -45,9 +45,7 @@ export default function DrawAMap({
         let y = 0;
 
         const widthOffset = store.Width === null ? 1 : store.Width;
-        const index = useRowIndex
-          ? store.Row
-          : (arrayIndex += widthOffset);
+        const index = useRowIndex ? store.Row : arrayIndex++;
         if (index < rowIndexLimit) {
           x = index * width;
           y = xmumConfig.storeBlock.position.firstRowY;
