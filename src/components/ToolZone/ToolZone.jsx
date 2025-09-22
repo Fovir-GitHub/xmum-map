@@ -11,6 +11,8 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import ResetLocationButton from "./ResetLocationButton";
 import getToggleButtonGroupStyle from "../../styles/getToggleButtonGroupStyle";
 import LayerSwitcher from "./LayerSwitcher";
+import BackToHomeButton from "./BackToHomeButton";
+import { usePathname } from "next/navigation";
 
 /**
  * It floats in the lower right corner of the web page, which contains two zones -- function zone and layer switcher zone.
@@ -32,6 +34,8 @@ export default function ToolZone({
 }) {
   const toggleButtonGroupStyle =
     getToggleButtonGroupStyle().toggleButtonGroupStyle;
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <div className={toolZoneStyle.toolZone}>
@@ -42,6 +46,7 @@ export default function ToolZone({
           backgroundColor: toggleButtonGroupStyle.backgroundColor,
         }}
       >
+        {!isHome && <BackToHomeButton />}
         <LanguageSwitcher locale={locale} setLocale={setLocale} />
         <ResetLocationButton transformRef={transformRef} />
       </ToggleButtonGroup>
