@@ -5,11 +5,6 @@
  * @since 2025-09-22
  */
 
-/**
- * TODO:
- *  Refactor maps.
- */
-
 "use client";
 
 import DrawAMap from "../DrawAMap/DrawAMap";
@@ -32,8 +27,10 @@ export default function Ly3SecondFloor({ storeData, locale }) {
 
   return (
     <div>
+      {/* Background image. */}
       <img src="maps/LY3_2F.svg" width={10000} height={10000} />
 
+      {/* Interaction overlay. */}
       <div
         style={{
           width: "100%",
@@ -44,29 +41,71 @@ export default function Ly3SecondFloor({ storeData, locale }) {
           left: 0,
         }}
       >
-        <TopRow
+        {/* Top Row Start */}
+        <StoresArea
+          limit={8}
+          top={1750}
+          left={200}
+          width={350}
+          height={500}
+          locale={locale}
           storeData={storeData.slice(topRowStart, topRowEnd)}
-          locale={locale}
+          fontSize={"4rem"}
+          useRowIndex={true}
         />
-        <LeftRow
+        {/* Top Row End */}
+        {/* Left Row Start */}
+        <StoresArea
+          limit={40}
+          top={4300}
+          left={-2700}
+          width={250}
+          height={500}
+          locale={locale}
           storeData={storeData.slice(leftRowStart, leftRowEnd)}
-          locale={locale}
+          fontSize={"4rem"}
+          rotate={true}
         />
-        <TmallCoffee
+        {/* Left Row End */}
+        {/* Tmall Coffee Start */}
+        <StoresArea
+          limit={1}
+          top={4300}
+          left={5400}
+          width={800}
+          height={800}
+          locale={locale}
           storeData={storeData.slice(tmallStart, tmallEnd)}
-          locale={locale}
+          fontSize={"6rem"}
         />
-        <FruitJuice
+        {/* Tmall Coffee End */}
+        {/* Fruit Juice Start */}
+        <StoresArea
+          limit={1}
+          top={7500}
+          left={4000}
+          width={350}
+          height={500}
+          locale={locale}
           storeData={storeData.slice(fruitJuiceStart, fruitJuiceEnd)}
-          locale={locale}
+          fontSize={"3rem"}
         />
-        <TopRightCorner
+        {/* Fruit Juice End */}
+        {/* Top Right Corner Start */}
+        <StoresArea
+          limit={2}
+          top={2000}
+          left={6000}
+          width={350}
+          height={500}
+          locale={locale}
           storeData={storeData.slice(
             topRightCornerStart,
             topRightCornerEnd,
           )}
-          locale={locale}
+          fontSize={"3rem"}
         />
+        {/* Top Right Corner End */}
       </div>
     </div>
   );
@@ -90,15 +129,19 @@ function StoresArea({
   width,
   height,
   fontSize,
+  useRowIndex = false,
+  rotate = false,
 }) {
   return (
     <div
       style={{
-        position: "relative",
+        position: "absolute",
         top: top,
         left: left,
         width: getTotalStoreWidth(storeData, width),
         height: height,
+        transform: rotate && "rotate(-90deg)",
+        transformOrigin: rotate && "center",
       }}
     >
       <svg width={"100%"} height={"100%"}>
@@ -111,181 +154,7 @@ function StoresArea({
           height: height,
           width: width,
           fontSize: fontSize,
-        })}
-      </svg>
-    </div>
-  );
-}
-
-function TopRow({ storeData, locale }) {
-  const rowIndexLimit = 8;
-  const limit = 8;
-
-  const top = 1750;
-  const left = 200;
-
-  const storeWidth = 350;
-  const storeHeight = 500;
-
-  return (
-    <div
-      style={{
-        position: "relative",
-        top: top,
-        left: left,
-        width: getTotalStoreWidth(storeData, storeWidth),
-        height: storeHeight,
-      }}
-    >
-      <svg width={"100%"} height={"100%"}>
-        {DrawAMap({
-          stores: storeData,
-          rowIndexLimit: rowIndexLimit,
-          limit: limit,
-          locale: locale,
-          handleStoreBlockClick: () => console.log("Clicked"),
-          height: storeHeight,
-          width: storeWidth,
-          fontSize: "4rem",
-        })}
-      </svg>
-    </div>
-  );
-}
-
-function LeftRow({ storeData, locale }) {
-  const rowIndexLimit = 40;
-  const storeWidth = 250;
-  const storeHeight = 500;
-
-  const top = 4300;
-  const left = -2700;
-
-  return (
-    <div
-      style={{
-        width: getTotalStoreWidth(storeData, storeWidth),
-        height: storeHeight,
-        position: "absolute",
-        top: top,
-        left: left,
-        transform: "rotate(-90deg)",
-        transformOrigin: "center",
-      }}
-    >
-      <svg width={"100%"} height={"100%"}>
-        {DrawAMap({
-          stores: storeData,
-          rowIndexLimit: rowIndexLimit,
-          limit: rowIndexLimit,
-          locale: locale,
-          fontSize: "4rem",
-          height: storeHeight,
-          width: storeWidth,
-          useRowIndex: false,
-        })}
-      </svg>
-    </div>
-  );
-}
-
-function TmallCoffee({ storeData, locale }) {
-  const limit = 1;
-  const storeWidth = 800;
-  const storeHeight = 800;
-  const top = 4300;
-  const left = 5400;
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: top,
-        left: left,
-        height: storeHeight,
-        width: getTotalStoreWidth(storeData, storeWidth),
-      }}
-    >
-      <svg width={"100%"} height={"100%"}>
-        {DrawAMap({
-          stores: storeData,
-          rowIndexLimit: limit,
-          locale: locale,
-          limit: limit,
-          useRowIndex: false,
-          width: storeWidth,
-          height: storeHeight,
-          fontSize: "6rem",
-        })}
-      </svg>
-    </div>
-  );
-}
-
-function FruitJuice({ storeData, locale }) {
-  const limit = 1;
-
-  const storeWidth = 350;
-  const storeHeight = 500;
-
-  const top = 7500;
-  const left = 4000;
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: top,
-        left: left,
-        height: storeHeight,
-        width: getTotalStoreWidth(storeData, storeWidth),
-      }}
-    >
-      <svg width={"100%"} height={"100%"}>
-        {DrawAMap({
-          stores: storeData,
-          rowIndexLimit: limit,
-          locale: locale,
-          limit: limit,
-          useRowIndex: false,
-          width: storeWidth,
-          height: storeHeight,
-          fontSize: "3rem",
-        })}
-      </svg>
-    </div>
-  );
-}
-
-function TopRightCorner({ storeData, locale }) {
-  const limit = 2;
-
-  const storeWidth = 350;
-  const storeHeight = 500;
-
-  const top = 2000;
-  const left = 6000;
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: top,
-        left: left,
-        height: storeHeight,
-        width: getTotalStoreWidth(storeData, storeWidth),
-      }}
-    >
-      <svg width={"100%"} height={"100%"}>
-        {DrawAMap({
-          stores: storeData,
-          rowIndexLimit: limit,
-          locale: locale,
-          limit: limit,
-          useRowIndex: false,
-          width: storeWidth,
-          height: storeHeight,
-          fontSize: "3rem",
+          useRowIndex: useRowIndex,
         })}
       </svg>
     </div>
