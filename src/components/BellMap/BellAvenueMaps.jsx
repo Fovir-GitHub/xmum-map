@@ -30,7 +30,7 @@ export default function BellAvenueMaps({
   mapHeight,
   locale,
   showCategories,
-  handleStoreBlockClick,
+  setSelectedPost,
   currentFloor = 0,
 }) {
   // Size of the map.
@@ -44,7 +44,7 @@ export default function BellAvenueMaps({
         svgHeight={HEIGHT}
         stores={storeData[currentFloor]}
         locale={locale}
-        handleStoreBlockClick={handleStoreBlockClick}
+        setSelectedPost={setSelectedPost}
         showPatch={
           currentFloor === 0 &&
           showCategories.includes(
@@ -71,7 +71,7 @@ function BellAvenueFloorMap({
   stores,
   locale,
   showPatch,
-  handleStoreBlockClick,
+  setSelectedPost,
 }) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const limit = 78; // Maximum number of stores.
@@ -118,11 +118,11 @@ function BellAvenueFloorMap({
         rowIndexLimit: ROW_INDEX_LIMIT,
         locale: locale,
         limit: limit,
-        handleStoreBlockClick: handleStoreBlockClick,
+        setSelectedPost: setSelectedPost,
       })}
       {showPatch &&
         MilliesVisionAndEncounteringNailArt({
-          handleBlockClick: handleStoreBlockClick,
+          setSelectedPost: setSelectedPost,
           locale: locale,
         })}
     </svg>

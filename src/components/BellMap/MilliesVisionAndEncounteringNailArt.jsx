@@ -18,7 +18,7 @@ import StoreBlock, {
  * @param locale Locale from `useState()`.
  */
 export default function MilliesVisionAndEncounteringNailArt({
-  handleBlockClick,
+  setSelectedPost,
   locale,
 }) {
   const xPosition =
@@ -41,10 +41,10 @@ export default function MilliesVisionAndEncounteringNailArt({
         text={xmumConfig.storeBlock.patches.milliesVision.name}
         showIcon={false}
         handleClick={() =>
-          handleBlockClick(
-            xmumConfig.storeBlock.patches.milliesVision.slug,
-            locale,
-          )
+          setSelectedPost({
+            slug: xmumConfig.storeBlock.patches.milliesVision.slug,
+            locale: locale,
+          })
         }
       />
 
@@ -63,10 +63,11 @@ export default function MilliesVisionAndEncounteringNailArt({
           xmumConfig.storeBlock.patches.encounteringNailArt.category,
         )}
         handleClick={() =>
-          handleBlockClick(
-            xmumConfig.storeBlock.patches.encounteringNailArt.slug,
-            locale,
-          )
+          setSelectedPost({
+            slug: xmumConfig.storeBlock.patches.encounteringNailArt
+              .slug,
+            locale: locale,
+          })
         }
         showIcon={false}
       />

@@ -53,14 +53,6 @@ export default function BodySection(props) {
   // Clicked store.
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
-  // Function to run when stores are clicked.
-  const handleStoreBlockClick = (slug, locale) => {
-    setSelectedPost({
-      slug: slug,
-      locale: locale,
-    });
-  };
-
   return (
     <>
       <ToolZone
@@ -111,7 +103,7 @@ export default function BodySection(props) {
                 mapHeight={mapHeight}
                 showCategories={showCategories}
                 locale={locale}
-                handleStoreBlockClick={handleStoreBlockClick}
+                setSelectedPost={setSelectedPost}
               />
             </div>
             <div
@@ -122,7 +114,7 @@ export default function BodySection(props) {
             >
               <BellSuiteMap
                 storeData={suiteData}
-                handleStoreBlockClick={handleStoreBlockClick}
+                setSelectedPost={setSelectedPost}
                 locale={locale}
                 mapWidth={bellSuiteMapWidth}
                 mapHeight={mapHeight}
