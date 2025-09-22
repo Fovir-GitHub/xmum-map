@@ -1,3 +1,10 @@
+/**
+ * @file Ly3SecondFloor.jsx
+ * @description Map of LY3 second floor.
+ * @author Fovir
+ * @since 2025-09-22
+ */
+
 "use client";
 
 import DrawAMap from "../DrawAMap/DrawAMap";
@@ -14,6 +21,9 @@ export default function Ly3SecondFloor({ storeData, locale }) {
 
   const fruitJuiceStart = leftRowEnd;
   const fruitJuiceEnd = fruitJuiceStart + 1;
+
+  const topRightCornerStart = tmallStart + 2;
+  const topRightCornerEnd = topRightCornerStart + 2;
 
   return (
     <div>
@@ -43,6 +53,13 @@ export default function Ly3SecondFloor({ storeData, locale }) {
         />
         <FruitJuice
           storeData={storeData.slice(fruitJuiceStart, fruitJuiceEnd)}
+          locale={locale}
+        />
+        <TopRightCorner
+          storeData={storeData.slice(
+            topRightCornerStart,
+            topRightCornerEnd,
+          )}
           locale={locale}
         />
       </div>
@@ -172,6 +189,41 @@ function FruitJuice({ storeData, locale }) {
 
   const top = 7500;
   const left = 4000;
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: top,
+        left: left,
+        height: storeHeight,
+        width: getTotalStoreWidth(storeData, storeWidth),
+      }}
+    >
+      <svg width={"100%"} height={"100%"}>
+        {DrawAMap({
+          stores: storeData,
+          rowIndexLimit: limit,
+          locale: locale,
+          limit: limit,
+          useRowIndex: false,
+          width: storeWidth,
+          height: storeHeight,
+          fontSize: "3rem",
+        })}
+      </svg>
+    </div>
+  );
+}
+
+function TopRightCorner({ storeData, locale }) {
+  const limit = 2;
+
+  const storeWidth = 350;
+  const storeHeight = 500;
+
+  const top = 2000;
+  const left = 6000;
 
   return (
     <div
