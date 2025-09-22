@@ -31,18 +31,23 @@ export default function DrawAMap({
   width = xmumConfig.storeBlock.size.width,
   height = xmumConfig.storeBlock.size.height,
   fontSize = xmumConfig.storeBlock.style.fontSize,
+  useRowIndex = true,
 }) {
+  let arrayIndex = 0;
   return (
     <>
       {stores.map((store) => {
         if (!store.Name || !store.Show) {
+          arrayIndex++;
           return;
         }
         let x = 0;
         let y = 0;
 
         const widthOffset = store.Width === null ? 1 : store.Width;
-        const index = store.Row;
+        const index = useRowIndex
+          ? store.Row
+          : (arrayIndex += widthOffset);
         if (index < rowIndexLimit) {
           x = index * width;
           y = xmumConfig.storeBlock.position.firstRowY;
