@@ -1,3 +1,10 @@
+/**
+ * @file BodySection.jsx
+ * @description Body section of LY3 map.
+ * @author Fovir
+ * @since 2025-09-21
+ */
+
 import { useRef, useState } from "react";
 import ToolZone from "../ToolZone/ToolZone";
 import Map from "../Map/Map";
