@@ -19,11 +19,11 @@ import Map from "../Map/Map";
 
 /**
  * @typedef {object} BodySectionProps
- * @property {string} locale
- * @property {Function} setLocale
- * @property {Array<Array<object>>} avenueData
- * @property {Array<Array<object>>} suiteData
- * @property {string[]} showCategories
+ * @property {string} locale Current locale.
+ * @property {Function} setLocale Function used to set locale.
+ * @property {object[][]} avenueData Data of bell avenue.
+ * @property {object[][]} suiteData Data of bell suite.
+ * @property {string[]} showCategories Categories that can be displayed.
  */
 
 /**

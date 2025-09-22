@@ -16,6 +16,9 @@ export default function XmumMap() {
   return <XmumSvg />;
 }
 
+/**
+ * SVG converted by https://www.svgviewer.dev/svg-to-react-jsx
+ */
 const XmumSvg = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
