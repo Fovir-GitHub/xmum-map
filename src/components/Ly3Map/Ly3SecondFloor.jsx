@@ -12,6 +12,9 @@ export default function Ly3SecondFloor({ storeData, locale }) {
   const tmallStart = leftRowEnd;
   const tmallEnd = tmallStart + 1;
 
+  const fruitJuiceStart = leftRowEnd;
+  const fruitJuiceEnd = fruitJuiceStart + 1;
+
   return (
     <div>
       <img src="maps/LY3_2F.svg" width={10000} height={10000} />
@@ -36,6 +39,10 @@ export default function Ly3SecondFloor({ storeData, locale }) {
         />
         <TmallCoffee
           storeData={storeData.slice(tmallStart, tmallEnd)}
+          locale={locale}
+        />
+        <FruitJuice
+          storeData={storeData.slice(fruitJuiceStart, fruitJuiceEnd)}
           locale={locale}
         />
       </div>
@@ -151,6 +158,41 @@ function TmallCoffee({ storeData, locale }) {
           width: storeWidth,
           height: storeHeight,
           fontSize: "6rem",
+        })}
+      </svg>
+    </div>
+  );
+}
+
+function FruitJuice({ storeData, locale }) {
+  const limit = 1;
+
+  const storeWidth = 350;
+  const storeHeight = 500;
+
+  const top = 7500;
+  const left = 4000;
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: top,
+        left: left,
+        height: storeHeight,
+        width: getTotalStoreWidth(storeData, storeWidth),
+      }}
+    >
+      <svg width={"100%"} height={"100%"}>
+        {DrawAMap({
+          stores: storeData,
+          rowIndexLimit: limit,
+          locale: locale,
+          limit: limit,
+          useRowIndex: false,
+          width: storeWidth,
+          height: storeHeight,
+          fontSize: "3rem",
         })}
       </svg>
     </div>
