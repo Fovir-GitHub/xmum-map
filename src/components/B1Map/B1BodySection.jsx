@@ -1,3 +1,10 @@
+/**
+ * @file B1BodySection.jsx
+ * @description Body section of B1 map.
+ * @author Fovir
+ * @since 2025-09-23
+ */
+
 import { useRef, useState } from "react";
 import ToolZone from "../ToolZone/ToolZone";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
@@ -6,6 +13,13 @@ import { usePathname, useRouter } from "next/navigation";
 import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
 
+/**
+ * Body section of B1 map.
+ *
+ * @param {string} locale Current locale.
+ * @param {Function} setLocale Function used to set `locale`.
+ * @param {object[][]} b1Data Data of B1 stores.
+ */
 export default function B1BodySection({ locale, setLocale, b1Data }) {
   const [layer, setLayer] = useState(0);
   const layerRange = 5;
