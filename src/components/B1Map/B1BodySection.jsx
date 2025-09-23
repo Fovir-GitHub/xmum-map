@@ -1,0 +1,44 @@
+import { useRef, useState } from "react";
+import ToolZone from "../ToolZone/ToolZone";
+import { useSelectedPost } from "../../hooks/useSelectedPost";
+import Sidebar from "../Sidebar/Sidebar";
+import { usePathname, useRouter } from "next/navigation";
+import DetailPage from "../DetailPage/DetailPage";
+import Map from "../Map/Map";
+
+export default function B1BodySection({ locale, setLocale, b1Data }) {
+  const [layer, setLayer] = useState(0);
+  const layerRange = 5;
+  const transformRef = useRef(null);
+  const [selectedPost, setSelectedPost] = useSelectedPost(locale);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  return (
+    <>
+      <ToolZone
+        locale={locale}
+        setLocale={setLocale}
+        layer={layer}
+        setLayer={setLayer}
+        layerRange={layerRange}
+        transformRef={transformRef}
+        layerStart={-1}
+      />
+
+      <Sidebar
+        selectedPost={selectedPost}
+        setSelectedPost={setSelectedPost}
+        router={router}
+        pathname={pathname}
+      >
+        <DetailPage
+          slug={selectedPost?.slug || "404"}
+          locale={locale}
+        />
+      </Sidebar>
+
+      <Map transformRef={transformRef}></Map>
+    </>
+  );
+}
