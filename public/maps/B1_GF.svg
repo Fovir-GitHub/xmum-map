@@ -123,11 +123,6 @@
       </g>
     </symbol>
   </defs>
-  <rect class="cls-7" x="537" y="36.4" width="57" height="84" rx="1.3" ry="1.3"/>
-  <rect class="cls-7" x="684" y="36.4" width="57" height="84" rx="1.3" ry="1.3"/>
-  <rect class="cls-7" x="831" y="36.4" width="57" height="84" rx="1.3" ry="1.3"/>
-  <rect class="cls-7" x="978" y="36.4" width="57" height="84" rx="1.3" ry="1.3"/>
-  <rect class="cls-7" x="1125" y="36.4" width="57" height="84" rx="1.3" ry="1.3"/>
   <use width="110" height="75.2" transform="translate(1018.2 302.5) rotate(-.2) scale(1 -1)" xlink:href="#_桌椅"/>
   <rect class="cls-2" x="366.3" y="380.8" width="39" height="14"/>
   <polygon class="cls-2" points="334.5 388.2 376.3 346.6 376 430 334.5 388.2"/>
