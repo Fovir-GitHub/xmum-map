@@ -1,8 +1,8 @@
-# Taste of the Day
+# Poke Bowl Rice
+
+Poke Bowl
 
 ## Menu
-
-Sweet snacks
 
 ---
 
@@ -12,16 +12,14 @@ Sweet snacks
 
 ## Business Hours
 
-7:00 AM - 12:00 AM Daily
+Daily 12:00 PM - 8:00 PM
 
 ---
 
 ## Contact Information
 
-0128877074
-
 ---
 
 ## Address
 
-Cafeteria 20
+B1.G.07

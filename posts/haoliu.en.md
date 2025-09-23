@@ -4,6 +4,8 @@
 
 ## Menu
 
+Malay rice noodle rolls, stuffed tofu, miscellaneous ingredients
+
 ---
 
 ## Environment
