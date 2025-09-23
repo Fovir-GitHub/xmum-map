@@ -31,7 +31,7 @@ export default function B1Map({ b1Data }) {
       <B1BodySection
         locale={locale}
         setLocale={setLocale}
-        ly3Data={b1Data}
+        b1Data={b1Data}
       />
 
       <Footer locale={locale} />
