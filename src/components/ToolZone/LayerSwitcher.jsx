@@ -12,13 +12,19 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 /**
  * A group of toggle buttons used to change layers or floors.
  *
- * It will display layers between [0, layerRange), where `0F` will display as `GF`, and it will also highlight current layer.
+ * It will display layers between [layerStart, layerRange), where `0F` will display as `GF` and `-1F` will be `B1`, and it will also highlight current layer.
  *
  * @param layer The layer variable from `useState()`.
  * @param setLayer Callback function used to set `layer`.
  * @param layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
+ * @param [layerStart=0] Start number of layers or floors.
  */
-export default function LayerSwitcher({ layer, layerRange, setLayer }) {
+export default function LayerSwitcher({
+  layer,
+  layerRange,
+  setLayer,
+  layerStart = 0,
+}) {
   const toolBackgroundOpacity = getToggleButtonGroupStyle().opacity;
   const toggleButtonGroupStyle =
     getToggleButtonGroupStyle().toggleButtonGroupStyle;
@@ -39,6 +45,17 @@ export default function LayerSwitcher({ layer, layerRange, setLayer }) {
     }
   };
 
+  // Get the floor label.
+  const getLayerLabel = (i) => {
+    if (i === 0) {
+      return "GF";
+    } else if (i === -1) {
+      return "B1";
+    } else {
+      return `${i}F`;
+    }
+  };
+
   return (
     <ToggleButtonGroup
       orientation="vertical"
@@ -50,11 +67,11 @@ export default function LayerSwitcher({ layer, layerRange, setLayer }) {
         backgroundColor: toggleButtonGroupStyle.backgroundColor,
       }}
     >
-      {Array.from({ length: layerRange }, (_, i) => i)
+      {Array.from({ length: layerRange }, (_, i) => layerStart + i)
         .reverse()
         .map((i) => (
           <ToggleButton key={i} value={i} sx={layerSwitcherStyle}>
-            {i === 0 ? "GF" : `${i}F`}
+            {getLayerLabel(i)}
           </ToggleButton>
         ))}
     </ToggleButtonGroup>

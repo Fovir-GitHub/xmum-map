@@ -23,6 +23,7 @@ import { usePathname } from "next/navigation";
  * @param setLayer Callback function used to set `layer`.
  * @param layerRange Number of layers, which will be passed to `LayerSwitcher` component.
  * @param transformRef Ref of map used to reset state of map.
+ * @param [layerStart=0] Start number of layers or floors.
  */
 export default function ToolZone({
   locale,
@@ -31,6 +32,7 @@ export default function ToolZone({
   setLayer,
   layerRange,
   transformRef,
+  layerStart = 0,
 }) {
   const toggleButtonGroupStyle =
     getToggleButtonGroupStyle().toggleButtonGroupStyle;
@@ -55,6 +57,7 @@ export default function ToolZone({
         layer={layer}
         layerRange={layerRange}
         setLayer={setLayer}
+        layerStart={layerStart}
       />
     </div>
   );
