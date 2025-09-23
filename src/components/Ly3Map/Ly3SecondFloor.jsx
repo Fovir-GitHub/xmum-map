@@ -54,37 +54,37 @@ export default function Ly3SecondFloor({
       >
         {/* Top Row Start */}
         <StoresArea
+          limit={40}
+          top={1000}
+          left={2700}
+          width={230}
+          height={400}
+          locale={locale}
+          storeData={storeData.slice(leftRowStart, leftRowEnd)}
+          fontSize={"3rem"}
+          setSelectedPost={setSelectedPost}
+        />
+        {/* Top Row End */}
+        {/* Right Row Start */}
+        <StoresArea
           limit={8}
-          top={1750}
-          left={200}
+          top={3000}
+          left={5600}
           width={350}
           height={500}
           locale={locale}
           storeData={storeData.slice(topRowStart, topRowEnd)}
           fontSize={"4rem"}
           useRowIndex={true}
-          setSelectedPost={setSelectedPost}
-        />
-        {/* Top Row End */}
-        {/* Left Row Start */}
-        <StoresArea
-          limit={40}
-          top={4300}
-          left={-2700}
-          width={250}
-          height={500}
-          locale={locale}
-          storeData={storeData.slice(leftRowStart, leftRowEnd)}
-          fontSize={"4rem"}
           rotate={true}
           setSelectedPost={setSelectedPost}
         />
-        {/* Left Row End */}
+        {/* Right Row End */}
         {/* Tmall Coffee Start */}
         <StoresArea
           limit={1}
-          top={4300}
-          left={5400}
+          top={5500}
+          left={4600}
           width={800}
           height={800}
           locale={locale}
@@ -96,8 +96,8 @@ export default function Ly3SecondFloor({
         {/* Fruit Juice Start */}
         <StoresArea
           limit={1}
-          top={7500}
-          left={4000}
+          top={4500}
+          left={2200}
           width={350}
           height={500}
           locale={locale}
@@ -106,11 +106,11 @@ export default function Ly3SecondFloor({
           setSelectedPost={setSelectedPost}
         />
         {/* Fruit Juice End */}
-        {/* Top Right Corner Start */}
+        {/* Bottom Right Corner Start */}
         <StoresArea
           limit={2}
-          top={2000}
-          left={6000}
+          top={5800}
+          left={7000}
           width={350}
           height={500}
           locale={locale}
@@ -121,7 +121,7 @@ export default function Ly3SecondFloor({
           fontSize={"3rem"}
           setSelectedPost={setSelectedPost}
         />
-        {/* Top Right Corner End */}
+        {/* Bottom Right Corner End */}
       </div>
     </div>
   );
@@ -180,7 +180,7 @@ function StoresArea({
         left: left,
         width: getTotalStoreWidth(storeData, width),
         height: height,
-        transform: rotate && "rotate(-90deg)",
+        transform: rotate && "rotate(90deg)",
         transformOrigin: rotate && "center",
       }}
     >
