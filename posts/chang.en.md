@@ -2,6 +2,8 @@
 
 ## Menu
 
+Sweet snacks
+
 ---
 
 ## Environment

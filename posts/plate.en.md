@@ -2,6 +2,8 @@
 
 ## Menu
 
+Malay dim sum, shrimp dumplings, siu mai, glutinous rice chicken, barbecued pork buns, steamed chicken feet, steamed chicken nuggets
+
 ---
 
 ## Environment
