@@ -1,44 +1,44 @@
 /**
- * @file BodySection.jsx
- * @description Body section of LY3 map.
+ * @file B1BodySection.jsx
+ * @description Body section of B1 map.
  * @author Fovir
- * @since 2025-09-21
+ * @since 2025-09-23
  */
 
 import { useRef, useState } from "react";
 import ToolZone from "../ToolZone/ToolZone";
-import Map from "../Map/Map";
-import Ly3SecondFloor from "./Ly3SecondFloor";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
-import { usePathname, useRouter } from "next/navigation";
 import Sidebar from "../Sidebar/Sidebar";
+import { usePathname, useRouter } from "next/navigation";
 import DetailPage from "../DetailPage/DetailPage";
+import Map from "../Map/Map";
+import B1GfMap from "./B1GfMap";
 
 /**
- * Body section of LY3 map.
+ * Body section of B1 map.
  *
- * @param {string} locale Current locale from `useState()` function.
- * @param {Function} setLocale Function used to change the value of `locale`.
- * @param {object[][]} ly3Data Store data of LY3.
+ * @param {string} locale Current locale.
+ * @param {Function} setLocale Function used to set `locale`.
+ * @param {object[][]} b1Data Data of B1 stores.
  */
-export default function BodySection({ locale, setLocale, ly3Data }) {
-  const [layer, setLayer] = useState(2);
-  const layerRange = 3;
-  const transfromRef = useRef(null);
-
+export default function B1BodySection({ locale, setLocale, b1Data }) {
+  const [layer, setLayer] = useState(0);
+  const layerRange = 5;
+  const transformRef = useRef(null);
+  const [selectedPost, setSelectedPost] = useSelectedPost(locale);
   const router = useRouter();
   const pathname = usePathname();
 
-  const [selectedPost, setSelectedPost] = useSelectedPost(locale);
-
-  const maps = [
+  const floorMaps = [
     null,
-    null,
-    <Ly3SecondFloor
+    <B1GfMap
+      storeData={b1Data[0]}
       locale={locale}
-      storeData={ly3Data[2]}
       setSelectedPost={setSelectedPost}
     />,
+    null,
+    null,
+    null,
   ];
 
   return (
@@ -49,7 +49,8 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
         layer={layer}
         setLayer={setLayer}
         layerRange={layerRange}
-        transformRef={transfromRef}
+        transformRef={transformRef}
+        layerStart={-1}
       />
 
       <Sidebar
@@ -64,7 +65,7 @@ export default function BodySection({ locale, setLocale, ly3Data }) {
         />
       </Sidebar>
 
-      <Map transformRef={transfromRef}>{maps[layer]}</Map>
+      <Map transformRef={transformRef}>{floorMaps[layer + 1]}</Map>
     </>
   );
 }

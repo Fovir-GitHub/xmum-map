@@ -1,10 +1,4 @@
-﻿# KIMS SALON Barber Shop
-
-## Special Promotion
-
-<img src="https://img.xmummap.com/G_kims_prom.webp" />
-
-**Valid from: Sept 20, 2025 to Sept 21, 2025**
+﻿# KIMS SALON
 
 ## Price List
 

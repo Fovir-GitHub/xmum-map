@@ -1,3 +1,10 @@
+/**
+ * @file page.jsx
+ * @description Page of LY3.
+ * @author Fovir
+ * @since 2025-09-21
+ */
+
 import Ly3Map from "../../components/Ly3Map/Ly3Map";
 import { readData } from "../../lib/readData";
 

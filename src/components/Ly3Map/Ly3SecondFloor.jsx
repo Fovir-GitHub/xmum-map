@@ -54,37 +54,37 @@ export default function Ly3SecondFloor({
       >
         {/* Top Row Start */}
         <StoresArea
+          limit={40}
+          top={1000}
+          left={2700}
+          width={230}
+          height={400}
+          locale={locale}
+          storeData={storeData.slice(leftRowStart, leftRowEnd)}
+          fontSize={"3rem"}
+          setSelectedPost={setSelectedPost}
+        />
+        {/* Top Row End */}
+        {/* Right Row Start */}
+        <StoresArea
           limit={8}
-          top={1750}
-          left={200}
+          top={3000}
+          left={5600}
           width={350}
           height={500}
           locale={locale}
           storeData={storeData.slice(topRowStart, topRowEnd)}
           fontSize={"4rem"}
           useRowIndex={true}
-          setSelectedPost={setSelectedPost}
-        />
-        {/* Top Row End */}
-        {/* Left Row Start */}
-        <StoresArea
-          limit={40}
-          top={4300}
-          left={-2700}
-          width={250}
-          height={500}
-          locale={locale}
-          storeData={storeData.slice(leftRowStart, leftRowEnd)}
-          fontSize={"4rem"}
           rotate={true}
           setSelectedPost={setSelectedPost}
         />
-        {/* Left Row End */}
+        {/* Right Row End */}
         {/* Tmall Coffee Start */}
         <StoresArea
           limit={1}
-          top={4300}
-          left={5400}
+          top={5500}
+          left={4600}
           width={800}
           height={800}
           locale={locale}
@@ -96,8 +96,8 @@ export default function Ly3SecondFloor({
         {/* Fruit Juice Start */}
         <StoresArea
           limit={1}
-          top={7500}
-          left={4000}
+          top={4500}
+          left={2200}
           width={350}
           height={500}
           locale={locale}
@@ -106,11 +106,11 @@ export default function Ly3SecondFloor({
           setSelectedPost={setSelectedPost}
         />
         {/* Fruit Juice End */}
-        {/* Top Right Corner Start */}
+        {/* Bottom Right Corner Start */}
         <StoresArea
           limit={2}
-          top={2000}
-          left={6000}
+          top={5800}
+          left={7000}
           width={350}
           height={500}
           locale={locale}
@@ -121,7 +121,7 @@ export default function Ly3SecondFloor({
           fontSize={"3rem"}
           setSelectedPost={setSelectedPost}
         />
-        {/* Top Right Corner End */}
+        {/* Bottom Right Corner End */}
       </div>
     </div>
   );
@@ -145,33 +145,40 @@ function getTotalStoreWidth(stores, width) {
 }
 
 /**
+ * @typedef {object} StoresAreaProps
+ * @property {object[]} storeData Data of stores.
+ * @property {string} locale Current locale.
+ * @property {number} limit Index limit.
+ * @property {number} top Top position in `absolute` layout.
+ * @property {number} left Left position in `absolute` layout.
+ * @property {number} width Width of a single store block.
+ * @property {number} height Height of a single store block.
+ * @property {string} fontSize Font size of the store block.
+ * @property {(post: any) => void} setSelectedPost Function used to set selected post.
+ * @property {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
+ * @property {boolean} [rotate=false] Determine whether to rotate the row.
+ */
+
+/**
  * Draw a row of stores.
  *
- * @param {object[]} storeData Data of stores.
- * @param {string} locale Current locale.
- * @param {number} limit Index limit.
- * @param {number} top Top position in `absolute` layout.
- * @param {number} left Left position in `absolute` layout.
- * @param {number} width Width of a single store block.
- * @param {number} height Height of a single store block.
- * @param {string} fontSize Font size of the store block.
- * @param {Function} setSelectedPost Function used to set selected post.
- * @param {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
- * @param {boolean} [rotate=false] Determine whether to rotate the row.
+ * @param {StoresAreaProps} props
  */
-function StoresArea({
-  storeData,
-  locale,
-  limit,
-  top,
-  left,
-  width,
-  height,
-  fontSize,
-  setSelectedPost,
-  useRowIndex = false,
-  rotate = false,
-}) {
+export function StoresArea(props) {
+  const {
+    storeData,
+    locale,
+    limit,
+    top,
+    left,
+    width,
+    height,
+    fontSize,
+    setSelectedPost,
+    useRowIndex = false,
+    rotate = false,
+  } = props;
+
   return (
     <div
       style={{
@@ -180,7 +187,7 @@ function StoresArea({
         left: left,
         width: getTotalStoreWidth(storeData, width),
         height: height,
-        transform: rotate && "rotate(-90deg)",
+        transform: rotate && "rotate(90deg)",
         transformOrigin: rotate && "center",
       }}
     >
