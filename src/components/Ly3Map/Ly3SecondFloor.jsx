@@ -145,33 +145,40 @@ function getTotalStoreWidth(stores, width) {
 }
 
 /**
+ * @typedef {object} StoresAreaProps
+ * @property {object[]} storeData Data of stores.
+ * @property {string} locale Current locale.
+ * @property {number} limit Index limit.
+ * @property {number} top Top position in `absolute` layout.
+ * @property {number} left Left position in `absolute` layout.
+ * @property {number} width Width of a single store block.
+ * @property {number} height Height of a single store block.
+ * @property {string} fontSize Font size of the store block.
+ * @property {(post: any) => void} setSelectedPost Function used to set selected post.
+ * @property {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
+ * @property {boolean} [rotate=false] Determine whether to rotate the row.
+ */
+
+/**
  * Draw a row of stores.
  *
- * @param {object[]} storeData Data of stores.
- * @param {string} locale Current locale.
- * @param {number} limit Index limit.
- * @param {number} top Top position in `absolute` layout.
- * @param {number} left Left position in `absolute` layout.
- * @param {number} width Width of a single store block.
- * @param {number} height Height of a single store block.
- * @param {string} fontSize Font size of the store block.
- * @param {Function} setSelectedPost Function used to set selected post.
- * @param {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
- * @param {boolean} [rotate=false] Determine whether to rotate the row.
+ * @param {StoresAreaProps} props
  */
-function StoresArea({
-  storeData,
-  locale,
-  limit,
-  top,
-  left,
-  width,
-  height,
-  fontSize,
-  setSelectedPost,
-  useRowIndex = false,
-  rotate = false,
-}) {
+export function StoresArea(props) {
+  const {
+    storeData,
+    locale,
+    limit,
+    top,
+    left,
+    width,
+    height,
+    fontSize,
+    setSelectedPost,
+    useRowIndex = false,
+    rotate = false,
+  } = props;
+
   return (
     <div
       style={{
