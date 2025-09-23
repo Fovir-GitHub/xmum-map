@@ -21,7 +21,7 @@ import DetailPage from "../DetailPage/DetailPage";
  * @param {Function} setLocale Function used to change the value of `locale`.
  * @param {object[][]} ly3Data Store data of LY3.
  */
-export default function BodySection({ locale, setLocale, ly3Data }) {
+export default function Ly3BodySection({ locale, setLocale, ly3Data }) {
   const [layer, setLayer] = useState(2);
   const layerRange = 3;
   const transfromRef = useRef(null);

@@ -3,10 +3,10 @@
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "../../styles/materialUiTheme";
 import { CssBaseline } from "@mui/material";
-import HeaderSection from "./HeaderSection";
 import { useLocale } from "../../hooks/useLocale";
-import BodySection from "./BodySection";
 import Footer from "../Footer/Footer";
+import Ly3BodySection from "./Ly3BodySection";
+import Ly3HeaderSection from "./Ly3HeaderSection";
 
 export default function Ly3Map({ ly3Data }) {
   const [locale, setLocale] = useLocale();
@@ -14,9 +14,9 @@ export default function Ly3Map({ ly3Data }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <HeaderSection locale={locale} />
+      <Ly3HeaderSection locale={locale} />
 
-      <BodySection
+      <Ly3BodySection
         locale={locale}
         setLocale={setLocale}
         ly3Data={ly3Data}

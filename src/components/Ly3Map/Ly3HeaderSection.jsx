@@ -1,6 +1,6 @@
 import Announcement from "../Announcement/Announcement";
 
-export default function HeaderSection({ locale }) {
+export default function Ly3HeaderSection({ locale }) {
   return (
     <>
       <Announcement locale={locale} slug={"ly3-announcement"} />
