@@ -12,6 +12,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import { usePathname, useRouter } from "next/navigation";
 import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
+import B1GfMap from "./B1GfMap";
 
 /**
  * Body section of B1 map.
@@ -27,6 +28,18 @@ export default function B1BodySection({ locale, setLocale, b1Data }) {
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
   const router = useRouter();
   const pathname = usePathname();
+
+  const floorMaps = [
+    null,
+    <B1GfMap
+      storeData={b1Data[0]}
+      locale={locale}
+      setSelectedPost={setSelectedPost}
+    />,
+    null,
+    null,
+    null,
+  ];
 
   return (
     <>
@@ -52,7 +65,7 @@ export default function B1BodySection({ locale, setLocale, b1Data }) {
         />
       </Sidebar>
 
-      <Map transformRef={transformRef}></Map>
+      <Map transformRef={transformRef}>{floorMaps[layer + 1]}</Map>
     </>
   );
 }
