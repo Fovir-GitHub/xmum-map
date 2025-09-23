@@ -1,297 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1152 911.5">
+<svg id="_图层_1" data-name=" 图层 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1152 911.5">
   <defs>
     <style>
       .cls-1 {
-        fill: #000;
+        fill: #545454;
       }
 
-      .cls-1, .cls-2, .cls-3 {
+      .cls-1, .cls-2 {
         stroke-width: 0px;
       }
 
-      .cls-4, .cls-5, .cls-6 {
+      .cls-3 {
+        fill: #84a2de;
+        stroke: #fff;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
         stroke-miterlimit: 10;
       }
 
-      .cls-4, .cls-6 {
-        stroke: #000;
+      .cls-7 {
+        fill: #000;
+        font-family: ArialMT, Arial;
+        font-size: 21px;
       }
 
-      .cls-4, .cls-3 {
-        fill: #fff;
+      .cls-4 {
+        stroke-width: 3px;
       }
 
-      .cls-5 {
-        stroke: #a0a1a6;
-      }
-
-      .cls-5, .cls-6 {
+      .cls-4, .cls-5 {
         fill: none;
       }
 
-      .cls-2 {
-        fill: #a0a1a6;
+      .cls-4, .cls-5, .cls-6 {
+        stroke: #545454;
+      }
+
+      .cls-6, .cls-2 {
+        fill: #fff;
       }
     </style>
-    <symbol id="_考试椅子" data-name="考试椅子" viewBox="0 0 36 42.58">
-      <g id="_桌椅" data-name=" 桌椅">
-        <g>
-          <g>
-            <path class="cls-5" d="M9.59,31.39v-11.47h17v11.47c0,4.35-2.98,7.88-6.65,7.88h-3.69c-3.67,0-6.65-3.53-6.65-7.88h0Z"/>
-            <path class="cls-5" d="M29.17,39.13s-10.46,6.65-22.17,0"/>
-            <path class="cls-5" d="M29.17,34.83s-10.46,11.71-22.17,0"/>
-            <polyline class="cls-5" points="26.42 40.2 25.43 38.54 24.2 40.8 22.45 39.97 18.45 41.51 13.96 40.12 11.73 40.78 11.03 38.76 9.21 40.03"/>
-          </g>
-          <polygon class="cls-2" points="0 0 36 0 36 19 0 19 0 0"/>
-          <path class="cls-3" d="M18.5,14.5"/>
-        </g>
-      </g>
-    </symbol>
   </defs>
-  <use width="36" height="42.58" transform="translate(1116 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1116 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(1054 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(992 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(930 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(868 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(806 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(744 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(682 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(620 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(558 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(496 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(434 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(372 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(310 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(248 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(186 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(124 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(62 868.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 184.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 241.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 298.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 355.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 412.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 469.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 526.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 583.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 640.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 697.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 754.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 811.92)" xlink:href="#_考试椅子"/>
-  <use width="36" height="42.58" transform="translate(0 868.92)" xlink:href="#_考试椅子"/>
   <g>
-    <circle class="cls-4" cx="576" cy="84" r="83.5"/>
-    <circle class="cls-1" cx="576.5" cy="83.5" r="3.5"/>
     <g>
-      <rect class="cls-6" x="575" y="83" width="26.87" height="1"/>
-      <polygon class="cls-1" points="603.5 83.39 602.07 85.27 602.17 81.58 603.5 83.39"/>
+      <rect class="cls-4" x="827.7" y="160.8" width="46.5" height="249"/>
+      <line class="cls-4" x1="827.7" y1="392.4" x2="874.2" y2="392.4"/>
+      <line class="cls-4" x1="827.7" y1="373.2" x2="874.2" y2="373.2"/>
+      <line class="cls-4" x1="827.7" y1="354" x2="874.2" y2="354"/>
+      <line class="cls-4" x1="827.7" y1="334.8" x2="874.2" y2="334.8"/>
+      <line class="cls-4" x1="827.7" y1="315.6" x2="874.2" y2="315.6"/>
+      <line class="cls-4" x1="827.7" y1="296.4" x2="874.2" y2="296.4"/>
+      <line class="cls-4" x1="827.7" y1="277.2" x2="874.2" y2="277.2"/>
+      <line class="cls-4" x1="827.7" y1="258" x2="874.2" y2="258"/>
+      <line class="cls-4" x1="827.7" y1="238.8" x2="874.2" y2="238.8"/>
+      <line class="cls-4" x1="827.7" y1="219.6" x2="874.2" y2="219.6"/>
+      <line class="cls-4" x1="827.7" y1="200.4" x2="874.2" y2="200.4"/>
+      <line class="cls-4" x1="827.7" y1="181.2" x2="874.2" y2="181.2"/>
     </g>
-    <g>
-      <rect class="cls-6" x="541.43" y="44.96" width="69.47" height="1" transform="translate(530.7 621.63) rotate(-90)"/>
-      <polygon class="cls-1" points="576.06 6.5 577.94 10.19 574.24 9.95 576.06 6.5"/>
-    </g>
+    <polyline class="cls-5" points="856.6 211 850.9 200.4 850.9 409.8"/>
+    <polyline class="cls-5" points="845.3 211 850.9 200.4 850.9 409.8"/>
   </g>
   <g>
-    <path class="cls-3" d="M427.56,454.86v-24.11h17.44v2.85h-14.25v7.39h13.34v2.83h-13.34v8.21h14.8v2.85h-18Z"/>
-    <path class="cls-3" d="M447.61,454.86l6.38-9.08-5.91-8.39h3.7l2.68,4.1c.5.78.91,1.43,1.22,1.96.48-.72.93-1.37,1.33-1.92l2.94-4.13h3.54l-6.04,8.22,6.5,9.24h-3.64l-3.59-5.43-.95-1.46-4.59,6.89h-3.59Z"/>
-    <path class="cls-3" d="M477.83,452.7c-1.1.93-2.15,1.59-3.17,1.97-1.01.38-2.1.58-3.27.58-1.92,0-3.39-.47-4.42-1.41-1.03-.94-1.55-2.14-1.55-3.59,0-.85.19-1.64.58-2.34.39-.71.9-1.27,1.53-1.7.63-.43,1.34-.75,2.13-.97.58-.15,1.46-.3,2.63-.44,2.39-.29,4.15-.62,5.28-1.02.01-.41.02-.66.02-.77,0-1.21-.28-2.06-.84-2.55-.76-.67-1.88-1-3.37-1-1.39,0-2.42.24-3.08.73-.66.49-1.15,1.35-1.47,2.59l-2.9-.39c.26-1.24.7-2.24,1.3-3,.6-.76,1.47-1.35,2.62-1.76s2.46-.62,3.96-.62,2.7.18,3.64.53c.93.35,1.62.79,2.06,1.32.44.53.75,1.2.92,2.02.1.5.15,1.41.15,2.73v3.95c0,2.75.06,4.49.19,5.22s.38,1.43.75,2.1h-3.09c-.31-.61-.5-1.33-.59-2.15ZM477.58,446.09c-1.07.44-2.69.81-4.84,1.12-1.22.18-2.08.37-2.58.59s-.89.54-1.17.96c-.27.42-.41.89-.41,1.41,0,.79.3,1.45.9,1.97s1.47.79,2.62.79,2.15-.25,3.04-.75c.89-.5,1.54-1.18,1.96-2.05.32-.67.48-1.66.48-2.96v-1.09Z"/>
-    <path class="cls-3" d="M485.17,454.86v-17.47h2.65v2.45c.55-.86,1.28-1.54,2.19-2.06.91-.52,1.95-.78,3.11-.78,1.29,0,2.35.27,3.18.81.83.54,1.41,1.29,1.75,2.25,1.38-2.04,3.18-3.06,5.4-3.06,1.73,0,3.06.48,4,1.44s1.4,2.44,1.4,4.43v11.99h-2.94v-11c0-1.18-.1-2.04-.29-2.56-.19-.52-.54-.94-1.04-1.26-.5-.32-1.1-.48-1.78-.48-1.23,0-2.25.41-3.06,1.23-.81.82-1.22,2.12-1.22,3.92v10.15h-2.96v-11.35c0-1.32-.24-2.3-.72-2.96-.48-.66-1.27-.99-2.37-.99-.83,0-1.6.22-2.31.66-.71.44-1.22,1.08-1.54,1.92-.32.84-.48,2.06-.48,3.65v9.06h-2.96Z"/>
-    <path class="cls-3" d="M513.25,434.15v-3.41h2.96v3.41h-2.96ZM513.25,454.86v-17.47h2.96v17.47h-2.96Z"/>
-    <path class="cls-3" d="M520.71,454.86v-17.47h2.66v2.48c1.28-1.92,3.14-2.88,5.56-2.88,1.05,0,2.02.19,2.9.57.88.38,1.54.87,1.98,1.49s.75,1.34.92,2.19c.11.55.16,1.51.16,2.88v10.74h-2.96v-10.63c0-1.21-.12-2.11-.35-2.71-.23-.6-.64-1.07-1.23-1.43-.59-.36-1.27-.53-2.06-.53-1.26,0-2.35.4-3.27,1.2-.92.8-1.37,2.32-1.37,4.56v9.54h-2.96Z"/>
-    <path class="cls-3" d="M550.85,452.7c-1.1.93-2.15,1.59-3.17,1.97-1.01.38-2.1.58-3.27.58-1.92,0-3.39-.47-4.42-1.41-1.03-.94-1.55-2.14-1.55-3.59,0-.85.19-1.64.58-2.34.39-.71.9-1.27,1.53-1.7.63-.43,1.34-.75,2.13-.97.58-.15,1.46-.3,2.63-.44,2.39-.29,4.15-.62,5.28-1.02.01-.41.02-.66.02-.77,0-1.21-.28-2.06-.84-2.55-.76-.67-1.88-1-3.37-1-1.39,0-2.42.24-3.08.73-.66.49-1.15,1.35-1.47,2.59l-2.9-.39c.26-1.24.7-2.24,1.3-3,.6-.76,1.47-1.35,2.62-1.76s2.46-.62,3.96-.62,2.7.18,3.64.53c.93.35,1.62.79,2.06,1.32.44.53.75,1.2.92,2.02.1.5.15,1.41.15,2.73v3.95c0,2.75.06,4.49.19,5.22s.38,1.43.75,2.1h-3.09c-.31-.61-.5-1.33-.59-2.15ZM550.6,446.09c-1.07.44-2.69.81-4.84,1.12-1.22.18-2.08.37-2.58.59s-.89.54-1.17.96c-.27.42-.41.89-.41,1.41,0,.79.3,1.45.9,1.97s1.47.79,2.62.79,2.15-.25,3.04-.75c.89-.5,1.54-1.18,1.96-2.05.32-.67.48-1.66.48-2.96v-1.09Z"/>
-    <path class="cls-3" d="M564.65,452.21l.43,2.62c-.83.18-1.58.26-2.24.26-1.08,0-1.91-.17-2.5-.51s-1.01-.79-1.25-1.34c-.24-.55-.36-1.72-.36-3.5v-10.05h-2.17v-2.3h2.17v-4.33l2.94-1.78v6.1h2.98v2.3h-2.98v10.21c0,.84.05,1.39.16,1.63.1.24.27.43.51.58s.57.21,1.01.21c.33,0,.76-.04,1.3-.12Z"/>
-    <path class="cls-3" d="M567.56,434.15v-3.41h2.96v3.41h-2.96ZM567.56,454.86v-17.47h2.96v17.47h-2.96Z"/>
-    <path class="cls-3" d="M573.93,446.12c0-3.23.9-5.63,2.7-7.19,1.5-1.29,3.33-1.94,5.49-1.94,2.4,0,4.36.79,5.89,2.36,1.52,1.57,2.29,3.75,2.29,6.52,0,2.25-.34,4.02-1.01,5.31-.67,1.29-1.66,2.29-2.94,3-1.29.71-2.69,1.07-4.22,1.07-2.45,0-4.42-.78-5.93-2.35-1.51-1.57-2.26-3.83-2.26-6.78ZM576.97,446.12c0,2.24.49,3.91,1.46,5.02.98,1.11,2.2,1.67,3.68,1.67s2.69-.56,3.67-1.68c.98-1.12,1.46-2.82,1.46-5.12,0-2.16-.49-3.8-1.47-4.91-.98-1.11-2.2-1.67-3.66-1.67s-2.71.55-3.68,1.66c-.98,1.11-1.46,2.78-1.46,5.02Z"/>
-    <path class="cls-3" d="M593.76,454.86v-17.47h2.66v2.48c1.28-1.92,3.14-2.88,5.56-2.88,1.05,0,2.02.19,2.9.57.88.38,1.54.87,1.98,1.49s.75,1.34.92,2.19c.11.55.16,1.51.16,2.88v10.74h-2.96v-10.63c0-1.21-.12-2.11-.35-2.71-.23-.6-.64-1.07-1.23-1.43-.59-.36-1.27-.53-2.06-.53-1.26,0-2.35.4-3.27,1.2-.92.8-1.37,2.32-1.37,4.56v9.54h-2.96Z"/>
-    <path class="cls-3" d="M622.29,454.86v-24.11h10.69c2.15,0,3.78.22,4.9.65,1.12.43,2.01,1.2,2.68,2.29s1,2.31,1,3.64c0,1.71-.55,3.15-1.66,4.33-1.11,1.17-2.82,1.92-5.13,2.24.84.41,1.49.81,1.92,1.2.93.86,1.81,1.92,2.65,3.21l4.19,6.56h-4.01l-3.19-5.02c-.93-1.45-1.7-2.56-2.3-3.32s-1.14-1.3-1.62-1.61-.96-.52-1.46-.64c-.36-.08-.95-.12-1.78-.12h-3.7v10.71h-3.19ZM625.48,441.39h6.86c1.46,0,2.6-.15,3.42-.45.82-.3,1.45-.78,1.88-1.45s.64-1.38.64-2.16c0-1.14-.41-2.08-1.24-2.81-.83-.73-2.14-1.1-3.92-1.1h-7.63v7.98Z"/>
-    <path class="cls-3" d="M645.09,446.12c0-3.23.9-5.63,2.7-7.19,1.5-1.29,3.33-1.94,5.49-1.94,2.4,0,4.36.79,5.89,2.36,1.52,1.57,2.29,3.75,2.29,6.52,0,2.25-.34,4.02-1.01,5.31-.67,1.29-1.66,2.29-2.94,3-1.29.71-2.69,1.07-4.22,1.07-2.45,0-4.42-.78-5.93-2.35-1.51-1.57-2.26-3.83-2.26-6.78ZM648.13,446.12c0,2.24.49,3.91,1.46,5.02.98,1.11,2.2,1.67,3.68,1.67s2.69-.56,3.67-1.68c.98-1.12,1.46-2.82,1.46-5.12,0-2.16-.49-3.8-1.47-4.91-.98-1.11-2.2-1.67-3.66-1.67s-2.71.55-3.68,1.66c-.98,1.11-1.46,2.78-1.46,5.02Z"/>
-    <path class="cls-3" d="M663.82,446.12c0-3.23.9-5.63,2.7-7.19,1.5-1.29,3.33-1.94,5.49-1.94,2.4,0,4.36.79,5.89,2.36,1.52,1.57,2.29,3.75,2.29,6.52,0,2.25-.34,4.02-1.01,5.31-.67,1.29-1.66,2.29-2.94,3-1.29.71-2.69,1.07-4.22,1.07-2.45,0-4.42-.78-5.93-2.35-1.51-1.57-2.26-3.83-2.26-6.78ZM666.86,446.12c0,2.24.49,3.91,1.46,5.02.98,1.11,2.2,1.67,3.68,1.67s2.69-.56,3.67-1.68c.98-1.12,1.46-2.82,1.46-5.12,0-2.16-.49-3.8-1.47-4.91-.98-1.11-2.2-1.67-3.66-1.67s-2.71.55-3.68,1.66c-.98,1.11-1.46,2.78-1.46,5.02Z"/>
-    <path class="cls-3" d="M683.66,454.86v-17.47h2.65v2.45c.55-.86,1.28-1.54,2.19-2.06.91-.52,1.95-.78,3.11-.78,1.29,0,2.35.27,3.18.81.83.54,1.41,1.29,1.75,2.25,1.38-2.04,3.18-3.06,5.4-3.06,1.73,0,3.06.48,4,1.44s1.4,2.44,1.4,4.43v11.99h-2.94v-11c0-1.18-.1-2.04-.29-2.56-.19-.52-.54-.94-1.04-1.26-.5-.32-1.1-.48-1.78-.48-1.23,0-2.25.41-3.06,1.23-.81.82-1.22,2.12-1.22,3.92v10.15h-2.96v-11.35c0-1.32-.24-2.3-.72-2.96-.48-.66-1.27-.99-2.37-.99-.83,0-1.6.22-2.31.66-.71.44-1.22,1.08-1.54,1.92-.32.84-.48,2.06-.48,3.65v9.06h-2.96Z"/>
-    <path class="cls-3" d="M532.13,518.49c.17.17.24.3.24.37,0,.1-.1.17-.37.17h-13.41c-1.62,1.45-3.4,2.9-5.36,4.28h12.16l1.38-1.85,2.22,2.09c.17.13.24.27.24.34,0,.1-.13.17-.4.17h-11.15l-1.55,4.04h7.78l1.15-1.31,2.09,1.72c.13.1.17.17.17.27,0,.07-.07.17-.24.24l-1.25.57c-.77,6.37-1.65,8.15-5.22,9.13-.03.03-.07.03-.07.03-.1,0-.2-.1-.27-.37-.27-1.04-.84-1.55-4.25-2.76l.13-.5c2.26.61,3.77.91,4.75.91,1.62,0,2.02-.74,2.49-2.32.4-1.28.67-2.73.88-4.85h-7.95l-.74.78c-.1.1-.17.17-.27.17s-.2-.07-.37-.17l-1.68-1.31,1.45-.94,1.21-3.3h-3.71c-3.5,2.43-7.31,4.65-11.12,6.33l-.17-.4c6.1-3.37,11.42-7.14,15.63-10.95h-12.67c-.71,0-1.72.13-2.26.34l-.94-1.21c.81.07,1.68.13,2.46.13h10.21v-5.05h-6.23c-.67,0-1.65.13-2.16.34l-.91-1.21c.77.07,1.62.13,2.36.13h6.94v-2.29c0-1.31-.03-2.12-.1-3.3l2.39,1.04c.2.1.34.17.34.24,0,.1-.1.2-.27.34l-.84.71v3.27h3.37l1.35-1.72,1.99,1.99c.17.17.27.27.27.37,0,.07-.13.1-.37.1h-6.6v5.05h2.49c3.64-3.37,6.2-6.23,8.49-9.64l1.95,1.55c.1.07.13.13.13.17,0,.07-.07.13-.27.17-.54.1-.98.37-1.31.74-2.02,2.26-4.31,4.62-6.94,7.01h8.93l1.55-2.02,2.22,2.22Z"/>
-    <path class="cls-3" d="M545.94,529.81c-4.48,4.38-5.73,5.79-6.4,6.94-.17.3-.27.4-.37.4s-.17-.07-.3-.24l-1.38-1.75c1.21-.74,1.62-1.35,1.62-2.29v-12.9l-2.49.17c-.54.03-.88.07-1.28.2l-.94-.98c.71.07,1.11.1,1.58.07l2.83-.17,1.15-1.52,2.09,1.68c.17.13.27.24.27.3,0,.1-.1.2-.3.34l-1.38.91v12.26l5.05-3.84.27.4ZM537.86,508.96c3.67,1.85,4.65,3.6,4.65,4.55s-.67,1.72-1.31,1.72c-.34,0-.54-.24-.74-1.52-.13-.78-.91-2.73-2.76-4.38l.17-.37ZM556.32,530.76l-6.44,2.53c-3.84,1.52-4.25,1.79-4.62,2.19-.1.1-.17.17-.24.17-.1,0-.2-.1-.37-.3l-1.21-1.48,5.63-1.58v-9.77h-1.95c-1.25,0-1.75.03-2.32.17l-.84-.98c.88.07,1.31.1,2.43.1h5.76l1.18-1.55,1.82,1.82c.13.13.2.24.2.3,0,.1-.1.13-.34.13h-4.38v9.33l5.56-1.55.13.47ZM565.55,515.63c.3.27.44.4.44.54,0,.1-.17.13-.54.13h-8.39c0,13.71,2.96,16.81,4.41,18.29.47.5.84.77,1.11.77.3,0,.54-.3.71-1.04l1.04-4.31.47.1c-.27,1.85-.4,3.27-.4,4.35,0,1.35.2,2.16.47,2.53.4.47.57.77.57.98s-.2.4-.47.4c-.44,0-1.52-.3-2.32-.81-6.74-4.41-6.87-13.07-7.04-21.26h-8.49c-1.01,0-1.65.1-2.22.3l-1.04-1.14c.81.07,1.75.1,2.53.1h9.23c-.03-2.12-.07-4.78-.1-8.22l2.63,1.35c.2.1.34.2.34.3,0,.07-.1.17-.27.27l-.94.67c-.1,1.75-.17,3.91-.2,5.63h5.19l1.38-1.68,1.92,1.75ZM559.55,509.56c2.63.71,3.6,1.55,3.6,2.49,0,.81-.64,1.52-.94,1.52s-.44-.1-.64-.88c-.17-.64-.67-1.62-2.12-2.86l.1-.27Z"/>
-    <path class="cls-3" d="M586.1,517.14c.24.24.34.4.34.54s-.2.2-.61.2h-5.36c-.94,1.11-1.92,2.19-2.9,3.23h3.64l.91-.84,1.45,1.11c.2.13.3.27.3.37,0,.17-.2.3-.64.47-1.01.37-2.39,1.35-4.21,3.1.34.17.47.3.47.4,0,.13-.1.17-.84.61v2.06c2.26-.4,4.38-.81,6.37-1.18l.13.51-6.5,1.65v6.03c0,1.04-.44,1.68-2.19,2.66-.07.03-.13.07-.2.07-.1,0-.2-.1-.24-.34-.24-1.01-1.08-1.62-3.64-2.29l.1-.5c1.82.44,2.93.64,3.64.64.88,0,1.04-.34,1.04-.91v-4.99l-2.59.64c-2.19.54-3.07.88-3.71,1.52l-1.38-1.99c2.66-.4,5.22-.84,7.68-1.25v-1.08c0-1.31-.03-2.12-.1-3.3l1.55.84,2.66-3.33h-4.38c-2.53,2.53-5.32,4.85-8.39,6.77l-.2-.44c2.66-2.06,4.99-4.18,7.08-6.33h-2.02c-.51,0-1.04.07-1.55.24l-1.11-1.01c.88.07,1.38.1,2.02.1h3.3c1.01-1.08,1.92-2.16,2.8-3.23h-7.01c-.67,0-1.65.13-2.16.34l-.91-1.21c.77.07,1.62.13,2.36.13h4.89v-4.21h-2.46c-.67,0-1.65.13-2.16.34l-.91-1.21c.77.07,1.62.13,2.36.13h3.17v-2.19c0-1.31-.03-2.12-.1-3.3l2.19,1.08c.24.13.37.24.37.34,0,.13-.07.2-.94.77v3.3h1.58l1.04-1.21,1.21,1.21c.3.3.44.47.44.57,0,.13-.2.17-.61.17h-3.67v4.21h1.89c1.79-2.29,3.34-4.62,4.72-7.01l1.45,1.01c.3.2.44.37.44.47,0,.13-.13.24-.4.3-.57.17-.71.27-1.04.74-1.08,1.52-2.22,3.03-3.44,4.48h2.66l1.01-1.31,1.31,1.31ZM595.63,515.33c-.74,6.03-1.75,11.59-3.6,14.59,2.39,3.37,4.58,4.75,7.75,5.9l-.03.44c-.44-.03-.81-.03-1.11-.03-1.21,0-1.52.2-1.95.77-.07.07-.13.13-.2.13-.2,0-3.34-2.63-5.42-5.86-2.56,3.13-6.4,5.63-11.79,7.58l-.13-.44c5.49-2.76,9.06-5.36,11.15-8.46-1.35-2.63-2.22-6.87-2.53-11.19-.98,2.36-1.72,3.74-2.73,5.53l-.37-.24c3.34-8.46,4.58-12.7,5.42-17.28l2.43,1.58c.13.1.2.17.2.24,0,.1-.13.2-.44.3-.71.24-.84.37-1.11,1.08-.67,1.82-1.21,3.34-1.72,4.62h6.54l1.35-1.62,1.68,1.62c.27.24.4.44.4.54,0,.13-.2.2-.54.2h-3.23ZM589.13,515.33c-.34.91-.64,1.72-.94,2.43.44,4.41,1.75,8.52,2.93,10.75,1.72-3.33,2.26-7.51,2.8-13.17h-4.78Z"/>
-    <path class="cls-3" d="M632.19,536.89c.13.13.2.24.2.3,0,.1-.1.17-.3.17h-26.38c-.71,0-1.72.13-2.26.34l-.94-1.21c.81.07,1.68.13,2.46.13h12.06v-5.49h-7.24c-.67,0-1.65.13-2.16.34l-.91-1.21c.77.07,1.62.13,2.36.13h7.95v-1.99c0-1.31-.03-2.16-.1-3.34l2.39,1.28c.2.1.27.2.27.27,0,.1-.07.17-.24.27l-.81.47v3.03h6.23l1.38-1.85,2.12,2.05c.2.2.27.3.27.4s-.1.13-.37.13h-9.64v5.49h9.7l1.42-2.02,2.53,2.29ZM632.35,513.51c.1.1.13.2.13.27,0,.13-.1.24-.37.27-1.31.13-2.12.47-3.64,2.09l-.4-.3,1.31-2.43h-22.51c-.27,2.7-1.28,4.35-2.8,4.35-.71,0-1.11-.44-1.11-.81,0-.4.34-.84,1.01-1.31,1.04-.74,1.89-1.75,2.43-4.45h.51c.03.54.03,1.01,0,1.48h22.2l1.08-1.25,2.16,2.09ZM621.88,519.97c4.55,1.75,7.45,3.88,7.45,5.59,0,.71-.44,1.21-.77,1.21-.4,0-.74-.3-.98-.78-.24-.51-.61-1.04-1.11-1.65l-13.51.84c-2.49.17-3.98.47-4.25.61-.2.1-.34.13-.44.13-.13,0-.2-.07-.3-.24l-1.08-1.79c1.25-.03,2.53-.34,3.1-.74,1.89-1.38,3.67-3.2,5.09-5.05h-5.39c-.67,0-1.65.13-2.16.34l-.91-1.21c.77.07,1.62.13,2.36.13h16.17l1.45-1.89,1.99,2.09c.17.17.24.3.24.4s-.1.13-.37.13h-10.95c-2.59,2.33-5.05,4.28-7.45,5.9l15.87-.27c-1.01-1.11-2.43-2.26-4.28-3.4l.24-.37ZM614.94,507.81c3.44,1.15,4.35,2.02,4.35,3.07,0,.88-.67,1.72-1.08,1.72-.54,0-.74-.13-.94-.94-.24-.91-1.01-2.26-2.53-3.5l.2-.34Z"/>
+    <g>
+      <rect class="cls-4" x="283.8" y="160.8" width="46.5" height="249"/>
+      <line class="cls-4" x1="283.8" y1="392.4" x2="330.2" y2="392.4"/>
+      <line class="cls-4" x1="283.8" y1="373.2" x2="330.2" y2="373.2"/>
+      <line class="cls-4" x1="283.8" y1="354" x2="330.2" y2="354"/>
+      <line class="cls-4" x1="283.8" y1="334.8" x2="330.2" y2="334.8"/>
+      <line class="cls-4" x1="283.8" y1="315.6" x2="330.2" y2="315.6"/>
+      <line class="cls-4" x1="283.8" y1="296.4" x2="330.2" y2="296.4"/>
+      <line class="cls-4" x1="283.8" y1="277.2" x2="330.2" y2="277.2"/>
+      <line class="cls-4" x1="283.8" y1="258" x2="330.2" y2="258"/>
+      <line class="cls-4" x1="283.8" y1="238.8" x2="330.2" y2="238.8"/>
+      <line class="cls-4" x1="283.8" y1="219.6" x2="330.2" y2="219.6"/>
+      <line class="cls-4" x1="283.8" y1="200.4" x2="330.2" y2="200.4"/>
+      <line class="cls-4" x1="283.8" y1="181.2" x2="330.2" y2="181.2"/>
+    </g>
+    <polyline class="cls-5" points="312.6 211 307 200.4 307 409.8"/>
+    <polyline class="cls-5" points="301.4 211 307 200.4 307 409.8"/>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-4" x="372.6" y="366.1" width="111.6" height="46.5"/>
+      <line class="cls-4" x1="476.4" y1="412.6" x2="476.4" y2="366.1"/>
+      <line class="cls-4" x1="467.8" y1="412.6" x2="467.8" y2="366.1"/>
+      <line class="cls-4" x1="459.2" y1="412.6" x2="459.2" y2="366.1"/>
+      <line class="cls-4" x1="450.6" y1="412.6" x2="450.6" y2="366.1"/>
+      <line class="cls-4" x1="442" y1="412.6" x2="442" y2="366.1"/>
+      <line class="cls-4" x1="433.4" y1="412.6" x2="433.4" y2="366.1"/>
+      <line class="cls-4" x1="424.8" y1="412.6" x2="424.8" y2="366.1"/>
+      <line class="cls-4" x1="416.2" y1="412.6" x2="416.2" y2="366.1"/>
+      <line class="cls-4" x1="407.5" y1="412.6" x2="407.5" y2="366.1"/>
+      <line class="cls-4" x1="399" y1="412.6" x2="399" y2="366.1"/>
+      <line class="cls-4" x1="390.3" y1="412.6" x2="390.3" y2="366.1"/>
+      <line class="cls-4" x1="381.7" y1="412.6" x2="381.7" y2="366.1"/>
+    </g>
+    <polyline class="cls-5" points="395.1 383.7 390.3 389.3 484.2 389.3"/>
+    <polyline class="cls-5" points="395.1 394.9 390.3 389.3 484.2 389.3"/>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-4" x="673" y="366.1" width="111.6" height="46.5"/>
+      <line class="cls-4" x1="680.9" y1="366.1" x2="680.9" y2="412.6"/>
+      <line class="cls-4" x1="689.4" y1="366.1" x2="689.4" y2="412.6"/>
+      <line class="cls-4" x1="698.1" y1="366.1" x2="698.1" y2="412.6"/>
+      <line class="cls-4" x1="706.7" y1="366.1" x2="706.7" y2="412.6"/>
+      <line class="cls-4" x1="715.3" y1="366.1" x2="715.3" y2="412.6"/>
+      <line class="cls-4" x1="723.9" y1="366.1" x2="723.9" y2="412.6"/>
+      <line class="cls-4" x1="732.5" y1="366.1" x2="732.5" y2="412.6"/>
+      <line class="cls-4" x1="741.1" y1="366.1" x2="741.1" y2="412.6"/>
+      <line class="cls-4" x1="749.7" y1="366.1" x2="749.7" y2="412.6"/>
+      <line class="cls-4" x1="758.3" y1="366.1" x2="758.3" y2="412.6"/>
+      <line class="cls-4" x1="766.9" y1="366.1" x2="766.9" y2="412.6"/>
+      <line class="cls-4" x1="775.5" y1="366.1" x2="775.5" y2="412.6"/>
+    </g>
+    <polyline class="cls-5" points="673 389.3 766.9 389.3 762.1 383.7"/>
+    <polyline class="cls-5" points="673 389.3 766.9 389.3 762.1 394.9"/>
+  </g>
+  <rect class="cls-1" x="343.4" y="46" width="474" height="307"/>
+  <rect class="cls-3" x="505.6" y="362.3" width="146.8" height="95.1"/>
+  <g>
+    <path class="cls-2" d="M437,172.5v-24h17.4v2.8h-14.2v7.4h13.3v2.8h-13.3v8.2h14.7v2.8h-17.9Z"/>
+    <path class="cls-2" d="M456.9,172.5l6.4-9-5.9-8.4h3.7l2.7,4.1c.5.8.9,1.4,1.2,1.9.5-.7.9-1.4,1.3-1.9l2.9-4.1h3.5l-6,8.2,6.5,9.2h-3.6l-3.6-5.4-.9-1.5-4.6,6.9h-3.6Z"/>
+    <path class="cls-2" d="M487,170.4c-1.1.9-2.1,1.6-3.2,2-1,.4-2.1.6-3.3.6-1.9,0-3.4-.5-4.4-1.4-1-.9-1.5-2.1-1.5-3.6s.2-1.6.6-2.3c.4-.7.9-1.3,1.5-1.7s1.3-.7,2.1-1c.6-.2,1.5-.3,2.6-.4,2.4-.3,4.1-.6,5.3-1,0-.4,0-.7,0-.8,0-1.2-.3-2-.8-2.5-.8-.7-1.9-1-3.4-1s-2.4.2-3.1.7c-.7.5-1.1,1.3-1.5,2.6l-2.9-.4c.3-1.2.7-2.2,1.3-3,.6-.8,1.5-1.3,2.6-1.8s2.5-.6,3.9-.6,2.7.2,3.6.5,1.6.8,2,1.3c.4.5.7,1.2.9,2,0,.5.1,1.4.1,2.7v3.9c0,2.7,0,4.5.2,5.2s.4,1.4.7,2.1h-3.1c-.3-.6-.5-1.3-.6-2.1ZM486.8,163.8c-1.1.4-2.7.8-4.8,1.1-1.2.2-2.1.4-2.6.6-.5.2-.9.5-1.2,1-.3.4-.4.9-.4,1.4,0,.8.3,1.4.9,2,.6.5,1.5.8,2.6.8s2.1-.2,3-.7c.9-.5,1.5-1.2,1.9-2,.3-.7.5-1.6.5-2.9v-1.1Z"/>
+    <path class="cls-2" d="M494.3,172.5v-17.4h2.6v2.4c.5-.9,1.3-1.5,2.2-2.1s1.9-.8,3.1-.8,2.3.3,3.2.8c.8.5,1.4,1.3,1.7,2.2,1.4-2,3.2-3,5.4-3s3.1.5,4,1.4c.9,1,1.4,2.4,1.4,4.4v11.9h-2.9v-11c0-1.2,0-2-.3-2.5-.2-.5-.5-.9-1-1.3-.5-.3-1.1-.5-1.8-.5-1.2,0-2.2.4-3,1.2-.8.8-1.2,2.1-1.2,3.9v10.1h-2.9v-11.3c0-1.3-.2-2.3-.7-2.9s-1.3-1-2.4-1-1.6.2-2.3.7c-.7.4-1.2,1.1-1.5,1.9-.3.8-.5,2.1-.5,3.6v9h-2.9Z"/>
+    <path class="cls-2" d="M522.3,151.9v-3.4h2.9v3.4h-2.9ZM522.3,172.5v-17.4h2.9v17.4h-2.9Z"/>
+    <path class="cls-2" d="M529.7,172.5v-17.4h2.7v2.5c1.3-1.9,3.1-2.9,5.5-2.9s2,.2,2.9.6c.9.4,1.5.9,2,1.5.4.6.7,1.3.9,2.2.1.5.2,1.5.2,2.9v10.7h-2.9v-10.6c0-1.2-.1-2.1-.3-2.7s-.6-1.1-1.2-1.4c-.6-.4-1.3-.5-2.1-.5-1.3,0-2.3.4-3.3,1.2-.9.8-1.4,2.3-1.4,4.5v9.5h-2.9Z"/>
+    <path class="cls-2" d="M559.7,170.4c-1.1.9-2.1,1.6-3.2,2-1,.4-2.1.6-3.3.6-1.9,0-3.4-.5-4.4-1.4-1-.9-1.5-2.1-1.5-3.6s.2-1.6.6-2.3c.4-.7.9-1.3,1.5-1.7s1.3-.7,2.1-1c.6-.2,1.5-.3,2.6-.4,2.4-.3,4.1-.6,5.3-1,0-.4,0-.7,0-.8,0-1.2-.3-2-.8-2.5-.8-.7-1.9-1-3.4-1s-2.4.2-3.1.7c-.7.5-1.1,1.3-1.5,2.6l-2.9-.4c.3-1.2.7-2.2,1.3-3,.6-.8,1.5-1.3,2.6-1.8s2.5-.6,3.9-.6,2.7.2,3.6.5,1.6.8,2,1.3c.4.5.7,1.2.9,2,0,.5.1,1.4.1,2.7v3.9c0,2.7,0,4.5.2,5.2s.4,1.4.7,2.1h-3.1c-.3-.6-.5-1.3-.6-2.1ZM559.5,163.8c-1.1.4-2.7.8-4.8,1.1-1.2.2-2.1.4-2.6.6-.5.2-.9.5-1.2,1-.3.4-.4.9-.4,1.4,0,.8.3,1.4.9,2,.6.5,1.5.8,2.6.8s2.1-.2,3-.7c.9-.5,1.5-1.2,1.9-2,.3-.7.5-1.6.5-2.9v-1.1Z"/>
+    <path class="cls-2" d="M573.5,169.9l.4,2.6c-.8.2-1.6.3-2.2.3-1.1,0-1.9-.2-2.5-.5-.6-.3-1-.8-1.2-1.3-.2-.6-.4-1.7-.4-3.5v-10h-2.2v-2.3h2.2v-4.3l2.9-1.8v6.1h3v2.3h-3v10.2c0,.8,0,1.4.2,1.6.1.2.3.4.5.6s.6.2,1,.2.8,0,1.3-.1Z"/>
+    <path class="cls-2" d="M576.4,151.9v-3.4h2.9v3.4h-2.9ZM576.4,172.5v-17.4h2.9v17.4h-2.9Z"/>
+    <path class="cls-2" d="M582.7,163.8c0-3.2.9-5.6,2.7-7.2,1.5-1.3,3.3-1.9,5.5-1.9s4.3.8,5.9,2.4,2.3,3.7,2.3,6.5-.3,4-1,5.3c-.7,1.3-1.6,2.3-2.9,3-1.3.7-2.7,1.1-4.2,1.1-2.4,0-4.4-.8-5.9-2.3s-2.3-3.8-2.3-6.7ZM585.7,163.8c0,2.2.5,3.9,1.5,5,1,1.1,2.2,1.7,3.7,1.7s2.7-.6,3.7-1.7c1-1.1,1.5-2.8,1.5-5.1s-.5-3.8-1.5-4.9c-1-1.1-2.2-1.7-3.6-1.7s-2.7.6-3.7,1.7c-1,1.1-1.5,2.8-1.5,5Z"/>
+    <path class="cls-2" d="M602.5,172.5v-17.4h2.7v2.5c1.3-1.9,3.1-2.9,5.5-2.9s2,.2,2.9.6c.9.4,1.5.9,2,1.5.4.6.7,1.3.9,2.2.1.5.2,1.5.2,2.9v10.7h-2.9v-10.6c0-1.2-.1-2.1-.3-2.7s-.6-1.1-1.2-1.4c-.6-.4-1.3-.5-2.1-.5-1.3,0-2.3.4-3.3,1.2-.9.8-1.4,2.3-1.4,4.5v9.5h-2.9Z"/>
+    <path class="cls-2" d="M630.9,172.5v-24h10.6c2.1,0,3.8.2,4.9.6,1.1.4,2,1.2,2.7,2.3.7,1.1,1,2.3,1,3.6s-.6,3.1-1.7,4.3-2.8,1.9-5.1,2.2c.8.4,1.5.8,1.9,1.2.9.9,1.8,1.9,2.6,3.2l4.2,6.5h-4l-3.2-5c-.9-1.4-1.7-2.5-2.3-3.3-.6-.8-1.1-1.3-1.6-1.6-.5-.3-1-.5-1.4-.6-.4,0-.9-.1-1.8-.1h-3.7v10.7h-3.2ZM634,159.1h6.8c1.5,0,2.6-.1,3.4-.5.8-.3,1.4-.8,1.9-1.4.4-.7.6-1.4.6-2.2,0-1.1-.4-2.1-1.2-2.8s-2.1-1.1-3.9-1.1h-7.6v7.9Z"/>
+    <path class="cls-2" d="M653.6,163.8c0-3.2.9-5.6,2.7-7.2,1.5-1.3,3.3-1.9,5.5-1.9s4.3.8,5.9,2.4,2.3,3.7,2.3,6.5-.3,4-1,5.3c-.7,1.3-1.6,2.3-2.9,3-1.3.7-2.7,1.1-4.2,1.1-2.4,0-4.4-.8-5.9-2.3s-2.3-3.8-2.3-6.7ZM656.6,163.8c0,2.2.5,3.9,1.5,5,1,1.1,2.2,1.7,3.7,1.7s2.7-.6,3.7-1.7c1-1.1,1.5-2.8,1.5-5.1s-.5-3.8-1.5-4.9c-1-1.1-2.2-1.7-3.6-1.7s-2.7.6-3.7,1.7c-1,1.1-1.5,2.8-1.5,5Z"/>
+    <path class="cls-2" d="M672.2,163.8c0-3.2.9-5.6,2.7-7.2,1.5-1.3,3.3-1.9,5.5-1.9s4.3.8,5.9,2.4,2.3,3.7,2.3,6.5-.3,4-1,5.3c-.7,1.3-1.6,2.3-2.9,3-1.3.7-2.7,1.1-4.2,1.1-2.4,0-4.4-.8-5.9-2.3-1.5-1.6-2.3-3.8-2.3-6.7ZM675.2,163.8c0,2.2.5,3.9,1.5,5,1,1.1,2.2,1.7,3.7,1.7s2.7-.6,3.7-1.7c1-1.1,1.5-2.8,1.5-5.1s-.5-3.8-1.5-4.9c-1-1.1-2.2-1.7-3.6-1.7s-2.7.6-3.7,1.7c-1,1.1-1.5,2.8-1.5,5Z"/>
+    <path class="cls-2" d="M692,172.5v-17.4h2.6v2.4c.5-.9,1.3-1.5,2.2-2.1.9-.5,1.9-.8,3.1-.8s2.3.3,3.2.8,1.4,1.3,1.7,2.2c1.4-2,3.2-3,5.4-3s3.1.5,4,1.4c.9,1,1.4,2.4,1.4,4.4v11.9h-2.9v-11c0-1.2,0-2-.3-2.5-.2-.5-.5-.9-1-1.3-.5-.3-1.1-.5-1.8-.5-1.2,0-2.2.4-3,1.2-.8.8-1.2,2.1-1.2,3.9v10.1h-2.9v-11.3c0-1.3-.2-2.3-.7-2.9s-1.3-1-2.4-1-1.6.2-2.3.7c-.7.4-1.2,1.1-1.5,1.9-.3.8-.5,2.1-.5,3.6v9h-2.9Z"/>
+    <path class="cls-2" d="M541.1,235.9c.2.2.2.3.2.4,0,.1-.1.2-.4.2h-13.3c-1.6,1.4-3.4,2.9-5.3,4.3h12.1l1.4-1.8,2.2,2.1c.2.1.2.3.2.3,0,.1-.1.2-.4.2h-11.1l-1.5,4h7.7l1.1-1.3,2.1,1.7c.1.1.2.2.2.3s0,.2-.2.2l-1.2.6c-.8,6.3-1.6,8.1-5.2,9.1,0,0,0,0,0,0-.1,0-.2-.1-.3-.4-.3-1-.8-1.5-4.2-2.8v-.5c2.4.6,3.9.9,4.9.9,1.6,0,2-.7,2.5-2.3.4-1.3.7-2.7.9-4.8h-7.9l-.7.8c-.1.1-.2.2-.3.2s-.2,0-.4-.2l-1.7-1.3,1.4-.9,1.2-3.3h-3.7c-3.5,2.4-7.3,4.6-11.1,6.3l-.2-.4c6.1-3.4,11.4-7.1,15.6-10.9h-12.6c-.7,0-1.7.1-2.2.3l-.9-1.2c.8,0,1.7.1,2.4.1h10.2v-5h-6.2c-.7,0-1.6.1-2.1.3l-.9-1.2c.8,0,1.6.1,2.3.1h6.9v-2.3c0-1.3,0-2.1-.1-3.3l2.4,1c.2.1.3.2.3.2,0,.1-.1.2-.3.3l-.8.7v3.3h3.4l1.3-1.7,2,2c.2.2.3.3.3.4s-.1.1-.4.1h-6.6v5h2.5c3.6-3.4,6.2-6.2,8.5-9.6l1.9,1.5c.1,0,.1.1.1.2,0,0,0,.1-.3.2-.5.1-1,.4-1.3.7-2,2.2-4.3,4.6-6.9,7h8.9l1.5-2,2.2,2.2Z"/>
+    <path class="cls-2" d="M554.8,247.1c-4.5,4.4-5.7,5.8-6.4,6.9-.2.3-.3.4-.4.4s-.2,0-.3-.2l-1.4-1.7c1.2-.7,1.6-1.3,1.6-2.3v-12.8l-2.5.2c-.5,0-.9,0-1.3.2l-.9-1c.7,0,1.1.1,1.6,0l2.8-.2,1.1-1.5,2.1,1.7c.2.1.3.2.3.3,0,.1-.1.2-.3.3l-1.4.9v12.2l5-3.8.3.4ZM546.8,226.4c3.7,1.8,4.6,3.6,4.6,4.5s-.7,1.7-1.3,1.7-.5-.2-.7-1.5c-.1-.8-.9-2.7-2.8-4.4l.2-.4ZM565.2,248.1l-6.4,2.5c-3.8,1.5-4.2,1.8-4.6,2.2-.1.1-.2.2-.2.2-.1,0-.2-.1-.4-.3l-1.2-1.5,5.6-1.6v-9.7h-1.9c-1.2,0-1.7,0-2.3.2l-.8-1c.9,0,1.3.1,2.4.1h5.7l1.2-1.5,1.8,1.8c.1.1.2.2.2.3,0,.1-.1.1-.3.1h-4.4v9.3l5.5-1.5v.5ZM574.3,233c.3.3.4.4.4.5s-.2.1-.5.1h-8.4c0,13.7,3,16.7,4.4,18.2.5.5.8.8,1.1.8s.5-.3.7-1l1-4.3h.5c-.3,1.9-.4,3.4-.4,4.4s.2,2.1.5,2.5c.4.5.6.8.6,1s-.2.4-.5.4c-.4,0-1.5-.3-2.3-.8-6.7-4.4-6.8-13-7-21.2h-8.5c-1,0-1.6.1-2.2.3l-1-1.1c.8,0,1.7.1,2.5.1h9.2c0-2.1,0-4.8-.1-8.2l2.6,1.3c.2.1.3.2.3.3s-.1.2-.3.3l-.9.7c-.1,1.7-.2,3.9-.2,5.6h5.2l1.4-1.7,1.9,1.7ZM568.4,227c2.6.7,3.6,1.5,3.6,2.5s-.6,1.5-.9,1.5-.4-.1-.6-.9c-.2-.6-.7-1.6-2.1-2.9v-.3Z"/>
+    <path class="cls-2" d="M594.8,234.5c.2.2.3.4.3.5s-.2.2-.6.2h-5.3c-.9,1.1-1.9,2.2-2.9,3.2h3.6l.9-.8,1.4,1.1c.2.1.3.3.3.4,0,.2-.2.3-.6.5-1,.4-2.4,1.3-4.2,3.1.3.2.5.3.5.4s-.1.2-.8.6v2c2.2-.4,4.4-.8,6.3-1.2v.5c.1,0-6.3,1.6-6.3,1.6v6c0,1-.4,1.7-2.2,2.6,0,0-.1,0-.2,0,0,0-.2-.1-.2-.3-.2-1-1.1-1.6-3.6-2.3v-.5c1.9.4,3,.6,3.7.6s1-.3,1-.9v-5l-2.6.6c-2.2.5-3.1.9-3.7,1.5l-1.4-2c2.6-.4,5.2-.8,7.6-1.2v-1.1c0-1.3,0-2.1-.1-3.3l1.5.8,2.7-3.3h-4.4c-2.5,2.5-5.3,4.8-8.4,6.7l-.2-.4c2.6-2,5-4.2,7-6.3h-2c-.5,0-1,0-1.5.2l-1.1-1c.9,0,1.4.1,2,.1h3.3c1-1.1,1.9-2.1,2.8-3.2h-7c-.7,0-1.6.1-2.1.3l-.9-1.2c.8,0,1.6.1,2.3.1h4.9v-4.2h-2.4c-.7,0-1.6.1-2.1.3l-.9-1.2c.8,0,1.6.1,2.3.1h3.2v-2.2c0-1.3,0-2.1-.1-3.3l2.2,1.1c.2.1.4.2.4.3s0,.2-.9.8v3.3h1.6l1-1.2,1.2,1.2c.3.3.4.5.4.6s-.2.2-.6.2h-3.7v4.2h1.9c1.8-2.3,3.3-4.6,4.7-7l1.4,1c.3.2.4.4.4.5s-.1.2-.4.3c-.6.2-.7.3-1,.7-1.1,1.5-2.2,3-3.4,4.5h2.6l1-1.3,1.3,1.3ZM604.3,232.7c-.7,6-1.7,11.5-3.6,14.5,2.4,3.4,4.6,4.7,7.7,5.9v.4c-.5,0-.8,0-1.1,0-1.2,0-1.5.2-1.9.8,0,0-.1.1-.2.1-.2,0-3.3-2.6-5.4-5.8-2.5,3.1-6.4,5.6-11.7,7.5v-.4c5.3-2.8,8.9-5.3,11-8.4-1.3-2.6-2.2-6.8-2.5-11.1-1,2.3-1.7,3.7-2.7,5.5l-.4-.2c3.3-8.4,4.6-12.6,5.4-17.2l2.4,1.6c.1.1.2.2.2.2,0,.1-.1.2-.4.3-.7.2-.8.4-1.1,1.1-.7,1.8-1.2,3.3-1.7,4.6h6.5l1.3-1.6,1.7,1.6c.3.2.4.4.4.5s-.2.2-.5.2h-3.2ZM597.8,232.7c-.3.9-.6,1.7-.9,2.4.4,4.4,1.7,8.5,2.9,10.7,1.7-3.3,2.2-7.5,2.8-13.1h-4.8Z"/>
+    <path class="cls-2" d="M640.7,254.2c.1.1.2.2.2.3,0,.1,0,.2-.3.2h-26.3c-.7,0-1.7.1-2.2.3l-.9-1.2c.8,0,1.7.1,2.4.1h12v-5.5h-7.2c-.7,0-1.6.1-2.1.3l-.9-1.2c.8,0,1.6.1,2.3.1h7.9v-2c0-1.3,0-2.1-.1-3.3l2.4,1.3c.2.1.3.2.3.3,0,.1,0,.2-.2.3l-.8.5v3h6.2l1.4-1.8,2.1,2c.2.2.3.3.3.4s-.1.1-.4.1h-9.6v5.5h9.7l1.4-2,2.5,2.3ZM640.9,230.9c.1.1.1.2.1.3,0,.1-.1.2-.4.3-1.3.1-2.1.5-3.6,2.1l-.4-.3,1.3-2.4h-22.4c-.3,2.7-1.3,4.3-2.8,4.3s-1.1-.4-1.1-.8.3-.8,1-1.3c1-.7,1.9-1.7,2.4-4.4h.5c0,.5,0,1,0,1.5h22.1l1.1-1.2,2.1,2.1ZM630.4,237.3c4.5,1.7,7.4,3.9,7.4,5.6s-.4,1.2-.8,1.2-.7-.3-1-.8c-.2-.5-.6-1-1.1-1.6l-13.4.8c-2.5.2-4,.5-4.2.6-.2.1-.3.1-.4.1s-.2,0-.3-.2l-1.1-1.8c1.2,0,2.5-.3,3.1-.7,1.9-1.4,3.7-3.2,5.1-5h-5.4c-.7,0-1.6.1-2.1.3l-.9-1.2c.8,0,1.6.1,2.3.1h16.1l1.4-1.9,2,2.1c.2.2.2.3.2.4s-.1.1-.4.1h-10.9c-2.6,2.3-5,4.3-7.4,5.9l15.8-.3c-1-1.1-2.4-2.2-4.3-3.4l.2-.4ZM623.5,225.2c3.4,1.1,4.3,2,4.3,3.1s-.7,1.7-1.1,1.7-.7-.1-.9-.9c-.2-.9-1-2.2-2.5-3.5l.2-.3Z"/>
+  </g>
+  <text class="cls-7" transform="translate(566.1 395.6)"><tspan x="0" y="0">3E</tspan></text>
+  <g>
+    <rect class="cls-1" x="317" y="522.5" width="26.4" height="52"/>
+    <circle class="cls-2" cx="330.3" cy="533.4" r="3.2"/>
+    <polygon class="cls-6" points="335.1 538.9 335.1 552.3 333.3 552.3 333.3 555.1 332.6 555.1 332.6 570.9 328.2 570.9 328.2 555.1 327.6 555.1 327.6 552.3 325.7 552.3 325.7 538.9 327.6 538.9 327.6 537.8 333.3 537.8 333.3 538.9 335.1 538.9"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="815.4" y="522.5" width="24.6" height="52"/>
+    <circle class="cls-2" cx="827.6" cy="533.4" r="3.2"/>
+    <polygon class="cls-6" points="837.3 552.2 837.3 555.1 829.8 555.1 829.8 570.9 825.4 570.9 825.4 555.1 817.9 555.1 817.9 552.2 820 552.2 822.9 549.3 822.9 538.9 824.7 538.9 824.7 537.8 830.5 537.8 830.5 538.9 832.3 538.9 832.3 549.2 835.2 552.2 837.3 552.2"/>
   </g>
 </svg>
