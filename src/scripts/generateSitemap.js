@@ -12,7 +12,11 @@ const baseUrl = "https://www.xmummap.com";
 const changeFrequency = "weekly";
 const priority = 0.8;
 
-const sourceFileNames = ["bell_avenue.json", "bell_suite.json"];
+const sourceFileNames = [
+  "bell_avenue.json",
+  "bell_suite.json",
+  "ly3.json",
+];
 const outputFileName = "sitemap.xml";
 const outputFilePath = path.join(
   process.cwd(),
