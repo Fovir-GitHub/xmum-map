@@ -13,12 +13,19 @@ import ImageSlide from "../ImageSlide/ImageSlide";
 import CircularProgress from "@mui/material/CircularProgress";
 
 /**
- * Detail page of stores in markdown format.
+ * @typedef {object} DetailPageProps
  *
- * @param {string} slug Slug of post.
- * @param {string} locale Current locale.
+ * @property {string} slug Slug of post.
+ * @property {string} locale Current locale.
  */
-export default function DetailPage({ slug, locale }) {
+
+/**
+ * Detail page of stores in markdown format.
+ */
+export default function DetailPage(
+  /** @type {DetailPageProps} */
+  { slug, locale },
+) {
   const [postHtml, setPostHtml] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);

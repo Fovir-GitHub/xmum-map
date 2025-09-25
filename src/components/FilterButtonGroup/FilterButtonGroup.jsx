@@ -13,14 +13,28 @@ import { toggleButtonGroupClasses } from "@mui/material/ToggleButtonGroup";
 import { styled } from "@mui/material/styles";
 import { isMobile } from "../../lib/isMobile";
 
-export default function FilterButtonGroup({
-  setAvenueData,
-  setSuiteData,
-  locale,
-  categories,
-  showCategories,
-  setShowCategories,
-}) {
+/**
+ * @typedef FilterButtonGroupProps
+ *
+ * @property {Function} setAvenueData Function used to change data of bell avenue.
+ * @property {Function} setSuiteData Function used to change data of bell suite.
+ * @property {string} locale Website locale from `useState()` function.
+ * @property {string[]} categories Array of all categories.
+ * @property {string[]} showCategories Categories that can be displayed.
+ * @property {Function} setShowCategories Function used to change which categories can be displayed.
+ */
+
+export default function FilterButtonGroup(
+  /** @type {FilterButtonGroupProps} */
+  {
+    setAvenueData,
+    setSuiteData,
+    locale,
+    categories,
+    showCategories,
+    setShowCategories,
+  },
+) {
   const handleFilterButtonChange = (_, clickedCategory) => {
     setShowCategories(clickedCategory);
   };
