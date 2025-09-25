@@ -17,13 +17,13 @@ import { usePathname } from "next/navigation";
 /**
  * @typedef {object} ToolZoneProps
  *
- * @property locale Locale from `useState()`.
- * @property setLocale Callback function used to set locale.
- * @property layer Layer variable from `useState()`.
- * @property setLayer Callback function used to set `layer`.
- * @property layerRange Number of layers, which will be passed to `LayerSwitcher` component.
- * @property transformRef Ref of map used to reset state of map.
- * @property [layerStart=0] Start number of layers or floors.
+ * @property {string} locale Locale from `useState()`.
+ * @property {Function} setLocale Callback function used to set locale.
+ * @property {number} layer Layer variable from `useState()`.
+ * @property {Function} setLayer Callback function used to set `layer`.
+ * @property {number} layerRange Number of layers, which will be passed to `LayerSwitcher` component.
+ * @property {import("react").Ref} transformRef Ref of map used to reset state of map.
+ * @property {number} [layerStart=0] Start number of layers or floors.
  */
 
 /**
