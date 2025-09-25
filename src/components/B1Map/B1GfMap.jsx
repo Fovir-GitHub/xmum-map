@@ -9,10 +9,9 @@
 
 /**
  * TODO:
- *  - Move `StoresArea` to a single lib function.
  *  - Add JSDoc.
  */
-import { StoresArea } from "../Ly3Map/Ly3SecondFloor";
+import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
  * Map of B1 ground floor.
