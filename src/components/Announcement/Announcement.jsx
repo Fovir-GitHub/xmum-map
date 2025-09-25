@@ -29,11 +29,11 @@ import DetailPage from "../DetailPage/DetailPage";
  * Component of displaying announcements on the top of web page.
  *
  * This component requires a slug to determine which markdown file is the content of announcement.
- *
- * @param {AnnouncementProps} props
  */
-export default function Announcement(props) {
-  const { locale, slug } = props;
+export default function Announcement(
+  /** @type {AnnouncementProps} */
+  { locale, slug },
+) {
   const [expanded, setExpanded] = useState(false);
 
   return (

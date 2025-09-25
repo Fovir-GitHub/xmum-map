@@ -23,12 +23,11 @@ import B1GfMap from "./B1GfMap";
 
 /**
  * Body section of B1 map.
- *
- * @param {B1BodySectionProps} props
  */
-export default function B1BodySection(props) {
-  const { locale, setLocale, b1Data } = props;
-
+export default function B1BodySection(
+  /** @type {B1BodySectionProps} */
+  { locale, setLocale, b1Data },
+) {
   const [layer, setLayer] = useState(0);
   const layerRange = 5;
   const transformRef = useRef(null);

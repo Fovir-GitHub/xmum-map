@@ -23,12 +23,11 @@ import { CssBaseline } from "@mui/material";
 
 /**
  * Wrapper of B1 map.
- *
- * @param {B1MapProps} props
  */
-export default function B1Map(props) {
-  const { b1Data } = props;
-
+export default function B1Map(
+  /** @type {B1MapProps} */
+  { b1Data },
+) {
   const [locale, setLocale] = useLocale();
 
   return (

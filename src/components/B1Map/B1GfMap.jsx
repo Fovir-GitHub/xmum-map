@@ -18,12 +18,11 @@ import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
  * Map of B1 ground floor.
- *
- * @param {B1GMapProps} props
  */
-export default function B1GfMap(props) {
-  const { storeData, locale, setSelectedPost } = props;
-
+export default function B1GfMap(
+  /** @type {B1GMapProps} */
+  { storeData, locale, setSelectedPost },
+) {
   return (
     <div>
       <img src="maps/B1_GF.svg" width={10000} height={10000} />

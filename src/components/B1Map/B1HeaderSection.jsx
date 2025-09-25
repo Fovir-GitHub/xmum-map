@@ -17,10 +17,10 @@ import Announcement from "../Announcement/Announcement";
  * Header section of B1 map.
  *
  * It includes an `Announcement` component.
- *
- * @param {B1HeaderSectionProps} props
  */
-export default function B1HeaderSection(props) {
-  const { locale } = props;
+export default function B1HeaderSection(
+  /** @type {B1HeaderSectionProps} */
+  { locale },
+) {
   return <Announcement slug={"b1-announcement"} locale={locale} />;
 }
