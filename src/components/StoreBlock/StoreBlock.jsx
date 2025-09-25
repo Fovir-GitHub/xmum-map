@@ -15,22 +15,42 @@ import xmumConfig, {
 } from "../../config";
 
 /**
- * @description Generate a store block.
+ * @typedef {object} storeBlockProps
+ *
+ * @property {number} x x-coordinate of the store block.
+ * @property {number} y y-coordinate of the store block.
+ * @property {string} fill Filled color.
+ * @property {number | string} width Width of the store block.
+ * @property {number | string} height Height of the store block.
+ * @property {string} stroke Color of stroke.
+ * @property {number} strokeWidth Width of stroke.
+ * @property {string} text Text displayed in the center of the store block.
+ * @property {import("react").ComponentType} icon Material icons displayed under `text`.
+ * @property {Function} handleClick Function to be called when the store block is clicked.
+ * @property {boolean} [showIcon=true] Determine whether to show the icon.
+ * @property {string} [fontSize=xmumConfig.storeBlock.style.fontSize] Font size of `text`. The default value can be set in the configuration file.
  */
-export default function StoreBlock({
-  x,
-  y,
-  fill,
-  width,
-  height,
-  stroke,
-  strokeWidth,
-  text,
-  icon,
-  handleClick,
-  showIcon = true,
-  fontSize = xmumConfig.storeBlock.style.fontSize,
-}) {
+
+/**
+ * Generate a store block.
+ */
+export default function StoreBlock(
+  /** @type {storeBlockProps} */
+  {
+    x,
+    y,
+    fill,
+    width,
+    height,
+    stroke,
+    strokeWidth,
+    text,
+    icon,
+    handleClick,
+    showIcon = true,
+    fontSize = xmumConfig.storeBlock.style.fontSize,
+  },
+) {
   return (
     <g onClick={handleClick} className={utilStyles.highlightOnHover}>
       <rect
@@ -72,9 +92,10 @@ export default function StoreBlock({
 }
 
 /**
- * @description Get the fill color by the category of the store.
+ * Get the fill color by the category of the store.
+ *
  * @param {string} category The category name.
- * @returns Color in #RRGGBBAA forms.
+ * @returns {string} Color in #RRGGBBAA forms.
  */
 export function getFillColor(category) {
   if (category in categoryInformation) {
@@ -85,9 +106,10 @@ export function getFillColor(category) {
 }
 
 /**
- * @description Get icon by store.Icon or store.Category
+ * Get icon by store.Icon or store.Category
+ *
  * @param {object} store The store object.
- * @returns A material UI icon component.
+ * @returns {import("react").ComponentType} A material UI icon component.
  */
 export function getStoreIcon(store) {
   // Use `store.Icon`.

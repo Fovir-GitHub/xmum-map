@@ -9,6 +9,7 @@ import DrawAMap from "../DrawAMap/DrawAMap";
 
 /**
  * @typedef {object} StoresAreaProps
+ *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
  * @property {number} limit Index limit.
@@ -17,18 +18,17 @@ import DrawAMap from "../DrawAMap/DrawAMap";
  * @property {number} width Width of a single store block.
  * @property {number} height Height of a single store block.
  * @property {string} fontSize Font size of the store block.
- * @property {(post: any) => void} setSelectedPost Function used to set selected post.
+ * @property {Function} setSelectedPost Function used to set selected post.
  * @property {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
  * @property {boolean} [rotate=false] Determine whether to rotate the row.
  */
 
 /**
  * Draw a row of stores.
- *
- * @param {StoresAreaProps} props
  */
-export function StoresArea(props) {
-  const {
+export function StoresArea(
+  /** @type {StoresAreaProps} */
+  {
     storeData,
     locale,
     limit,
@@ -40,8 +40,8 @@ export function StoresArea(props) {
     setSelectedPost,
     useRowIndex = false,
     rotate = false,
-  } = props;
-
+  },
+) {
   return (
     <div
       style={{
