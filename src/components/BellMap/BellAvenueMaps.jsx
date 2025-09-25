@@ -12,27 +12,34 @@ import xmumConfig from "../../config";
 import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringNailArt";
 
 /**
+ * @typedef {object} BellAvenueMapsProps
+ *
+ * @property {object[][]} storeData JSON data.
+ * @property {number} mapWidth Width of the map.
+ * @property {number} mapHeight Height of the map.
+ * @property {string} locale Locale from `useState()`.
+ * @property {string[]} showCategories An array to determine which stores can be displayed by their categories.
+ * @property {Function} setSelectedPost Function used to set selected post.
+ * @property {number} [currentFloor=0] The floor that users are on. By default, it is GF (0F).
+ */
+
+/**
  * Generate the map of bell avenue from the data file.
  *
  * Bell avenue map has two floors, which requires a `LayerSwitcher` component.
- *
- * @param {object[][]} storeData JSON data.
- * @param {number} mapWidth Width of the map.
- * @param {number} mapHeight Height of the map.
- * @param {string} locale Locale from `useState()`.
- * @param {string[]} showCategories An array to determine which stores can be displayed by their categories.
- * @param {Function} setSelectedPost Function used to set selected post.
- * @param {number} [currentFloor=0] The floor that users are on. By default, it is GF (0F).
  */
-export default function BellAvenueMaps({
-  storeData,
-  mapWidth,
-  mapHeight,
-  locale,
-  showCategories,
-  setSelectedPost,
-  currentFloor = 0,
-}) {
+export default function BellAvenueMaps(
+  /** @type {BellAvenueMapsProps} */
+  {
+    storeData,
+    mapWidth,
+    mapHeight,
+    locale,
+    showCategories,
+    setSelectedPost,
+    currentFloor = 0,
+  },
+) {
   // Size of the map.
   const WIDTH = mapWidth;
   const HEIGHT = mapHeight;
@@ -57,22 +64,23 @@ export default function BellAvenueMaps({
 }
 
 /**
- * Generate maps for each floor of bell avenue.
- * @param {number} svgWidth The width of SVG.
- * @param {number} svgHeight The height of SVG.
- * @param {object[]} stores Data of stores on every floor.
- * @param {string} locale Locale from `useState()`.
- * @param {boolean} showPatch Determine whether to display patch stores.
- * @param {Function} setSelectedPost Function used to set selected post.
+ * @typedef {object} BellAvenueFloorMapProps
+ *
+ * @property {number} svgWidth The width of SVG.
+ * @property {number} svgHeight The height of SVG.
+ * @property {object[]} stores Data of stores on every floor.
+ * @property {string} locale Locale from `useState()`.
+ * @property {boolean} showPatch Determine whether to display patch stores.
+ * @property {Function} setSelectedPost Function used to set selected post.
  */
-function BellAvenueFloorMap({
-  svgWidth,
-  svgHeight,
-  stores,
-  locale,
-  showPatch,
-  setSelectedPost,
-}) {
+
+/**
+ * Generate maps for each floor of bell avenue.
+ */
+function BellAvenueFloorMap(
+  /** @type {BellAvenueMapsProps} */
+  { svgWidth, svgHeight, stores, locale, showPatch, setSelectedPost },
+) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const limit = 78; // Maximum number of stores.
 
