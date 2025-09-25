@@ -125,7 +125,21 @@ function Repository({ locale }) {
   );
 }
 
-function FooterLink({ children, href, isEmail }) {
+/**
+ * @typedef {object} FooterLinkProps
+ *
+ * @property {any} children Children elements.
+ * @property {string} href Links or refs.
+ * @property {boolean} isEmail Determine whether `href` is an email address. If it is, `href` will add a prefix `mailto:`.
+ */
+
+/**
+ * Component of displaying links.
+ */
+function FooterLink(
+  /** @type {FooterLinkProps} */
+  { children, href, isEmail },
+) {
   return (
     <>
       <Link
@@ -148,6 +162,9 @@ function FooterLink({ children, href, isEmail }) {
   );
 }
 
+/**
+ * Typography wrapper of the footer section.
+ */
 function FooterTypography({ children }) {
   return (
     <>
