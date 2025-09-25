@@ -1,10 +1,29 @@
+/**
+ * @file Ly3GFloor.jsx
+ * @description Map of LY3 G floor.
+ * @author Fovir
+ * @since 2025-09-25
+ */
+
 import xmumConfig from "../../config";
 import StoreBlock, {
   getFillColor,
   getStoreIcon,
 } from "../StoreBlock/StoreBlock";
 
-export default function Ly3GFloor({ locale, setSelectedPost }) {
+/**
+ * @typedef {object} Ly3GFloorProps
+ * @property {string} locale Current locale.
+ * @property {Function} setSelectedPost Function used to select post.
+ */
+
+/**
+ * Map of LY3 G floor.
+ *
+ * @param {Ly3GFloorProps} props
+ */
+export default function Ly3GFloor(props) {
+  const { locale, setSelectedPost } = props;
   const storeInformation = xmumConfig.map.ly3.gStoreInformation;
 
   return (
