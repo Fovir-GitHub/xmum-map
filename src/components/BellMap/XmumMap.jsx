@@ -733,13 +733,15 @@ const XmumSvg = (props) => (
           height={111}
         />
       </a>
-      <rect
-        className="cls-3"
-        x={1096.87}
-        y={439.5}
-        width={402}
-        height={234}
-      />
+      <a href="/b1" className={utilsStyle.highlightOnHover}>
+        <rect
+          className="cls-3"
+          x={1096.87}
+          y={439.5}
+          width={402}
+          height={234}
+        />
+      </a>
       <rect
         className="cls-3"
         x={1417.87}
@@ -939,9 +941,11 @@ const XmumSvg = (props) => (
         className="cls-7"
         transform="translate(1232.7 580.96) scale(1.25 1)"
       >
-        <tspan x={0} y={0}>
-          {"B1"}
-        </tspan>
+        <a href="/b1" className={utilsStyle.highlightOnHover}>
+          <tspan x={0} y={0}>
+            {"B1"}
+          </tspan>
+        </a>
       </text>
       <text className="cls-10" transform="translate(270.51 869.66)">
         <tspan x={0} y={0}>
