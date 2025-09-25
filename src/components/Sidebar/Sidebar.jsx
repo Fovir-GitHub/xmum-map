@@ -14,13 +14,26 @@ import { isMobile } from "../../lib/isMobile";
 import { clearHashTag } from "../../lib/routerOperation";
 import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 
-export default function Sidebar({
-  selectedPost,
-  setSelectedPost,
-  router,
-  pathname,
-  children,
-}) {
+/**
+ * @typedef {object} SidebarProps
+ *
+ * @property {{slug: string, locale: string}} selectedPost Information of selected post.
+ * @property {Function} setSelectedPost Function used to select post.
+ * @property {AppRouterInstance} router Router from `useRouter()` function.
+ * @property {string} pathname Path name from `usePathname()` hook function.
+ * @property {any} children Children elements.
+ */
+
+/**
+ * Sidebar used to display detail information of stores.
+ *
+ * When the device is desktop, it will be displayed in the left side.
+ * And if the device is mobile, it will be displayed in the bottom.
+ */
+export default function Sidebar(
+  /** @type {SidebarProps} */
+  { selectedPost, setSelectedPost, router, pathname, children },
+) {
   // Width of drawer.
   const DRAWER_WIDTH = "480px";
 
