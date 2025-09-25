@@ -18,7 +18,7 @@ import { isMobile } from "../../lib/isMobile";
  * @typedef {object} MapProps
  *
  * @property {any} children Children elements.
- * @property {import('react-zoom-pan-pinch').ReactZoomPanPinchRef} transformRef Ref of the map.
+ * @property {import("react").Ref} transformRef Ref of the map.
  */
 
 /**
