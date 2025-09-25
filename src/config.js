@@ -55,6 +55,13 @@ const xmumConfig = {
     height: 1000,
     bellAvenueWidth: 6000,
     bellSuiteWidth: 1400,
+    ly3: {
+      gStoreInformation: {
+        Name: "3E",
+        Category: "daily_necessity",
+        Slug: "3e",
+      },
+    },
   },
   seo: {
     description:
@@ -122,7 +129,7 @@ export default xmumConfig;
 
 // Category information which includes display name, color, and icon.
 const opacity = "E2";
-const iconSize = "large";
+const iconSize = "inherit";
 export const categoryInformation = {
   restaurant: {
     displayName: {

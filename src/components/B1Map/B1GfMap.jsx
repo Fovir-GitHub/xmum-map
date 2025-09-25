@@ -7,21 +7,23 @@
 
 "use client";
 
+import { StoresArea } from "../StoresArea/StoresArea";
+
 /**
- * TODO:
- *  - Move `StoresArea` to a single lib function.
- *  - Add JSDoc.
+ * @typedef {object[]} B1GMapProps
+ * @property {object[]} storeData Data of stores.
+ * @property {string} locale Current locale.
+ * @property {Function} setSelectedPost Function used to select posts.
  */
-import { StoresArea } from "../Ly3Map/Ly3SecondFloor";
 
 /**
  * Map of B1 ground floor.
+ *
+ * @param {B1GMapProps} props
  */
-export default function B1GfMap({
-  storeData,
-  locale,
-  setSelectedPost,
-}) {
+export default function B1GfMap(props) {
+  const { storeData, locale, setSelectedPost } = props;
+
   return (
     <div>
       <img src="maps/B1_GF.svg" width={10000} height={10000} />

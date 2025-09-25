@@ -58,11 +58,11 @@ export default function StoreBlock({
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            fontSize: fontSize,
           }}
         >
           <p
             style={{
-              fontSize: fontSize,
               textAlign: "center",
               wordBreak: "break-word",
               whiteSpace: "pre-line",
