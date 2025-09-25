@@ -9,7 +9,7 @@ import Announcement from "../Announcement/Announcement";
 import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 
 /**
- * @typedef {object} HeaderSectionProps
+ * @typedef {object} BellHeaderSectionProps
  * @property {string} locale Current locale.
  * @property {Function} setAvenueData Function used to change bell avenue data.
  * @property {Function} setSuiteData Function used to change bell suite data.
@@ -20,19 +20,18 @@ import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 
 /**
  * Header section of bell map.
- *
- * @param {HeaderSectionProps} props
  */
-export default function BellHeaderSection(props) {
-  const {
+export default function BellHeaderSection(
+  /** @type {BellHeaderSectionProps} */
+  {
     locale,
     setAvenueData,
     setSuiteData,
     categories,
     showCategories,
     setShowCategories,
-  } = props;
-
+  },
+) {
   return (
     <div
       style={{

@@ -18,7 +18,7 @@ import BellSuiteMap from "./BellSuiteMap";
 import Map from "../Map/Map";
 
 /**
- * @typedef {object} BodySectionProps
+ * @typedef {object} BellBodySectionProps
  * @property {string} locale Current locale.
  * @property {Function} setLocale Function used to set locale.
  * @property {object[][]} avenueData Data of bell avenue.
@@ -28,13 +28,11 @@ import Map from "../Map/Map";
 
 /**
  * Body section of bell map.
- *
- * @param {BodySectionProps} props
  */
-export default function BellBodySection(props) {
-  const { locale, setLocale, avenueData, suiteData, showCategories } =
-    props;
-
+export default function BellBodySection(
+  /** @type {BellBodySectionProps} */
+  { locale, setLocale, avenueData, suiteData, showCategories },
+) {
   // Width and height of map.
   const bellAvenueMapWidth = xmumConfig.map.bellAvenueWidth;
   const bellSuiteMapWidth = xmumConfig.map.bellSuiteWidth;
