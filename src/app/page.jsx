@@ -8,6 +8,9 @@
 import BellMap from "../components/BellMap/BellMap";
 import { readData } from "../lib/readData";
 
+/**
+ * Page of Bell and XMUM maps.
+ */
 export default function Page() {
   const bellAvenueData = readData("bell_avenue.json");
   const bellSuiteData = readData("bell_suite.json");

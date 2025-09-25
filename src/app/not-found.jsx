@@ -7,6 +7,12 @@
 
 import { redirect } from "next/navigation";
 
+/**
+ * Page of not-found.
+ *
+ * When users access to an invalid or non-exist page,
+ * redirect them to the home page.
+ */
 export default function NotFound() {
   redirect("/");
 }
