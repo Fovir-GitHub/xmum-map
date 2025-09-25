@@ -11,7 +11,19 @@ import { Box, Link, Typography } from "@mui/material";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import xmumConfig from "../../config";
 
-export default function Footer({ locale }) {
+/**
+ * @typedef {object} FooterProps
+ *
+ * @property {string} locale Website locale from `useState()` function.
+ */
+
+/**
+ * Footer component displayed in the bottom of web page.
+ */
+export default function Footer(
+  /** @type {FooterProps} */
+  { locale },
+) {
   return (
     <>
       <Box
@@ -42,6 +54,9 @@ export default function Footer({ locale }) {
   );
 }
 
+/**
+ * Display copyright information.
+ */
 function CopyRight() {
   return (
     <MyTypography>
@@ -53,6 +68,9 @@ function CopyRight() {
   );
 }
 
+/**
+ * Telephone information.
+ */
 function Telephone({ locale }) {
   return (
     <MyTypography>
@@ -62,6 +80,9 @@ function Telephone({ locale }) {
   );
 }
 
+/**
+ * Email information.
+ */
 function Email({ locale }) {
   return (
     <MyTypography>
@@ -73,6 +94,9 @@ function Email({ locale }) {
   );
 }
 
+/**
+ * Information of the last update time.
+ */
 function LastUpdateTime({ locale }) {
   return (
     <MyTypography>
@@ -82,6 +106,9 @@ function LastUpdateTime({ locale }) {
   );
 }
 
+/**
+ * Link of GitHub repository.
+ */
 function Repository({ locale }) {
   return (
     <MyTypography>
