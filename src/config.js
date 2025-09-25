@@ -129,7 +129,7 @@ export default xmumConfig;
 
 // Category information which includes display name, color, and icon.
 const opacity = "E2";
-const iconSize = "large";
+const iconSize = "inherit";
 export const categoryInformation = {
   restaurant: {
     displayName: {
