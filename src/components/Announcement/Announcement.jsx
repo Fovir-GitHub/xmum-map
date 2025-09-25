@@ -21,6 +21,7 @@ import DetailPage from "../DetailPage/DetailPage";
 
 /**
  * @typedef {object} AnnouncementProps
+ *
  * @property {string} locale Website locale from `useState()` function.
  * @property {string} slug Slug of announcement.
  */

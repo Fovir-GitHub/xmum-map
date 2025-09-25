@@ -11,6 +11,7 @@ import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
  * @typedef {object[]} B1GMapProps
+ *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
  * @property {Function} setSelectedPost Function used to select posts.

@@ -16,6 +16,7 @@ import B1GfMap from "./B1GfMap";
 
 /**
  * @typedef {object} B1BodySectionProps
+ *
  * @property {string} locale Current locale.
  * @property {Function} setLocale Function used to set `locale`.
  * @property {object[][]} b1Data Data of B1 stores.

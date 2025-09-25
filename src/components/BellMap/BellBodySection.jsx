@@ -19,6 +19,7 @@ import Map from "../Map/Map";
 
 /**
  * @typedef {object} BellBodySectionProps
+ *
  * @property {string} locale Current locale.
  * @property {Function} setLocale Function used to set locale.
  * @property {object[][]} avenueData Data of bell avenue.

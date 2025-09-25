@@ -10,6 +10,7 @@ import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
 
 /**
  * @typedef {object} BellHeaderSectionProps
+ *
  * @property {string} locale Current locale.
  * @property {Function} setAvenueData Function used to change bell avenue data.
  * @property {Function} setSuiteData Function used to change bell suite data.
