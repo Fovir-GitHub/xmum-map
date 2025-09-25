@@ -1,5 +1,5 @@
 /**
- * @file BodySection.jsx
+ * @file BellBodySection.jsx
  * @description Body section of bell map.
  * @author Fovir
  * @since 2025-09-21
@@ -31,7 +31,7 @@ import Map from "../Map/Map";
  *
  * @param {BodySectionProps} props
  */
-export default function BodySection(props) {
+export default function BellBodySection(props) {
   const { locale, setLocale, avenueData, suiteData, showCategories } =
     props;
 

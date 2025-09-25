@@ -1,5 +1,5 @@
 /**
- * @file HeaderSection.jsx
+ * @file BellHeaderSection.jsx
  * @description Header section of bell map.
  * @author Fovir
  * @since 2025-09-21
@@ -23,7 +23,7 @@ import FilterButtonGroup from "../FilterButtonGroup/FilterButtonGroup";
  *
  * @param {HeaderSectionProps} props
  */
-export default function HeaderSection(props) {
+export default function BellHeaderSection(props) {
   const {
     locale,
     setAvenueData,

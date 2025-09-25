@@ -13,9 +13,9 @@ import { theme } from "../../styles/materialUiTheme";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
 import { useLocale } from "../../hooks/useLocale";
-import HeaderSection from "./HeaderSection";
-import BodySection from "./BodySection";
 import { categoryInformation } from "../../config";
+import BellHeaderSection from "./BellHeaderSection";
+import BellBodySection from "./BellBodySection";
 
 /**
  * @typedef {object} BellMapProps
@@ -48,7 +48,7 @@ export default function BellMap(
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <HeaderSection
+      <BellHeaderSection
         locale={locale}
         setAvenueData={setAvenueData}
         setSuiteData={setSuiteData}
@@ -57,7 +57,7 @@ export default function BellMap(
         setShowCategories={setShowCategories}
       />
 
-      <BodySection
+      <BellBodySection
         locale={locale}
         setLocale={setLocale}
         avenueData={avenueData}
