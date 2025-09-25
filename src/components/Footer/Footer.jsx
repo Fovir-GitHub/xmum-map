@@ -59,12 +59,14 @@ export default function Footer(
  */
 function CopyRight() {
   return (
-    <MyTypography>
+    <FooterTypography>
       Copyright &copy; 2025 XMUM Map | Built by {""}
-      <MyLink href={xmumConfig.footer.links.oui}>Mr.Oui</MyLink>
+      <FooterLink href={xmumConfig.footer.links.oui}>Mr.Oui</FooterLink>
       {" & "}
-      <MyLink href={xmumConfig.footer.links.fovir}>Fovir</MyLink>
-    </MyTypography>
+      <FooterLink href={xmumConfig.footer.links.fovir}>
+        Fovir
+      </FooterLink>
+    </FooterTypography>
   );
 }
 
@@ -73,10 +75,10 @@ function CopyRight() {
  */
 function Telephone({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.tel[locale]}
       {xmumConfig.footer.tel.number}
-    </MyTypography>
+    </FooterTypography>
   );
 }
 
@@ -85,12 +87,12 @@ function Telephone({ locale }) {
  */
 function Email({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.email[locale]}
-      <MyLink href={xmumConfig.footer.email.address} isEmail={true}>
+      <FooterLink href={xmumConfig.footer.email.address} isEmail={true}>
         {xmumConfig.footer.email.address}
-      </MyLink>
-    </MyTypography>
+      </FooterLink>
+    </FooterTypography>
   );
 }
 
@@ -99,10 +101,10 @@ function Email({ locale }) {
  */
 function LastUpdateTime({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.lastUpdateTime[locale]}
       {xmumConfig.footer.lastUpdateTime.time}
-    </MyTypography>
+    </FooterTypography>
   );
 }
 
@@ -111,16 +113,19 @@ function LastUpdateTime({ locale }) {
  */
 function Repository({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.repository[locale]}
-      <MyLink href={xmumConfig.footer.repository.link} isEmail={false}>
+      <FooterLink
+        href={xmumConfig.footer.repository.link}
+        isEmail={false}
+      >
         GitHub
-      </MyLink>
-    </MyTypography>
+      </FooterLink>
+    </FooterTypography>
   );
 }
 
-function MyLink({ children, href, isEmail }) {
+function FooterLink({ children, href, isEmail }) {
   return (
     <>
       <Link
@@ -143,7 +148,7 @@ function MyLink({ children, href, isEmail }) {
   );
 }
 
-function MyTypography({ children }) {
+function FooterTypography({ children }) {
   return (
     <>
       <Typography
