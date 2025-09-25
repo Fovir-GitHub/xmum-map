@@ -10,21 +10,23 @@ import getToggleButtonGroupStyle from "../../styles/getToggleButtonGroupStyle";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 
 /**
+ * @typedef {object} LayerSwitcherProps
+ *
+ * @property layer The layer variable from `useState()`.
+ * @property setLayer Callback function used to set `layer`.
+ * @property layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
+ * @property [layerStart=0] Start number of layers or floors.
+ */
+
+/**
  * A group of toggle buttons used to change layers or floors.
  *
  * It will display layers between [layerStart, layerRange), where `0F` will display as `GF` and `-1F` will be `B1`, and it will also highlight current layer.
- *
- * @param layer The layer variable from `useState()`.
- * @param setLayer Callback function used to set `layer`.
- * @param layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
- * @param [layerStart=0] Start number of layers or floors.
  */
-export default function LayerSwitcher({
-  layer,
-  layerRange,
-  setLayer,
-  layerStart = 0,
-}) {
+export default function LayerSwitcher(
+  /** @type {LayerSwitcherProps} */
+  { layer, layerRange, setLayer, layerStart = 0 },
+) {
   const toolBackgroundOpacity = getToggleButtonGroupStyle().opacity;
   const toggleButtonGroupStyle =
     getToggleButtonGroupStyle().toggleButtonGroupStyle;
