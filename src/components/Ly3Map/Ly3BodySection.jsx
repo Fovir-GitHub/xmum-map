@@ -23,7 +23,7 @@ import Ly3GFloor from "./Ly3GFloor";
  * @param {object[][]} ly3Data Store data of LY3.
  */
 export default function Ly3BodySection({ locale, setLocale, ly3Data }) {
-  const [layer, setLayer] = useState(2);
+  const [layer, setLayer] = useState(0);
   const layerRange = 3;
   const transfromRef = useRef(null);
 
