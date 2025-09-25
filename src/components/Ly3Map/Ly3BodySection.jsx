@@ -16,13 +16,20 @@ import DetailPage from "../DetailPage/DetailPage";
 import Ly3GFloor from "./Ly3GFloor";
 
 /**
- * Body section of LY3 map.
+ * @typedef {object} Ly3BodySectionProps
  *
- * @param {string} locale Current locale from `useState()` function.
- * @param {Function} setLocale Function used to change the value of `locale`.
- * @param {object[][]} ly3Data Store data of LY3.
+ * @property {string} locale Current locale from `useState()` function.
+ * @property {Function} setLocale Function used to change the value of `locale`.
+ * @property {object[][]} ly3Data Store data of LY3.
  */
-export default function Ly3BodySection({ locale, setLocale, ly3Data }) {
+
+/**
+ * Body section of LY3 map.
+ */
+export default function Ly3BodySection(
+  /** @type {Ly3BodySectionProps} */
+  { locale, setLocale, ly3Data },
+) {
   const [layer, setLayer] = useState(0);
   const layerRange = 3;
   const transfromRef = useRef(null);

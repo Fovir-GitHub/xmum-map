@@ -10,9 +10,18 @@
 import { useEffect } from "react";
 
 /**
- * @param onEsc Function to be ran on pressing `Esc`.
+ * @typedef {object} GlobalEscListenerProps
+ *
+ * @property {Function} onEsc Function to be called when pressing `Esc`.
  */
-export default function GlobalEscListener({ onEsc }) {
+
+/**
+ * Listener of `Esc` key down.
+ */
+export default function GlobalEscListener(
+  /** @type {GlobalEscListenerProps} */
+  { onEsc },
+) {
   useEffect(() => {
     function handleKeyDown(e) {
       if (e.key === "Escape") {

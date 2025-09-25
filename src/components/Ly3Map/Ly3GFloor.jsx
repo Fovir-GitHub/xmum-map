@@ -13,17 +13,18 @@ import StoreBlock, {
 
 /**
  * @typedef {object} Ly3GFloorProps
+ *
  * @property {string} locale Current locale.
  * @property {Function} setSelectedPost Function used to select post.
  */
 
 /**
  * Map of LY3 G floor.
- *
- * @param {Ly3GFloorProps} props
  */
-export default function Ly3GFloor(props) {
-  const { locale, setSelectedPost } = props;
+export default function Ly3GFloor(
+  /** @type {Ly3GFloorProps} */
+  { locale, setSelectedPost },
+) {
   const storeInformation = xmumConfig.map.ly3.gStoreInformation;
 
   return (
