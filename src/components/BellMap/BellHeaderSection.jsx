@@ -2,7 +2,7 @@
  * @file BellHeaderSection.jsx
  * @description Header section of bell map.
  * @author Fovir
- * @since 2025-09-21
+ * @since 2025-09-25
  */
 
 import Announcement from "../Announcement/Announcement";

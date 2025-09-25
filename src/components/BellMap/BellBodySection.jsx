@@ -2,7 +2,7 @@
  * @file BellBodySection.jsx
  * @description Body section of bell map.
  * @author Fovir
- * @since 2025-09-21
+ * @since 2025-09-25
  */
 
 import { usePathname, useRouter } from "next/navigation";
