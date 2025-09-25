@@ -14,14 +14,6 @@ import xmumConfig, {
   extraIcons,
 } from "../../config";
 
-export const STORE_BLOCK_WIDTH = 150; // Width of a store.
-export const STORE_BLOCK_HEIGHT = 200; // Height of a store.
-export const FIRST_ROW_Y = 100; // y of the first row of stores.
-export const SECOND_ROW_Y = 700; // y of the second row of stores.
-export const PATH_SIZE = 100; // Size of a single path block.
-export const GAP_BETWEEN_STORES_AND_PATH =
-  (SECOND_ROW_Y - FIRST_ROW_Y - STORE_BLOCK_HEIGHT - 2 * PATH_SIZE) / 2; // Center justify the path.
-
 /**
  * @description Generate a store block.
  */
