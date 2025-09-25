@@ -8,11 +8,18 @@
 import Announcement from "../Announcement/Announcement";
 
 /**
- * Wrapper of header section of LY3 map, which includes an `Announcement` component.
+ * @typedef {object} Ly3HeaderSectionProps
  *
- * @param {string} locale Current locale.
+ * @property {string} locale Current locale.
  */
-export default function Ly3HeaderSection({ locale }) {
+
+/**
+ * Wrapper of header section of LY3 map, which includes an `Announcement` component.
+ */
+export default function Ly3HeaderSection(
+  /** @type {Ly3HeaderSectionProps} */
+  { locale },
+) {
   return (
     <>
       <Announcement locale={locale} slug={"ly3-announcement"} />

@@ -6,6 +6,7 @@
  */
 
 "use client";
+
 import {
   TransformWrapper,
   TransformComponent,
@@ -13,7 +14,20 @@ import {
 import { useEffect, useState } from "react";
 import { isMobile } from "../../lib/isMobile";
 
-export default function Map({ children, transformRef }) {
+/**
+ * @typedef {object} MapProps
+ *
+ * @property {any} children Children elements.
+ * @property {import("react").Ref} transformRef Ref of the map.
+ */
+
+/**
+ * Map component which is able to be zoomed and panned.
+ */
+export default function Map(
+  /** @type {MapProps} */
+  { children, transformRef },
+) {
   // Get current window width.
   const [windowWidth, setWindowWidth] = useState(0);
   const [windowHeight, setWindowHeight] = useState(0);

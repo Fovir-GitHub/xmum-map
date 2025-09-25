@@ -14,31 +14,43 @@ import xmumConfig, {
   extraIcons,
 } from "../../config";
 
-export const STORE_BLOCK_WIDTH = 150; // Width of a store.
-export const STORE_BLOCK_HEIGHT = 200; // Height of a store.
-export const FIRST_ROW_Y = 100; // y of the first row of stores.
-export const SECOND_ROW_Y = 700; // y of the second row of stores.
-export const PATH_SIZE = 100; // Size of a single path block.
-export const GAP_BETWEEN_STORES_AND_PATH =
-  (SECOND_ROW_Y - FIRST_ROW_Y - STORE_BLOCK_HEIGHT - 2 * PATH_SIZE) / 2; // Center justify the path.
+/**
+ * @typedef {object} storeBlockProps
+ *
+ * @property {number} x x-coordinate of the store block.
+ * @property {number} y y-coordinate of the store block.
+ * @property {string} fill Filled color.
+ * @property {number | string} width Width of the store block.
+ * @property {number | string} height Height of the store block.
+ * @property {string} stroke Color of stroke.
+ * @property {number} strokeWidth Width of stroke.
+ * @property {string} text Text displayed in the center of the store block.
+ * @property {import("react").ComponentType} icon Material icons displayed under `text`.
+ * @property {Function} handleClick Function to be called when the store block is clicked.
+ * @property {boolean} [showIcon=true] Determine whether to show the icon.
+ * @property {string} [fontSize=xmumConfig.storeBlock.style.fontSize] Font size of `text`. The default value can be set in the configuration file.
+ */
 
 /**
- * @description Generate a store block.
+ * Generate a store block.
  */
-export default function StoreBlock({
-  x,
-  y,
-  fill,
-  width,
-  height,
-  stroke,
-  strokeWidth,
-  text,
-  icon,
-  handleClick,
-  showIcon = true,
-  fontSize = xmumConfig.storeBlock.style.fontSize,
-}) {
+export default function StoreBlock(
+  /** @type {storeBlockProps} */
+  {
+    x,
+    y,
+    fill,
+    width,
+    height,
+    stroke,
+    strokeWidth,
+    text,
+    icon,
+    handleClick,
+    showIcon = true,
+    fontSize = xmumConfig.storeBlock.style.fontSize,
+  },
+) {
   return (
     <g onClick={handleClick} className={utilStyles.highlightOnHover}>
       <rect
@@ -80,9 +92,10 @@ export default function StoreBlock({
 }
 
 /**
- * @description Get the fill color by the category of the store.
+ * Get the fill color by the category of the store.
+ *
  * @param {string} category The category name.
- * @returns Color in #RRGGBBAA forms.
+ * @returns {string} Color in #RRGGBBAA forms.
  */
 export function getFillColor(category) {
   if (category in categoryInformation) {
@@ -93,9 +106,10 @@ export function getFillColor(category) {
 }
 
 /**
- * @description Get icon by store.Icon or store.Category
+ * Get icon by store.Icon or store.Category
+ *
  * @param {object} store The store object.
- * @returns A material UI icon component.
+ * @returns {import("react").ComponentType} A material UI icon component.
  */
 export function getStoreIcon(store) {
   // Use `store.Icon`.

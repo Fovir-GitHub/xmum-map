@@ -13,17 +13,24 @@ import { theme } from "../../styles/materialUiTheme";
 import { ThemeProvider } from "@emotion/react";
 import Footer from "../Footer/Footer";
 import { useLocale } from "../../hooks/useLocale";
-import HeaderSection from "./HeaderSection";
-import BodySection from "./BodySection";
 import { categoryInformation } from "../../config";
+import BellHeaderSection from "./BellHeaderSection";
+import BellBodySection from "./BellBodySection";
+
+/**
+ * @typedef {object} BellMapProps
+ *
+ * @property {object[][]} bellAvenueData Store data of bell avenue.
+ * @property {object[][]} bellSuiteData Store data of bell suite.
+ */
 
 /**
  * Wrapper of bell map.
- *
- * @param {object[][]} bellAvenueData Store data of bell avenue.
- * @param {object[][]} bellSuiteData Store data of bell suite.
  */
-export default function BellMap({ bellAvenueData, bellSuiteData }) {
+export default function BellMap(
+  /** @type {BellMapProps} */
+  { bellAvenueData, bellSuiteData },
+) {
   // Get all categories.
   const categories = Object.keys(categoryInformation);
 
@@ -41,7 +48,7 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <HeaderSection
+      <BellHeaderSection
         locale={locale}
         setAvenueData={setAvenueData}
         setSuiteData={setSuiteData}
@@ -50,7 +57,7 @@ export default function BellMap({ bellAvenueData, bellSuiteData }) {
         setShowCategories={setShowCategories}
       />
 
-      <BodySection
+      <BellBodySection
         locale={locale}
         setLocale={setLocale}
         avenueData={avenueData}

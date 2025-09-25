@@ -9,14 +9,21 @@ import { ToggleButton } from "@mui/material";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 
 /**
+ * @typedef {object} LanguageSwitcherProps
+ *
+ * @property locale Locale from `useState()`.
+ * @property setLocale Function used to set locale.
+ */
+
+/**
  * Button that switch language between `zh` and `en`.
  *
  * It will display `locale` as text, and it requires `setLocale` to change the locale.
- *
- * @param locale Locale from `useState()`.
- * @param setLocale Function used to set locale.
  */
-export default function LanguageSwitcher({ locale, setLocale }) {
+export default function LanguageSwitcher(
+  /** @type {LanguageSwitcherProps} */
+  { locale, setLocale },
+) {
   return (
     <ToggleButton
       onClick={() => {

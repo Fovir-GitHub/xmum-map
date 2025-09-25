@@ -12,7 +12,9 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 /**
- * @description How to use:
+ * Component of image slide, which turns a group of images to slide form.
+ *
+ * @example
  * In markdown file, write:
  *    <div class="image-slide">
  *      <img src="URL" />

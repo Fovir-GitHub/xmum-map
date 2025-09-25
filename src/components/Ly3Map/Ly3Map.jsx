@@ -16,11 +16,18 @@ import Ly3BodySection from "./Ly3BodySection";
 import Ly3HeaderSection from "./Ly3HeaderSection";
 
 /**
- * Map of LY3.
+ * @typedef {object} Ly3MapProps
  *
- * @param {object[][]} ly3Data Data of LY3 stores.
+ * @property {object[][]} ly3Data Data of LY3 stores.
  */
-export default function Ly3Map({ ly3Data }) {
+
+/**
+ * Map of LY3.
+ */
+export default function Ly3Map(
+  /** @type {Ly3MapProps} */
+  { ly3Data },
+) {
   const [locale, setLocale] = useLocale();
 
   return (

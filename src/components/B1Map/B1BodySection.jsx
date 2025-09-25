@@ -15,13 +15,20 @@ import Map from "../Map/Map";
 import B1GfMap from "./B1GfMap";
 
 /**
- * Body section of B1 map.
+ * @typedef {object} B1BodySectionProps
  *
- * @param {string} locale Current locale.
- * @param {Function} setLocale Function used to set `locale`.
- * @param {object[][]} b1Data Data of B1 stores.
+ * @property {string} locale Current locale.
+ * @property {Function} setLocale Function used to set `locale`.
+ * @property {object[][]} b1Data Data of B1 stores.
  */
-export default function B1BodySection({ locale, setLocale, b1Data }) {
+
+/**
+ * Body section of B1 map.
+ */
+export default function B1BodySection(
+  /** @type {B1BodySectionProps} */
+  { locale, setLocale, b1Data },
+) {
   const [layer, setLayer] = useState(0);
   const layerRange = 5;
   const transformRef = useRef(null);

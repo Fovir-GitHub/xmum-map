@@ -15,25 +15,32 @@ import BackToHomeButton from "./BackToHomeButton";
 import { usePathname } from "next/navigation";
 
 /**
- * It floats in the lower right corner of the web page, which contains two zones -- function zone and layer switcher zone.
+ * @typedef {object} ToolZoneProps
  *
- * @param locale Locale from `useState()`.
- * @param setLocale Callback function used to set locale.
- * @param layer Layer variable from `useState()`.
- * @param setLayer Callback function used to set `layer`.
- * @param layerRange Number of layers, which will be passed to `LayerSwitcher` component.
- * @param transformRef Ref of map used to reset state of map.
- * @param [layerStart=0] Start number of layers or floors.
+ * @property {string} locale Locale from `useState()`.
+ * @property {Function} setLocale Callback function used to set locale.
+ * @property {number} layer Layer variable from `useState()`.
+ * @property {Function} setLayer Callback function used to set `layer`.
+ * @property {number} layerRange Number of layers, which will be passed to `LayerSwitcher` component.
+ * @property {import("react").Ref} transformRef Ref of map used to reset state of map.
+ * @property {number} [layerStart=0] Start number of layers or floors.
  */
-export default function ToolZone({
-  locale,
-  setLocale,
-  layer,
-  setLayer,
-  layerRange,
-  transformRef,
-  layerStart = 0,
-}) {
+
+/**
+ * It floats in the lower right corner of the web page, which contains two zones -- function zone and layer switcher zone.
+ */
+export default function ToolZone(
+  /** @type {ToolZoneProps} */
+  {
+    locale,
+    setLocale,
+    layer,
+    setLayer,
+    layerRange,
+    transformRef,
+    layerStart = 0,
+  },
+) {
   const toggleButtonGroupStyle =
     getToggleButtonGroupStyle().toggleButtonGroupStyle;
   const pathname = usePathname();

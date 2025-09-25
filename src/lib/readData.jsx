@@ -12,6 +12,8 @@ import path from "path";
  * Read data from `src/data/${fileName}` file.
  *
  * The `fileName` includes extension name.
+ *
+ * @param {string} fileName Name of data file stored under `src/data` directory.
  */
 export function readData(fileName) {
   const dataFile = path.join(process.cwd(), `src/data/${fileName}`);

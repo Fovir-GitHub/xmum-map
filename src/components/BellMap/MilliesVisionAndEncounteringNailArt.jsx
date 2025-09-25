@@ -12,15 +12,19 @@ import StoreBlock, {
 } from "../StoreBlock/StoreBlock";
 
 /**
- * Non-regular store blocks that needs special operation.
+ * @typedef {object} MilliesVisionAndEncounteringNailArtProps
  *
- * @param {Function} setSelectedPost Function used to set selected post.
- * @param {string} locale Locale from `useState()`.
+ * @property {Function} setSelectedPost Function used to set selected post.
+ * @property {string} locale Locale from `useState()`.
  */
-export default function MilliesVisionAndEncounteringNailArt({
-  setSelectedPost,
-  locale,
-}) {
+
+/**
+ * Non-regular store blocks that needs special operation.
+ */
+export default function MilliesVisionAndEncounteringNailArt(
+  /** @type {MilliesVisionAndEncounteringNailArtProps} */
+  { setSelectedPost, locale },
+) {
   const xPosition =
     xmumConfig.storeBlock.patches.position.x *
     xmumConfig.storeBlock.size.width;

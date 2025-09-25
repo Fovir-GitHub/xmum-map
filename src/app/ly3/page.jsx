@@ -8,6 +8,9 @@
 import Ly3Map from "../../components/Ly3Map/Ly3Map";
 import { readData } from "../../lib/readData";
 
+/**
+ * Page of LY3 map.
+ */
 export default function Ly3() {
   const ly3Data = readData("ly3.json");
 

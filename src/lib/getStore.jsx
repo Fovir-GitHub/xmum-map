@@ -8,6 +8,13 @@
 import fs from "fs";
 import path from "path";
 
+/**
+ * Get a store by slug.
+ *
+ * @param {string} slug Slug of the store.
+ *
+ * @returns {object | null} If the store exists, the function will return the store object. Otherwise, it will return `null`.
+ */
 export async function getStoreBySlug(slug) {
   const storeFiles = ["bell_avenue.json", "bell_suite.json"];
   let allStores = [];

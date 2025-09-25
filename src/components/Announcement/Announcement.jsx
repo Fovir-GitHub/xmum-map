@@ -19,7 +19,22 @@ import xmumConfig from "../../config";
 import GlobalEscListener from "../GlobalEscListener/GlobalEscListener";
 import DetailPage from "../DetailPage/DetailPage";
 
-export default function Announcement({ locale, slug }) {
+/**
+ * @typedef {object} AnnouncementProps
+ *
+ * @property {string} locale Website locale from `useState()` function.
+ * @property {string} slug Slug of announcement.
+ */
+
+/**
+ * Component of displaying announcements on the top of web page.
+ *
+ * This component requires a slug to determine which markdown file is the content of announcement.
+ */
+export default function Announcement(
+  /** @type {AnnouncementProps} */
+  { locale, slug },
+) {
   const [expanded, setExpanded] = useState(false);
 
   return (

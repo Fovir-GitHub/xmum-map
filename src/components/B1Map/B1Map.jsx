@@ -16,11 +16,18 @@ import { theme } from "../../styles/materialUiTheme";
 import { CssBaseline } from "@mui/material";
 
 /**
- * Wrapper of B1 map.
+ * @typedef {object} B1MapProps
  *
- * @param {object[][]} b1Data Data of B1 stores.
+ * @property {object[][]} b1Data Data of B1 stores.
  */
-export default function B1Map({ b1Data }) {
+
+/**
+ * Wrapper of B1 map.
+ */
+export default function B1Map(
+  /** @type {B1MapProps} */
+  { b1Data },
+) {
   const [locale, setLocale] = useLocale();
 
   return (

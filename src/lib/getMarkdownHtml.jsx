@@ -11,6 +11,14 @@ import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import html from "remark-html";
 
+/**
+ * Get markdown content via API and parse it to HTML.
+ *
+ * @param {string} slug Markdown file name.
+ * @param {string} locale Locale of markdown.
+ *
+ * @returns {{html:string, isLoading: boolean, notFound: boolean}} An object that contains html content, loading status, and not-found flag.
+ */
 export async function getMarkdownHtml(slug, locale) {
   let res;
   try {

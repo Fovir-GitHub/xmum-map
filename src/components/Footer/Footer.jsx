@@ -11,7 +11,19 @@ import { Box, Link, Typography } from "@mui/material";
 import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 import xmumConfig from "../../config";
 
-export default function Footer({ locale }) {
+/**
+ * @typedef {object} FooterProps
+ *
+ * @property {string} locale Website locale from `useState()` function.
+ */
+
+/**
+ * Footer component displayed in the bottom of web page.
+ */
+export default function Footer(
+  /** @type {FooterProps} */
+  { locale },
+) {
   return (
     <>
       <Box
@@ -42,58 +54,92 @@ export default function Footer({ locale }) {
   );
 }
 
+/**
+ * Display copyright information.
+ */
 function CopyRight() {
   return (
-    <MyTypography>
+    <FooterTypography>
       Copyright &copy; 2025 XMUM Map | Built by {""}
-      <MyLink href={xmumConfig.footer.links.oui}>Mr.Oui</MyLink>
+      <FooterLink href={xmumConfig.footer.links.oui}>Mr.Oui</FooterLink>
       {" & "}
-      <MyLink href={xmumConfig.footer.links.fovir}>Fovir</MyLink>
-    </MyTypography>
+      <FooterLink href={xmumConfig.footer.links.fovir}>
+        Fovir
+      </FooterLink>
+    </FooterTypography>
   );
 }
 
+/**
+ * Telephone information.
+ */
 function Telephone({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.tel[locale]}
       {xmumConfig.footer.tel.number}
-    </MyTypography>
+    </FooterTypography>
   );
 }
 
+/**
+ * Email information.
+ */
 function Email({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.email[locale]}
-      <MyLink href={xmumConfig.footer.email.address} isEmail={true}>
+      <FooterLink href={xmumConfig.footer.email.address} isEmail={true}>
         {xmumConfig.footer.email.address}
-      </MyLink>
-    </MyTypography>
+      </FooterLink>
+    </FooterTypography>
   );
 }
 
+/**
+ * Information of the last update time.
+ */
 function LastUpdateTime({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.lastUpdateTime[locale]}
       {xmumConfig.footer.lastUpdateTime.time}
-    </MyTypography>
+    </FooterTypography>
   );
 }
 
+/**
+ * Link of GitHub repository.
+ */
 function Repository({ locale }) {
   return (
-    <MyTypography>
+    <FooterTypography>
       {xmumConfig.footer.repository[locale]}
-      <MyLink href={xmumConfig.footer.repository.link} isEmail={false}>
+      <FooterLink
+        href={xmumConfig.footer.repository.link}
+        isEmail={false}
+      >
         GitHub
-      </MyLink>
-    </MyTypography>
+      </FooterLink>
+    </FooterTypography>
   );
 }
 
-function MyLink({ children, href, isEmail }) {
+/**
+ * @typedef {object} FooterLinkProps
+ *
+ * @property {any} children Children elements.
+ * @property {string} href Links or refs.
+ * @property {boolean} isEmail Determine whether `href` is an email address. If it is, `href` will add a prefix `mailto:`.
+ */
+
+/**
+ * Component of displaying links.
+ */
+function FooterLink(
+  /** @type {FooterLinkProps} */
+  { children, href, isEmail },
+) {
   return (
     <>
       <Link
@@ -116,7 +162,10 @@ function MyLink({ children, href, isEmail }) {
   );
 }
 
-function MyTypography({ children }) {
+/**
+ * Typography wrapper of the footer section.
+ */
+function FooterTypography({ children }) {
   return (
     <>
       <Typography

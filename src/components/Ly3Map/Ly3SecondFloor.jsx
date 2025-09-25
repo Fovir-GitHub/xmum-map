@@ -10,17 +10,20 @@
 import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
- * Draw the map of LY3 second floor.
+ * @typedef {object} Ly3SecondFloorProps
  *
- * @param {object[]} storeData Data of stores.
- * @param {string} locale Current locale.
- * @param {Function} setSelectedPost Function used to set selected post.
+ * @property {object[]} storeData Data of stores.
+ * @property {string} locale Current locale.
+ * @property {Function} setSelectedPost Function used to set selected post.
  */
-export default function Ly3SecondFloor({
-  storeData,
-  locale,
-  setSelectedPost,
-}) {
+
+/**
+ * Draw the map of LY3 second floor.
+ */
+export default function Ly3SecondFloor(
+  /** @type {Ly3SecondFloorProps} */
+  { storeData, locale, setSelectedPost },
+) {
   const topRowStart = 0;
   const topRowEnd = 8;
 
