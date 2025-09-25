@@ -11,21 +11,22 @@ import DrawAMap, { drawPathBlock } from "../DrawAMap/DrawAMap";
 import xmumConfig from "../../config";
 
 /**
- * Bell suite map which has one floor.
+ * @typedef {object} BellSuiteMapProps
  *
- * @param {object[]} storeData Data of stores in bell suite.
- * @param {number} mapWidth Width of the map.
- * @param {number} mapHeight Height of the map.
- * @param {Function} setSelectedPost Function used to set selected post.
- * @param {string} locale Locale from `useState()` function.
+ * @property {object[]} storeData Data of stores in bell suite.
+ * @property {number} mapWidth Width of the map.
+ * @property {number} mapHeight Height of the map.
+ * @property {Function} setSelectedPost Function used to set selected post.
+ * @property {string} locale Locale from `useState()` function.
  */
-export default function BellSuiteMap({
-  storeData,
-  mapWidth,
-  mapHeight,
-  setSelectedPost,
-  locale,
-}) {
+
+/**
+ * Bell suite map which has one floor.
+ */
+export default function BellSuiteMap(
+  /** @type {BellSuiteMapProps} */
+  { storeData, mapWidth, mapHeight, setSelectedPost, locale },
+) {
   const ROW_INDEX_LIMIT = 8;
   const limit = 13;
 
