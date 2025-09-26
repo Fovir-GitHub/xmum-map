@@ -10,6 +10,7 @@ import {
   getAllStoresForStaticGeneration,
   getStoreBySlug,
 } from "../../../../lib/getStore";
+import DetailPage from "../../../../components/DetailPage/DetailPage";
 
 export const dynamic = "force-static";
 
@@ -94,6 +95,7 @@ export default async function StorePage({ params }) {
 
   return (
     <div>
+      <DetailPage slug={slug} locale={locale} />
       <script
         dangerouslySetInnerHTML={{
           __html: `
