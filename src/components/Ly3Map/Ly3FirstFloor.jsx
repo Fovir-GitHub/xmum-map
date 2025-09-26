@@ -1,3 +1,10 @@
+/**
+ * @file src/components/Ly3Map/Ly3FirstFloor.jsx
+ * @description Map of LY3 first floor.
+ * @author Fovir
+ * @since 2025-09-26
+ */
+
 "use client";
 
 import { StoresArea } from "../StoresArea/StoresArea";
@@ -10,6 +17,9 @@ import { StoresArea } from "../StoresArea/StoresArea";
  * @property {Function} setSelectedPost Function used to set selected post.
  */
 
+/**
+ * Map of LY3 first floor.
+ */
 export default function Ly3FirstFloor(
   /** @type {Ly3FirstFloorProps} */
   { storeData, locale, setSelectedPost },
