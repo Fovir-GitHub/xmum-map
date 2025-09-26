@@ -8,7 +8,9 @@ const nextConfig = {
     config.externals.push(/.*\.pnpm-store.*/);
     return config;
   },
-  outputFileTracingExcludes: { "/api/docs": ["./.next/cache/**/*"] },
+  outputFileTracingExcludes: {
+    "/[sourceFile]/[locale]/[slug]": [".next/cache/**/*"],
+  },
 };
 
 export default nextConfig;
