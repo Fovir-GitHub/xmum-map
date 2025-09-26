@@ -61,7 +61,5 @@ export function useSelectedPost(locale) {
     }
   }, [selectedPost, locale, pathname, router]);
 
-  console.log(selectedPost);
-
   return [selectedPost, setSelectedPost];
 }
