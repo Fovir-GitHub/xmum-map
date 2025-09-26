@@ -5,12 +5,14 @@
  * @since 2025-09-26
  */
 
-import DetailPage from "../../../../components/DetailPage/DetailPage";
 import xmumConfig from "../../../../config";
 import {
   getAllStoresForStaticGeneration,
   getStoreBySlug,
 } from "../../../../lib/getStore";
+import DetailPage from "../../../../components/DetailPage/DetailPage";
+
+export const dynamic = "force-static";
 
 /**
  * Generate static params.
@@ -90,7 +92,6 @@ export async function generateMetadata({ params }) {
  */
 export default async function StorePage({ params }) {
   const { sourceFile, locale, slug } = await params;
-  console.log(sourceFile);
 
   return (
     <div>
