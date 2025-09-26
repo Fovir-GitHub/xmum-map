@@ -4,9 +4,9 @@
   "scripts": {
     "dev": "NODE_ENV=development next dev",
     "pre:data": "node src/scripts/readSvgData.js",
-    "pre:sitemap": "next-sitemap --config next-sitemap.config.cjs",
-    "prebuild": "pnpm pre:data && pnpm pre:sitemap",
+    "prebuild": "pnpm pre:data",
     "build": "NODE_ENV=production next build",
+    "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "start": "next start",
     "format": "prettier --write posts/** docs/** src/**",
     "wdev": "next dev",
