@@ -1,12 +1,12 @@
 {
   "name": "XMUM Map",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "scripts": {
     "dev": "NODE_ENV=development next dev",
     "pre:data": "node src/scripts/readSvgData.js",
-    "pre:sitemap": "node src/scripts/generateSitemap.js",
-    "prebuild": "pnpm pre:data && pnpm pre:sitemap",
+    "prebuild": "pnpm pre:data",
     "build": "NODE_ENV=production next build",
+    "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "start": "next start",
     "format": "prettier --write posts/** docs/** src/**",
     "wdev": "next dev",
@@ -22,7 +22,6 @@
     "@mui/material": "7.3.1",
     "next": "15.5.0",
     "next-sitemap": "^4.2.3",
-    "node-fetch": "^3.3.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-zoom-pan-pinch": "3.7.0",
@@ -30,8 +29,7 @@
     "remark-gfm": "4.0.1",
     "remark-html": "16.0.1",
     "swiper": "11.2.10",
-    "xlsx": "0.18.5",
-    "xml2js": "^0.6.2"
+    "xlsx": "0.18.5"
   },
   "devDependencies": {
     "prettier": "3.6.2"
