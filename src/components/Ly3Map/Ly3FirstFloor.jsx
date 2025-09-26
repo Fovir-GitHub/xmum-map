@@ -65,6 +65,20 @@ export default function Ly3FirstFloor(
           setSelectedPost={setSelectedPost}
         />
         {/* Top Row End */}
+        {/* Right Row Start */}
+        <StoresArea
+          limit={1}
+          storeData={storeData.slice(rightRowStart, rightRowEnd)}
+          width={2000}
+          height={1000}
+          top={2000}
+          left={8000}
+          fontSize="6rem"
+          locale={locale}
+          rotate={90}
+          setSelectedPost={setSelectedPost}
+        />
+        {/* Right Row End */}
       </div>
     </div>
   );
