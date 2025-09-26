@@ -32,17 +32,13 @@ export default function Ly3FirstFloor(
   const rightRowEnd = topRowEnd + 1;
 
   return (
-    <div
-      style={{
-        width: 10000,
-        height: 10000,
-      }}
-    >
+    <div>
+      <img src="maps/LY3_1F.svg" width={10000} height={10000} />
       <div
         style={{
           width: "100%",
           height: "100%",
-          backgroundColor: "grey",
+          backgroundColor: "transparent",
           position: "absolute",
           top: 0,
           left: 0,
@@ -51,8 +47,8 @@ export default function Ly3FirstFloor(
         {/* Left Row Start */}
         <StoresArea
           limit={1}
-          top={2000}
-          left={0}
+          top={1000}
+          left={-2000}
           width={2000}
           height={1000}
           locale={locale}
@@ -66,10 +62,10 @@ export default function Ly3FirstFloor(
         <StoresArea
           limit={topRowEnd - topRowStart + 1}
           storeData={storeData.slice(topRowStart, topRowEnd)}
-          width={940}
+          width={1300}
           height={900}
           top={100}
-          left={1800}
+          left={500}
           fontSize="7rem"
           locale={locale}
           setSelectedPost={setSelectedPost}
@@ -81,8 +77,8 @@ export default function Ly3FirstFloor(
           storeData={storeData.slice(rightRowStart, rightRowEnd)}
           width={2000}
           height={1000}
-          top={2000}
-          left={8000}
+          top={1000}
+          left={10000}
           fontSize="10rem"
           locale={locale}
           rotate={90}
