@@ -1,5 +1,5 @@
 /**
- * @file StoresArea.jsx
+ * @file src/components/StoresArea/StoresArea.jsx
  * @description Component of `StoresArea`.
  * @author Fovir
  * @since 2025-09-25

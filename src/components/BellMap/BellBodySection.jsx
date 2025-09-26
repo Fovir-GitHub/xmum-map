@@ -1,5 +1,5 @@
 /**
- * @file BellBodySection.jsx
+ * @file src/components/BellMap/BellBodySection.jsx
  * @description Body section of bell map.
  * @author Fovir
  * @since 2025-09-25

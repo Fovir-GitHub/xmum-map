@@ -1,5 +1,5 @@
 /**
- * @file Announcement.jsx
+ * @file src/components/Announcement/Announcement.jsx
  * @description Component of displaying announcements on the top of page.
  * @author Fovir
  * @since 2025-09-17

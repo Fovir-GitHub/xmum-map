@@ -1,5 +1,5 @@
 /**
- * @file readSvgData.js
+ * @file src/scripts/readSvgData.js
  * @description Read map data from `.xlsx` files and convert them into `.json` format.
  * @author Fovir
  * @since 2025-09-05

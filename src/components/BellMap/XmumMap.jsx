@@ -1,5 +1,5 @@
 /**
- * @file XmumMap.jsx
+ * @file src/components/BellMap/XmumMap.jsx
  * @description Map of xmum campus.
  * @author Fovir
  * @since 2025-09-20

@@ -1,5 +1,5 @@
 /**
- * @file route.jsx
+ * @file src/app/api/posts/[slug]/[locale]/route.jsx
  * @description Provide API to fetch markdown content.
  * @author Fovir
  * @since 2025-08-25

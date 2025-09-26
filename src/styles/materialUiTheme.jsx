@@ -1,5 +1,5 @@
 /**
- * @file materialUiTheme.jsx
+ * @file src/styles/materialUiTheme.jsx
  * @description Theme for material UI.
  * @author Fovir
  * @since 2025-08-27

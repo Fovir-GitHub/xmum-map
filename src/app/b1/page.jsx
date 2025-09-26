@@ -1,5 +1,5 @@
 /**
- * @file page.jsx
+ * @file src/app/b1/page.jsx
  * @description Page of B1 map.
  * @author Fovir
  * @since 2025-09-23

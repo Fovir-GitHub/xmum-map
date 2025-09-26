@@ -1,5 +1,5 @@
 /**
- * @file isMobile.jsx
+ * @file src/lib/isMobile.jsx
  * @description Judge whether the client is on mobile phones.
  * @author Fovir
  * @since 2025-08-30

@@ -1,5 +1,5 @@
 /**
- * @file readData.jsx
+ * @file src/lib/readData.jsx
  * @description Read data file and parse it as JSON.
  * @author Fovir
  * @since 2025-09-19

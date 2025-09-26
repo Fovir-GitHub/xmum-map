@@ -1,5 +1,5 @@
 /**
- * @file getStore.jsx
+ * @file src/lib/getStore.jsx
  * @description Get store data.
  * @author Fovir
  * @since 2025-09-17

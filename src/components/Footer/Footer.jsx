@@ -1,5 +1,5 @@
 /**
- * @file Footer.jsx
+ * @file src/components/Footer/Footer.jsx
  * @description Footer component that fixed on the bottom of the page.
  * @author Fovir
  * @since 2025-09-18

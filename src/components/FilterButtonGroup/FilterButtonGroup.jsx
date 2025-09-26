@@ -1,5 +1,5 @@
 /**
- * @file FilterButtonGroup.jsx
+ * @file src/components/FilterButtonGroup/FilterButtonGroup.jsx
  * @description Component of filter buttons, which filter stores by their categories.
  * @author Fovir
  * @since 2025-09-12

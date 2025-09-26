@@ -1,5 +1,5 @@
 /**
- * @file GlobalEscListener.jsx
+ * @file src/components/GlobalEscListener/GlobalEscListener.jsx
  * @description This component listens `Esc` globally.
  * @author Fovir
  * @since 2025-08-29

@@ -1,5 +1,5 @@
 /**
- * @file ImageSlide.jsx
+ * @file src/components/ImageSlide/ImageSlide.jsx
  * @description Enable image slide feature.
  * @author Fovir
  * @since 2025-09-08

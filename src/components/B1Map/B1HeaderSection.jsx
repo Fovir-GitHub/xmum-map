@@ -1,5 +1,5 @@
 /**
- * @file B1HeaderSection.jsx
+ * @file src/components/B1Map/B1HeaderSection.jsx
  * @description Header section of B1 map.
  * @author Fovir
  * @since 2025-09-23

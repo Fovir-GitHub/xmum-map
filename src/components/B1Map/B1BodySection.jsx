@@ -1,5 +1,5 @@
 /**
- * @file B1BodySection.jsx
+ * @file src/components/B1Map/B1BodySection.jsx
  * @description Body section of B1 map.
  * @author Fovir
  * @since 2025-09-23

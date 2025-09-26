@@ -1,5 +1,5 @@
 /**
- * @file Ly3Map.jsx
+ * @file src/components/Ly3Map/Ly3Map.jsx
  * @description Wrapper of LY3 map.
  * @author Fovir
  * @since 2025-09-21

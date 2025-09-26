@@ -1,5 +1,5 @@
 /**
- * @file useSelectedPost.jsx
+ * @file src/hooks/useSelectedPost.jsx
  * @description Define hook of setting `selectedPost`.
  * @author Fovir
  * @since 2025-09-20

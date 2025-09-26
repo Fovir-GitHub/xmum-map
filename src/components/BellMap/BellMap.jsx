@@ -1,5 +1,5 @@
 /**
- * @file BellMap.jsx
+ * @file src/components/BellMap/BellMap.jsx
  * @description This component wraps all components of the application.
  * @author Fovir
  * @since 2025-09-20

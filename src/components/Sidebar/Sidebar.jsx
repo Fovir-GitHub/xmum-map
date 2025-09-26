@@ -1,5 +1,5 @@
 /**
- * @file Sidebar.jsx
+ * @file src/components/Sidebar/Sidebar.jsx
  * @description Sidebar used to contain other pages.
  * @author Fovir
  * @since 2025-09-16

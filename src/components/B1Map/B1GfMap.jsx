@@ -1,5 +1,5 @@
 /**
- * @file B1GfMap.jsx
+ * @file src/components/B1Map/B1GfMap.jsx
  * @description Map of B1 ground floor.
  * @author Fovir
  * @since 2025-09-24

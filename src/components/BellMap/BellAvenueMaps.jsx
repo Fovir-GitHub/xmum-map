@@ -1,5 +1,5 @@
 /**
- * @file BellMaps.jsx
+ * @file src/components/BellMap/BellAvenueMaps.jsx
  * @description Create the `BellAvenueMaps` component which depends on another two components, `BellAvenueFloorMap` and `StoreBlock`.
  * @author Fovir
  * @since 2025-09-20

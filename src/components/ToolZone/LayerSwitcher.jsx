@@ -1,5 +1,5 @@
 /**
- * @file LayerSwitcher.jsx
+ * @file src/components/ToolZone/LayerSwitcher.jsx
  * @description Component used to switch layers.
  * @author Fovir
  * @since 2025-09-20
