@@ -10,7 +10,6 @@ import {
   getAllStoresForStaticGeneration,
   getStoreBySlug,
 } from "../../../../lib/getStore";
-import DetailPage from "../../../../components/DetailPage/DetailPage";
 
 export const dynamic = "force-static";
 
@@ -92,11 +91,9 @@ export async function generateMetadata({ params }) {
  */
 export default async function StorePage({ params }) {
   const { sourceFile, locale, slug } = await params;
-  console.log(sourceFile);
 
   return (
     <div>
-      <DetailPage slug={slug} locale={locale} />
       <script
         dangerouslySetInnerHTML={{
           __html: `
