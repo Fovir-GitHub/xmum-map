@@ -1,3 +1,10 @@
+/**
+ * @file src/app/[sourceFile]/[locale]/[slug]/page.jsx
+ * @description Generate SEO pages for stores.
+ * @author Fovir
+ * @since 2025-09-26
+ */
+
 import DetailPage from "../../../../components/DetailPage/DetailPage";
 import xmumConfig from "../../../../config";
 import {
