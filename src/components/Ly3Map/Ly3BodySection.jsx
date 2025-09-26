@@ -14,6 +14,7 @@ import { usePathname, useRouter } from "next/navigation";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import Ly3GFloor from "./Ly3GFloor";
+import Ly3FirstFloor from "./Ly3FirstFloor";
 
 /**
  * @typedef {object} Ly3BodySectionProps
@@ -30,7 +31,7 @@ export default function Ly3BodySection(
   /** @type {Ly3BodySectionProps} */
   { locale, setLocale, ly3Data },
 ) {
-  const [layer, setLayer] = useState(0);
+  const [layer, setLayer] = useState(1);
   const layerRange = 3;
   const transfromRef = useRef(null);
 
@@ -41,7 +42,11 @@ export default function Ly3BodySection(
 
   const maps = [
     <Ly3GFloor locale={locale} setSelectedPost={setSelectedPost} />,
-    null,
+    <Ly3FirstFloor
+      locale={locale}
+      storeData={ly3Data[1]}
+      setSelectedPost={setSelectedPost}
+    />,
     <Ly3SecondFloor
       locale={locale}
       storeData={ly3Data[2]}
