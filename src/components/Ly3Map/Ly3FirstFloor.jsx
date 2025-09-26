@@ -83,7 +83,7 @@ export default function Ly3FirstFloor(
           height={1000}
           top={2000}
           left={8000}
-          fontSize="6rem"
+          fontSize="10rem"
           locale={locale}
           rotate={90}
           setSelectedPost={setSelectedPost}
