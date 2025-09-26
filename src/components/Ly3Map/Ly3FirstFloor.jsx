@@ -32,17 +32,13 @@ export default function Ly3FirstFloor(
   const rightRowEnd = topRowEnd + 1;
 
   return (
-    <div
-      style={{
-        width: 10000,
-        height: 10000,
-      }}
-    >
+    <div>
+      <img src="maps/LY3_1F.svg" width={10000} height={10000} />
       <div
         style={{
           width: "100%",
           height: "100%",
-          backgroundColor: "grey",
+          backgroundColor: "transparent",
           position: "absolute",
           top: 0,
           left: 0,
