@@ -1,5 +1,5 @@
 /**
- * @file getMarkdownHtml.jsx
+ * @file src/lib/getMarkdownHtml.jsx
  * @description Fetch markdown via API and parse it with `remark`.
  * @author Fovir
  * @since 2025-09-10

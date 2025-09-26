@@ -1,5 +1,5 @@
 /**
- * @file BodySection.jsx
+ * @file src/components/Ly3Map/Ly3BodySection.jsx
  * @description Body section of LY3 map.
  * @author Fovir
  * @since 2025-09-21

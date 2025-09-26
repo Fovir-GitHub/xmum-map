@@ -1,5 +1,5 @@
 /**
- * @file MilliesVisionAndEncounteringNailArt.jsx
+ * @file src/components/BellMap/MilliesVisionAndEncounteringNailArt.jsx
  * @description Draw milles vision and encountering nail art.
  * @author Fovir
  * @since 2025-09-20

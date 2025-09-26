@@ -1,5 +1,5 @@
 /**
- * @file testSitemap.js
+ * @file src/scripts/testSitemap.js
  * @description Test whether all urls in sitemap are available.
  * @author Fovir
  * @since 2025-09-18

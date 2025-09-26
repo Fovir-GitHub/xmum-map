@@ -1,5 +1,5 @@
 /**
- * @file StoreBlock.jsx
+ * @file src/components/StoreBlock/StoreBlock.jsx
  * @description Create component that is used to draw a single block of store.
  * @author Fovir
  * @since 2025-09-10

@@ -1,5 +1,5 @@
 /**
- * @file Ly3HeaderSection.jsx
+ * @file src/components/Ly3Map/Ly3HeaderSection.jsx
  * @description Header section of LY3 map.
  * @author Fovir
  * @since 2025-09-23

@@ -1,5 +1,5 @@
 /**
- * @file config.js
+ * @file src/config.js
  * @description Configuration file of the website.
  * @author Fovir
  * @since 2025-09-18

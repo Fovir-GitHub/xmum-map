@@ -1,5 +1,5 @@
 /**
- * @file BellSuiteMap.jsx
+ * @file src/components/BellMap/BellSuiteMap.jsx
  * @description Draw map of bell suite.
  * @author Fovir
  * @since 2025-09-20

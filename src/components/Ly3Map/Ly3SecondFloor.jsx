@@ -1,5 +1,5 @@
 /**
- * @file Ly3SecondFloor.jsx
+ * @file src/components/Ly3Map/Ly3SecondFloor.jsx
  * @description Map of LY3 second floor.
  * @author Fovir
  * @since 2025-09-22

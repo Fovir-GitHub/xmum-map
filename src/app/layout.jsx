@@ -1,5 +1,5 @@
 /**
- * @file layout.jsx
+ * @file src/app/layout.jsx
  * @description Layout of the website.
  * @author Fovir
  * @since 2025-08-22

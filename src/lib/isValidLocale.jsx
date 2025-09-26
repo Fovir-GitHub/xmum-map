@@ -1,5 +1,5 @@
 /**
- * @file isValidLocale.jsx
+ * @file src/lib/isValidLocale.jsx
  * @author Fovir
  * @since 2025-09-20
  */

@@ -1,5 +1,5 @@
 /**
- * @file Ly3GFloor.jsx
+ * @file src/components/Ly3Map/Ly3GFloor.jsx
  * @description Map of LY3 G floor.
  * @author Fovir
  * @since 2025-09-25

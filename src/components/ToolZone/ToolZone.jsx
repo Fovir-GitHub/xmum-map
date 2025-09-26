@@ -1,5 +1,5 @@
 /**
- * @file ToolZone.jsx
+ * @file src/components/ToolZone/ToolZone.jsx
  * @description Tool zone float in the lower right corner of web page.
  * @author Fovir
  * @since 2025-09-20

@@ -1,5 +1,5 @@
 /**
- * @file BackToHomeButton.jsx
+ * @file src/components/ToolZone/BackToHomeButton.jsx
  * @description Back to home button.
  * @author Fovir
  * @since 2025-09-23

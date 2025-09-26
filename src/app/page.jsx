@@ -1,5 +1,5 @@
 /**
- * @file page.jsx
+ * @file src/app/page.jsx
  * @description This is a file from server side, which read map data and pass them to `BellMap`.
  * @author Fovir
  * @since 2025-09-20

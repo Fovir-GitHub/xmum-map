@@ -1,5 +1,5 @@
 /**
- * @file DrawAMap.jsx
+ * @file src/components/DrawAMap/DrawAMap.jsx
  * @description Draw a map with row index limit.
  * @author Fovir
  * @since 2025-09-15

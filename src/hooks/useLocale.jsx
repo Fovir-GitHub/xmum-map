@@ -1,5 +1,5 @@
 /**
- * @file useLocale.jsx
+ * @file src/hooks/useLocale.jsx
  * @description Hook of setting locale.
  * @author Fovir
  * @since 2025-09-20

@@ -1,5 +1,5 @@
 /**
- * @file LanguageSwitcher.jsx
+ * @file src/components/ToolZone/LanguageSwitcher.jsx
  * @description Language switcher button component.
  * @author Fovir
  * @since 2025-09-20

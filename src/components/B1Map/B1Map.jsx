@@ -1,5 +1,5 @@
 /**
- * @file B1Map.jsx
+ * @file src/components/B1Map/B1Map.jsx
  * @description Wrapper of B1 map.
  * @author Fovir
  * @since 2025-09-23

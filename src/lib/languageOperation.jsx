@@ -1,5 +1,5 @@
 /**
- * @file languageOperation.jsx
+ * @file src/lib/languageOperation.jsx
  * @description Language operation functions.
  * @author Fovir
  * @since 2025-09-20

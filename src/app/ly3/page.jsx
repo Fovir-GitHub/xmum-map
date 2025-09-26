@@ -1,5 +1,5 @@
 /**
- * @file page.jsx
+ * @file src/app/ly3/page.jsx
  * @description Page of LY3.
  * @author Fovir
  * @since 2025-09-21

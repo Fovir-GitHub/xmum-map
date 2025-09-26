@@ -1,5 +1,5 @@
 /**
- * @file generateSitemap.js
+ * @file src/scripts/generateSitemap.js
  * @description Generate sitemap for SEO.
  * @author Fovir
  * @since 2025-09-18

@@ -1,5 +1,5 @@
 /**
- * @file DetailPage.jsx
+ * @file src/components/DetailPage/DetailPage.jsx
  * @description Create the `DetailPage` component, which is the container of detail pages. The component fetches post html via API.
  * @author Fovir
  * @since 2025-09-10

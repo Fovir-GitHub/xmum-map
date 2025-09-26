@@ -1,5 +1,5 @@
 /**
- * @file ResetLocationButton.jsx
+ * @file src/components/ToolZone/ResetLocationButton.jsx
  * @description Button component used to reset location of a map.
  * @author Fovir
  * @since 2025-09-20

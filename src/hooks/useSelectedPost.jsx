@@ -1,5 +1,5 @@
 /**
- * @file useSelectedPost.jsx
+ * @file src/hooks/useSelectedPost.jsx
  * @description Define hook of setting `selectedPost`.
  * @author Fovir
  * @since 2025-09-20
@@ -60,8 +60,6 @@ export function useSelectedPost(locale) {
       router.replace(`${pathname}#${newHash}`);
     }
   }, [selectedPost, locale, pathname, router]);
-
-  console.log(selectedPost);
 
   return [selectedPost, setSelectedPost];
 }
