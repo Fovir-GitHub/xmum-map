@@ -14,12 +14,12 @@ export default function Ly3FirstFloor(
   /** @type {Ly3FirstFloorProps} */
   { storeData, locale, setSelectedPost },
 ) {
-  const rightRowStart = 0;
-  const rightRowEnd = rightRowStart + 1;
-  const topRowStart = rightRowEnd;
-  const topRowEnd = 10;
-  const leftRowStart = topRowEnd;
-  const leftRowEnd = topRowEnd + 1;
+  const leftRowStart = 0;
+  const leftRowEnd = leftRowStart + 1;
+  const topRowStart = leftRowEnd;
+  const topRowEnd = 8;
+  const rightRowStart = topRowEnd;
+  const rightRowEnd = topRowEnd + 1;
 
   return (
     <div
@@ -38,18 +38,33 @@ export default function Ly3FirstFloor(
           left: 0,
         }}
       >
+        {/* Left Row Start */}
         <StoresArea
           limit={1}
           top={2000}
-          left={8000}
+          left={0}
           width={2000}
           height={1000}
           locale={locale}
-          storeData={storeData.slice(rightRowStart, rightRowEnd)}
+          storeData={storeData.slice(leftRowStart, leftRowEnd)}
           fontSize="10rem"
           setSelectedPost={setSelectedPost}
-          rotate={90}
+          rotate={-90}
         />
+        {/* Left Row End */}
+        {/* Top Row Start */}
+        <StoresArea
+          limit={topRowEnd - topRowStart + 1}
+          storeData={storeData.slice(topRowStart, topRowEnd)}
+          width={940}
+          height={900}
+          top={100}
+          left={1800}
+          fontSize="6rem"
+          locale={locale}
+          setSelectedPost={setSelectedPost}
+        />
+        {/* Top Row End */}
       </div>
     </div>
   );
