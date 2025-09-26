@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "NODE_ENV=development next dev",
     "pre:data": "node src/scripts/readSvgData.js",
-    "pre:sitemap": "node src/scripts/generateSitemap.js",
+    "pre:sitemap": "next-sitemap --config next-sitemap.config.cjs",
     "prebuild": "pnpm pre:data && pnpm pre:sitemap",
     "build": "NODE_ENV=production next build",
     "start": "next start",
