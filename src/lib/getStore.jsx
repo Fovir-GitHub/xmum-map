@@ -8,26 +8,85 @@
 import fs from "fs";
 import path from "path";
 
+// Default directory of data files.
+const storeFileDirectory = "src/data";
+
 /**
- * Get a store by slug.
+ * Get all `.json` files under `directory`.
+ *
+ * @param {string} directory Directory of file.
+ */
+export function getJsonFiles(directory = storeFileDirectory) {
+  const dataDirectory = path.join(process.cwd(), directory);
+
+  const files = fs.readdirSync(dataDirectory);
+  return files.filter((file) => path.extname(file) === ".json");
+}
+
+/**
+ * Get store information by slug.
  *
  * @param {string} slug Slug of the store.
+ * @param {string} dataDirectory Directory of data.
  *
- * @returns {object | null} If the store exists, the function will return the store object. Otherwise, it will return `null`.
+ * @returns {{found: object, sourceFile: string, sourceFileName: string}} An object includes founded store, full source file name, and source file name without extension.
  */
-export async function getStoreBySlug(slug) {
-  const storeFiles = ["bell_avenue.json", "bell_suite.json"];
-  let allStores = [];
+export async function getStoreBySlug(
+  slug,
+  dataDirectory = storeFileDirectory,
+) {
+  const storeFiles = getJsonFiles(dataDirectory);
 
   for (const file of storeFiles) {
-    const filePath = path.join(process.cwd(), "src/data", file);
+    const filePath = path.join(process.cwd(), dataDirectory, file);
     const rawData = fs.readFileSync(filePath, "utf8");
     const nestedStores = JSON.parse(rawData);
-
     const stores = nestedStores.flat();
-    allStores = allStores.concat(stores);
+
+    const foundObject = stores.find((s) => s.Slug == slug);
+    if (foundObject) {
+      return {
+        found: foundObject,
+        sourceFile: file,
+        sourceFileName: file.replace(".json", ""),
+      };
+    }
   }
 
-  // Let 123 matches "123".
-  return allStores.find((s) => s.Slug == slug) || null;
+  return {
+    found: null,
+    sourceFile: null,
+    sourceFileName: null,
+  };
+}
+
+/**
+ * Get all stores for generating static params.
+ *
+ * @param {string} dataDirectory Directory of data files.
+ *
+ * @returns {object[]} An array of all store objects.
+ */
+export function getAllStoresForStaticGeneration(
+  dataDirectory = storeFileDirectory,
+) {
+  const storeFiles = getJsonFiles(dataDirectory);
+  const allStores = [];
+
+  for (const file of storeFiles) {
+    const filePath = path.join(process.cwd(), dataDirectory, file);
+    const rawData = fs.readFileSync(filePath, "utf8");
+    const nestedStores = JSON.parse(rawData);
+    const stores = nestedStores.flat();
+
+    const storesWithSource = stores.map((store) => ({
+      ...store,
+      sourceFile: file,
+      sourceFileName: file.replace(".json", ""),
+    }));
+
+    allStores.push(...storesWithSource);
+  }
+
+  return allStores;
 }
