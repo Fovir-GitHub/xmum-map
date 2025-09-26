@@ -79,7 +79,7 @@ export default function Ly3SecondFloor(
           storeData={storeData.slice(topRowStart, topRowEnd)}
           fontSize={"4rem"}
           useRowIndex={true}
-          rotate={true}
+          rotate={90}
           setSelectedPost={setSelectedPost}
         />
         {/* Right Row End */}

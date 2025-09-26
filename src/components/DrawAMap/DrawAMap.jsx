@@ -44,7 +44,7 @@ export default function DrawAMap(
   return (
     <>
       {stores.map((store) => {
-        if (!store.Name || !store.Show) {
+        if (!store.Name || store.Show === false) {
           arrayIndex++;
           return;
         }
