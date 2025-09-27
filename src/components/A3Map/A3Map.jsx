@@ -5,6 +5,8 @@
  * @since 2025-09-27
  */
 
+"use client";
+
 import { ThemeProvider } from "@emotion/react";
 import { useLocale } from "../../hooks/useLocale";
 import { theme } from "../../styles/materialUiTheme";

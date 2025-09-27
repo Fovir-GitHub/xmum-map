@@ -5,6 +5,8 @@
  * @since 2025-09-27
  */
 
+"use client";
+
 /**
  * @typedef {object} A3BodySectionProps
  *
@@ -13,8 +15,7 @@
  * @property {object[][]} a3Data Store data of A3.
  */
 
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { useSelectedPost } from "../../hooks/useSelectedPost";
 import ToolZone from "../ToolZone/ToolZone";
