@@ -24,20 +24,17 @@ export default function Ly3SecondFloor(
   /** @type {Ly3SecondFloorProps} */
   { storeData, locale, setSelectedPost },
 ) {
-  const topRowStart = 0;
-  const topRowEnd = 8;
+  const rightRowStart = 0;
+  const rightRowEnd = 8;
 
-  const leftRowStart = topRowEnd + 1;
-  const leftRowEnd = 29;
+  const topRowStart = rightRowEnd;
+  const topRowEnd = 17;
 
-  const tmallStart = leftRowEnd;
-  const tmallEnd = tmallStart + 1;
+  const tmallStart = 29;
+  const tmallEnd = 31;
 
-  const fruitJuiceStart = leftRowEnd;
-  const fruitJuiceEnd = fruitJuiceStart + 1;
-
-  const topRightCornerStart = tmallStart + 2;
-  const topRightCornerEnd = topRightCornerStart + 2;
+  const bottomRightStart = 31;
+  const bottomRightEnd = bottomRightStart + 2;
 
   return (
     <div>
@@ -57,72 +54,62 @@ export default function Ly3SecondFloor(
       >
         {/* Top Row Start */}
         <StoresArea
-          limit={40}
+          limit={topRowEnd - topRowStart + 1}
+          storeData={storeData.slice(topRowStart, topRowEnd)}
           top={1000}
-          left={2700}
-          width={230}
-          height={400}
+          left={2500}
+          width={300}
+          height={500}
           locale={locale}
-          storeData={storeData.slice(leftRowStart, leftRowEnd)}
-          fontSize={"3rem"}
           setSelectedPost={setSelectedPost}
+          useRowIndex={false}
+          fontSize="3.2rem"
         />
         {/* Top Row End */}
         {/* Right Row Start */}
         <StoresArea
-          limit={8}
-          top={3000}
-          left={5600}
-          width={350}
-          height={500}
+          limit={rightRowEnd - rightRowStart + 1}
+          storeData={storeData.slice(rightRowStart, rightRowEnd)}
           locale={locale}
-          storeData={storeData.slice(topRowStart, topRowEnd)}
-          fontSize={"4rem"}
+          setSelectedPost={setSelectedPost}
+          top={2000}
+          left={6400}
+          width={200}
+          height={500}
           useRowIndex={true}
           rotate={90}
-          setSelectedPost={setSelectedPost}
+          fontSize="5rem"
         />
         {/* Right Row End */}
         {/* Tmall Coffee Start */}
         <StoresArea
-          limit={1}
-          top={5500}
-          left={4600}
-          width={800}
-          height={800}
-          locale={locale}
+          limit={tmallEnd - tmallStart + 1}
           storeData={storeData.slice(tmallStart, tmallEnd)}
-          fontSize={"6rem"}
+          locale={locale}
           setSelectedPost={setSelectedPost}
+          top={5200}
+          left={4500}
+          width={400}
+          height={500}
+          useRowIndex={false}
+          fontSize="4rem"
         />
         {/* Tmall Coffee End */}
         {/* Fruit Juice Start */}
-        <StoresArea
-          limit={1}
-          top={4500}
-          left={2200}
-          width={350}
-          height={500}
-          locale={locale}
-          storeData={storeData.slice(fruitJuiceStart, fruitJuiceEnd)}
-          fontSize={"3rem"}
-          setSelectedPost={setSelectedPost}
-        />
+
         {/* Fruit Juice End */}
         {/* Bottom Right Corner Start */}
         <StoresArea
-          limit={2}
-          top={5800}
-          left={7000}
-          width={350}
-          height={500}
+          limit={bottomRightEnd - bottomRightStart + 1}
+          storeData={storeData.slice(bottomRightStart, bottomRightEnd)}
           locale={locale}
-          storeData={storeData.slice(
-            topRightCornerStart,
-            topRightCornerEnd,
-          )}
-          fontSize={"3rem"}
           setSelectedPost={setSelectedPost}
+          top={5800}
+          left={7200}
+          width={400}
+          height={500}
+          useRowIndex={false}
+          fontSize="4rem"
         />
         {/* Bottom Right Corner End */}
       </div>
