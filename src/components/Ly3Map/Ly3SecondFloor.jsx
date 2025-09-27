@@ -30,6 +30,12 @@ export default function Ly3SecondFloor(
   const topRowStart = rightRowEnd;
   const topRowEnd = 17;
 
+  const tmallStart = 29;
+  const tmallEnd = 31;
+
+  const bottomRightStart = 31;
+  const bottomRightEnd = bottomRightStart + 2;
+
   return (
     <div>
       {/* Background image. */}
@@ -76,13 +82,35 @@ export default function Ly3SecondFloor(
         />
         {/* Right Row End */}
         {/* Tmall Coffee Start */}
-
+        <StoresArea
+          limit={tmallEnd - tmallStart + 1}
+          storeData={storeData.slice(tmallStart, tmallEnd)}
+          locale={locale}
+          setSelectedPost={setSelectedPost}
+          top={5200}
+          left={4500}
+          width={400}
+          height={500}
+          useRowIndex={false}
+          fontSize="4rem"
+        />
         {/* Tmall Coffee End */}
         {/* Fruit Juice Start */}
 
         {/* Fruit Juice End */}
         {/* Bottom Right Corner Start */}
-
+        <StoresArea
+          limit={bottomRightEnd - bottomRightStart + 1}
+          storeData={storeData.slice(bottomRightStart, bottomRightEnd)}
+          locale={locale}
+          setSelectedPost={setSelectedPost}
+          top={5800}
+          left={7200}
+          width={400}
+          height={500}
+          useRowIndex={false}
+          fontSize="4rem"
+        />
         {/* Bottom Right Corner End */}
       </div>
     </div>
