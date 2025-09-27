@@ -27,6 +27,9 @@ export default function Ly3SecondFloor(
   const rightRowStart = 0;
   const rightRowEnd = 8;
 
+  const topRowStart = rightRowEnd;
+  const topRowEnd = 17;
+
   return (
     <div>
       {/* Background image. */}
@@ -44,7 +47,18 @@ export default function Ly3SecondFloor(
         }}
       >
         {/* Top Row Start */}
-
+        <StoresArea
+          limit={topRowEnd - topRowStart + 1}
+          storeData={storeData.slice(topRowStart, topRowEnd)}
+          top={1000}
+          left={2500}
+          width={300}
+          height={500}
+          locale={locale}
+          setSelectedPost={setSelectedPost}
+          useRowIndex={false}
+          fontSize="3.2rem"
+        />
         {/* Top Row End */}
         {/* Right Row Start */}
         <StoresArea
@@ -52,7 +66,7 @@ export default function Ly3SecondFloor(
           storeData={storeData.slice(rightRowStart, rightRowEnd)}
           locale={locale}
           setSelectedPost={setSelectedPost}
-          top={1500}
+          top={2000}
           left={6400}
           width={200}
           height={500}
