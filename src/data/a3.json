@@ -1,0 +1,108 @@
+[
+  [
+    {
+      "Row": 2,
+      "Name": "ZUS Coffee",
+      "Category": "snack",
+      "Slug": "zus",
+      "Width": null,
+      "Icon": null,
+      "Show": null,
+      "Description": null,
+      "Image": null
+    },
+    {
+      "Row": 3,
+      "Name": null,
+      "Category": null,
+      "Slug": null,
+      "Width": null,
+      "Icon": null,
+      "Show": null,
+      "Description": null,
+      "Image": null
+    },
+    {
+      "Row": 4,
+      "Name": null,
+      "Category": null,
+      "Slug": null,
+      "Width": null,
+      "Icon": null,
+      "Show": null,
+      "Description": null,
+      "Image": null
+    }
+  ],
+  [
+    {
+      "Row": 2,
+      "Name": "Zhong Min Kitchen \n中闽美食",
+      "Category": "restaurant",
+      "Slug": "zhongmin",
+      "Width": null,
+      "Icon": null,
+      "Show": null,
+      "Description": null,
+      "Image": null
+    },
+    {
+      "Row": 3,
+      "Name": "Bean's Express",
+      "Category": "restaurant",
+      "Slug": "bean",
+      "Width": null,
+      "Icon": null,
+      "Show": null,
+      "Description": null,
+      "Image": null
+    },
+    {
+      "Row": 4,
+      "Name": "Mad Plate Express",
+      "Category": "restaurant",
+      "Slug": "mad",
+      "Width": null,
+      "Icon": null,
+      "Show": null,
+      "Description": null,
+      "Image": null
+    }
+  ],
+  [
+    {
+      "Row": 2,
+      "Name": "YUAN FOOD HALL\n食.园",
+      "Category": "restaurant",
+      "Slug": "shiyuan",
+      "Width": 4,
+      "Icon": null,
+      "Show": 1,
+      "Description": null,
+      "Image": null
+    },
+    {
+      "Row": 3,
+      "Name": null,
+      "Category": null,
+      "Slug": null,
+      "Width": null,
+      "Icon": null,
+      "Show": 1,
+      "Description": null,
+      "Image": null
+    },
+    {
+      "Row": 4,
+      "Name": null,
+      "Category": null,
+      "Slug": null,
+      "Width": null,
+      "Icon": null,
+      "Show": 1,
+      "Description": null,
+      "Image": null
+    }
+  ]
+]
+

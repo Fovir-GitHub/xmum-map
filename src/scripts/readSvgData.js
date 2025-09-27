@@ -50,5 +50,6 @@ readXlsx("bell_avenue", 78);
 readXlsx("bell_suite", 13);
 readXlsx("ly3", 40);
 readXlsx("b1", 10);
+readXlsx("a3", 3);
 
 console.log("\n\nXLSX Parsed\n\n");
