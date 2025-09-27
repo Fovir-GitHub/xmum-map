@@ -36,6 +36,10 @@ Real Peak Music DJ Academy，助你从 <零基础> 成长为 <专业DJ>
 
 ## 联系方式
 
+微信用户群：
+
+<img src="https://img.xmummap.com/1_real_code1.webp" />
+
 +60 126012892
 
 ---
