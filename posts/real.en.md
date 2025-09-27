@@ -36,6 +36,10 @@ Closed every Tuesday
 
 ## Contact Information
 
+Wechat User Group:
+
+<img src="https://img.xmummap.com/1_real_surround%20%284%29.webp" />
+
 +60 126012892
 
 ---
