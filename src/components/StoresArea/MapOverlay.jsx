@@ -29,14 +29,7 @@ export default function MapOverlay(
         left: 0,
       }}
     >
-      <svg
-        style={{
-          width: "100%",
-          height: "100%",
-        }}
-      >
-        {children}
-      </svg>
+      {children}
     </div>
   );
 }
