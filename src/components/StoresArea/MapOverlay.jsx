@@ -1,12 +1,12 @@
 /**
- * @file src/components/StoresArea/Overlay.jsx
+ * @file src/components/StoresArea/MapOverlay.jsx
  * @description Overlay container of a map.
  * @author Fovir
  * @since 2025-09-27
  */
 
 /**
- * @typedef {object} OverlayProps
+ * @typedef {object} MapOverlayProps
  *
  * @property {any} children Children elements.
  */
@@ -14,8 +14,8 @@
 /**
  * Overlay of a map.
  */
-export default function Overlay(
-  /** @type {OverlayProps} */
+export default function MapOverlay(
+  /** @type {MapOverlayProps} */
   { children },
 ) {
   return (
@@ -29,7 +29,14 @@ export default function Overlay(
         left: 0,
       }}
     >
-      {children}
+      <svg
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        {children}
+      </svg>
     </div>
   );
 }
