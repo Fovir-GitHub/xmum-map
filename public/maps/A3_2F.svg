@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1459 1052">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #545454;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        stroke: #a0a1a6;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4, .cls-6, .cls-7, .cls-8 {
+        fill: none;
+      }
+
+      .cls-5 {
+        font-family: ArialMT, Arial;
+        font-size: 9.1px;
+        stroke-width: .25px;
+      }
+
+      .cls-5, .cls-10, .cls-9, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        fill: #a0a1a6;
+      }
+
+      .cls-10 {
+        font-family: AdobeSongStd-Light-GBpc-EUC-H, 'Adobe Song Std';
+        font-size: 9px;
+        font-weight: 300;
+      }
+
+      .cls-7 {
+        stroke-width: 3px;
+      }
+
+      .cls-7, .cls-8, .cls-9 {
+        stroke: #545454;
+      }
+
+      .cls-11 {
+        letter-spacing: -.02em;
+      }
+    </style>
+    <symbol id="_新建符号" data-name="新建符号" viewBox="0 0 169.8 242.74">
+      <g>
+        <g>
+          <g>
+            <path class="cls-7" d="M168.26,216.81l-40.17,23.43c-2.27-28.94-14.98-74.31-45.23-122.84C55.24,73.09,24.48,42.82,2.63,25.15,16.02,17.34,29.41,9.53,42.8,1.72c23.17,12.81,52.92,40.87,79.07,83.67,33.07,54.14,47.28,103.32,46.4,131.41Z"/>
+            <line class="cls-7" x1="124.87" y1="220.4" x2="166.37" y2="196.26"/>
+            <line class="cls-7" x1="119.6" y1="201.32" x2="161.87" y2="178.4"/>
+            <line class="cls-7" x1="114.19" y1="182.25" x2="155.87" y2="157.4"/>
+            <line class="cls-7" x1="106.87" y1="165.4" x2="149.87" y2="141.4"/>
+            <line class="cls-7" x1="98.87" y1="146.4" x2="140.69" y2="122.3"/>
+            <line class="cls-7" x1="90.87" y1="130.4" x2="132.63" y2="106.25"/>
+            <line class="cls-7" x1="79.87" y1="113.4" x2="123.15" y2="88.11"/>
+            <line class="cls-7" x1="70.87" y1="98.4" x2="113.66" y2="72.98"/>
+            <line class="cls-7" x1="58.87" y1="81.4" x2="101.45" y2="56.31"/>
+            <line class="cls-7" x1="43.87" y1="64.4" x2="86.87" y2="38.4"/>
+            <line class="cls-7" x1="30.46" y1="48.97" x2="72.87" y2="24.4"/>
+            <line class="cls-7" x1="17.05" y1="36.47" x2="58.87" y2="12.4"/>
+          </g>
+          <path class="cls-8" d="M148.87,228.4c-5.69-28.4-15.03-74.25-44-121C76.8,62.1,44.29,32.11,21.87,14.4l3,12"/>
+        </g>
+        <line class="cls-8" x1="35.87" y1="16.4" x2="21.87" y2="14.4"/>
+      </g>
+    </symbol>
+    <symbol id="_新建符号_1" data-name="新建符号 1" viewBox="0 0 278.41 281.85">
+      <g>
+        <path class="cls-2" d="M264.59,246.22l-.15-.3c.11,2.59.15,5.21.15,7.83,0,29.71-19.03,33.66-46.86,22.06.81-7.24,1.26-14.6,1.26-22.06,0-105.42-85.47-190.9-190.89-190.9-7.46,0-14.82.44-22.06,1.26C-5.56,36.29-1.61,17.26,28.1,17.26l146.55,1.26,90.53,90.53-.59,137.17Z"/>
+        <path class="cls-4" d="M199.6,31.45l-11.7-11.7c-.83-.83-.83-2.17,0-2.99l15.63-15.63c.83-.83,2.17-.83,2.99,0l11.7,11.7c.83.83.83,2.17,0,2.99l-15.63,15.63c-.83.83-2.17.83-2.99,0Z"/>
+        <path class="cls-4" d="M219.29,51.14l-11.7-11.7c-.83-.83-.83-2.17,0-2.99l15.63-15.63c.83-.83,2.17-.83,2.99,0l11.7,11.7c.83.83.83,2.17,0,2.99l-15.63,15.63c-.83.83-2.17.83-2.99,0Z"/>
+        <path class="cls-4" d="M238.97,70.83l-11.7-11.7c-.83-.83-.83-2.17,0-2.99l15.63-15.63c.83-.83,2.17-.83,2.99,0l11.7,11.7c.83.83.83,2.17,0,2.99l-15.63,15.63c-.83.83-2.17.83-2.99,0Z"/>
+        <path class="cls-4" d="M258.66,90.51l-11.7-11.7c-.83-.83-.83-2.17,0-2.99l15.63-15.63c.83-.83,2.17-.83,2.99,0l11.7,11.7c.83.83.83,2.17,0,2.99l-15.63,15.63c-.83.83-2.17.83-2.99,0Z"/>
+      </g>
+    </symbol>
+    <symbol id="_新建符号_2" data-name="新建符号 2" viewBox="0 0 110 75">
+      <use width="110" height="75.17" transform="" xlink:href="#_桌椅"/>
+    </symbol>
+    <symbol id="_桌椅" data-name="桌椅" viewBox="0 0 110 75.17">
+      <g>
+        <g>
+          <g>
+            <path class="cls-4" d="M24.08,11.2v11.47H7.09v-11.47c0-4.35,2.98-7.88,6.65-7.88h3.69c3.67,0,6.65,3.53,6.65,7.88Z"/>
+            <path class="cls-4" d="M4.5,3.46s10.46-6.65,22.17,0"/>
+            <path class="cls-4" d="M4.5,7.76s10.46-11.71,22.17,0"/>
+            <polyline class="cls-4" points="7.25 2.39 8.24 4.05 9.47 1.79 11.22 2.62 15.21 1.08 19.71 2.47 21.94 1.81 22.64 3.83 24.46 2.56"/>
+          </g>
+          <g>
+            <path class="cls-4" d="M49.95,11.2v11.47h-17v-11.47c0-4.35,2.98-7.88,6.65-7.88h3.69c3.67,0,6.65,3.53,6.65,7.88Z"/>
+            <path class="cls-4" d="M30.36,3.46s10.46-6.65,22.17,0"/>
+            <path class="cls-4" d="M30.36,7.76s10.46-11.71,22.17,0"/>
+            <polyline class="cls-4" points="33.11 2.39 34.1 4.05 35.34 1.79 37.08 2.62 41.08 1.08 45.58 2.47 47.81 1.81 48.5 3.83 50.33 2.56"/>
+          </g>
+          <g>
+            <path class="cls-4" d="M76.55,11.2v11.47h-17v-11.47c0-4.35,2.98-7.88,6.65-7.88h3.69c3.67,0,6.65,3.53,6.65,7.88Z"/>
+            <path class="cls-4" d="M56.97,3.46s10.46-6.65,22.17,0"/>
+            <path class="cls-4" d="M56.97,7.76s10.46-11.71,22.17,0"/>
+            <polyline class="cls-4" points="59.72 2.39 60.71 4.05 61.94 1.79 63.69 2.62 67.68 1.08 72.18 2.47 74.41 1.81 75.11 3.83 76.93 2.56"/>
+          </g>
+          <g>
+            <path class="cls-4" d="M102.41,11.2v11.47h-17v-11.47c0-4.35,2.98-7.88,6.65-7.88h3.69c3.67,0,6.65,3.53,6.65,7.88Z"/>
+            <path class="cls-4" d="M82.83,3.46s10.46-6.65,22.17,0"/>
+            <path class="cls-4" d="M82.83,7.76s10.46-11.71,22.17,0"/>
+            <polyline class="cls-4" points="85.58 2.39 86.57 4.05 87.8 1.79 89.55 2.62 93.55 1.08 98.04 2.47 100.27 1.81 100.97 3.83 102.79 2.56"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path class="cls-4" d="M85.42,63.97v-11.47s17,0,17,0v11.47c0,4.35-2.98,7.88-6.65,7.88h-3.69c-3.67,0-6.65-3.53-6.65-7.88Z"/>
+            <path class="cls-4" d="M105,71.71s-10.46,6.65-22.17,0"/>
+            <path class="cls-4" d="M105,67.41s-10.46,11.71-22.17,0"/>
+            <polyline class="cls-4" points="102.25 72.78 101.26 71.12 100.03 73.38 98.28 72.55 94.29 74.09 89.79 72.7 87.56 73.35 86.86 71.34 85.04 72.61"/>
+          </g>
+          <g>
+            <path class="cls-4" d="M59.55,63.97v-11.47s17,0,17,0v11.47c0,4.35-2.98,7.88-6.65,7.88h-3.69c-3.67,0-6.65-3.53-6.65-7.88Z"/>
+            <path class="cls-4" d="M79.14,71.71s-10.46,6.65-22.17,0"/>
+            <path class="cls-4" d="M79.14,67.41s-10.46,11.71-22.17,0"/>
+            <polyline class="cls-4" points="76.39 72.78 75.4 71.12 74.16 73.38 72.42 72.55 68.42 74.09 63.92 72.7 61.69 73.35 61 71.34 59.17 72.61"/>
+          </g>
+          <g>
+            <path class="cls-4" d="M32.95,63.97v-11.47s17,0,17,0v11.47c0,4.35-2.98,7.88-6.65,7.88h-3.69c-3.67,0-6.65-3.53-6.65-7.88Z"/>
+            <path class="cls-4" d="M52.53,71.71s-10.46,6.65-22.17,0"/>
+            <path class="cls-4" d="M52.53,67.41s-10.46,11.71-22.17,0"/>
+            <polyline class="cls-4" points="49.78 72.78 48.79 71.12 47.56 73.38 45.81 72.55 41.82 74.09 37.32 72.7 35.09 73.35 34.39 71.34 32.57 72.61"/>
+          </g>
+          <g>
+            <path class="cls-4" d="M7.09,63.97v-11.47s17,0,17,0v11.47c0,4.35-2.98,7.88-6.65,7.88h-3.69c-3.67,0-6.65-3.53-6.65-7.88Z"/>
+            <path class="cls-4" d="M26.67,71.71s-10.46,6.65-22.17,0"/>
+            <path class="cls-4" d="M26.67,67.41s-10.46,11.71-22.17,0"/>
+            <polyline class="cls-4" points="23.92 72.78 22.93 71.12 21.7 73.38 19.95 72.55 15.95 74.09 11.46 72.7 9.23 73.35 8.53 71.34 6.71 72.61"/>
+          </g>
+        </g>
+        <rect class="cls-2" y="21.67" width="110" height="32"/>
+      </g>
+    </symbol>
+  </defs>
+  <use width="169.8" height="242.74" transform="translate(785.52 667.79) scale(1 -1)" xlink:href="#_新建符号"/>
+  <use width="169.8" height="242.74" transform="translate(662.32 670.79) rotate(-180)" xlink:href="#_新建符号"/>
+  <use width="278.41" height="281.85" transform="translate(785.14 123.13)" xlink:href="#_新建符号_1"/>
+  <use width="278.41" height="281.85" transform="translate(646.55 814.98) rotate(-180)" xlink:href="#_新建符号_1"/>
+  <use width="278.41" height="281.85" transform="translate(1067.23 533.8) rotate(89.98)" xlink:href="#_新建符号_1"/>
+  <use width="278.41" height="281.85" transform="translate(365.42 404.26) rotate(-90)" xlink:href="#_新建符号_1"/>
+  <use width="110" height="75" transform="translate(0 34)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 140)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 246)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 352)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 458)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 564)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 670)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 776)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(0 882)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 34)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(376)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(519)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(662)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(805)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(948)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(375 977)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(518 977)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(661 977)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(804 977)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(947 977)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 140)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 246)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 352)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 458)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 564)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 670)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 776)" xlink:href="#_新建符号_2"/>
+  <use width="110" height="75" transform="translate(1349 882)" xlink:href="#_新建符号_2"/>
+  <g>
+    <rect class="cls-1" x="237" y="91" width="78.74" height="98"/>
+    <text class="cls-10" transform="translate(258.39 140.07)"><tspan x="0" y="0">嘉庚书房</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-1" x="1115.08" y="855.72" width="43.07" height="52"/>
+    <circle class="cls-3" cx="1147.12" cy="866.66" r="3.22"/>
+    <polygon class="cls-9" points="1151.85 872.12 1151.85 885.54 1150.11 885.54 1150.11 888.35 1149.37 888.35 1149.37 904.18 1145.01 904.18 1145.01 888.35 1144.34 888.35 1144.34 885.54 1142.46 885.54 1142.46 872.12 1144.34 872.12 1144.34 871.12 1150.11 871.12 1150.11 872.12 1151.85 872.12"/>
+    <circle class="cls-3" cx="1127.27" cy="866.66" r="3.22"/>
+    <polygon class="cls-9" points="1136.96 885.47 1136.96 888.35 1129.45 888.35 1129.45 904.18 1125.09 904.18 1125.09 888.35 1117.58 888.35 1117.58 885.47 1119.68 885.47 1122.54 882.55 1122.54 872.12 1124.42 872.12 1124.42 871.12 1130.18 871.12 1130.18 872.12 1131.93 872.12 1131.93 882.48 1134.86 885.47 1136.96 885.47"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="255.08" y="443.08" width="43.07" height="52"/>
+    <circle class="cls-3" cx="287.12" cy="457.02" r="3.22"/>
+    <polygon class="cls-9" points="291.85 462.48 291.85 475.9 290.11 475.9 290.11 478.71 289.37 478.71 289.37 494.54 285.01 494.54 285.01 478.71 284.34 478.71 284.34 475.9 282.46 475.9 282.46 462.48 284.34 462.48 284.34 461.48 290.11 461.48 290.11 462.48 291.85 462.48"/>
+    <circle class="cls-3" cx="266.12" cy="457.02" r="3.22"/>
+    <polygon class="cls-9" points="270.85 462.48 270.85 475.9 269.11 475.9 269.11 478.71 268.37 478.71 268.37 494.54 264.01 494.54 264.01 478.71 263.34 478.71 263.34 475.9 261.46 475.9 261.46 462.48 263.34 462.48 263.34 461.48 269.11 461.48 269.11 462.48 270.85 462.48"/>
+    <line class="cls-6" x1="276.62" y1="453.49" x2="276.62" y2="494.49"/>
+    <text class="cls-5" transform="translate(268.33 451.3)"><tspan x="0" y="0">LIF</tspan><tspan class="cls-11" x="13.15" y="0">T</tspan></text>
+  </g>
+</svg>
