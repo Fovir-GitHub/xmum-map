@@ -22,6 +22,7 @@ import ToolZone from "../ToolZone/ToolZone";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
+import A3GFloor from "./A3GFloor";
 
 export default function A3BodySection(
   /** @type {A3BodySectionProps} */
@@ -35,6 +36,14 @@ export default function A3BodySection(
   const router = useRouter();
   const pathname = usePathname();
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
+
+  const floorMaps = [
+    <A3GFloor
+      storeData={a3Data[0]}
+      locale={locale}
+      setSelectedPost={setSelectedPost}
+    />,
+  ];
 
   return (
     <>
@@ -60,7 +69,7 @@ export default function A3BodySection(
         />
       </Sidebar>
 
-      <Map transformRef={transformRef}></Map>
+      <Map transformRef={transformRef}>{floorMaps[layer]}</Map>
     </>
   );
 }
