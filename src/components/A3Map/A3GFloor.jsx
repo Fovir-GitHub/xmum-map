@@ -1,4 +1,14 @@
 /**
+ * @file src/components/A3Map/A3GFloor.jsx
+ * @description Map of A3 ground floor.
+ * @author Fovir
+ * @since 2025-09-29
+ */
+
+import MapOverlay from "../StoresArea/MapOverlay";
+import { StoresArea } from "../StoresArea/StoresArea";
+
+/**
  * @typedef {object} A3GFloorProps
  *
  * @property {object[]} storeData Data of stores.
@@ -6,9 +16,9 @@
  * @property {Function} setSelectedPost Function used to select post.
  */
 
-import MapOverlay from "../StoresArea/MapOverlay";
-import { StoresArea } from "../StoresArea/StoresArea";
-
+/**
+ * Map of A3 ground floor.
+ */
 export default function A3GFloor(
   /** @type {A3GFloorProps} */
   { storeData, locale, setSelectedPost },
