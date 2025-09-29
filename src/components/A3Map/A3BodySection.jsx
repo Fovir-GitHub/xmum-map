@@ -24,6 +24,7 @@ import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
 import A3GFloor from "./A3GFloor";
 import A3FirstFloor from "./A3FirstFloor";
+import A3SecondFloor from "./A3SecondFloor";
 
 export default function A3BodySection(
   /** @type {A3BodySectionProps} */
@@ -49,6 +50,7 @@ export default function A3BodySection(
       locale={locale}
       setSelectedPost={setSelectedPost}
     />,
+    <A3SecondFloor />,
   ];
 
   return (
