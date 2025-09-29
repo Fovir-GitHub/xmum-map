@@ -62,6 +62,8 @@ const xmumConfig = {
         Slug: "3e",
       },
     },
+    backgroundMapWidth: 10000,
+    backgroundMapHeight: 10000,
   },
   seo: {
     description:
