@@ -7,7 +7,7 @@
 
 "use client";
 
-import xmumConfig from "../../config";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
@@ -34,12 +34,7 @@ export default function Ly3FirstFloor(
   const rightRowEnd = topRowEnd + 1;
 
   return (
-    <div>
-      <img
-        src="maps/LY3_1F.svg"
-        width={xmumConfig.map.backgroundMapWidth}
-        height={xmumConfig.map.backgroundMapHeight}
-      />
+    <BackgroundMapWrapper backgroundSource="maps/LY3_1F.svg">
       <MapOverlay>
         {/* Left Row Start */}
         <StoresArea
@@ -83,6 +78,6 @@ export default function Ly3FirstFloor(
         />
         {/* Right Row End */}
       </MapOverlay>
-    </div>
+    </BackgroundMapWrapper>
   );
 }

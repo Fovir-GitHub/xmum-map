@@ -10,6 +10,7 @@ import StoreBlock, {
   getFillColor,
   getStoreIcon,
 } from "../StoreBlock/StoreBlock";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 import MapOverlay from "../StoresArea/MapOverlay";
 
 /**
@@ -33,12 +34,7 @@ export default function Ly3GFloor(
   const storeInformation = xmumConfig.map.ly3.gStoreInformation;
 
   return (
-    <div>
-      <img
-        src="maps/LY3_GF.svg"
-        width={xmumConfig.map.backgroundMapWidth}
-        height={xmumConfig.map.backgroundMapHeight}
-      />
+    <BackgroundMapWrapper backgroundSource="maps/LY3_GF.svg">
       <MapOverlay>
         <svg
           style={{
@@ -66,6 +62,6 @@ export default function Ly3GFloor(
           />
         </svg>
       </MapOverlay>
-    </div>
+    </BackgroundMapWrapper>
   );
 }

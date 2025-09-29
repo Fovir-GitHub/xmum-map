@@ -5,7 +5,7 @@
  * @since 2025-09-29
  */
 
-import xmumConfig from "../../config";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
@@ -25,12 +25,7 @@ export default function A3GFloor(
   { storeData, locale, setSelectedPost },
 ) {
   return (
-    <div>
-      <img
-        src="maps/A3_GF.svg"
-        width={xmumConfig.map.backgroundMapWidth}
-        height={xmumConfig.map.backgroundMapHeight}
-      />
+    <BackgroundMapWrapper backgroundSource="maps/A3_GF.svg">
       <MapOverlay>
         <StoresArea
           storeData={storeData}
@@ -44,6 +39,6 @@ export default function A3GFloor(
           setSelectedPost={setSelectedPost}
         />
       </MapOverlay>
-    </div>
+    </BackgroundMapWrapper>
   );
 }

@@ -9,7 +9,7 @@
 
 import { StoresArea } from "../StoresArea/StoresArea";
 import MapOverlay from "../StoresArea/MapOverlay";
-import xmumConfig from "../../config";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 
 /**
  * @typedef {object[]} B1GMapProps
@@ -27,12 +27,7 @@ export default function B1GfMap(
   { storeData, locale, setSelectedPost },
 ) {
   return (
-    <div>
-      <img
-        src="maps/B1_GF.svg"
-        width={xmumConfig.map.backgroundMapWidth}
-        height={xmumConfig.map.backgroundMapHeight}
-      />
+    <BackgroundMapWrapper backgroundSource="maps/B1_GF.svg">
       <MapOverlay>
         <StoresArea
           limit={12}
@@ -46,6 +41,6 @@ export default function B1GfMap(
           setSelectedPost={setSelectedPost}
         />
       </MapOverlay>
-    </div>
+    </BackgroundMapWrapper>
   );
 }

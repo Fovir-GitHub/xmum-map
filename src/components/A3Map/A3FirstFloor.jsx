@@ -13,7 +13,7 @@
  * @property {Function} setSelectedPost Function used to select post.
  */
 
-import xmumConfig from "../../config";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
@@ -31,13 +31,7 @@ export default function A3FirstFloor(
   const cinemaEnd = cinemaStart + 1;
 
   return (
-    <div>
-      <img
-        src="maps/A3_1F.svg"
-        width={xmumConfig.map.backgroundMapWidth}
-        height={xmumConfig.map.backgroundMapHeight}
-      />
-
+    <BackgroundMapWrapper backgroundSource="maps/A3_1F.svg">
       <MapOverlay>
         {/* Print Area Start */}
         <StoresArea
@@ -66,6 +60,6 @@ export default function A3FirstFloor(
         />
         {/* MINI Cinema End */}
       </MapOverlay>
-    </div>
+    </BackgroundMapWrapper>
   );
 }

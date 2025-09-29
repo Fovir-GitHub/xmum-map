@@ -5,19 +5,11 @@
  * @since 2025-09-29
  */
 
-import xmumConfig from "../../config";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 
 /**
  * Map of A3 second floor.
  */
 export default function A3SecondFloor() {
-  return (
-    <div>
-      <img
-        src="maps/A3_2F.svg"
-        width={xmumConfig.map.backgroundMapWidth}
-        height={xmumConfig.map.backgroundMapHeight}
-      />
-    </div>
-  );
+  return <BackgroundMapWrapper backgroundSource="maps/A3_2F.svg" />;
 }

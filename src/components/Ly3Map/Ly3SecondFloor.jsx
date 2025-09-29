@@ -9,7 +9,7 @@
 
 import { StoresArea } from "../StoresArea/StoresArea";
 import MapOverlay from "../StoresArea/MapOverlay";
-import xmumConfig from "../../config";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 
 /**
  * @typedef {object} Ly3SecondFloorProps
@@ -39,14 +39,7 @@ export default function Ly3SecondFloor(
   const bottomRightEnd = bottomRightStart + 2;
 
   return (
-    <div>
-      {/* Background image. */}
-      <img
-        src="maps/LY3_2F.svg"
-        width={xmumConfig.map.backgroundMapWidth}
-        height={xmumConfig.map.backgroundMapHeight}
-      />
-
+    <BackgroundMapWrapper backgroundSource="maps/LY3_2F.svg">
       <MapOverlay>
         {/* Top Row Start */}
         <StoresArea
@@ -109,6 +102,6 @@ export default function Ly3SecondFloor(
         />
         {/* Bottom Right Corner End */}
       </MapOverlay>
-    </div>
+    </BackgroundMapWrapper>
   );
 }
