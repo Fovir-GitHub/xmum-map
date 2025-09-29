@@ -23,6 +23,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
 import A3GFloor from "./A3GFloor";
+import A3FirstFloor from "./A3FirstFloor";
 
 export default function A3BodySection(
   /** @type {A3BodySectionProps} */
@@ -40,6 +41,11 @@ export default function A3BodySection(
   const floorMaps = [
     <A3GFloor
       storeData={a3Data[0]}
+      locale={locale}
+      setSelectedPost={setSelectedPost}
+    />,
+    <A3FirstFloor
+      storeData={a3Data[1]}
       locale={locale}
       setSelectedPost={setSelectedPost}
     />,
