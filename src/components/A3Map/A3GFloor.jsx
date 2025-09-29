@@ -13,10 +13,6 @@ export default function A3GFloor(
   /** @type {A3GFloorProps} */
   { storeData, locale, setSelectedPost },
 ) {
-  /**
-   * TODO:
-   *  - Change font color of the SVG map.
-   */
   return (
     <div>
       <img src="maps/A3_GF.svg" width={10000} height={10000} />
