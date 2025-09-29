@@ -26,9 +26,10 @@ import xmumConfig, {
  * @property {number} strokeWidth Width of stroke.
  * @property {string} text Text displayed in the center of the store block.
  * @property {import("react").ComponentType} icon Material icons displayed under `text`.
- * @property {Function} handleClick Function to be called when the store block is clicked.
  * @property {boolean} [showIcon=true] Determine whether to show the icon.
  * @property {string} [fontSize=xmumConfig.storeBlock.style.fontSize] Font size of `text`. The default value can be set in the configuration file.
+ * @property {string} [slug="404"] Slug of the post.
+ * @property {string} locale Current locale.
  */
 
 /**
@@ -46,47 +47,52 @@ export default function StoreBlock(
     strokeWidth,
     text,
     icon,
-    handleClick,
+    locale,
     showIcon = true,
+    slug = "404",
     fontSize = xmumConfig.storeBlock.style.fontSize,
   },
 ) {
   return (
-    <g onClick={handleClick} className={utilStyles.highlightOnHover}>
-      <rect
-        x={x}
-        y={y}
-        fill={fill}
-        width={width}
-        height={height}
-        stroke={stroke}
-        strokeWidth={strokeWidth}
-      />
-      <foreignObject width={width} height={height} x={x} y={y}>
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style={{
-            color: catppuccinMochaColors.surface0,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            fontSize: fontSize,
-          }}
-        >
-          <p
+    <g className={utilStyles.highlightOnHover}>
+      <a
+        href={`#${slug}${xmumConfig.website.seperatorBetweenSlugAndLocale}${locale}`}
+      >
+        <rect
+          x={x}
+          y={y}
+          fill={fill}
+          width={width}
+          height={height}
+          stroke={stroke}
+          strokeWidth={strokeWidth}
+        />
+        <foreignObject width={width} height={height} x={x} y={y}>
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
             style={{
-              textAlign: "center",
-              wordBreak: "break-word",
-              whiteSpace: "pre-line",
-              textWrap: "wrap",
-              padding: "0 10px",
+              color: catppuccinMochaColors.surface0,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              fontSize: fontSize,
             }}
           >
-            {text}
-          </p>
-          {showIcon && icon}
-        </div>
-      </foreignObject>
+            <p
+              style={{
+                textAlign: "center",
+                wordBreak: "break-word",
+                whiteSpace: "pre-line",
+                textWrap: "wrap",
+                padding: "0 10px",
+              }}
+            >
+              {text}
+            </p>
+            {showIcon && icon}
+          </div>
+        </foreignObject>
+      </a>
     </g>
   );
 }

@@ -73,9 +73,8 @@ export default function DrawAMap(
             fontSize={fontSize}
             key={crypto.randomUUID()}
             icon={getStoreIcon(store)}
-            handleClick={() =>
-              setSelectedPost({ slug: store.Slug, locale: locale })
-            }
+            slug={store.Slug}
+            locale={locale}
           />
         );
       })}
