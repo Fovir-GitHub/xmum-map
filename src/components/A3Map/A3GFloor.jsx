@@ -5,6 +5,7 @@
  * @since 2025-09-29
  */
 
+import xmumConfig from "../../config";
 import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
@@ -25,7 +26,11 @@ export default function A3GFloor(
 ) {
   return (
     <div>
-      <img src="maps/A3_GF.svg" width={10000} height={10000} />
+      <img
+        src="maps/A3_GF.svg"
+        width={xmumConfig.map.backgroundMapWidth}
+        height={xmumConfig.map.backgroundMapHeight}
+      />
       <MapOverlay>
         <StoresArea
           storeData={storeData}

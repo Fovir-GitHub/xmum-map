@@ -9,6 +9,7 @@
 
 import { StoresArea } from "../StoresArea/StoresArea";
 import MapOverlay from "../StoresArea/MapOverlay";
+import xmumConfig from "../../config";
 
 /**
  * @typedef {object} Ly3SecondFloorProps
@@ -40,7 +41,11 @@ export default function Ly3SecondFloor(
   return (
     <div>
       {/* Background image. */}
-      <img src="maps/LY3_2F.svg" width={10000} height={10000} />
+      <img
+        src="maps/LY3_2F.svg"
+        width={xmumConfig.map.backgroundMapWidth}
+        height={xmumConfig.map.backgroundMapHeight}
+      />
 
       <MapOverlay>
         {/* Top Row Start */}

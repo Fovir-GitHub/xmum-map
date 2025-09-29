@@ -34,7 +34,11 @@ export default function Ly3GFloor(
 
   return (
     <div>
-      <img src="maps/LY3_GF.svg" width={10000} height={10000} />
+      <img
+        src="maps/LY3_GF.svg"
+        width={xmumConfig.map.backgroundMapWidth}
+        height={xmumConfig.map.backgroundMapHeight}
+      />
       <MapOverlay>
         <svg
           style={{

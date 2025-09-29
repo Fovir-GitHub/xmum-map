@@ -9,6 +9,7 @@
 
 import { StoresArea } from "../StoresArea/StoresArea";
 import MapOverlay from "../StoresArea/MapOverlay";
+import xmumConfig from "../../config";
 
 /**
  * @typedef {object[]} B1GMapProps
@@ -27,7 +28,11 @@ export default function B1GfMap(
 ) {
   return (
     <div>
-      <img src="maps/B1_GF.svg" width={10000} height={10000} />
+      <img
+        src="maps/B1_GF.svg"
+        width={xmumConfig.map.backgroundMapWidth}
+        height={xmumConfig.map.backgroundMapHeight}
+      />
       <MapOverlay>
         <StoresArea
           limit={12}

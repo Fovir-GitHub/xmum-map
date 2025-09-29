@@ -13,6 +13,7 @@
  * @property {Function} setSelectedPost Function used to select post.
  */
 
+import xmumConfig from "../../config";
 import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
@@ -31,7 +32,11 @@ export default function A3FirstFloor(
 
   return (
     <div>
-      <img src="maps/A3_1F.svg" width={10000} height={10000} />
+      <img
+        src="maps/A3_1F.svg"
+        width={xmumConfig.map.backgroundMapWidth}
+        height={xmumConfig.map.backgroundMapHeight}
+      />
 
       <MapOverlay>
         {/* Print Area Start */}

@@ -7,6 +7,7 @@
 
 "use client";
 
+import xmumConfig from "../../config";
 import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
@@ -34,7 +35,11 @@ export default function Ly3FirstFloor(
 
   return (
     <div>
-      <img src="maps/LY3_1F.svg" width={10000} height={10000} />
+      <img
+        src="maps/LY3_1F.svg"
+        width={xmumConfig.map.backgroundMapWidth}
+        height={xmumConfig.map.backgroundMapHeight}
+      />
       <MapOverlay>
         {/* Left Row Start */}
         <StoresArea
