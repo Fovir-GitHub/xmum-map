@@ -1,4 +1,11 @@
 /**
+ * @file src/components/A3Map/A3FirstFloor.jsx
+ * @description Map of A3 first floor.
+ * @author Fovir
+ * @since 2025-09-29
+ */
+
+/**
  * @typedef {object} A3FirstFloorProps
  *
  * @property {object[]} storeData Data of stores.
@@ -25,7 +32,9 @@ export default function A3FirstFloor(
   return (
     <div>
       <img src="maps/A3_1F.svg" width={10000} height={10000} />
+
       <MapOverlay>
+        {/* Print Area Start */}
         <StoresArea
           storeData={storeData.slice(printAreaStart, printAreaEnd)}
           locale={locale}
@@ -37,6 +46,8 @@ export default function A3FirstFloor(
           left={8600}
           fontSize="10rem"
         />
+        {/* Print Area End */}
+        {/* MINI Cinema Start */}
         <StoresArea
           storeData={storeData.slice(cinemaStart, cinemaEnd)}
           limit={cinemaEnd - cinemaStart + 1}
@@ -48,6 +59,7 @@ export default function A3FirstFloor(
           left={500}
           fontSize="10rem"
         />
+        {/* MINI Cinema End */}
       </MapOverlay>
     </div>
   );
