@@ -949,10 +949,12 @@ const XmumSvg = (props) => (
         />
       </g>
     </g>
-    <path
-      className="cls-23"
-      d="M694.2,747.7l-31.3,60.1c-8.5-4.3-17.9-7.2-28-8.2-15.7-1.7-30.9,1.4-44,7.9l-31.2-60.4c24.5-12.2,52.8-17.8,82.2-14.8,18.8,2,36.4,7.3,52.2,15.3h0Z"
-    />
+    <LinkWrapper href="/a3">
+      <path
+        className="cls-23"
+        d="M694.2,747.7l-31.3,60.1c-8.5-4.3-17.9-7.2-28-8.2-15.7-1.7-30.9,1.4-44,7.9l-31.2-60.4c24.5-12.2,52.8-17.8,82.2-14.8,18.8,2,36.4,7.3,52.2,15.3h0Z"
+      />
+    </LinkWrapper>
     <path
       className="cls-23"
       d="M185.8,653.1l9.6,108.5c-15.2,1.5-30.4,5.7-44.9,13-22.7,11.3-40.6,28.5-52.6,48.7L3.5,768.2c22.6-37.7,55.9-69.7,98.3-90.9,27.1-13.5,55.5-21.5,83.9-24.3h0Z"
@@ -1227,11 +1229,13 @@ const XmumSvg = (props) => (
         </text>
       </g>
       <g className="cls-15">
-        <text className="cls-4" transform="translate(615.2 772.6)">
-          <tspan x={0} y={0}>
-            {"A3"}
-          </tspan>
-        </text>
+        <LinkWrapper href="/a3">
+          <text className="cls-4" transform="translate(615.2 772.6)">
+            <tspan x={0} y={0}>
+              {"A3"}
+            </tspan>
+          </text>
+        </LinkWrapper>
       </g>
       <g className="cls-15">
         <text className="cls-8" transform="translate(419.9 481.6)">
