@@ -5,17 +5,14 @@
  * @since 2025-09-25
  */
 
-import xmumConfig from "../../config";
-import StoreBlock, {
-  getFillColor,
-  getStoreIcon,
-} from "../StoreBlock/StoreBlock";
 import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 import MapOverlay from "../StoresArea/MapOverlay";
+import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
  * @typedef {object} Ly3GFloorProps
  *
+ * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
  * @property {Function} setSelectedPost Function used to select post.
  */
@@ -25,42 +22,22 @@ import MapOverlay from "../StoresArea/MapOverlay";
  */
 export default function Ly3GFloor(
   /** @type {Ly3GFloorProps} */
-  { locale, setSelectedPost },
+  { storeData, locale, setSelectedPost },
 ) {
-  /**
-   * TODO:
-   *  Use store information in the `.xlsx`.
-   */
-  const storeInformation = xmumConfig.map.ly3.gStoreInformation;
-
   return (
     <BackgroundMapWrapper backgroundSource="maps/LY3_GF.svg">
       <MapOverlay>
-        <svg
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          <StoreBlock
-            x={4400}
-            y={4200}
-            fill={getFillColor(storeInformation.Category)}
-            icon={getStoreIcon(storeInformation)}
-            width={1300}
-            height={850}
-            text={storeInformation.Name}
-            stroke={xmumConfig.storeBlock.style.stroke}
-            strokeWidth={xmumConfig.storeBlock.style.strokeWidth}
-            fontSize="8rem"
-            handleClick={() =>
-              setSelectedPost({
-                slug: storeInformation.Slug,
-                locale: locale,
-              })
-            }
-          />
-        </svg>
+        <StoresArea
+          storeData={storeData}
+          locale={locale}
+          limit={storeData.length}
+          setSelectedPost={setSelectedPost}
+          top={4100}
+          left={4400}
+          width={650}
+          height={950}
+          fontSize="8rem"
+        />
       </MapOverlay>
     </BackgroundMapWrapper>
   );

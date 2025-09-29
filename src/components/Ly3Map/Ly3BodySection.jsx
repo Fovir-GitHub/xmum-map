@@ -41,7 +41,11 @@ export default function Ly3BodySection(
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
   const maps = [
-    <Ly3GFloor locale={locale} setSelectedPost={setSelectedPost} />,
+    <Ly3GFloor
+      storeData={ly3Data[0]}
+      locale={locale}
+      setSelectedPost={setSelectedPost}
+    />,
     <Ly3FirstFloor
       locale={locale}
       storeData={ly3Data[1]}
