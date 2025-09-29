@@ -26,6 +26,10 @@ export default function Ly3GFloor(
   /** @type {Ly3GFloorProps} */
   { locale, setSelectedPost },
 ) {
+  /**
+   * TODO:
+   *  Use store information in the `.xlsx`.
+   */
   const storeInformation = xmumConfig.map.ly3.gStoreInformation;
 
   return (
