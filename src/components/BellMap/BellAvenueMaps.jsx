@@ -19,7 +19,6 @@ import MilliesVisionAndEncounteringNailArt from "./MilliesVisionAndEncounteringN
  * @property {number} mapHeight Height of the map.
  * @property {string} locale Locale from `useState()`.
  * @property {string[]} showCategories An array to determine which stores can be displayed by their categories.
- * @property {Function} setSelectedPost Function used to set selected post.
  * @property {number} [currentFloor=0] The floor that users are on. By default, it is GF (0F).
  */
 
@@ -36,7 +35,6 @@ export default function BellAvenueMaps(
     mapHeight,
     locale,
     showCategories,
-    setSelectedPost,
     currentFloor = 0,
   },
 ) {
@@ -51,7 +49,6 @@ export default function BellAvenueMaps(
         svgHeight={HEIGHT}
         stores={storeData[currentFloor]}
         locale={locale}
-        setSelectedPost={setSelectedPost}
         showPatch={
           currentFloor === 0 &&
           showCategories.includes(
@@ -71,7 +68,6 @@ export default function BellAvenueMaps(
  * @property {object[]} stores Data of stores on every floor.
  * @property {string} locale Locale from `useState()`.
  * @property {boolean} showPatch Determine whether to display patch stores.
- * @property {Function} setSelectedPost Function used to set selected post.
  */
 
 /**
@@ -79,7 +75,7 @@ export default function BellAvenueMaps(
  */
 function BellAvenueFloorMap(
   /** @type {BellAvenueMapsProps} */
-  { svgWidth, svgHeight, stores, locale, showPatch, setSelectedPost },
+  { svgWidth, svgHeight, stores, locale, showPatch },
 ) {
   const ROW_INDEX_LIMIT = 39; // The last store of the first row.
   const limit = 78; // Maximum number of stores.
@@ -126,11 +122,9 @@ function BellAvenueFloorMap(
         rowIndexLimit: ROW_INDEX_LIMIT,
         locale: locale,
         limit: limit,
-        setSelectedPost: setSelectedPost,
       })}
       {showPatch &&
         MilliesVisionAndEncounteringNailArt({
-          setSelectedPost: setSelectedPost,
           locale: locale,
         })}
     </svg>

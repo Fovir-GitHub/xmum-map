@@ -41,16 +41,8 @@ export default function A3BodySection(
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
   const floorMaps = [
-    <A3GFloor
-      storeData={a3Data[0]}
-      locale={locale}
-      setSelectedPost={setSelectedPost}
-    />,
-    <A3FirstFloor
-      storeData={a3Data[1]}
-      locale={locale}
-      setSelectedPost={setSelectedPost}
-    />,
+    <A3GFloor storeData={a3Data[0]} locale={locale} />,
+    <A3FirstFloor storeData={a3Data[1]} locale={locale} />,
     <A3SecondFloor />,
     <A3ThirdFloor />,
   ];

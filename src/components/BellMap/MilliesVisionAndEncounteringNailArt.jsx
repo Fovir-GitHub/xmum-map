@@ -14,7 +14,6 @@ import StoreBlock, {
 /**
  * @typedef {object} MilliesVisionAndEncounteringNailArtProps
  *
- * @property {Function} setSelectedPost Function used to set selected post.
  * @property {string} locale Locale from `useState()`.
  */
 

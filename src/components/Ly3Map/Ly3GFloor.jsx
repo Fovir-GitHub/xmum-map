@@ -14,7 +14,6 @@ import { StoresArea } from "../StoresArea/StoresArea";
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
- * @property {Function} setSelectedPost Function used to select post.
  */
 
 /**
@@ -22,7 +21,7 @@ import { StoresArea } from "../StoresArea/StoresArea";
  */
 export default function Ly3GFloor(
   /** @type {Ly3GFloorProps} */
-  { storeData, locale, setSelectedPost },
+  { storeData, locale },
 ) {
   return (
     <BackgroundMapWrapper backgroundSource="maps/LY3_GF.svg">
@@ -31,7 +30,6 @@ export default function Ly3GFloor(
           storeData={storeData}
           locale={locale}
           limit={storeData.length}
-          setSelectedPost={setSelectedPost}
           top={4100}
           left={4400}
           width={650}

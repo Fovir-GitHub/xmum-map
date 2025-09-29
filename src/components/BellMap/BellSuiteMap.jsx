@@ -16,7 +16,6 @@ import xmumConfig from "../../config";
  * @property {object[]} storeData Data of stores in bell suite.
  * @property {number} mapWidth Width of the map.
  * @property {number} mapHeight Height of the map.
- * @property {Function} setSelectedPost Function used to set selected post.
  * @property {string} locale Locale from `useState()` function.
  */
 
@@ -25,7 +24,7 @@ import xmumConfig from "../../config";
  */
 export default function BellSuiteMap(
   /** @type {BellSuiteMapProps} */
-  { storeData, mapWidth, mapHeight, setSelectedPost, locale },
+  { storeData, mapWidth, mapHeight, locale },
 ) {
   const ROW_INDEX_LIMIT = 8;
   const limit = 13;
@@ -99,7 +98,6 @@ export default function BellSuiteMap(
         {DrawAMap({
           stores: storeData[0],
           rowIndexLimit: ROW_INDEX_LIMIT,
-          setSelectedPost: setSelectedPost,
           locale: locale,
           limit: limit,
         })}

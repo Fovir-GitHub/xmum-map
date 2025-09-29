@@ -16,7 +16,6 @@ import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
- * @property {Function} setSelectedPost Function used to select posts.
  */
 
 /**
@@ -24,7 +23,7 @@ import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
  */
 export default function B1GfMap(
   /** @type {B1GMapProps} */
-  { storeData, locale, setSelectedPost },
+  { storeData, locale },
 ) {
   return (
     <BackgroundMapWrapper backgroundSource="maps/B1_GF.svg">
@@ -38,7 +37,6 @@ export default function B1GfMap(
           locale={locale}
           storeData={storeData}
           fontSize={"5rem"}
-          setSelectedPost={setSelectedPost}
         />
       </MapOverlay>
     </BackgroundMapWrapper>

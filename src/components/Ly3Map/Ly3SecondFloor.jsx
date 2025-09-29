@@ -16,7 +16,6 @@ import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
- * @property {Function} setSelectedPost Function used to set selected post.
  */
 
 /**
@@ -24,7 +23,7 @@ import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
  */
 export default function Ly3SecondFloor(
   /** @type {Ly3SecondFloorProps} */
-  { storeData, locale, setSelectedPost },
+  { storeData, locale },
 ) {
   const rightRowStart = 0;
   const rightRowEnd = 8;
@@ -50,7 +49,6 @@ export default function Ly3SecondFloor(
           width={300}
           height={500}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           useRowIndex={false}
           fontSize="3.2rem"
         />
@@ -60,7 +58,6 @@ export default function Ly3SecondFloor(
           limit={rightRowEnd - rightRowStart + 1}
           storeData={storeData.slice(rightRowStart, rightRowEnd)}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           top={2000}
           left={6400}
           width={200}
@@ -75,7 +72,6 @@ export default function Ly3SecondFloor(
           limit={tmallEnd - tmallStart + 1}
           storeData={storeData.slice(tmallStart, tmallEnd)}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           top={5200}
           left={4500}
           width={400}
@@ -92,7 +88,6 @@ export default function Ly3SecondFloor(
           limit={bottomRightEnd - bottomRightStart + 1}
           storeData={storeData.slice(bottomRightStart, bottomRightEnd)}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           top={5800}
           left={7200}
           width={400}

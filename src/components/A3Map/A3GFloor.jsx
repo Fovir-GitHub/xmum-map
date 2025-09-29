@@ -14,7 +14,6 @@ import { StoresArea } from "../StoresArea/StoresArea";
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
- * @property {Function} setSelectedPost Function used to select post.
  */
 
 /**
@@ -22,7 +21,7 @@ import { StoresArea } from "../StoresArea/StoresArea";
  */
 export default function A3GFloor(
   /** @type {A3GFloorProps} */
-  { storeData, locale, setSelectedPost },
+  { storeData, locale },
 ) {
   return (
     <BackgroundMapWrapper backgroundSource="maps/A3_GF.svg">
@@ -36,7 +35,6 @@ export default function A3GFloor(
           top={1450}
           left={6700}
           fontSize="9rem"
-          setSelectedPost={setSelectedPost}
         />
       </MapOverlay>
     </BackgroundMapWrapper>

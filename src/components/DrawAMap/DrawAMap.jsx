@@ -20,7 +20,6 @@ import xmumConfig from "../../config";
  * @property {number} rowIndexLimit Determine how many stores should be placed in a row.
  * @property {string} locale Current locale.
  * @property {number} limit Total number of stores.
- * @property {Function} setSelectedPost Function used to set selected post.
  */
 
 /**
@@ -33,7 +32,6 @@ export default function DrawAMap(
     rowIndexLimit,
     locale,
     limit,
-    setSelectedPost,
     width = xmumConfig.storeBlock.size.width,
     height = xmumConfig.storeBlock.size.height,
     fontSize = xmumConfig.storeBlock.style.fontSize,
