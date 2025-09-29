@@ -8,6 +8,7 @@
 "use client";
 
 import { StoresArea } from "../StoresArea/StoresArea";
+import MapOverlay from "../StoresArea/MapOverlay";
 
 /**
  * @typedef {object} Ly3SecondFloorProps
@@ -41,17 +42,7 @@ export default function Ly3SecondFloor(
       {/* Background image. */}
       <img src="maps/LY3_2F.svg" width={10000} height={10000} />
 
-      {/* Interaction overlay. */}
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "transparent",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      >
+      <MapOverlay>
         {/* Top Row Start */}
         <StoresArea
           limit={topRowEnd - topRowStart + 1}
@@ -112,7 +103,7 @@ export default function Ly3SecondFloor(
           fontSize="4rem"
         />
         {/* Bottom Right Corner End */}
-      </div>
+      </MapOverlay>
     </div>
   );
 }

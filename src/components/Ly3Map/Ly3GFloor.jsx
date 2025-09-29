@@ -10,6 +10,7 @@ import StoreBlock, {
   getFillColor,
   getStoreIcon,
 } from "../StoreBlock/StoreBlock";
+import MapOverlay from "../StoresArea/MapOverlay";
 
 /**
  * @typedef {object} Ly3GFloorProps
@@ -30,17 +31,7 @@ export default function Ly3GFloor(
   return (
     <div>
       <img src="maps/LY3_GF.svg" width={10000} height={10000} />
-
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "transparent",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      >
+      <MapOverlay>
         <svg
           style={{
             width: "100%",
@@ -66,7 +57,7 @@ export default function Ly3GFloor(
             }
           />
         </svg>
-      </div>
+      </MapOverlay>
     </div>
   );
 }

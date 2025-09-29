@@ -7,6 +7,7 @@
 
 "use client";
 
+import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
@@ -34,16 +35,7 @@ export default function Ly3FirstFloor(
   return (
     <div>
       <img src="maps/LY3_1F.svg" width={10000} height={10000} />
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "transparent",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      >
+      <MapOverlay>
         {/* Left Row Start */}
         <StoresArea
           limit={1}
@@ -85,7 +77,7 @@ export default function Ly3FirstFloor(
           setSelectedPost={setSelectedPost}
         />
         {/* Right Row End */}
-      </div>
+      </MapOverlay>
     </div>
   );
 }
