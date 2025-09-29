@@ -25,6 +25,7 @@ import Map from "../Map/Map";
 import A3GFloor from "./A3GFloor";
 import A3FirstFloor from "./A3FirstFloor";
 import A3SecondFloor from "./A3SecondFloor";
+import A3ThirdFloor from "./A3ThirdFloor";
 
 export default function A3BodySection(
   /** @type {A3BodySectionProps} */
@@ -51,6 +52,7 @@ export default function A3BodySection(
       setSelectedPost={setSelectedPost}
     />,
     <A3SecondFloor />,
+    <A3ThirdFloor />,
   ];
 
   return (
