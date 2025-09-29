@@ -30,6 +30,7 @@ export default function A3GFloor(
           top={1450}
           left={6700}
           fontSize="9rem"
+          setSelectedPost={setSelectedPost}
         />
       </MapOverlay>
     </div>
