@@ -10,7 +10,7 @@ import xmumConfig from "../../config";
 /**
  * @typedef {object} BackgroundMapWrapperProps
  *
- * @property {string} backgroundSource URL of the source image.
+ * @property {string} backgroundSource URL of the source image to be inserted in the `<img>` tag.
  * @property {number} [backgroundWidth=xmumConfig.map.backgroundMapWidth] Width of the background image.
  * @property {number} [backgroundHeight=xmumConfig.map.backgroundMapHeight] Height of the background image.
  * @property {any} children Children elements.
