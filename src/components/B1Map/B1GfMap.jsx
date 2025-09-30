@@ -12,7 +12,7 @@ import MapOverlay from "../StoresArea/MapOverlay";
 import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 
 /**
- * @typedef {object[]} B1GMapProps
+ * @typedef {object} B1GMapProps
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.

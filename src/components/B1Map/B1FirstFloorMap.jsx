@@ -8,7 +8,7 @@
 import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 
 /**
- * @typedef {object[]} B1FirstFloorMapProps
+ * @typedef {object} B1FirstFloorMapProps
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
