@@ -17,7 +17,7 @@ import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 /**
  * Map of B1 first floor.
  */
-export default function B1FirstFloor(
+export default function B1FirstFloorMap(
   /** @type {B1FirstFloorMapProps} */
   { storeData, locale },
 ) {
