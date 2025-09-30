@@ -14,6 +14,7 @@ import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
 import B1GfMap from "./B1GfMap";
 import B1FirstFloorMap from "./B1FirstFloorMap";
+import B1ThirdFloorMap from "./B1ThirdFloorMap";
 
 /**
  * @typedef {object} B1BodySectionProps
@@ -42,7 +43,7 @@ export default function B1BodySection(
     <B1GfMap storeData={b1Data[0]} locale={locale} />,
     <B1FirstFloorMap storeData={b1Data[1]} locale={locale} />,
     null,
-    null,
+    <B1ThirdFloorMap storeData={b1Data[3]} locale={locale} />,
   ];
 
   return (
