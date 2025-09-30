@@ -16,6 +16,7 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
  * @property {Function} setLayer Callback function used to set `layer`.
  * @property {number} layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
  * @property {number} [layerStart=0] Start number of layers or floors.
+ * @property {number[]} [layerIgnore=[]] Layers that won't be displayed.
  */
 
 /**
@@ -25,7 +26,7 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
  */
 export default function LayerSwitcher(
   /** @type {LayerSwitcherProps} */
-  { layer, layerRange, setLayer, layerStart = 0 },
+  { layer, layerRange, setLayer, layerStart = 0, layerIgnore = [] },
 ) {
   const toolBackgroundOpacity = getToggleButtonGroupStyle().opacity;
   const toggleButtonGroupStyle =
@@ -71,11 +72,16 @@ export default function LayerSwitcher(
     >
       {Array.from({ length: layerRange }, (_, i) => layerStart + i)
         .reverse()
-        .map((i) => (
-          <ToggleButton key={i} value={i} sx={layerSwitcherStyle}>
-            {getLayerLabel(i)}
-          </ToggleButton>
-        ))}
+        .map((i) => {
+          if (layerIgnore.includes(i)) {
+            return null;
+          }
+          return (
+            <ToggleButton key={i} value={i} sx={layerSwitcherStyle}>
+              {getLayerLabel(i)}
+            </ToggleButton>
+          );
+        })}
     </ToggleButtonGroup>
   );
 }
