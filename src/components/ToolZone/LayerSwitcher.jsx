@@ -12,10 +12,10 @@ import { catppuccinMochaColors } from "../../styles/materialUiTheme";
 /**
  * @typedef {object} LayerSwitcherProps
  *
- * @property layer The layer variable from `useState()`.
- * @property setLayer Callback function used to set `layer`.
- * @property layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
- * @property [layerStart=0] Start number of layers or floors.
+ * @property {number} layer The layer variable from `useState()`.
+ * @property {Function} setLayer Callback function used to set `layer`.
+ * @property {number} layerRange Number of layers. The component will generate layers or floors between [0, layerRange).
+ * @property {number} [layerStart=0] Start number of layers or floors.
  */
 
 /**
