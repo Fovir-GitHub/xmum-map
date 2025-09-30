@@ -1,6 +1,6 @@
 {
   "name": "XMUM Map",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "scripts": {
     "dev": "NODE_ENV=development next dev",
     "pre:data": "node src/scripts/readSvgData.js",
