@@ -13,6 +13,7 @@ import { usePathname, useRouter } from "next/navigation";
 import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
 import B1GfMap from "./B1GfMap";
+import B1FirstFloor from "./B1FirstFloor";
 
 /**
  * @typedef {object} B1BodySectionProps
@@ -39,7 +40,7 @@ export default function B1BodySection(
   const floorMaps = [
     null,
     <B1GfMap storeData={b1Data[0]} locale={locale} />,
-    null,
+    <B1FirstFloor storeData={b1Data[1]} locale={locale} />,
     null,
     null,
   ];
