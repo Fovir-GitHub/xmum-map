@@ -24,6 +24,7 @@ import { usePathname } from "next/navigation";
  * @property {number} layerRange Number of layers, which will be passed to `LayerSwitcher` component.
  * @property {import("react").Ref} transformRef Ref of map used to reset state of map.
  * @property {number} [layerStart=0] Start number of layers or floors.
+ * @property {number[]} [layerIgnore=[]] Layers that won't be displayed.
  */
 
 /**
@@ -39,6 +40,7 @@ export default function ToolZone(
     layerRange,
     transformRef,
     layerStart = 0,
+    layerIgnore = [],
   },
 ) {
   const toggleButtonGroupStyle =
@@ -65,6 +67,7 @@ export default function ToolZone(
         layerRange={layerRange}
         setLayer={setLayer}
         layerStart={layerStart}
+        layerIgnore={layerIgnore}
       />
     </div>
   );
