@@ -4,6 +4,13 @@
 
 Nasi Lemak
 
+<div class="image-slide">
+<img src="https://img.xmummap.com/LY3_2F_rasa_menu%20%281%29.webp" />
+<img src="https://img.xmummap.com/LY3_2F_rasa_menu%20%282%29.webp" />
+<img src="https://img.xmummap.com/LY3_2F_rasa_menu%20%283%29.webp" />
+<img src="https://img.xmummap.com/LY3_2F_rasa_menu%20%284%29.webp" />
+</div>
+
 ---
 
 ## Environment
