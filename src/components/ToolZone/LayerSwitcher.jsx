@@ -52,7 +52,7 @@ export default function LayerSwitcher(
     if (i === 0) {
       return "GF";
     } else if (i === -1) {
-      return "B1";
+      return "BF";
     } else {
       return `${i}F`;
     }
