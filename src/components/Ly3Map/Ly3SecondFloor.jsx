@@ -8,13 +8,14 @@
 "use client";
 
 import { StoresArea } from "../StoresArea/StoresArea";
+import MapOverlay from "../StoresArea/MapOverlay";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 
 /**
  * @typedef {object} Ly3SecondFloorProps
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
- * @property {Function} setSelectedPost Function used to set selected post.
  */
 
 /**
@@ -22,7 +23,7 @@ import { StoresArea } from "../StoresArea/StoresArea";
  */
 export default function Ly3SecondFloor(
   /** @type {Ly3SecondFloorProps} */
-  { storeData, locale, setSelectedPost },
+  { storeData, locale },
 ) {
   const rightRowStart = 0;
   const rightRowEnd = 8;
@@ -37,21 +38,8 @@ export default function Ly3SecondFloor(
   const bottomRightEnd = bottomRightStart + 2;
 
   return (
-    <div>
-      {/* Background image. */}
-      <img src="maps/LY3_2F.svg" width={10000} height={10000} />
-
-      {/* Interaction overlay. */}
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "transparent",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      >
+    <BackgroundMapWrapper backgroundSource="maps/LY3_2F.svg">
+      <MapOverlay>
         {/* Top Row Start */}
         <StoresArea
           limit={topRowEnd - topRowStart + 1}
@@ -61,7 +49,6 @@ export default function Ly3SecondFloor(
           width={300}
           height={500}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           useRowIndex={false}
           fontSize="3.2rem"
         />
@@ -71,7 +58,6 @@ export default function Ly3SecondFloor(
           limit={rightRowEnd - rightRowStart + 1}
           storeData={storeData.slice(rightRowStart, rightRowEnd)}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           top={2000}
           left={6400}
           width={200}
@@ -86,7 +72,6 @@ export default function Ly3SecondFloor(
           limit={tmallEnd - tmallStart + 1}
           storeData={storeData.slice(tmallStart, tmallEnd)}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           top={5200}
           left={4500}
           width={400}
@@ -103,7 +88,6 @@ export default function Ly3SecondFloor(
           limit={bottomRightEnd - bottomRightStart + 1}
           storeData={storeData.slice(bottomRightStart, bottomRightEnd)}
           locale={locale}
-          setSelectedPost={setSelectedPost}
           top={5800}
           left={7200}
           width={400}
@@ -112,7 +96,7 @@ export default function Ly3SecondFloor(
           fontSize="4rem"
         />
         {/* Bottom Right Corner End */}
-      </div>
-    </div>
+      </MapOverlay>
+    </BackgroundMapWrapper>
   );
 }

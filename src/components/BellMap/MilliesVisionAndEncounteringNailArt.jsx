@@ -14,7 +14,6 @@ import StoreBlock, {
 /**
  * @typedef {object} MilliesVisionAndEncounteringNailArtProps
  *
- * @property {Function} setSelectedPost Function used to set selected post.
  * @property {string} locale Locale from `useState()`.
  */
 
@@ -23,7 +22,7 @@ import StoreBlock, {
  */
 export default function MilliesVisionAndEncounteringNailArt(
   /** @type {MilliesVisionAndEncounteringNailArtProps} */
-  { setSelectedPost, locale },
+  { locale },
 ) {
   const xPosition =
     xmumConfig.storeBlock.patches.position.x *
@@ -44,12 +43,8 @@ export default function MilliesVisionAndEncounteringNailArt(
         strokeWidth={xmumConfig.storeBlock.style.strokeWidth}
         text={xmumConfig.storeBlock.patches.milliesVision.name}
         showIcon={false}
-        handleClick={() =>
-          setSelectedPost({
-            slug: xmumConfig.storeBlock.patches.milliesVision.slug,
-            locale: locale,
-          })
-        }
+        slug={xmumConfig.storeBlock.patches.milliesVision.slug}
+        locale={locale}
       />
 
       <StoreBlock
@@ -66,13 +61,8 @@ export default function MilliesVisionAndEncounteringNailArt(
         icon={getStoreIcon(
           xmumConfig.storeBlock.patches.encounteringNailArt.category,
         )}
-        handleClick={() =>
-          setSelectedPost({
-            slug: xmumConfig.storeBlock.patches.encounteringNailArt
-              .slug,
-            locale: locale,
-          })
-        }
+        slug={xmumConfig.storeBlock.patches.encounteringNailArt.slug}
+        locale={locale}
         showIcon={false}
       />
     </>

@@ -33,7 +33,7 @@ export default function Ly3BodySection(
 ) {
   const [layer, setLayer] = useState(0);
   const layerRange = 3;
-  const transfromRef = useRef(null);
+  const transformRef = useRef(null);
 
   const router = useRouter();
   const pathname = usePathname();
@@ -41,17 +41,9 @@ export default function Ly3BodySection(
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
   const maps = [
-    <Ly3GFloor locale={locale} setSelectedPost={setSelectedPost} />,
-    <Ly3FirstFloor
-      locale={locale}
-      storeData={ly3Data[1]}
-      setSelectedPost={setSelectedPost}
-    />,
-    <Ly3SecondFloor
-      locale={locale}
-      storeData={ly3Data[2]}
-      setSelectedPost={setSelectedPost}
-    />,
+    <Ly3GFloor storeData={ly3Data[0]} locale={locale} />,
+    <Ly3FirstFloor locale={locale} storeData={ly3Data[1]} />,
+    <Ly3SecondFloor locale={locale} storeData={ly3Data[2]} />,
   ];
 
   return (
@@ -62,7 +54,7 @@ export default function Ly3BodySection(
         layer={layer}
         setLayer={setLayer}
         layerRange={layerRange}
-        transformRef={transfromRef}
+        transformRef={transformRef}
       />
 
       <Sidebar
@@ -77,7 +69,7 @@ export default function Ly3BodySection(
         />
       </Sidebar>
 
-      <Map transformRef={transfromRef}>{maps[layer]}</Map>
+      <Map transformRef={transformRef}>{maps[layer]}</Map>
     </>
   );
 }

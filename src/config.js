@@ -55,13 +55,8 @@ const xmumConfig = {
     height: 1000,
     bellAvenueWidth: 6000,
     bellSuiteWidth: 1400,
-    ly3: {
-      gStoreInformation: {
-        Name: "3E",
-        Category: "daily_necessity",
-        Slug: "3e",
-      },
-    },
+    backgroundMapWidth: 10000,
+    backgroundMapHeight: 10000,
   },
   seo: {
     description:

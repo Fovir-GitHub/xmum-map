@@ -17,6 +17,27 @@ export default function XmumMap() {
 }
 
 /**
+ * @typedef {object} LinkWrapperProps
+ *
+ * @property {any} children Children elements.
+ * @property {string} href `href` in the `<a>` tag.
+ */
+
+/**
+ * Wrap children elements by a link.
+ */
+function LinkWrapper(
+  /** @type {LinkWrapperProps} */
+  { children, href },
+) {
+  return (
+    <a href={href} className={utilsStyle.highlightOnHover}>
+      {children}
+    </a>
+  );
+}
+
+/**
  * SVG converted by https://www.svgviewer.dev/svg-to-react-jsx
  */
 const XmumSvg = (props) => (
@@ -31,26 +52,26 @@ const XmumSvg = (props) => (
     <defs>
       <style>
         {
-          "\n      .cls-1 {\n        font-size: 2.6px;\n      }\n\n      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {\n        fill: #000;\n      }\n\n      .cls-1, .cls-2, .cls-13, .cls-4, .cls-14, .cls-15, .cls-5, .cls-16, .cls-17, .cls-6, .cls-18, .cls-7, .cls-19, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-20 {\n        isolation: isolate;\n      }\n\n      .cls-1, .cls-2, .cls-13, .cls-4, .cls-15, .cls-6, .cls-18, .cls-7, .cls-19, .cls-8, .cls-11, .cls-12, .cls-20 {\n        font-family: ArialMT, Arial;\n      }\n\n      .cls-21 {\n        fill: #cff;\n        stroke: #cff;\n      }\n\n      .cls-21, .cls-22, .cls-23, .cls-17, .cls-24, .cls-25, .cls-26, .cls-20, .cls-27 {\n        stroke-miterlimit: 10;\n      }\n\n      .cls-2, .cls-10 {\n        font-size: 5px;\n      }\n\n      .cls-28 {\n        clip-path: url(#clippath-20);\n      }\n\n      .cls-29 {\n        clip-path: url(#clippath-11);\n      }\n\n      .cls-30 {\n        clip-path: url(#clippath-16);\n      }\n\n      .cls-22, .cls-31, .cls-32, .cls-33, .cls-34, .cls-24, .cls-35, .cls-36, .cls-37 {\n        fill: #545454;\n      }\n\n      .cls-22, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37 {\n        stroke: #545454;\n      }\n\n      .cls-31, .cls-3, .cls-38, .cls-39 {\n        stroke-width: 0px;\n      }\n\n      .cls-13, .cls-4 {\n        font-size: 17px;\n      }\n\n      .cls-13, .cls-15, .cls-16, .cls-18, .cls-19, .cls-27 {\n        fill: #fff;\n      }\n\n      .cls-23, .cls-17, .cls-24, .cls-40, .cls-25, .cls-26, .cls-20, .cls-27, .cls-41 {\n        stroke: #fff;\n      }\n\n      .cls-23, .cls-40, .cls-41 {\n        fill: #dc8a78;\n      }\n\n      .cls-42 {\n        stroke-dasharray: 0 0 0 0 0 0 15 15;\n      }\n\n      .cls-42, .cls-43, .cls-44, .cls-45, .cls-39, .cls-26, .cls-46 {\n        fill: none;\n      }\n\n      .cls-42, .cls-43, .cls-44, .cls-45, .cls-46 {\n        stroke: #a0a1a6;\n        stroke-linecap: round;\n        stroke-linejoin: round;\n        stroke-width: 4px;\n      }\n\n      .cls-32 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-33 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-34 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-47 {\n        clip-path: url(#clippath-2);\n      }\n\n      .cls-43 {\n        stroke-dasharray: 0 0 0 0 0 0 14.9 14.9;\n      }\n\n      .cls-48 {\n        clip-path: url(#clippath-13);\n      }\n\n      .cls-38 {\n        fill: #a0a1a6;\n      }\n\n      .cls-15, .cls-16 {\n        font-size: 11px;\n      }\n\n      .cls-49 {\n        clip-path: url(#clippath-15);\n      }\n\n      .cls-50 {\n        clip-path: url(#clippath-6);\n      }\n\n      .cls-5, .cls-16, .cls-17, .cls-9, .cls-10 {\n        font-family: AdobeSongStd-Light-GBpc-EUC-H, 'Adobe Song Std';\n        font-weight: 300;\n      }\n\n      .cls-5, .cls-7 {\n        font-size: 29px;\n      }\n\n      .cls-45 {\n        stroke-dasharray: 0 0 0 0 0 0 15.1 15.1;\n      }\n\n      .cls-51 {\n        clip-path: url(#clippath-7);\n      }\n\n      .cls-52 {\n        clip-path: url(#clippath-21);\n      }\n\n      .cls-17, .cls-20 {\n        fill: #000200;\n        font-size: 9px;\n      }\n\n      .cls-53 {\n        clip-path: url(#clippath-1);\n      }\n\n      .cls-54 {\n        clip-path: url(#clippath-4);\n      }\n\n      .cls-40 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-35 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-55 {\n        clip-path: url(#clippath-12);\n      }\n\n      .cls-25 {\n        fill: #f60006;\n      }\n\n      .cls-25, .cls-27 {\n        stroke-width: .2px;\n      }\n\n      .cls-56 {\n        clip-path: url(#clippath-22);\n      }\n\n      .cls-6, .cls-12 {\n        font-size: 33.8px;\n      }\n\n      .cls-18 {\n        letter-spacing: 0em;\n      }\n\n      .cls-18, .cls-19 {\n        font-size: 22px;\n      }\n\n      .cls-57 {\n        clip-path: url(#clippath-9);\n      }\n\n      .cls-58 {\n        clip-path: url(#clippath);\n      }\n\n      .cls-26 {\n        stroke-width: .5px;\n      }\n\n      .cls-59 {\n        clip-path: url(#clippath-19);\n      }\n\n      .cls-8, .cls-9 {\n        font-size: 9px;\n      }\n\n      .cls-60 {\n        clip-path: url(#clippath-3);\n      }\n\n      .cls-46 {\n        stroke-dasharray: 0 0 0 0 0 0 16.5 16.5;\n      }\n\n      .cls-11 {\n        font-size: 98.6px;\n      }\n\n      .cls-61 {\n        clip-path: url(#clippath-8);\n      }\n\n      .cls-36 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-12 {\n        letter-spacing: 0em;\n      }\n\n      .cls-37 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-62 {\n        clip-path: url(#clippath-18);\n      }\n\n      .cls-63 {\n        clip-path: url(#clippath-14);\n      }\n\n      .cls-64 {\n        clip-path: url(#clippath-17);\n      }\n\n      .cls-65 {\n        clip-path: url(#clippath-5);\n      }\n\n      .cls-66 {\n        clip-path: url(#clippath-10);\n      }\n\n      .cls-67 {\n        clip-path: url(#clippath-23);\n      }\n\n      .cls-41 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n    "
+          "\n      .cls-1 {\n        font-size: 2.6px;\n      }\n\n      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {\n        fill: #000;\n      }\n\n      .cls-1, .cls-2, .cls-13, .cls-14, .cls-4, .cls-15, .cls-16, .cls-5, .cls-17, .cls-6, .cls-7, .cls-18, .cls-8, .cls-19, .cls-20, .cls-9, .cls-10, .cls-11, .cls-12 {\n        isolation: isolate;\n      }\n\n      .cls-1, .cls-2, .cls-13, .cls-4, .cls-16, .cls-6, .cls-7, .cls-18, .cls-8, .cls-19, .cls-20, .cls-11, .cls-12 {\n        font-family: ArialMT, Arial;\n      }\n\n      .cls-21 {\n        fill: #cff;\n        stroke: #cff;\n      }\n\n      .cls-21, .cls-22, .cls-23, .cls-14, .cls-24, .cls-25, .cls-20, .cls-26 {\n        stroke-miterlimit: 10;\n      }\n\n      .cls-2, .cls-10 {\n        font-size: 5px;\n      }\n\n      .cls-27 {\n        clip-path: url(#clippath-20);\n      }\n\n      .cls-28 {\n        clip-path: url(#clippath-11);\n      }\n\n      .cls-29 {\n        clip-path: url(#clippath-16);\n      }\n\n      .cls-22, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36 {\n        fill: #545454;\n      }\n\n      .cls-22, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36 {\n        stroke: #545454;\n      }\n\n      .cls-30, .cls-3, .cls-37, .cls-38 {\n        stroke-width: 0px;\n      }\n\n      .cls-13, .cls-4 {\n        font-size: 17px;\n      }\n\n      .cls-13, .cls-16, .cls-17, .cls-18, .cls-19, .cls-26 {\n        fill: #fff;\n      }\n\n      .cls-23, .cls-14, .cls-39, .cls-40, .cls-24, .cls-25, .cls-20, .cls-26 {\n        stroke: #fff;\n      }\n\n      .cls-23, .cls-39, .cls-40 {\n        fill: #dc8a78;\n      }\n\n      .cls-41 {\n        stroke-dasharray: 0 0 0 0 0 0 15 15;\n      }\n\n      .cls-41, .cls-14, .cls-42, .cls-43, .cls-44, .cls-38, .cls-25, .cls-20, .cls-45 {\n        fill: none;\n      }\n\n      .cls-41, .cls-42, .cls-43, .cls-44, .cls-45 {\n        stroke: #a0a1a6;\n        stroke-linecap: round;\n        stroke-linejoin: round;\n        stroke-width: 4px;\n      }\n\n      .cls-14, .cls-5, .cls-17, .cls-9, .cls-10 {\n        font-family: AdobeSongStd-Light-GBpc-EUC-H, 'Adobe Song Std';\n        font-weight: 300;\n      }\n\n      .cls-14, .cls-20 {\n        font-size: 9px;\n      }\n\n      .cls-31 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-32 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-46 {\n        clip-path: url(#clippath-2);\n      }\n\n      .cls-42 {\n        stroke-dasharray: 0 0 0 0 0 0 14.9 14.9;\n      }\n\n      .cls-47 {\n        clip-path: url(#clippath-13);\n      }\n\n      .cls-37 {\n        fill: #a0a1a6;\n      }\n\n      .cls-16, .cls-17 {\n        font-size: 11px;\n      }\n\n      .cls-48 {\n        clip-path: url(#clippath-15);\n      }\n\n      .cls-49 {\n        clip-path: url(#clippath-6);\n      }\n\n      .cls-5, .cls-7 {\n        font-size: 29px;\n      }\n\n      .cls-44 {\n        stroke-dasharray: 0 0 0 0 0 0 15.1 15.1;\n      }\n\n      .cls-39 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-50 {\n        clip-path: url(#clippath-7);\n      }\n\n      .cls-51 {\n        clip-path: url(#clippath-21);\n      }\n\n      .cls-33 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-52 {\n        clip-path: url(#clippath-1);\n      }\n\n      .cls-53 {\n        clip-path: url(#clippath-4);\n      }\n\n      .cls-40 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-54 {\n        clip-path: url(#clippath-12);\n      }\n\n      .cls-24 {\n        fill: #f60006;\n      }\n\n      .cls-24, .cls-26 {\n        stroke-width: .2px;\n      }\n\n      .cls-55 {\n        clip-path: url(#clippath-22);\n      }\n\n      .cls-6, .cls-12 {\n        font-size: 33.8px;\n      }\n\n      .cls-56 {\n        clip-path: url(#clippath-9);\n      }\n\n      .cls-57 {\n        clip-path: url(#clippath);\n      }\n\n      .cls-25 {\n        stroke-width: .5px;\n      }\n\n      .cls-18, .cls-19 {\n        font-size: 22px;\n      }\n\n      .cls-34 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-58 {\n        clip-path: url(#clippath-19);\n      }\n\n      .cls-35 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-8, .cls-9 {\n        font-size: 9px;\n      }\n\n      .cls-19 {\n        letter-spacing: 0em;\n      }\n\n      .cls-59 {\n        clip-path: url(#clippath-3);\n      }\n\n      .cls-45 {\n        stroke-dasharray: 0 0 0 0 0 0 16.5 16.5;\n      }\n\n      .cls-11 {\n        font-size: 98.6px;\n      }\n\n      .cls-60 {\n        clip-path: url(#clippath-8);\n      }\n\n      .cls-12 {\n        letter-spacing: 0em;\n      }\n\n      .cls-36 {\n        stroke-miterlimit: 10;\n        stroke-width: 1px;\n      }\n\n      .cls-61 {\n        clip-path: url(#clippath-18);\n      }\n\n      .cls-62 {\n        clip-path: url(#clippath-14);\n      }\n\n      .cls-63 {\n        clip-path: url(#clippath-17);\n      }\n\n      .cls-64 {\n        clip-path: url(#clippath-5);\n      }\n\n      .cls-65 {\n        clip-path: url(#clippath-10);\n      }\n\n      .cls-66 {\n        clip-path: url(#clippath-23);\n      }\n    "
         }
       </style>
       <symbol id="AED" viewBox="0 0 10.5 10.8">
         <g>
           <g>
             <path
-              className="cls-25"
+              className="cls-24"
               d="M10.4,7.9c0-.8-.3-1.5-.8-2h0L5.3.2,1,5.9c-.5.5-.9,1.2-.9,2,0,1.5,1.3,2.8,2.8,2.8s1.8-.5,2.3-1.3c.5.8,1.4,1.3,2.3,1.3,1.5,0,2.8-1.2,2.8-2.8h0Z"
             />
             <polyline
-              className="cls-26"
+              className="cls-25"
               points="5.3 8.9 4.4 6.2 6.6 7.3 5.4 2.1"
             />
             <polygon
-              className="cls-27"
+              className="cls-26"
               points="5.2 1.4 5.1 2.4 6 2.2 5.2 1.4"
             />
           </g>
-          <g className="cls-14">
+          <g className="cls-15">
             <text
               className="cls-1"
               transform="translate(2.6 5.7) scale(1 -1)"
@@ -64,7 +85,7 @@ const XmumSvg = (props) => (
       </symbol>
       <clipPath id="clippath">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={493.1}
           y={757.9}
           width={10.5}
@@ -73,7 +94,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-1">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={936.1}
           y={262.9}
           width={10.5}
@@ -82,7 +103,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-2">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={1155.1}
           y={316.9}
           width={10.5}
@@ -91,7 +112,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-3">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={751.1}
           y={758.9}
           width={10.5}
@@ -100,7 +121,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-4">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={883.1}
           y={812.9}
           width={10.5}
@@ -109,7 +130,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-5">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={539.1}
           y={768.9}
           width={31.1}
@@ -118,7 +139,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-6">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={305.1}
           y={877}
           width={15.5}
@@ -127,7 +148,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-7">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={1436.1}
           y={810}
           width={21.3}
@@ -136,7 +157,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-8">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={121.1}
           y={795.9}
           width={31.1}
@@ -145,7 +166,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-9">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={1062.1}
           y={540.9}
           width={31.1}
@@ -154,7 +175,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-10">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={1019.1}
           y={201.9}
           width={31.1}
@@ -163,7 +184,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-11">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={547.1}
           y={247.9}
           width={39.8}
@@ -172,7 +193,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-12">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={357.2}
           y={812}
           width={10}
@@ -181,7 +202,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-13">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={1349.2}
           y={243}
           width={10}
@@ -190,7 +211,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-14">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={1217.2}
           y={70}
           width={10}
@@ -199,7 +220,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-15">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={1097.2}
           y={39}
           width={11}
@@ -208,7 +229,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-16">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={814.2}
           y={241}
           width={11}
@@ -217,7 +238,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-17">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={823.2}
           y={131}
           width={10}
@@ -226,7 +247,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-18">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={712.2}
           y={133}
           width={11}
@@ -235,7 +256,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-19">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={715.2}
           y={247}
           width={11}
@@ -244,7 +265,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-20">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={446.2}
           y={250}
           width={11}
@@ -253,7 +274,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-21">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={455.2}
           y={136}
           width={10}
@@ -262,7 +283,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-22">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={341.2}
           y={130}
           width={11}
@@ -271,7 +292,7 @@ const XmumSvg = (props) => (
       </clipPath>
       <clipPath id="clippath-23">
         <rect
-          className="cls-39"
+          className="cls-38"
           x={347.2}
           y={249}
           width={10}
@@ -307,26 +328,26 @@ const XmumSvg = (props) => (
         ry={1.5}
       />
       <g>
-        <path className="cls-31" d="M627.3,923.4c.3,1.2.6,2.5,1,3.6" />
+        <path className="cls-30" d="M627.3,923.4c.3,1.2.6,2.5,1,3.6" />
         <path
-          className="cls-31"
+          className="cls-30"
           d="M625.8,923.8c.3,1.2.6,2.5,1,3.6.1.4.3.7.7.9.3.2.8.3,1.2.2s.7-.3.9-.7.3-.8.2-1.2c-.4-1.2-.7-2.4-1-3.6,0-.3-.4-.7-.7-.9-.3-.2-.8-.3-1.2-.2s-.7.3-.9.7c-.2.4-.2.7-.2,1.2h0Z"
         />
       </g>
       <g>
         <path
-          className="cls-31"
+          className="cls-30"
           d="M627.3,924.2c.2,0,.3.3.3.5.2.8.4,1.6.7,2.3"
         />
         <path
-          className="cls-31"
+          className="cls-30"
           d="M626.9,925.6s0,0,0,0l-.4-.2s0,0,0,0l-.3-.2h0c0,0-.2-.2-.2-.2,0,0,0,0,0,.2l-.2-.4c.2.4.2.8.3,1.2.1.4.2.9.4,1.3,0,.4.4.7.7.9s.8.3,1.2.2.7-.3.9-.7.3-.8.2-1.2c-.2-.6-.3-1.2-.5-1.7,0-.3-.1-.5-.2-.8-.1-.3-.2-.6-.5-.8-.2-.2-.5-.4-.8-.5-.4,0-.8,0-1.2.2-.3.2-.6.5-.7.9,0,.4,0,.8.2,1.2s.5.6.9.7h0Z"
         />
       </g>
       <g>
-        <path className="cls-31" d="M627.8,923.9c.4,1.7.7,3.4.8,5.2" />
+        <path className="cls-30" d="M627.8,923.9c.4,1.7.7,3.4.8,5.2" />
         <path
-          className="cls-31"
+          className="cls-30"
           d="M626.4,924.3c.3,1.1.5,2.3.7,3.5v-.4c0,.6,0,1.1.1,1.7,0,.4.1.8.4,1.1s.7.5,1.1.4c.8,0,1.6-.7,1.5-1.5-.2-1.9-.5-3.7-.9-5.6-.2-.8-1.1-1.3-1.8-1-.8.3-1.2,1-1,1.8h0Z"
         />
       </g>
@@ -504,7 +525,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={401.7}
         y={109.5}
         width={80}
@@ -512,7 +533,7 @@ const XmumSvg = (props) => (
         transform="translate(27.9 319.6) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={428.7}
         y={82.5}
         width={26}
@@ -522,7 +543,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={291.7}
         y={106.5}
         width={80}
@@ -530,7 +551,7 @@ const XmumSvg = (props) => (
         transform="translate(2.9 246.8) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={318.7}
         y={79.5}
         width={26}
@@ -540,7 +561,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={394.7}
         y={224.5}
         width={80}
@@ -548,7 +569,7 @@ const XmumSvg = (props) => (
         transform="translate(-49.2 343.2) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={421.7}
         y={197.5}
         width={26}
@@ -558,7 +579,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={296.7}
         y={224.5}
         width={80}
@@ -566,7 +587,7 @@ const XmumSvg = (props) => (
         transform="translate(-73.2 279) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={323.7}
         y={197.5}
         width={26}
@@ -576,7 +597,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={770.7}
         y={104.5}
         width={80}
@@ -584,7 +605,7 @@ const XmumSvg = (props) => (
         transform="translate(121.5 560.3) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={797.7}
         y={77.5}
         width={26}
@@ -594,7 +615,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={661.7}
         y={109.5}
         width={80}
@@ -602,7 +623,7 @@ const XmumSvg = (props) => (
         transform="translate(91.6 490.1) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={688.7}
         y={82.5}
         width={26}
@@ -612,7 +633,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={940.4}
         y={91}
         width={194.3}
@@ -620,7 +641,7 @@ const XmumSvg = (props) => (
         transform="translate(186 705.8) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={1067.7}
         y={26.5}
         width={26}
@@ -630,7 +651,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-35"
+        className="cls-33"
         x={991.1}
         y={161.5}
         width={26}
@@ -638,7 +659,7 @@ const XmumSvg = (props) => (
         transform="translate(464.5 1144.1) rotate(-73.1)"
       />
       <rect
-        className="cls-35"
+        className="cls-33"
         x={909.4}
         y={229.1}
         width={80}
@@ -648,7 +669,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-36"
+        className="cls-35"
         x={1120.6}
         y={279.6}
         width={194.3}
@@ -656,7 +677,7 @@ const XmumSvg = (props) => (
         transform="translate(-15.1 71.9) rotate(-3.4)"
       />
       <rect
-        className="cls-36"
+        className="cls-35"
         x={1147.7}
         y={255.9}
         width={26}
@@ -666,7 +687,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-34"
+        className="cls-32"
         x={1282.5}
         y={128.2}
         width={26}
@@ -674,7 +695,7 @@ const XmumSvg = (props) => (
         transform="translate(1042.1 1515.7) rotate(-88.8)"
       />
       <rect
-        className="cls-32"
+        className="cls-31"
         x={1312.7}
         y={213.7}
         width={80}
@@ -684,7 +705,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-37"
+        className="cls-36"
         x={1282.4}
         y={25.9}
         width={26}
@@ -692,7 +713,7 @@ const XmumSvg = (props) => (
         transform="translate(516.2 1165.1) rotate(-58.6)"
       />
       <rect
-        className="cls-37"
+        className="cls-36"
         x={1206.5}
         y={80.2}
         width={80}
@@ -702,7 +723,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={763.7}
         y={219.5}
         width={80}
@@ -710,7 +731,7 @@ const XmumSvg = (props) => (
         transform="translate(44.4 583.9) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={790.7}
         y={192.5}
         width={26}
@@ -720,7 +741,7 @@ const XmumSvg = (props) => (
     </g>
     <g>
       <rect
-        className="cls-33"
+        className="cls-34"
         x={665.7}
         y={219.5}
         width={80}
@@ -728,7 +749,7 @@ const XmumSvg = (props) => (
         transform="translate(20.4 519.7) rotate(-41)"
       />
       <rect
-        className="cls-33"
+        className="cls-34"
         x={692.7}
         y={192.5}
         width={26}
@@ -740,19 +761,19 @@ const XmumSvg = (props) => (
       className="cls-21"
       d="M730.6,626.3c7.6-1.8-17.5-20.5-8.8-33.7,10.9-16.5,67.6-13.2,110.2-5.1,8.5,1.6,44.9,9.1,67.3,26.8,32.1,25.3,9.9,51.2,17.9,53.8,14.7,4.9,145.1-65.1,66.1-142.3-42.9-41.9-150.7-36-195-77-41.8-38.7,50.6-69.4,17.8-94.8-31.7-24.5-140.4-18.7-198.1-9.1-39.7,6.6-111.2,18.5-116.4,54.4-3.6,25,27,45.6,9.5,55.7-20.5,11.8-70.1-12.1-100.4-2.1-35.1,11.6-26.3,62.7,24,91.7,29.2,16.8,65.5,22.2,88.2,25.6,60.3,9,69.2-4.9,110.8,4.7,59,13.6,96.2,54,106.9,51.4h0Z"
     />
-    <g className="cls-14">
-      <text className="cls-15" transform="translate(581.7 1022.7)">
+    <g className="cls-15">
+      <text className="cls-16" transform="translate(581.7 1022.7)">
         <tspan x={0} y={0}>
           {"Southern Entrance"}
         </tspan>
       </text>
-      <text className="cls-16" transform="translate(616.6 1035.9)">
+      <text className="cls-17" transform="translate(616.6 1035.9)">
         <tspan x={0} y={0}>
           {"\u5357\u95E8"}
         </tspan>
       </text>
     </g>
-    <g className="cls-14">
+    <g className="cls-15">
       <text
         className="cls-20"
         transform="translate(1524.1 403.9) scale(1.2 1)"
@@ -762,7 +783,7 @@ const XmumSvg = (props) => (
         </tspan>
       </text>
       <text
-        className="cls-17"
+        className="cls-14"
         transform="translate(1548.6 414.7) scale(1.2 1)"
       >
         <tspan x={0} y={0}>
@@ -773,18 +794,18 @@ const XmumSvg = (props) => (
     <g id="_\u56FE\u5C42_4" data-name=" \u56FE\u5C42 4">
       <g>
         <line
-          className="cls-44"
+          className="cls-43"
           x1={571.2}
           y1={992}
           x2={563.7}
           y2={992}
         />
         <path
-          className="cls-45"
+          className="cls-44"
           d="M548.6,992H246.8c-5.9-.1-10.6-4.9-10.6-10.7v-155.9c0-5.7-4.6-10.3-10.3-10.3h-46"
         />
         <line
-          className="cls-44"
+          className="cls-43"
           x1={172.3}
           y1={815}
           x2={164.8}
@@ -793,134 +814,134 @@ const XmumSvg = (props) => (
       </g>
       <g>
         <line
-          className="cls-44"
+          className="cls-43"
           x1={236.2}
           y1={791}
           x2={236.2}
           y2={783.5}
         />
         <path
-          className="cls-43"
+          className="cls-42"
           d="M236.2,768.6v-60.5c0-5.6,4.5-10.1,10.1-10.1h770.1c10.4,0,18.8,8.4,18.8,18.8l-.4,262.8c0,6-4.9,10.9-10.9,11l-326.2,1.3"
         />
         <line
-          className="cls-44"
+          className="cls-43"
           x1={690.2}
           y1={991.8}
           x2={682.7}
           y2={991.9}
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M241.5,791c0,2.9-2.4,5.3-5.3,5.3s-5.3-2.4-5.3-5.3,2.4-5.3,5.3-5.3,5.3,2.4,5.3,5.3Z"
         />
       </g>
       <g>
         <path
-          className="cls-42"
+          className="cls-41"
           d="M1062.4,991h474.4c6.8-3.1,11.4-7.8,11.4-13.6v-501.1"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M1062.4,996.3c-2.9,0-5.3-2.4-5.3-5.3s2.4-5.3,5.3-5.3,5.3,2.4,5.3,5.3-2.4,5.3-5.3,5.3Z"
         />
       </g>
       <g>
         <path
-          className="cls-42"
+          className="cls-41"
           d="M1035.2,668.2l2.3-340.4c0-5.7-4.6-10.4-10.3-10.4H246.5c-5.7,0-10.3-4.6-10.3-10.3V12.6c0-5.7,4.6-10.3,10.3-10.3l962.7-.4h328.7c5.7,0,10.3,4.6,10.3,10.3v348.3c0,5.7-4.6,10.3-10.2,10.3l-466.8,1.2"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M1040.4,668.3c0,2.9-2.4,5.2-5.3,5.2s-5.2-2.4-5.2-5.3,2.4-5.2,5.3-5.2,5.2,2.4,5.2,5.3Z"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M1071.2,366.7c-2.9,0-5.3,2.4-5.2,5.3,0,2.9,2.4,5.3,5.3,5.2,2.9,0,5.3-2.4,5.2-5.3,0-2.9-2.4-5.3-5.3-5.2Z"
         />
       </g>
       <g>
         <line
-          className="cls-42"
+          className="cls-41"
           x1={236.2}
           y1={335.1}
           x2={236.2}
           y2={683.3}
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M230.9,335.1c0-2.9,2.4-5.3,5.3-5.3s5.3,2.4,5.3,5.3-2.4,5.3-5.3,5.3-5.3-2.4-5.3-5.3Z"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M230.9,683.3c0,2.9,2.4,5.3,5.3,5.3s5.3-2.4,5.3-5.3-2.4-5.3-5.3-5.3-5.3,2.4-5.3,5.3Z"
         />
       </g>
       <g>
         <path
-          className="cls-42"
+          className="cls-41"
           d="M437.7,335.1s-230.5,146.9-9.5,265.9"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M434.9,330.7c2.5-1.6,5.7-.8,7.3,1.6,1.6,2.5.8,5.7-1.6,7.3-2.5,1.6-5.7.8-7.3-1.6-1.6-2.5-.8-5.7,1.6-7.3Z"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M425.7,605.6c2.6,1.4,5.8.4,7.1-2.1s.4-5.8-2.1-7.1c-2.6-1.4-5.8-.4-7.1,2.1s-.4,5.8,2.1,7.1Z"
         />
       </g>
       <g>
         <line
-          className="cls-42"
+          className="cls-41"
           x1={593.6}
           y1={624.3}
           x2={849.7}
           y2={338.9}
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M597.7,627.6c-1.9,2.2-5.3,2.3-7.4.4s-2.3-5.3-.4-7.4,5.3-2.3,7.4-.4,2.3,5.3.4,7.4Z"
         />
-        <circle className="cls-38" cx={849.5} cy={339} r={5.3} />
+        <circle className="cls-37" cx={849.5} cy={339} r={5.3} />
       </g>
       <g>
         <path
-          className="cls-42"
+          className="cls-41"
           d="M217.2,557.2c-21.6.6-105.7-1.2-103.5-68.7"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M216.7,552c2.9-.1,5.4,2.1,5.5,5s-2.1,5.4-5,5.5c-2.9.1-5.4-2.1-5.5-5s2.1-5.4,5-5.5Z"
         />
       </g>
       <g>
         <path
-          className="cls-42"
+          className="cls-41"
           d="M446.5,612.8l122,20.5c5,.8,8.7,5.2,8.7,10.3v44.4"
         />
         <path
-          className="cls-38"
+          className="cls-37"
           d="M572,687.7c0,2.9,2.4,5.3,5.3,5.3s5.3-2.4,5.3-5.3-2.4-5.3-5.3-5.3-5.3,2.4-5.3,5.3Z"
         />
       </g>
       <g>
         <line
-          className="cls-44"
+          className="cls-43"
           x1={259}
           y1={673.5}
           x2={266}
           y2={670.7}
         />
         <line
-          className="cls-46"
+          className="cls-45"
           x1={281.3}
           y1={664.6}
           x2={396.1}
           y2={618.7}
         />
         <line
-          className="cls-44"
+          className="cls-43"
           x1={403.7}
           y1={615.6}
           x2={410.7}
@@ -928,81 +949,81 @@ const XmumSvg = (props) => (
         />
       </g>
     </g>
-    <g id="_\u56FE\u5C42_1-2" data-name=" \u56FE\u5C42 1">
+    <LinkWrapper href="/a3">
       <path
         className="cls-23"
         d="M694.2,747.7l-31.3,60.1c-8.5-4.3-17.9-7.2-28-8.2-15.7-1.7-30.9,1.4-44,7.9l-31.2-60.4c24.5-12.2,52.8-17.8,82.2-14.8,18.8,2,36.4,7.3,52.2,15.3h0Z"
       />
-      <path
-        className="cls-23"
-        d="M185.8,653.1l9.6,108.5c-15.2,1.5-30.4,5.7-44.9,13-22.7,11.3-40.6,28.5-52.6,48.7L3.5,768.2c22.6-37.7,55.9-69.7,98.3-90.9,27.1-13.5,55.5-21.5,83.9-24.3h0Z"
-      />
-      <path
-        className="cls-24"
-        d="M831.7,774.7l-28.3,36c-5-3.9-10.8-7-17.2-9-10.1-3.1-20.4-3-29.8-.2l-12.6-44c17.6-5,36.9-5.2,55.7.5,12,3.7,22.9,9.4,32.2,16.7h0Z"
-      />
-      <path
-        className="cls-24"
-        d="M962.1,839.1l-33.4,31.4c-4.4-4.6-9.6-8.5-15.7-11.4-9.5-4.5-19.7-6-29.5-4.7l-5.9-45.4c18.2-2.3,37.2.3,55,8.8,11.4,5.4,21.2,12.7,29.4,21.4h0Z"
-      />
-      <path
-        className="cls-24"
-        d="M420.1,773.7l28.3,36c5-3.9,10.8-7,17.2-9,10.1-3.1,20.4-3,29.8-.2l12.6-44c-17.6-5-36.9-5.2-55.7.5-12,3.7-22.9,9.4-32.2,16.7h0Z"
-      />
-      <path
-        className="cls-24"
-        d="M289.7,838.1l33.4,31.4c4.4-4.6,9.6-8.5,15.7-11.4,9.5-4.5,19.7-6,29.5-4.7l5.9-45.4c-18.2-2.3-37.2.3-55,8.8-11.4,5.4-21.2,12.7-29.4,21.4h0Z"
-      />
+    </LinkWrapper>
+    <path
+      className="cls-23"
+      d="M185.8,653.1l9.6,108.5c-15.2,1.5-30.4,5.7-44.9,13-22.7,11.3-40.6,28.5-52.6,48.7L3.5,768.2c22.6-37.7,55.9-69.7,98.3-90.9,27.1-13.5,55.5-21.5,83.9-24.3h0Z"
+    />
+    <path
+      className="cls-30"
+      d="M831.7,774.7l-28.3,36c-5-3.9-10.8-7-17.2-9-10.1-3.1-20.4-3-29.8-.2l-12.6-44c17.6-5,36.9-5.2,55.7.5,12,3.7,22.9,9.4,32.2,16.7h0Z"
+    />
+    <path
+      className="cls-30"
+      d="M962.1,839.1l-33.4,31.4c-4.4-4.6-9.6-8.5-15.7-11.4-9.5-4.5-19.7-6-29.5-4.7l-5.9-45.4c18.2-2.3,37.2.3,55,8.8,11.4,5.4,21.2,12.7,29.4,21.4h0Z"
+    />
+    <path
+      className="cls-30"
+      d="M420.1,773.7l28.3,36c5-3.9,10.8-7,17.2-9,10.1-3.1,20.4-3,29.8-.2l12.6-44c-17.6-5-36.9-5.2-55.7.5-12,3.7-22.9,9.4-32.2,16.7h0Z"
+    />
+    <path
+      className="cls-30"
+      d="M289.7,838.1l33.4,31.4c4.4-4.6,9.6-8.5,15.7-11.4,9.5-4.5,19.7-6,29.5-4.7l5.9-45.4c-18.2-2.3-37.2.3-55,8.8-11.4,5.4-21.2,12.7-29.4,21.4h0Z"
+    />
+    <rect
+      className="cls-39"
+      x={270.7}
+      y={852.5}
+      width={38}
+      height={34}
+      transform="translate(-546.3 493.9) rotate(-47.4)"
+    />
+    <rect
+      className="cls-23"
+      x={1100.7}
+      y={722.5}
+      width={305}
+      height={234}
+    />
+    <LinkWrapper href="/ly3">
       <rect
-        className="cls-41"
-        x={270.7}
-        y={852.5}
-        width={38}
-        height={34}
-        transform="translate(-546.3 493.9) rotate(-47.4)"
+        className="cls-23"
+        x={493.7}
+        y={126.5}
+        width={148}
+        height={111}
       />
+    </LinkWrapper>
+    <LinkWrapper href="/b1">
       <rect
         className="cls-23"
-        x={1100.7}
-        y={722.5}
-        width={305}
+        x={1099.7}
+        y={438.5}
+        width={402}
         height={234}
       />
-      <a href="/ly3" className={utilsStyle.highlightOnHover}>
-        <rect
-          className="cls-23"
-          x={493.7}
-          y={126.5}
-          width={148}
-          height={111}
-        />
-      </a>
-      <a href="/b1" className={utilsStyle.highlightOnHover}>
-        <rect
-          className="cls-23"
-          x={1099.7}
-          y={438.5}
-          width={402}
-          height={234}
-        />
-      </a>
-      <rect
-        className="cls-23"
-        x={1420.7}
-        y={838.5}
-        width={47}
-        height={113}
-      />
-      <circle className="cls-23" cx={434.7} cy={488.5} r={27} />
-      <ellipse
-        className="cls-40"
-        cx={1132.2}
-        cy={173.5}
-        rx={91}
-        ry={64.5}
-        transform="translate(208.9 851.4) rotate(-45)"
-      />
-    </g>
+    </LinkWrapper>
+    <rect
+      className="cls-23"
+      x={1420.7}
+      y={838.5}
+      width={47}
+      height={113}
+    />
+    <circle className="cls-23" cx={434.7} cy={488.5} r={27} />
+    <ellipse
+      className="cls-40"
+      cx={1132.2}
+      cy={173.5}
+      rx={91}
+      ry={64.5}
+      transform="translate(208.9 851.4) rotate(-45)"
+    />
     <g id="_\u56FE\u5C42_5" data-name=" \u56FE\u5C42 5">
       <g>
         <path className="cls-3" d="M36.7,744.4v-5h.7v5h-.7Z" />
@@ -1193,28 +1214,30 @@ const XmumSvg = (props) => (
           d="M115.3,749.3c0,.2,0,.4,0,.6,0,1-.2,1.5-.5,1.8,0,0-.2,0-.3,0s-.2,0-.2-.2,0-.1.1-.2c.5-.5.7-.8.8-2.1h0ZM119,751.2c0,.9,0,1,.3,1.1,0,0,0,0,0,0s0,0,0,0c-.2.5-.4.5-1.7.5s-1.5,0-1.5-.5v-3.4c0-.3,0-.5,0-.8l.5.2s0,0,0,0,0,0-.2.2v3.6c0,.3,0,.4,1.3.4s.5,0,.6,0c.4,0,.4,0,.5-1.4h.1,0ZM117,747.2c.5.3,1.1.8,1.1,1.2s-.2.4-.3.4-.1,0-.2-.2c0-.3-.3-.9-.7-1.4h0c0,0,0,0,0,0ZM119.1,749.2c.7.5,1.3,1.3,1.4,1.6,0,0,0,.1,0,.2,0,.2-.1.5-.3.5s-.1,0-.2-.3c0-.3-.5-1.3-1.1-2h0c0,0,0,0,0,0Z"
         />
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-13" transform="translate(327.2 839.6)">
           <tspan x={0} y={0}>
             {"A1"}
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-13" transform="translate(455.2 782.6)">
           <tspan x={0} y={0}>
             {"A2"}
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
-        <text className="cls-4" transform="translate(615.2 772.6)">
-          <tspan x={0} y={0}>
-            {"A3"}
-          </tspan>
-        </text>
+      <g className="cls-15">
+        <LinkWrapper href="/a3">
+          <text className="cls-4" transform="translate(615.2 772.6)">
+            <tspan x={0} y={0}>
+              {"A3"}
+            </tspan>
+          </text>
+        </LinkWrapper>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-8" transform="translate(419.9 481.6)">
           <tspan x={0} y={0}>
             {"Musical "}
@@ -1231,14 +1254,14 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-13" transform="translate(777.2 784.6)">
           <tspan x={0} y={0}>
             {"A4"}
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
           className="cls-6"
           transform="translate(1107.2 189.4) scale(.9 1)"
@@ -1248,21 +1271,21 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
-        <a href="/ly3">
+      <g className="cls-15">
+        <LinkWrapper href="/ly3">
           <text
-            className="cls-12"
-            transform="translate(538.5 192.4) scale(.9 1)"
+            className="cls-6"
+            transform="translate(553.7 192.4) scale(.9 1)"
           >
             <tspan x={0} y={0}>
               {"LY3"}
             </tspan>
           </text>
-        </a>
+        </LinkWrapper>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(314.9 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1270,7 +1293,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(324.7 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1278,9 +1301,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(318.9 243.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1288,7 +1311,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(328.7 243.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1296,9 +1319,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(418.9 243.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1306,7 +1329,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(428.7 243.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1314,9 +1337,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(423.9 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1324,7 +1347,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(433.7 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1332,9 +1355,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(686.9 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1342,7 +1365,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(696.7 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1350,9 +1373,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(689.9 241.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1360,7 +1383,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(699.7 241.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1368,9 +1391,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(785.9 237.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1378,7 +1401,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(795.7 237.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1386,9 +1409,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-18"
+          className="cls-19"
           transform="translate(792.9 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1396,7 +1419,7 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(802.7 126.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1404,9 +1427,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(1067.2 76.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1414,9 +1437,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(936.2 246.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1424,9 +1447,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(1147.2 302.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1434,9 +1457,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(1343.2 232.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1444,9 +1467,9 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text
-          className="cls-19"
+          className="cls-18"
           transform="translate(1233.2 98.4) scale(.9 1)"
         >
           <tspan x={0} y={0}>
@@ -1454,21 +1477,21 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-13" transform="translate(909.2 841.6)">
           <tspan x={0} y={0}>
             {"A5"}
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-4" transform="translate(1434.2 898.6)">
           <tspan x={0} y={0}>
             {"B2"}
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-7" transform="translate(1119.1 838.7)">
           <tspan x={0} y={0}>
             {"Outdoor Sports Field"}
@@ -1480,8 +1503,8 @@ const XmumSvg = (props) => (
           </tspan>
         </text>
       </g>
-      <g className="cls-14">
-        <a href="/b1">
+      <g className="cls-15">
+        <LinkWrapper href="/b1">
           <text
             className="cls-11"
             transform="translate(1230.2 591) scale(1.2 1)"
@@ -1490,9 +1513,9 @@ const XmumSvg = (props) => (
               {"B1"}
             </tspan>
           </text>
-        </a>
+        </LinkWrapper>
       </g>
-      <g className="cls-14">
+      <g className="cls-15">
         <text className="cls-2" transform="translate(273.7 869.7)">
           <tspan x={0} y={0}>
             {"Auditorium Hall"}
@@ -1506,7 +1529,7 @@ const XmumSvg = (props) => (
       </g>
     </g>
     <g id="_\u56FE\u5C42_6" data-name=" \u56FE\u5C42 6">
-      <g className="cls-58">
+      <g className="cls-57">
         <use
           width={10.5}
           height={10.8}
@@ -1514,7 +1537,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-53">
+      <g className="cls-52">
         <use
           width={10.5}
           height={10.8}
@@ -1522,7 +1545,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-47">
+      <g className="cls-46">
         <use
           width={10.5}
           height={10.8}
@@ -1530,7 +1553,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-60">
+      <g className="cls-59">
         <use
           width={10.5}
           height={10.8}
@@ -1538,7 +1561,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-54">
+      <g className="cls-53">
         <use
           width={10.5}
           height={10.8}
@@ -1546,7 +1569,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-65">
+      <g className="cls-64">
         <use
           width={10.5}
           height={10.8}
@@ -1554,7 +1577,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-50">
+      <g className="cls-49">
         <use
           width={10.5}
           height={10.8}
@@ -1562,7 +1585,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-51">
+      <g className="cls-50">
         <use
           width={10.5}
           height={10.8}
@@ -1570,7 +1593,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-61">
+      <g className="cls-60">
         <use
           width={10.5}
           height={10.8}
@@ -1578,7 +1601,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-57">
+      <g className="cls-56">
         <use
           width={10.5}
           height={10.8}
@@ -1586,7 +1609,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-66">
+      <g className="cls-65">
         <use
           width={10.5}
           height={10.8}
@@ -1594,7 +1617,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-29">
+      <g className="cls-28">
         <use
           width={10.5}
           height={10.8}
@@ -1602,7 +1625,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-55">
+      <g className="cls-54">
         <use
           width={10.5}
           height={10.8}
@@ -1610,7 +1633,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-48">
+      <g className="cls-47">
         <use
           width={10.5}
           height={10.8}
@@ -1618,7 +1641,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-63">
+      <g className="cls-62">
         <use
           width={10.5}
           height={10.8}
@@ -1626,7 +1649,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-49">
+      <g className="cls-48">
         <use
           width={10.5}
           height={10.8}
@@ -1634,7 +1657,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-30">
+      <g className="cls-29">
         <use
           width={10.5}
           height={10.8}
@@ -1642,7 +1665,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-64">
+      <g className="cls-63">
         <use
           width={10.5}
           height={10.8}
@@ -1650,7 +1673,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-62">
+      <g className="cls-61">
         <use
           width={10.5}
           height={10.8}
@@ -1658,7 +1681,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-59">
+      <g className="cls-58">
         <use
           width={10.5}
           height={10.8}
@@ -1666,7 +1689,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-28">
+      <g className="cls-27">
         <use
           width={10.5}
           height={10.8}
@@ -1674,7 +1697,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-52">
+      <g className="cls-51">
         <use
           width={10.5}
           height={10.8}
@@ -1682,7 +1705,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-56">
+      <g className="cls-55">
         <use
           width={10.5}
           height={10.8}
@@ -1690,7 +1713,7 @@ const XmumSvg = (props) => (
           xlinkHref="#AED"
         />
       </g>
-      <g className="cls-67">
+      <g className="cls-66">
         <use
           width={10.5}
           height={10.8}

@@ -38,11 +38,7 @@ export default function B1BodySection(
 
   const floorMaps = [
     null,
-    <B1GfMap
-      storeData={b1Data[0]}
-      locale={locale}
-      setSelectedPost={setSelectedPost}
-    />,
+    <B1GfMap storeData={b1Data[0]} locale={locale} />,
     null,
     null,
     null,

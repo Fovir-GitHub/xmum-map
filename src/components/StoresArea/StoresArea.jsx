@@ -18,7 +18,6 @@ import DrawAMap from "../DrawAMap/DrawAMap";
  * @property {number} width Width of a single store block.
  * @property {number} height Height of a single store block.
  * @property {string} fontSize Font size of the store block.
- * @property {Function} setSelectedPost Function used to set selected post.
  * @property {boolean} [useRowIndex=false] Determine whether to use `store.Row` as index.
  * @property {number} [rotate=0] The rotate degree. By default, it is 0.
  */
@@ -37,7 +36,6 @@ export function StoresArea(
     width,
     height,
     fontSize,
-    setSelectedPost,
     useRowIndex = false,
     rotate = 0,
   },
@@ -64,7 +62,6 @@ export function StoresArea(
           width: width,
           fontSize: fontSize,
           useRowIndex: useRowIndex,
-          setSelectedPost: setSelectedPost,
         })}
       </svg>
     </div>

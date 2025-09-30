@@ -7,6 +7,8 @@
 
 "use client";
 
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
+import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
@@ -14,7 +16,6 @@ import { StoresArea } from "../StoresArea/StoresArea";
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
- * @property {Function} setSelectedPost Function used to set selected post.
  */
 
 /**
@@ -22,7 +23,7 @@ import { StoresArea } from "../StoresArea/StoresArea";
  */
 export default function Ly3FirstFloor(
   /** @type {Ly3FirstFloorProps} */
-  { storeData, locale, setSelectedPost },
+  { storeData, locale },
 ) {
   const leftRowStart = 0;
   const leftRowEnd = leftRowStart + 1;
@@ -32,18 +33,8 @@ export default function Ly3FirstFloor(
   const rightRowEnd = topRowEnd + 1;
 
   return (
-    <div>
-      <img src="maps/LY3_1F.svg" width={10000} height={10000} />
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "transparent",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      >
+    <BackgroundMapWrapper backgroundSource="maps/LY3_1F.svg">
+      <MapOverlay>
         {/* Left Row Start */}
         <StoresArea
           limit={1}
@@ -54,7 +45,6 @@ export default function Ly3FirstFloor(
           locale={locale}
           storeData={storeData.slice(leftRowStart, leftRowEnd)}
           fontSize="10rem"
-          setSelectedPost={setSelectedPost}
           rotate={-90}
         />
         {/* Left Row End */}
@@ -68,7 +58,6 @@ export default function Ly3FirstFloor(
           left={500}
           fontSize="7rem"
           locale={locale}
-          setSelectedPost={setSelectedPost}
         />
         {/* Top Row End */}
         {/* Right Row Start */}
@@ -82,10 +71,9 @@ export default function Ly3FirstFloor(
           fontSize="10rem"
           locale={locale}
           rotate={90}
-          setSelectedPost={setSelectedPost}
         />
         {/* Right Row End */}
-      </div>
-    </div>
+      </MapOverlay>
+    </BackgroundMapWrapper>
   );
 }

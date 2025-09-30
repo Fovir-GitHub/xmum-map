@@ -102,7 +102,6 @@ export default function BellBodySection(
                 mapHeight={mapHeight}
                 showCategories={showCategories}
                 locale={locale}
-                setSelectedPost={setSelectedPost}
               />
             </div>
             <div
@@ -113,7 +112,6 @@ export default function BellBodySection(
             >
               <BellSuiteMap
                 storeData={suiteData}
-                setSelectedPost={setSelectedPost}
                 locale={locale}
                 mapWidth={bellSuiteMapWidth}
                 mapHeight={mapHeight}

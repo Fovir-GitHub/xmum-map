@@ -1,8 +1,8 @@
 /**
- * @file src/components/Ly3Map/Ly3GFloor.jsx
- * @description Map of LY3 G floor.
+ * @file src/components/A3Map/A3GFloor.jsx
+ * @description Map of A3 ground floor.
  * @author Fovir
- * @since 2025-09-25
+ * @since 2025-09-29
  */
 
 import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
@@ -10,31 +10,31 @@ import MapOverlay from "../StoresArea/MapOverlay";
 import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
- * @typedef {object} Ly3GFloorProps
+ * @typedef {object} A3GFloorProps
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
  */
 
 /**
- * Map of LY3 G floor.
+ * Map of A3 ground floor.
  */
-export default function Ly3GFloor(
-  /** @type {Ly3GFloorProps} */
+export default function A3GFloor(
+  /** @type {A3GFloorProps} */
   { storeData, locale },
 ) {
   return (
-    <BackgroundMapWrapper backgroundSource="maps/LY3_GF.svg">
+    <BackgroundMapWrapper backgroundSource="maps/A3_GF.svg">
       <MapOverlay>
         <StoresArea
           storeData={storeData}
           locale={locale}
           limit={storeData.length}
-          top={4100}
-          left={4400}
           width={650}
-          height={950}
-          fontSize="8rem"
+          height={1100}
+          top={1450}
+          left={6700}
+          fontSize="9rem"
         />
       </MapOverlay>
     </BackgroundMapWrapper>

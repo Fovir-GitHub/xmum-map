@@ -8,13 +8,14 @@
 "use client";
 
 import { StoresArea } from "../StoresArea/StoresArea";
+import MapOverlay from "../StoresArea/MapOverlay";
+import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
 
 /**
  * @typedef {object[]} B1GMapProps
  *
  * @property {object[]} storeData Data of stores.
  * @property {string} locale Current locale.
- * @property {Function} setSelectedPost Function used to select posts.
  */
 
 /**
@@ -22,22 +23,11 @@ import { StoresArea } from "../StoresArea/StoresArea";
  */
 export default function B1GfMap(
   /** @type {B1GMapProps} */
-  { storeData, locale, setSelectedPost },
+  { storeData, locale },
 ) {
   return (
-    <div>
-      <img src="maps/B1_GF.svg" width={10000} height={10000} />
-
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "transparent",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-      >
+    <BackgroundMapWrapper backgroundSource="maps/B1_GF.svg">
+      <MapOverlay>
         <StoresArea
           limit={12}
           top={100}
@@ -47,9 +37,8 @@ export default function B1GfMap(
           locale={locale}
           storeData={storeData}
           fontSize={"5rem"}
-          setSelectedPost={setSelectedPost}
         />
-      </div>
-    </div>
+      </MapOverlay>
+    </BackgroundMapWrapper>
   );
 }
