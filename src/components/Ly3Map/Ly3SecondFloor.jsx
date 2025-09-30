@@ -26,7 +26,7 @@ export default function Ly3SecondFloor(
   { storeData, locale },
 ) {
   const rightRowStart = 0;
-  const rightRowEnd = 8;
+  const rightRowEnd = 9;
 
   const topRowStart = rightRowEnd;
   const topRowEnd = 17;
@@ -59,8 +59,8 @@ export default function Ly3SecondFloor(
           storeData={storeData.slice(rightRowStart, rightRowEnd)}
           locale={locale}
           top={2000}
-          left={6400}
-          width={200}
+          left={6000}
+          width={300}
           height={500}
           useRowIndex={true}
           rotate={90}
