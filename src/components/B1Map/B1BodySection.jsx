@@ -42,9 +42,9 @@ export default function B1BodySection(
   const pathname = usePathname();
 
   const floorMaps = [
-    <B1BFloorMap storeData={b1Data[-1]} locale={locale} />,
-    <B1GfMap storeData={b1Data[0]} locale={locale} />,
-    <B1FirstFloorMap storeData={b1Data[1]} locale={locale} />,
+    <B1BFloorMap storeData={b1Data[0]} locale={locale} />,
+    <B1GfMap storeData={b1Data[1]} locale={locale} />,
+    <B1FirstFloorMap storeData={b1Data[2]} locale={locale} />,
     null,
     <B1ThirdFloorMap storeData={b1Data[3]} locale={locale} />,
   ];
