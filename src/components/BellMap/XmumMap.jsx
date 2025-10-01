@@ -915,7 +915,7 @@ const XmumSvg = (props) => (
       x2={417}
       y2={606.2}
     />
-    <a href="/a3">
+    <a href="/a3" className="highlight-on-hover">
       <path
         className="cls-3"
         d="M694.2,747.7l-31.3,60.1c-8.5-4.3-17.9-7.2-28-8.2-15.7-1.7-30.9,1.4-44,7.9l-31.2-60.4c24.5-12.2,52.8-17.8,82.2-14.8,18.8,2,36.4,7.3,52.2,15.3h0Z"
@@ -1200,7 +1200,7 @@ const XmumSvg = (props) => (
       </g>
       <g className="cls-21">
         <g className="cls-21">
-          <a href="/a3">
+          <a href="/a3" className="highlight-on-hover">
             <text className="cls-11" transform="translate(615.2 772.6)">
               <tspan x={0} y={0}>
                 {"A3"}
