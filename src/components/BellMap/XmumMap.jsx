@@ -32,20 +32,6 @@ export default function XmumMap(
  */
 
 /**
- * Wrap children elements by a link.
- */
-function LinkWrapper(
-  /** @type {LinkWrapperProps} */
-  { children, href },
-) {
-  return (
-    <a href={href} className={utilsStyle.highlightOnHover}>
-      {children}
-    </a>
-  );
-}
-
-/**
  * SVG converted by https://www.svgviewer.dev/svg-to-react-jsx
  */
 const XmumSvg = (props) => (
