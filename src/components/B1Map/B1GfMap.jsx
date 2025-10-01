@@ -25,18 +25,33 @@ export default function B1GfMap(
   /** @type {B1GMapProps} */
   { storeData, locale },
 ) {
+  const topRowStart = 0;
+  const topRowEnd = 5;
+  const leftRowStart = topRowEnd;
+  const leftRowEnd = storeData.length;
+
   return (
     <BackgroundMapWrapper backgroundSource="maps/B1_GF.svg">
       <MapOverlay>
         <StoresArea
-          limit={12}
+          limit={topRowEnd - topRowStart + 1}
           top={100}
           left={3500}
           width={800}
           height={600}
           locale={locale}
-          storeData={storeData}
+          storeData={storeData.slice(topRowStart, topRowEnd)}
           fontSize={"5rem"}
+        />
+        <StoresArea
+          limit={leftRowEnd - leftRowStart + 1}
+          storeData={storeData.slice(leftRowStart, leftRowEnd)}
+          width={500}
+          height={800}
+          top={4950}
+          left={2900}
+          fontSize="5rem"
+          locale={locale}
         />
       </MapOverlay>
     </BackgroundMapWrapper>
