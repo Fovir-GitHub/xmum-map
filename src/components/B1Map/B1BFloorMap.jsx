@@ -6,6 +6,8 @@
  */
 
 import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
+import MapOverlay from "../StoresArea/MapOverlay";
+import { StoresArea } from "../StoresArea/StoresArea";
 
 /**
  * @typedef {object} B1BFMapProps
@@ -22,6 +24,19 @@ export default function B1BFloorMap(
   { storeData, locale },
 ) {
   return (
-    <BackgroundMapWrapper backgroundSource="maps/B1_BF.svg"></BackgroundMapWrapper>
+    <BackgroundMapWrapper backgroundSource="maps/B1_BF.svg">
+      <MapOverlay>
+        <StoresArea
+          limit={storeData.length}
+          storeData={storeData}
+          locale={locale}
+          width={540}
+          height={850}
+          top={7260}
+          left={4120}
+          fontSize="5rem"
+        />
+      </MapOverlay>
+    </BackgroundMapWrapper>
   );
 }
