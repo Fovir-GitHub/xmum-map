@@ -9,11 +9,18 @@ import utilsStyle from "../../styles/utils.module.css";
 import xmumConfig from "../../config";
 
 /**
- * XMUM map displayed above bell.
+ * @typedef {object} XmumMapProps
  *
- * @returns A SVG map image of XMUM.
+ * @property {string} locale
  */
-export default function XmumMap({ locale }) {
+
+/**
+ * XMUM map displayed above bell.
+ */
+export default function XmumMap(
+  /** @type {XmumMapProps} */
+  { locale },
+) {
   return <XmumSvg locale={locale} />;
 }
 
