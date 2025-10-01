@@ -5,7 +5,6 @@
  * @since 2025-09-20
  */
 
-import utilsStyle from "../../styles/utils.module.css";
 import xmumConfig from "../../config";
 
 /**
