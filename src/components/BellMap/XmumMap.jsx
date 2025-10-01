@@ -914,10 +914,15 @@ const XmumSvg = (props) => (
         d="M694.2,747.7l-31.3,60.1c-8.5-4.3-17.9-7.2-28-8.2-15.7-1.7-30.9,1.4-44,7.9l-31.2-60.4c24.5-12.2,52.8-17.8,82.2-14.8,18.8,2,36.4,7.3,52.2,15.3h0Z"
       />
     </a>
-    <path
-      className="cls-3"
-      d="M185.8,653.1l9.6,108.5c-15.2,1.5-30.4,5.7-44.9,13-22.7,11.3-40.6,28.5-52.6,48.7L3.5,768.2c22.6-37.7,55.9-69.7,98.3-90.9,27.1-13.5,55.5-21.5,83.9-24.3h0Z"
-    />
+    <a
+      href={`#iaec${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+      className="highlight-on-hover"
+    >
+      <path
+        className="cls-3"
+        d="M185.8,653.1l9.6,108.5c-15.2,1.5-30.4,5.7-44.9,13-22.7,11.3-40.6,28.5-52.6,48.7L3.5,768.2c22.6-37.7,55.9-69.7,98.3-90.9,27.1-13.5,55.5-21.5,83.9-24.3h0Z"
+      />
+    </a>
     <path
       className="cls-28"
       d="M831.7,774.7l-28.3,36c-5-3.9-10.8-7-17.2-9-10.1-3.1-20.4-3-29.8-.2l-12.6-44c17.6-5,36.9-5.2,55.7.5,12,3.7,22.9,9.4,32.2,16.7h0Z"
@@ -934,21 +939,31 @@ const XmumSvg = (props) => (
       className="cls-28"
       d="M289.7,838.1l33.4,31.4c4.4-4.6,9.6-8.5,15.7-11.4,9.5-4.5,19.7-6,29.5-4.7l5.9-45.4c-18.2-2.3-37.2.3-55,8.8-11.4,5.4-21.2,12.7-29.4,21.4h-.1Z"
     />
-    <rect
-      className="cls-37"
-      x={270.8}
-      y={852.2}
-      width={38}
-      height={34}
-      transform="translate(-546.2 494.2) rotate(-47.4)"
-    />
-    <rect
-      className="cls-3"
-      x={1100.7}
-      y={722.5}
-      width={305}
-      height={234}
-    />
+    <a
+      href={`#ah${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+      className="highlight-on-hover"
+    >
+      <rect
+        className="cls-37"
+        x={270.8}
+        y={852.2}
+        width={38}
+        height={34}
+        transform="translate(-546.2 494.2) rotate(-47.4)"
+      />
+    </a>
+    <a
+      href={`#outdoor${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+      className="highlight-on-hover"
+    >
+      <rect
+        className="cls-3"
+        x={1100.7}
+        y={722.5}
+        width={305}
+        height={234}
+      />
+    </a>
     <a href="/ly3" className="highlight-on-hover">
       <rect
         className="cls-3"
@@ -974,7 +989,12 @@ const XmumSvg = (props) => (
       width={47}
       height={113}
     />
-    <circle className="cls-3" cx={434.7} cy={488.5} r={27} />
+    <a
+      href={`#music${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+      className="highlight-on-hover"
+    >
+      <circle className="cls-3" cx={434.7} cy={488.5} r={27} />
+    </a>
     <ellipse
       className="cls-38"
       cx={1132.2}
@@ -1203,27 +1223,32 @@ const XmumSvg = (props) => (
         </g>
       </g>
       <g className="cls-21">
-        <g className="cls-21">
-          <text className="cls-15" transform="translate(419.9 481.6)">
-            <tspan x={0} y={0}>
-              {"Musical"}
-            </tspan>
-          </text>
-        </g>
-        <g className="cls-21">
-          <text className="cls-15" transform="translate(424 492.4)">
-            <tspan x={0} y={0}>
-              {"Island"}
-            </tspan>
-          </text>
-        </g>
-        <g className="cls-21">
-          <text className="cls-16" transform="translate(421.1 503.2)">
-            <tspan x={0} y={0}>
-              {"\u97F3\u4E50\u5C9B"}
-            </tspan>
-          </text>
-        </g>
+        <a
+          href={`#music${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+          className="highlight-on-hover"
+        >
+          <g className="cls-21">
+            <text className="cls-15" transform="translate(419.9 481.6)">
+              <tspan x={0} y={0}>
+                {"Musical"}
+              </tspan>
+            </text>
+          </g>
+          <g className="cls-21">
+            <text className="cls-15" transform="translate(424 492.4)">
+              <tspan x={0} y={0}>
+                {"Island"}
+              </tspan>
+            </text>
+          </g>
+          <g className="cls-21">
+            <text className="cls-16" transform="translate(421.1 503.2)">
+              <tspan x={0} y={0}>
+                {"\u97F3\u4E50\u5C9B"}
+              </tspan>
+            </text>
+          </g>
+        </a>
       </g>
       <g className="cls-21">
         <g className="cls-21">
@@ -1525,20 +1550,31 @@ const XmumSvg = (props) => (
         </g>
       </g>
       <g className="cls-21">
-        <g className="cls-21">
-          <text className="cls-14" transform="translate(1119.1 838.7)">
-            <tspan x={0} y={0}>
-              {"Outdoor Sports Field"}
-            </tspan>
-          </text>
-        </g>
-        <g className="cls-21">
-          <text className="cls-12" transform="translate(1180.4 873.5)">
-            <tspan x={0} y={0}>
-              {"\u5BA4\u5916\u8FD0\u52A8\u573A"}
-            </tspan>
-          </text>
-        </g>
+        <a
+          href={`#outdoor${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+          className="highlight-on-hover"
+        >
+          <g className="cls-21">
+            <text
+              className="cls-14"
+              transform="translate(1119.1 838.7)"
+            >
+              <tspan x={0} y={0}>
+                {"Outdoor Sports Field"}
+              </tspan>
+            </text>
+          </g>
+          <g className="cls-21">
+            <text
+              className="cls-12"
+              transform="translate(1180.4 873.5)"
+            >
+              <tspan x={0} y={0}>
+                {"\u5BA4\u5916\u8FD0\u52A8\u573A"}
+              </tspan>
+            </text>
+          </g>
+        </a>
       </g>
       <g className="cls-21">
         <g className="cls-21">
@@ -1689,7 +1725,10 @@ const XmumSvg = (props) => (
       </a>
     </g>
     <g className="cls-50">
-      <a className="highlight-on-hover" href="#outdoor">
+      <a
+        className="highlight-on-hover"
+        href={`#outdoor${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+      >
         <use
           width={10.5}
           height={10.8}
