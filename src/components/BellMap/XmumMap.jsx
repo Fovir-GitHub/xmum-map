@@ -24,13 +24,6 @@ export default function XmumMap(
 }
 
 /**
- * @typedef {object} LinkWrapperProps
- *
- * @property {any} children Children elements.
- * @property {string} href `href` in the `<a>` tag.
- */
-
-/**
  * SVG converted by https://www.svgviewer.dev/svg-to-react-jsx
  */
 const XmumSvg = (props) => (
