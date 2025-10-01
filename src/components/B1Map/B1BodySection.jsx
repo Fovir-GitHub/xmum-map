@@ -16,6 +16,7 @@ import B1GfMap from "./B1GfMap";
 import B1FirstFloorMap from "./B1FirstFloorMap";
 import B1ThirdFloorMap from "./B1ThirdFloorMap";
 import { getIgnoreLayers } from "../../lib/getIgnoreLayers";
+import B1BFloorMap from "./B1BFloorMap";
 
 /**
  * @typedef {object} B1BodySectionProps
@@ -41,7 +42,7 @@ export default function B1BodySection(
   const pathname = usePathname();
 
   const floorMaps = [
-    null,
+    <B1BFloorMap storeData={b1Data[-1]} locale={locale} />,
     <B1GfMap storeData={b1Data[0]} locale={locale} />,
     <B1FirstFloorMap storeData={b1Data[1]} locale={locale} />,
     null,
