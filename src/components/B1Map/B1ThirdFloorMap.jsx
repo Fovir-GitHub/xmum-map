@@ -33,6 +33,9 @@ export default function B1ThirdFloorMap(
   );
 }
 
+/**
+ * SVG converted by https://www.svgviewer.dev/svg-to-react-jsx
+ */
 const B1ThirdFloorSvg = (props) => (
   <svg
     id="_\u56FE\u5C42_1"
