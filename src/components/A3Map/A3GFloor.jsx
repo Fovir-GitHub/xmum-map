@@ -47,6 +47,9 @@ export default function A3GFloor(
   );
 }
 
+/**
+ * SVG converted by https://www.svgviewer.dev/svg-to-react-jsx
+ */
 const A3GFSvg = (props) => (
   <svg
     id="_\u56FE\u5C42_1"
