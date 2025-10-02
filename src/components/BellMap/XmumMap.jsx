@@ -1764,17 +1764,22 @@ const XmumSvg = (props) => (
       </a>
     </g>
     <g className="cls-47">
-      <use
-        width={10.5}
-        height={10.8}
-        transform="translate(357.2 812.3) scale(.9 1)"
-        xlinkHref="#AED"
-      />
+      <a
+        href={`#AED_A${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+        className="highlight-on-hover"
+      >
+        <use
+          width={10.5}
+          height={10.8}
+          transform="translate(357.2 812.3) scale(.9 1)"
+          xlinkHref="#AED"
+        />
+      </a>
     </g>
     <g className="cls-40">
       <a
         className="highlight-on-hover"
-        href={`#AED_A${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+        href={`#AED_D${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
       >
         <use
           width={10.5}
