@@ -2,6 +2,10 @@
 <svg id="_图层_1" data-name=" 图层 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1152 911.5">
   <defs>
     <style>
+      .highlight-on-hover:hover {
+        filter: brightness(1.2);
+      }
+
       .cls-1 {
         fill: #000;
         font-family: ArialMT, Arial;
@@ -171,5 +175,7 @@
     <circle class="cls-3" cx="827.6" cy="533.4" r="3.2"/>
     <polygon class="cls-8" points="837.3 552.2 837.3 555.1 829.8 555.1 829.8 570.9 825.4 570.9 825.4 555.1 817.9 555.1 817.9 552.2 820 552.2 822.9 549.3 822.9 538.9 824.7 538.9 824.7 537.8 830.5 537.8 830.5 538.9 832.3 538.9 832.3 549.2 835.2 552.2 837.3 552.2"/>
   </g>
-  <use width="10.5" height="10.8" transform="translate(405.9 422.5) scale(3)" xlink:href="#AED"/>
+  <a href="#AED_LY3" class="highlight-on-hover">
+    <use width="10.5" height="10.8" transform="translate(405.9 422.5) scale(3)" xlink:href="#AED"/>
+  </a>
 </svg>

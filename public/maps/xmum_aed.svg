@@ -811,10 +811,12 @@
     </a>
   </g>
   <g class="cls-47">
-    <use width="10.5" height="10.8" transform="translate(357.2 812.3) scale(.9 1)" xlink:href="#AED"/>
+    <a href="#AED_A" class="highlight-on-hover">
+      <use width="10.5" height="10.8" transform="translate(357.2 812.3) scale(.9 1)" xlink:href="#AED"/>
+    </a>
   </g>
   <g class="cls-40">
-    <a class="highlight-on-hover" href="#AED_A">
+    <a class="highlight-on-hover" href="#AED_D">
       <use width="10.5" height="10.8" transform="translate(1349.2 243.3) scale(.9 1)" xlink:href="#AED"/>
     </a>
   </g>
