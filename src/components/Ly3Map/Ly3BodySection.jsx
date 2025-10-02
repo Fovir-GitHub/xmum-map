@@ -31,7 +31,7 @@ export default function Ly3BodySection(
   /** @type {Ly3BodySectionProps} */
   { locale, setLocale, ly3Data },
 ) {
-  const [layer, setLayer] = useState(0);
+  const [layer, setLayer] = useState(2);
   const layerRange = 3;
   const transformRef = useRef(null);
 
