@@ -982,13 +982,18 @@ const XmumSvg = (props) => (
         height={234}
       />
     </a>
-    <rect
-      className="cls-3"
-      x={1420.7}
-      y={838.5}
-      width={47}
-      height={113}
-    />
+    <a
+      href={`#b2${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+      className="highlight-on-hover"
+    >
+      <rect
+        className="cls-3"
+        x={1420.7}
+        y={838.5}
+        width={47}
+        height={113}
+      />
+    </a>
     <a
       href={`#music${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
       className="highlight-on-hover"
@@ -1542,11 +1547,19 @@ const XmumSvg = (props) => (
       </g>
       <g className="cls-21">
         <g className="cls-21">
-          <text className="cls-11" transform="translate(1434.2 898.6)">
-            <tspan x={0} y={0}>
-              {"B2"}
-            </tspan>
-          </text>
+          <a
+            href={`#b2${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+            className="highlight-on-hover"
+          >
+            <text
+              className="cls-11"
+              transform="translate(1434.2 898.6)"
+            >
+              <tspan x={0} y={0}>
+                {"B2"}
+              </tspan>
+            </text>
+          </a>
         </g>
       </g>
       <g className="cls-21">
@@ -1727,7 +1740,7 @@ const XmumSvg = (props) => (
     <g className="cls-50">
       <a
         className="highlight-on-hover"
-        href={`#outdoor${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
+        href={`#AED_B2${xmumConfig.website.seperatorBetweenSlugAndLocale}${props.locale}`}
       >
         <use
           width={10.5}

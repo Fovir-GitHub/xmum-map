@@ -518,7 +518,9 @@
   <a href="/b1" class="highlight-on-hover">
     <rect class="cls-3" x="1099.7" y="438.5" width="402" height="234"/>
   </a>
-  <rect class="cls-3" x="1420.7" y="838.5" width="47" height="113"/>
+  <a href="#b2" class="highlight-on-hover">
+    <rect class="cls-3" x="1420.7" y="838.5" width="47" height="113"/>
+  </a>
   <a href="#music" class="highlight-on-hover">
     <circle class="cls-3" cx="434.7" cy="488.5" r="27"/>
   </a>
@@ -721,7 +723,9 @@
     </g>
     <g class="cls-21">
       <g class="cls-21">
-        <text class="cls-11" transform="translate(1434.2 898.6)"><tspan x="0" y="0">B2</tspan></text>
+        <a href="#b2" class="highlight-on-hover">
+          <text class="cls-11" transform="translate(1434.2 898.6)"><tspan x="0" y="0">B2</tspan></text>
+        </a>
       </g>
     </g>
     <g class="cls-21">
@@ -796,7 +800,7 @@
     </a>
   </g>
   <g class="cls-50">
-    <a class="highlight-on-hover" href="#outdoor">
+    <a class="highlight-on-hover" href="#AED_B2">
       <use width="10.5" height="10.8" transform="translate(1428.6 804.4) scale(3)" xlink:href="#AED"/>
     </a>
   </g>
