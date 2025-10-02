@@ -17,4 +17,4 @@
 <img src="https://img.xmummap.com/11_AED_B2%20%283%29.webp" />
 </div>
 
-位于 G 层十字路口保安休息区
+位于 G 层

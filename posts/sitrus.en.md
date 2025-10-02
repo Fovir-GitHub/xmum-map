@@ -4,9 +4,11 @@
 
 ## Daily Fruit
 
-| Fruit  | Price (RM) |
-| ------ | ---------- |
-| Banana | XX         |
+<div class="image-slide">
+<img src="https://img.xmummap.com/11_sitrus%20%281%29.webp" />
+<img src="https://img.xmummap.com/11_sitrus%20%282%29.webp" />
+<img src="https://img.xmummap.com/11_sitrus%20%283%29.webp" />
+</div>
 
 ---
 
