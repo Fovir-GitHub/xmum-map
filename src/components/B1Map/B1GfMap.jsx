@@ -10,6 +10,8 @@
 import { StoresArea } from "../StoresArea/StoresArea";
 import MapOverlay from "../StoresArea/MapOverlay";
 import BackgroundMapWrapper from "../StoresArea/BackgroundMapWrapper";
+import StoreBlock from "../StoreBlock/StoreBlock";
+import xmumConfig from "../../config";
 
 /**
  * @typedef {object} B1GMapProps
@@ -53,6 +55,22 @@ export default function B1GfMap(
           fontSize="5rem"
           locale={locale}
         />
+        <svg width={"100%"} height={"100%"}>
+          <StoreBlock
+            width={820}
+            height={1020}
+            x={2110}
+            y={1250}
+            fill="#dc8a78"
+            text={"Outdoor Sports Field\n室外运动场"}
+            fontSize="10rem"
+            slug="outdoor"
+            locale={locale}
+            showIcon={false}
+            stroke={xmumConfig.storeBlock.style.stroke}
+            strokeWidth={xmumConfig.storeBlock.style.strokeWidth}
+          />
+        </svg>
       </MapOverlay>
     </BackgroundMapWrapper>
   );

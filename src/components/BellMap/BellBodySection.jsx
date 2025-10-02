@@ -83,7 +83,7 @@ export default function BellBodySection(
             gap: "500px",
           }}
         >
-          <XmumMap />
+          <XmumMap locale={locale} />
           <div
             style={{
               display: "flex",
