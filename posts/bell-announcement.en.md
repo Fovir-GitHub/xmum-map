@@ -1,5 +1,6 @@
 # Updates
 
+- 2025/10/03 ---- _There are 5 major updates:_ [XMUM AED and first aid hotline information has been published] [All interactive blocks on the homepage have been updated] [LY3-2F Tmall Campus details have been updated] [Bell store updated] [_JIAYUE CHINESE RESTAURANT_ has agreed to show this website to obtain discounts if there are student discounts in the future]
 - 2025/09/19 ---- _<span style="background-color:rgba(208, 137, 255, 0.3)">KIMS SALON</span>_ _Recently launched a two-day special salon promotion (2025/09/20 to 2025/09/21), for details, please see the KIMS SALON page._
 - 2025/09/19 ---- _Some merchants have promised that if they currently or in the future offer student discounts, you can display the website or present your student ID to enjoy student discounts._ For specific merchants, please see **_Author's Words_**Point **_9_** below
 - 2025/09/18 ---- _<span style="background-color:rgba(137, 243, 255, 0.3)">Senze Caff</span> New promotions updated_. _<span style="background-color:rgba(137, 243, 255, 0.3)">Student's Home</span>New products added_.
@@ -35,11 +36,11 @@ Welcome to this website! To help students more easily access information about n
 8. For valid feedback that is confirmed and adopted, the administrator will provide a reward as a token of appreciation for your support and contribution to the website!
 9. The following merchants have promised (will continue to update in the future) that if they currently offer student discounts, you can display the website or present your student ID to receive the discount:
 
-| SENZE CAFF                   | Stella Vet Clinic             | 369 Express             | Face-to-Face             | KCBC               |
-| ---------------------------- | ----------------------------- | ----------------------- | ------------------------ | ------------------ |
-| **Geprek’ing Fried Chicken** | **Millies Vision**            | **Encounter Nail Art**  | **Ming Gui Mini Market** | **Hey Stationery** |
-| **STO Express**              | **Jiayue Chinese Restaurant** | **Xinjiang Restaurant** | **XILE DESSERT**         | **Student Home**   |
-| **SITRUS**                   | **Klinik Cosmomedic**         | **YAKMEETARIK**         |                          |                    |
+| SENZE CAFF                   | Stella Vet Clinic             | 369 Express             | Face-to-Face                  | KCBC               |
+| ---------------------------- | ----------------------------- | ----------------------- | ----------------------------- | ------------------ |
+| **Geprek’ing Fried Chicken** | **Millies Vision**            | **Encounter Nail Art**  | **Ming Gui Mini Market**      | **Hey Stationery** |
+| **STO Express**              | **Jiayue Chinese Restaurant** | **Xinjiang Restaurant** | **XILE DESSERT**              | **Student Home**   |
+| **SITRUS**                   | **Klinik Cosmomedic**         | **YAKMEETARIK**         | **JIAYUE CHINESE RESTAURANT** |                    |
 
 - Eathami (student ID required for this store)
 
