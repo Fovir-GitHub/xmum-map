@@ -6,6 +6,7 @@
  */
 
 import { useLocale } from "../../hooks/useLocale";
+import D6HeaderSection from "./D6HeaderSection";
 
 /**
  * @typedef {object} {D6MapProps}
@@ -25,6 +26,8 @@ export default function D6Map(
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
+      <D6HeaderSection locale={locale} />
 
       <Footer locale={locale} />
     </ThemeProvider>
