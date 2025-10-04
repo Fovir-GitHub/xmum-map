@@ -38,7 +38,7 @@ export default function Announcement(
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <>
+    <div>
       <GlobalEscListener onEsc={() => setExpanded(false)} />
       <Accordion
         sx={{ width: "100%" }}
@@ -64,6 +64,6 @@ export default function Announcement(
           <DetailPage slug={slug} locale={locale} />
         </AccordionDetails>
       </Accordion>
-    </>
+    </div>
   );
 }
