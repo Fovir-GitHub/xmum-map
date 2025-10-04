@@ -13,6 +13,7 @@ import { getIgnoreLayers } from "../../lib/getIgnoreLayers";
 import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
+import D6GFloorMap from "./D6GFloorMap";
 
 /**
  * @typedef {object} D6BodySectionProps
@@ -39,7 +40,11 @@ export default function D6BodySection(
 
   const [selectedPost, setSelectedPost] = useSelectedPost(locale);
 
-  const maps = [null, null, null];
+  const maps = [
+    <D6GFloorMap locale={locale} storeData={d6Data[0]} />,
+    null,
+    null,
+  ];
 
   return (
     <>
