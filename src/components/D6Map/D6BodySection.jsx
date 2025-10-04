@@ -15,6 +15,7 @@ import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
 import D6GFloorMap from "./D6GFloorMap";
 import D6FirstFloorMap from "./D6FirstFloorMap";
+import D6SecondFloorMap from "./D6SecondFloorMap";
 
 /**
  * @typedef {object} D6BodySectionProps
@@ -44,7 +45,7 @@ export default function D6BodySection(
   const maps = [
     <D6GFloorMap locale={locale} storeData={d6Data[0]} />,
     <D6FirstFloorMap locale={locale} storeData={d6Data[1]} />,
-    null,
+    <D6SecondFloorMap locale={locale} storeData={d6Data[2]} />,
   ];
 
   return (
