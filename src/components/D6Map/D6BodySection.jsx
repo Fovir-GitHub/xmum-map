@@ -14,6 +14,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import DetailPage from "../DetailPage/DetailPage";
 import Map from "../Map/Map";
 import D6GFloorMap from "./D6GFloorMap";
+import D6FirstFloorMap from "./D6FirstFloorMap";
 
 /**
  * @typedef {object} D6BodySectionProps
@@ -42,7 +43,7 @@ export default function D6BodySection(
 
   const maps = [
     <D6GFloorMap locale={locale} storeData={d6Data[0]} />,
-    null,
+    <D6FirstFloorMap locale={locale} storeData={d6Data[1]} />,
     null,
   ];
 
@@ -70,7 +71,7 @@ export default function D6BodySection(
         />
       </Sidebar>
 
-      <Map transformRef={transformRef}>{maps[layerStart]}</Map>
+      <Map transformRef={transformRef}>{maps[layer]}</Map>
     </>
   );
 }
