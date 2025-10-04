@@ -4,10 +4,14 @@
 
 +60 11-5424-1874
 
-- Free first aid treatment availabe to XMUM students
-- Operation daily, excluded public holidy & semester breaks
-- Describe casualty injure & location
+**_This service is provided by students and volunteers from our school_**
+
+- Describe casualty's injuries, location, gender and colour of shirt
 - Wait patiently at your location
+- Do not panic
+  ——
+- Free first aid treatment availabe to XMUM students
+- Any updates to the hotline will be posted on the Instagram account [@xmum_first_aid_society](https://www.instagram.com/xmum_first_aid_society/)
 
 ## AED Location
 

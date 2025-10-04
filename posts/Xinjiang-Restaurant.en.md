@@ -9,12 +9,28 @@ All dishes are freshly cooked and stir-fried, guaranteeing freshness (only Rouji
 ## Menu
 
 <div class="image-slide">
-<img src="https://img.xmummap.com/G_xinjiang_menu%20%281%29.webp" />
-<img src="https://img.xmummap.com/G_xinjiang_menu%20%282%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%281%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%282%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%283%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%284%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%285%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%286%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%287%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%288%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%289%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%2810%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%2811%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%2812%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%2813%29.webp" />
+<img src="https://img.xmummap.com/11_xinjiang_menu%20%2814%29.webp" />
 
 </div>
 
 ## Hot Products
+
+- Super delicious lamb bone soup
+
+<img src="https://img.xmummap.com/11_xinjiang_lamb.webp" />
 
 - Xinjiang Big Plate Chicken
 - Spicy Chicken
