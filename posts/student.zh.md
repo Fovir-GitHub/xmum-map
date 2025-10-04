@@ -36,6 +36,12 @@
 
 ---
 
+## 会员福利
+
+<img src="https://img.xmummap.com/11_student_vip.webp" />
+
+---
+
 ## 营业时间
 
 每日 10：00-22：00

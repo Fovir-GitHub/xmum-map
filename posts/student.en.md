@@ -36,6 +36,12 @@ We'll soon be offering late-night snacks, so stay tuned.
 
 ---
 
+## Membership
+
+<img src="https://img.xmummap.com/11_student_vip.webp" />
+
+---
+
 ## Opening Hours
 
 Daily 10:00-22:00

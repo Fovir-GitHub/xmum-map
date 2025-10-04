@@ -19,8 +19,6 @@
 
 Weekly Featured Dishes
 
-**Yangzhou Fried Rice (10 Yuan)** will be our next featured dish.
-
 ---
 
 ## Opening Hours
