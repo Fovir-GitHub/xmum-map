@@ -1,5 +1,6 @@
 # Updates
 
+- 2025/10/04 ---- _<span style="background-color:rgba(137, 243, 255, 0.3)">Student's Home</span>_ _The store will be cleaned from 10:00 am to 3:00 pm today! It will be open to the public as usual at 3:00 pm_
 - 2025/10/03 ---- _There are 5 major updates:_ [XMUM AED and first aid hotline information has been published] [All interactive blocks on the homepage have been updated] [LY3-2F Tmall Campus details have been updated] [Bell store updated] [_JIAYUE CHINESE RESTAURANT_ has agreed to show this website to obtain discounts if there are student discounts in the future]
 - 2025/09/19 ---- _<span style="background-color:rgba(208, 137, 255, 0.3)">KIMS SALON</span>_ _Recently launched a two-day special salon promotion (2025/09/20 to 2025/09/21), for details, please see the KIMS SALON page._
 - 2025/09/19 ---- _Some merchants have promised that if they currently or in the future offer student discounts, you can display the website or present your student ID to enjoy student discounts._ For specific merchants, please see **_Author's Words_**Point **_9_** below
