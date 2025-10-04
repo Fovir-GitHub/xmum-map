@@ -1000,14 +1000,16 @@ const XmumSvg = (props) => (
     >
       <circle className="cls-3" cx={434.7} cy={488.5} r={27} />
     </a>
-    <ellipse
-      className="cls-38"
-      cx={1132.2}
-      cy={173.5}
-      rx={91}
-      ry={64.5}
-      transform="translate(208.9 851.4) rotate(-45)"
-    />
+    <a href="/d6" className="highlight-on-hover">
+      <ellipse
+        className="cls-38"
+        cx={1132.2}
+        cy={173.5}
+        rx={91}
+        ry={64.5}
+        transform="translate(208.9 851.4) rotate(-45)"
+      />
+    </a>
     <g id="_\u56FE\u5C42_5" data-name=" \u56FE\u5C42 5">
       <g>
         <path className="cls-10" d="M36.7,744.4v-5h.7v5h-.7Z" />
@@ -1266,14 +1268,16 @@ const XmumSvg = (props) => (
       </g>
       <g className="cls-21">
         <g className="cls-21">
-          <text
-            className="cls-18"
-            transform="translate(1107.2 189.4) scale(.9 1)"
-          >
-            <tspan x={0} y={0}>
-              {"D6"}
-            </tspan>
-          </text>
+          <a href="/d6" className="highlight-on-hover">
+            <text
+              className="cls-18"
+              transform="translate(1107.2 189.4) scale(.9 1)"
+            >
+              <tspan x={0} y={0}>
+                {"D6"}
+              </tspan>
+            </text>
+          </a>
         </g>
       </g>
       <g className="cls-21">

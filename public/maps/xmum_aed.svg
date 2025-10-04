@@ -524,7 +524,9 @@
   <a href="#music" class="highlight-on-hover">
     <circle class="cls-3" cx="434.7" cy="488.5" r="27"/>
   </a>
-  <ellipse class="cls-38" cx="1132.2" cy="173.5" rx="91" ry="64.5" transform="translate(208.9 851.4) rotate(-45)"/>
+  <a href="/d6" class="highlight-on-hover">
+    <ellipse class="cls-38" cx="1132.2" cy="173.5" rx="91" ry="64.5" transform="translate(208.9 851.4) rotate(-45)"/>
+  </a>
   <g id="_图层_5" data-name=" 图层 5">
     <g>
       <path class="cls-10" d="M36.7,744.4v-5h.7v5h-.7Z"/>
@@ -614,7 +616,9 @@
     </g>
     <g class="cls-21">
       <g class="cls-21">
-        <text class="cls-18" transform="translate(1107.2 189.4) scale(.9 1)"><tspan x="0" y="0">D6</tspan></text>
+        <a href="/d6" class="highlight-on-hover">
+          <text class="cls-18" transform="translate(1107.2 189.4) scale(.9 1)"><tspan x="0" y="0">D6</tspan></text>
+        </a>
       </g>
     </g>
     <g class="cls-21">
