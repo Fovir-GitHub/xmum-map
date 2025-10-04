@@ -1,5 +1,7 @@
 # Updates
 
+- 2025/10/05 ---- _XMUM TCM Centre announced that TCM consultation services will resume from 6th October 2025 until 26th December 2025_ _Location: B1-G01A (TCM Clinic)_ _Free consultations_ **_For more details, click on map B1 and see the announcement board_**
+- 2025/10/04 ---- _<span style="background-color:rgba(208, 137, 255, 0.3)">Xinjiang Restaurant</span>_ _New Menu Released_
 - 2025/10/04 ---- _<span style="background-color:rgba(137, 243, 255, 0.3)">Student's Home</span>_ _The store will be cleaned from 10:00 am to 3:00 pm today! It will be open to the public as usual at 3:00 pm_
 - 2025/10/03 ---- _There are 5 major updates:_ [XMUM AED and first aid hotline information has been published] [All interactive blocks on the homepage have been updated] [LY3-2F Tmall Campus details have been updated] [Bell store updated] [_JIAYUE CHINESE RESTAURANT_ has agreed to show this website to obtain discounts if there are student discounts in the future]
 - 2025/09/19 ---- _<span style="background-color:rgba(208, 137, 255, 0.3)">KIMS SALON</span>_ _Recently launched a two-day special salon promotion (2025/09/20 to 2025/09/21), for details, please see the KIMS SALON page._
