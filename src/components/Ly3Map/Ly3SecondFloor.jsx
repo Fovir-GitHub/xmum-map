@@ -31,7 +31,7 @@ export default function Ly3SecondFloor(
   const topRowStart = rightRowEnd;
   const topRowEnd = 17;
 
-  const tmallStart = 29;
+  const tmallStart = 28;
   const tmallEnd = 31;
 
   const bottomRightStart = 31;
@@ -58,8 +58,8 @@ export default function Ly3SecondFloor(
           limit={rightRowEnd - rightRowStart + 1}
           storeData={storeData.slice(rightRowStart, rightRowEnd)}
           locale={locale}
-          top={2000}
-          left={6000}
+          top={3000}
+          left={5500}
           width={300}
           height={500}
           useRowIndex={true}
@@ -67,22 +67,12 @@ export default function Ly3SecondFloor(
           fontSize="5rem"
         />
         {/* Right Row End */}
-        {/* Tmall Coffee Start */}
-        <StoresArea
-          limit={tmallEnd - tmallStart + 1}
+        {/* Tmall Zone Start */}
+        <TmallZoneMap
           storeData={storeData.slice(tmallStart, tmallEnd)}
           locale={locale}
-          top={5200}
-          left={4500}
-          width={400}
-          height={500}
-          useRowIndex={false}
-          fontSize="4rem"
         />
-        {/* Tmall Coffee End */}
-        {/* Fruit Juice Start */}
-
-        {/* Fruit Juice End */}
+        {/* Tmall Zone End */}
         {/* Bottom Right Corner Start */}
         <StoresArea
           limit={bottomRightEnd - bottomRightStart + 1}
@@ -98,5 +88,52 @@ export default function Ly3SecondFloor(
         {/* Bottom Right Corner End */}
       </MapOverlay>
     </BackgroundMapWrapper>
+  );
+}
+
+function TmallZoneMap({ storeData, locale }) {
+  const leftStart = 0;
+  const leftEnd = leftStart + 1;
+
+  const rightTopStart = leftEnd;
+  const rightTopEnd = rightTopStart + 1;
+  const rightBottomStart = rightTopEnd;
+  const rightBottomEnd = rightBottomStart + 1;
+
+  const width = 500;
+
+  return (
+    <div>
+      <StoresArea
+        limit={1}
+        storeData={storeData.slice(leftStart, leftEnd)}
+        locale={locale}
+        top={5200}
+        left={4500}
+        width={width}
+        height={800}
+        fontSize="4rem"
+      />
+      <StoresArea
+        limit={1}
+        storeData={storeData.slice(rightTopStart, rightTopEnd)}
+        locale={locale}
+        top={5200}
+        left={4500 + width}
+        width={width}
+        height={450}
+        fontSize="4rem"
+      />
+      <StoresArea
+        limit={1}
+        storeData={storeData.slice(rightBottomStart, rightBottomEnd)}
+        locale={locale}
+        top={5550}
+        left={4500 + width}
+        width={width}
+        height={450}
+        fontSize="4rem"
+      />
+    </div>
   );
 }
