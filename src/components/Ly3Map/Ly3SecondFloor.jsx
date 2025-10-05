@@ -58,8 +58,8 @@ export default function Ly3SecondFloor(
           limit={rightRowEnd - rightRowStart + 1}
           storeData={storeData.slice(rightRowStart, rightRowEnd)}
           locale={locale}
-          top={2000}
-          left={6000}
+          top={3000}
+          left={5500}
           width={300}
           height={500}
           useRowIndex={true}
