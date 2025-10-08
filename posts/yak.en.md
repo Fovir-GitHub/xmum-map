@@ -17,7 +17,11 @@
 
 **_Our main dishes include beef ramen and Chinese Muslim-style stir-fried dishes._**
 
-Weekly Featured Dishes
+Weekly Featured Dishes：
+
+This week's feature: Egg fried rice for RM10
+
+**Show this website to enjoy a 10% discount**
 
 ---
 

@@ -1,5 +1,6 @@
-# Updates
+# Updates (We hope you will support us by joining the XMUM Map WeChat user group below the announcement to get the latest updates.)
 
+- 2025/10/08 ---- _AED page updated **Etiqa medical insurance guide**, and **off-campus emergency phone number**_ _<span style="background-color:rgba(137, 243, 255, 0.3)">Student's Home</span>_ _Start takeaway chain service_
 - 2025/10/05 ---- _XMUM TCM Centre announced that TCM consultation services will resume from 6th October 2025 until 26th December 2025_ _Location: B1-G01A (TCM Clinic)_ _Free consultations_ **_For more details, click on map B1 and see the announcement board_**
 - 2025/10/04 ---- _<span style="background-color:rgba(208, 137, 255, 0.3)">Xinjiang Restaurant</span>_ _New Menu Released_
 - 2025/10/04 ---- _<span style="background-color:rgba(137, 243, 255, 0.3)">Student's Home</span>_ _The store will be cleaned from 10:00 am to 3:00 pm today! It will be open to the public as usual at 3:00 pm_
@@ -47,8 +48,8 @@ Welcome to this website! To help students more easily access information about n
 
 - Eathami (student ID required for this store)
 
-10. Website WeChat user group (for user feedback and website update notifications):
+10. WeChat User Group
 
-<img src="https://img.xmummap.com/1Ausercode.jpg">
+<img src="https://img.xmummap.com/111_wechatcode.jpg" />
 
 Thank you for your understanding and support. We hope that students can easily find the right food and leisure spots for their studies and daily life! 🍜✨
