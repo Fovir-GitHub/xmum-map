@@ -29,8 +29,6 @@
         echo '    build="pnpm run build"'
         echo '    start="pnpm run start"'
         echo '    format="pnpm run format"'
-
-        trap 'echo "Leaving the development environment!"' EXIT
       '';
     };
   };
