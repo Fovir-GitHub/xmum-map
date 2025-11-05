@@ -13,24 +13,18 @@
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
         nodejs
+        pnpm
       ];
 
       shellHook = ''
         echo "Entering the development environment!"
         echo "Node: $(node -v), pnpm: $(pnpm -v)"
 
-        alias dev="pnpm run dev"
-        alias build="pnpm run build"
-        alias start="pnpm run start"
-        alias format="pnpm run format"
-
-        echo "Aliases:"
-        echo '    dev="pnpm run dev"'
-        echo '    build="pnpm run build"'
-        echo '    start="pnpm run start"'
-        echo '    format="pnpm run format"'
-
-        trap 'echo "Leaving the development environment!"' EXIT
+        echo "Justfile:"
+        echo '    just dev="pnpm run dev"'
+        echo '    just build="pnpm run build"'
+        echo '    just start="pnpm run start"'
+        echo '    just format="pnpm run format"'
       '';
     };
   };
