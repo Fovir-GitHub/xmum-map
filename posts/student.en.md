@@ -2,7 +2,7 @@
 
 ## Manager's Words
 
-We'll soon be offering late-night snacks, so stay tuned.
+We have started offering late-night snacks.
 
 ## Menu QR code
 
@@ -39,6 +39,17 @@ We'll soon be offering late-night snacks, so stay tuned.
 ## Membership
 
 <img src="https://img.xmummap.com/11_student_vip.webp" />
+
+---
+
+## Takeout Order Hours
+
+- Lunch orders close at 11:20 AM
+- Delivery starts at 12:00 PM
+- Dinner orders close at 5:20 PM
+- Delivery starts at 6:00 PM
+- Late-night snack orders close at 8:20 PM
+- Delivery starts at 9:00 PM
 
 ---
 
