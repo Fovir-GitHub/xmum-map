@@ -10,13 +10,13 @@ const nextConfig = {
   experimental: {
     forceSwcTransforms: true,
   },
-  webpack(config) {
-    config.externals = config.externals || [];
-    config.externals.push(/.*\.pnpm-store.*/);
-    return config;
-  },
+  output: "standalone",
   outputFileTracingExcludes: {
-    "/[sourceFile]/[locale]/[slug]": [".next/cache/**/*"],
+    "/[locale]/[slug]": [
+      ".next/cache/**/*",
+      "**/.pnpm-store/**/*",
+      ".git/**/*",
+    ],
   },
 };
 
