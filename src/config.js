@@ -44,7 +44,7 @@ const xmumConfig = {
     lastUpdateTime: {
       zh: "⏰ 上次更新时间：",
       en: "⏰ Last update time: ",
-      time: "05 Nov 2025",
+      time: "31 Dec 2025",
     },
   },
   language: {
